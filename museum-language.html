@@ -1,0 +1,748 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>语言馆</title>
+  <link rel="stylesheet" type="text/css" href="css/public.css">
+  <link rel="stylesheet" type="text/css" href="css/layout.css">
+  <script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+  <script type="text/javascript" src="js/jquery.input.js"></script>
+  <script type="text/javascript" src="js/layout.js"></script>
+  <script type="text/javascript" src="js/scrollBox.js"></script>
+  <script type="text/javascript" src="js/museumFunc.js"></script>
+</head>
+
+<body class="museum-box">
+<div class="header">
+  <div class="head-top">
+    <div class="head-l">
+      <a class="logo-refer-book" href="homePage.html" target="_blank"></a>
+      <ul class="nav">
+        <li class="link-cnki"><a href="http://cnki.net/" target="_blank">中国知网</a></li>
+        <li><a href="homePage.html" target="_blank">工具书总库</a></li>
+        <li><a href="museum-language.html" target="_blank">语言馆</a></li>
+        <li><a href="museum-major.html" target="_blank">专业馆</a></li>
+        <li><a href="museum-science.html" target="_blank">科普馆</a></li>
+        <li><a href="booklist.html" target="_blank">总书目</a></li>
+        <li><a href="type.html" target="_blank">工具书类型</a></li>
+        <li><a href="products.html" target="_blank">独立子产品</a></li>
+      </ul>
+    </div>
+    <div class="head-r">
+      <ul class="nav">
+        <li><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+        <li><a href="myCollect-items.html" target="_blank">我的收藏</a></li>
+        <li><a href="#">充值</a></li>
+        <li><a href="#">帮助</a></li>
+        <li><a href="#">客服</a></li>
+      </ul>
+    </div>
+  </div><!--head-top-->
+
+  <div class="head-content museum-language">
+    <div class="searchmain">
+      <div class="search-form">
+        <div class="input-box">
+          <input class="search-input" type="text" autocomplete="off" placeholder="请输入检索词···" value="请输入检索词···" maxlength="100">
+          <a class="btn-wildcard" href="javascript:void(0);">?</a>
+          <a class="btn-wildcard" href="javascript:void(0);">*</a>
+          <div class="sort">
+            <div class="sort-default">
+              <span>条目</span>
+              <i class="sort-icon">▼</i>
+            </div>
+            <ul class="sort-list">
+              <li class="cur"><a href="javascript:void(0);">条目</a></li>
+              <li><a href="javascript:void(0);">条头</a></li>
+              <li><a href="javascript:void(0);">图书</a></li>
+            </ul>
+          </div>
+        </div>
+        <input class="search-btn" type="button" value="检索">
+      </div><!--search-form-->
+
+      <div class="search-nav">
+        <span class="title">输入助手：</span>
+        <ul class="nav-bar">
+          <li><a href="javascript:void(0);">部首<i class="icon"></i></a></li>
+          <li><a href="javascript:void(0);">笔画<i class="icon"></i></a></li>
+          <li><a href="javascript:void(0);">拼音<i class="icon"></i></a></li>
+          <li><a href="javascript:void(0);">通配符说明<i class="icon"></i></a></li>
+          <li><a href="javascript:void(0);">高级设置<i class="icon"></i></a></li>
+        </ul>
+        <label class="expand">
+          <input type="checkbox" checked>同义词扩展
+        </label>
+      </div><!--search-nav-->
+
+      <div class="drop-box">
+        <a href="javascript:;" class="close"></a>
+        <div class="subnav-container">
+          <div class="unit bushou">
+            <h5>部首导航</h5>
+            <ul class="menu">
+              <li><a href="javascript:void(0);">1</a></li>
+              <li><a href="javascript:void(0);">2</a></li>
+              <li><a href="javascript:void(0);">3</a></li>
+              <li><a href="javascript:void(0);">4</a></li>
+              <li><a href="javascript:void(0);">5</a></li>
+              <li><a href="javascript:void(0);">6</a></li>
+              <li><a href="javascript:void(0);">7</a></li>
+              <li><a href="javascript:void(0);">8</a></li>
+              <li><a href="javascript:void(0);">9</a></li>
+              <li><a href="javascript:void(0);">10</a></li>
+              <li><a href="javascript:void(0);">11</a></li>
+              <li><a href="javascript:void(0);">12</a></li>
+              <li><a href="javascript:void(0);">13</a></li>
+              <li><a href="javascript:void(0);">14</a></li>
+              <li><a href="javascript:void(0);">15</a></li>
+            </ul><!--menu-->
+
+            <div class="submenu-box">
+              <ul class="submenu">
+                <li><a href="javascript:void(0);">一</a></li>
+                <li><a href="javascript:void(0);">丨</a></li>
+                <li><a href="javascript:void(0);">亅</a></li>
+                <li><a href="javascript:void(0);">丿</a></li>
+                <li><a href="javascript:void(0);">丶</a></li>
+                <li><a href="javascript:void(0);">乛</a></li>
+                <li><a href="javascript:void(0);">乙</a></li>
+                <li><a href="javascript:void(0);">乚</a></li>
+              </ul><!--submenu-->
+              <div class="thirdmenu-box">
+                <ul class="thirdmenu">
+                  <li><a href="javascript:void(0);">1</a></li>
+                  <li><a href="javascript:void(0);">2</a></li>
+                  <li><a href="javascript:void(0);">3</a></li>
+                  <li><a href="javascript:void(0);">4</a></li>
+                  <li><a href="javascript:void(0);">5</a></li>
+                  <li><a href="javascript:void(0);">6</a></li>
+                  <li><a href="javascript:void(0);">7</a></li>
+                  <li><a href="javascript:void(0);">8</a></li>
+                </ul>
+                <div class="fourthmenu-box">
+                  <ul class="fourthmenu">
+                    <li><a href="javascript:void(0);">兀</a></li>
+                    <li><a href="javascript:void(0);">无</a></li>
+                    <li><a href="javascript:void(0);">丨</a></li>
+                    <li><a href="javascript:void(0);">卡</a></li>
+                    <li><a href="javascript:void(0);">卡</a></li>
+                    <li><a href="javascript:void(0);">卥</a></li>
+                    <li><a href="javascript:void(0);">临</a></li>
+                    <li><a href="javascript:void(0);">中</a></li>
+                    <li><a href="javascript:void(0);">串</a></li>
+                    <li><a href="javascript:void(0);">串</a></li>
+                    <li><a href="javascript:void(0);">丳</a></li>
+                    <li><a href="javascript:void(0);">丯</a></li>
+                    <li><a href="javascript:void(0);">丬</a></li>
+                    <li><a href="javascript:void(0);">丫</a></li>
+                    <li><a href="javascript:void(0);">丮</a></li>
+                    <li><a href="javascript:void(0);">丩</a></li>
+                    <li><a href="javascript:void(0);">丱</a></li>
+                  </ul>
+                </div>
+
+              </div><!--thirdmenu-box-->
+            </div><!--submenu-box-->
+
+            <div class="result-box">
+              <table cellpadding="0" cellspacing="0">
+                <tbody>
+                <tr>
+                  <td rowspan="2" class="hz">无</td>
+                  <td><b>汉字：</b>无</td>
+                  <td><b>部首：</b>一</td>
+                  <td><b>笔画数：</b>4</td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="py"><b>拼音：</b>mó;wú</td>
+                  <td>
+                    <b>五笔：</b>fqv
+                    <a class="btn-more" href="javascript:void(0);" >more&nbsp;&gt;&gt;</a>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+
+              <div class="result-more">
+                <p><span class="tit">基本内容：</span>无 （無） wú 没有，与“有”相对；不：无辜。无偿。无从（没有门径或找不到头绪）。无度。无端（无缘无故）。无方（不得法，与“有方”相对）。无非（只，不过）。无动于衷。无所适从。 有 笔画数：4； 部首：一； 笔顺编号：1135</p>
+                <p><span class="tit">详细内容：</span>无 無 mó ——“南无”(nāmó):佛教用语,表示对佛尊敬或皈依 另见wú 无 無 wú 【名】 (会意。据甲骨文字形,象一个人持把在跳舞。卜辞、金文中“无、舞”同字。本义:乐舞) 同本义〖singanddance〗 哲学范畴,指无形、无名、虚无等,或指物质的隐微状态〖nihility〗 天下万物生于有,有生于无。——《老子》 无 無 wú 【动】 没有,跟“有”相对〖nothave;thereisnot〗 无,不有也。</p>
+                <p><span class="tit">相关单词：</span>爱憎无常;安然无事;安然无恙;安忍无亲;坐无虚席;坐无公车作辍无常;坐帐无鹤;尊无二上;走投无路;</p>
+                <p><span class="tit">相关成语：</span>案无留牍;黯淡无光;黯然无色;傲慢无礼;白璧无瑕;白玉无瑕;变幻无穷;变幻无常;兵无常势;百无一成;百无一是;卑鄙无耻;别来无恙;别无二致;秉公无私;搏手无策;苍白无力;不识之无;策无遗算;茶饭无心</p>
+              </div>
+            </div><!--result-box-->
+
+          </div><!--bushou end-->
+
+          <div class="unit bihua">
+            <h5>笔画导航</h5>
+            <ul class="menu">
+              <li><a href="javascript:void(0);">1</a></li>
+              <li><a href="javascript:void(0);">2</a></li>
+              <li><a href="javascript:void(0);">3</a></li>
+              <li><a href="javascript:void(0);">4</a></li>
+              <li><a href="javascript:void(0);">5</a></li>
+              <li><a href="javascript:void(0);">6</a></li>
+              <li><a href="javascript:void(0);">7</a></li>
+              <li><a href="javascript:void(0);">8</a></li>
+              <li><a href="javascript:void(0);">9</a></li>
+              <li><a href="javascript:void(0);">10</a></li>
+              <li><a href="javascript:void(0);">11</a></li>
+              <li><a href="javascript:void(0);">12</a></li>
+              <li><a href="javascript:void(0);">13</a></li>
+              <li><a href="javascript:void(0);">14</a></li>
+              <li><a href="javascript:void(0);">15</a></li>
+              <li><a href="javascript:void(0);">16</a></li>
+              <li><a href="javascript:void(0);">17</a></li>
+              <li><a href="javascript:void(0);">18</a></li>
+              <li><a href="javascript:void(0);">19</a></li>
+              <li><a href="javascript:void(0);">20</a></li>
+              <li><a href="javascript:void(0);">21</a></li>
+              <li><a href="javascript:void(0);">22</a></li>
+              <li><a href="javascript:void(0);">23</a></li>
+              <li><a href="javascript:void(0);">24</a></li>
+              <li><a href="javascript:void(0);">25以上</a></li>
+            </ul><!--menu-->
+
+            <div class="submenu-box">
+              <ul class="submenu">
+                <li><a href="javascript:void(0);">卍</a></li>
+                <li><a href="javascript:void(0);">分</a></li>
+                <li><a href="javascript:void(0);">乥</a></li>
+                <li><a href="javascript:void(0);"></a></li>
+                <li><a href="javascript:void(0);"></a></li>
+                <li><a href="javascript:void(0);"></a></li>
+                <li><a href="javascript:void(0);"></a></li>
+                <li><a href="javascript:void(0);"></a></li>
+                <li><a href="javascript:void(0);">亖</a></li>
+                <li><a href="javascript:void(0);">丰</a></li>
+                <li><a href="javascript:void(0);">王</a></li>
+                <li><a href="javascript:void(0);">亓</a></li>
+                <li><a href="javascript:void(0);">亓</a></li>
+                <li><a href="javascript:void(0);">开</a></li>
+                <li><a href="javascript:void(0);">天</a></li>
+                <li><a href="javascript:void(0);">夫</a></li>
+                <li><a href="javascript:void(0);">无</a></li>
+                <li><a href="javascript:void(0);">分</a></li>
+                <li><a href="javascript:void(0);">乥</a></li>
+                <li><a href="javascript:void(0);"></a></li>
+                <li><a href="javascript:void(0);"></a></li>
+                <li><a href="javascript:void(0);"></a></li>
+                <li><a href="javascript:void(0);"></a></li>
+                <li><a href="javascript:void(0);"></a></li>
+                <li><a href="javascript:void(0);">亖</a></li>
+                <li><a href="javascript:void(0);">丰</a></li>
+                <li><a href="javascript:void(0);">王</a></li>
+                <li><a href="javascript:void(0);">亓</a></li>
+                <li><a href="javascript:void(0);">亓</a></li>
+                <li><a href="javascript:void(0);">开</a></li>
+                <li><a href="javascript:void(0);">天</a></li>
+                <li><a href="javascript:void(0);">夫</a></li>
+                <li><a href="javascript:void(0);">分</a></li>
+                <li><a href="javascript:void(0);">乥</a></li>
+                <li><a href="javascript:void(0);"></a></li>
+                <li><a href="javascript:void(0);"></a></li>
+                <li><a href="javascript:void(0);"></a></li>
+                <li><a href="javascript:void(0);"></a></li>
+                <li><a href="javascript:void(0);"></a></li>
+                <li><a href="javascript:void(0);">亖</a></li>
+                <li><a href="javascript:void(0);">丰</a></li>
+                <li><a href="javascript:void(0);">王</a></li>
+                <li><a href="javascript:void(0);">亓</a></li>
+                <li><a href="javascript:void(0);">亓</a></li>
+                <li><a href="javascript:void(0);">开</a></li>
+                <li><a href="javascript:void(0);">天</a></li>
+                <li><a href="javascript:void(0);">夫</a></li>
+
+              </ul><!--submenu-->
+            </div><!--submenu-box-->
+
+            <div class="result-box">
+              <table cellpadding="0" cellspacing="0">
+                <tbody>
+                <tr>
+                  <td rowspan="2" class="hz">无</td>
+                  <td><b>汉字：</b>无</td>
+                  <td><b>部首：</b>一</td>
+                  <td><b>笔画数：</b>4</td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="py"><b>拼音：</b>mó;wú</td>
+                  <td>
+                    <b>五笔：</b>fqv
+                    <a class="btn-more" href="javascript:void(0);" >more&nbsp;&gt;&gt;</a>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+
+              <div class="result-more">
+                <p><span class="tit">基本内容：</span>无 （無） wú 没有，与“有”相对；不：无辜。无偿。无从（没有门径或找不到头绪）。无度。无端（无缘无故）。无方（不得法，与“有方”相对）。无非（只，不过）。无动于衷。无所适从。 有 笔画数：4； 部首：一； 笔顺编号：1135</p>
+                <p><span class="tit">详细内容：</span>无 無 mó ——“南无”(nāmó):佛教用语,表示对佛尊敬或皈依 另见wú 无 無 wú 【名】 (会意。据甲骨文字形,象一个人持把在跳舞。卜辞、金文中“无、舞”同字。本义:乐舞) 同本义〖singanddance〗 哲学范畴,指无形、无名、虚无等,或指物质的隐微状态〖nihility〗 天下万物生于有,有生于无。——《老子》 无 無 wú 【动】 没有,跟“有”相对〖nothave;thereisnot〗 无,不有也。</p>
+                <p><span class="tit">相关单词：</span>爱憎无常;安然无事;安然无恙;安忍无亲;坐无虚席;坐无公车作辍无常;坐帐无鹤;尊无二上;走投无路;</p>
+                <p><span class="tit">相关成语：</span>案无留牍;黯淡无光;黯然无色;傲慢无礼;白璧无瑕;白玉无瑕;变幻无穷;变幻无常;兵无常势;百无一成;百无一是;卑鄙无耻;别来无恙;别无二致;秉公无私;搏手无策;苍白无力;不识之无;策无遗算;茶饭无心</p>
+              </div>
+            </div><!--result-box-->
+          </div><!--bihua end-->
+
+          <div class="unit pinyin">
+            <h5>拼音导航</h5>
+            <ul class="menu">
+              <li><a href="javascript:void(0);">a</a></li>
+              <li><a href="javascript:void(0);">b</a></li>
+              <li><a href="javascript:void(0);">c</a></li>
+              <li><a href="javascript:void(0);">ch</a></li>
+              <li><a href="javascript:void(0);">d</a></li>
+              <li><a href="javascript:void(0);">e</a></li>
+              <li><a href="javascript:void(0);">f</a></li>
+              <li><a href="javascript:void(0);">g</a></li>
+              <li><a href="javascript:void(0);">h</a></li>
+              <li><a href="javascript:void(0);">j</a></li>
+              <li><a href="javascript:void(0);">k</a></li>
+              <li><a href="javascript:void(0);">l</a></li>
+              <li><a href="javascript:void(0);">m</a></li>
+              <li><a href="javascript:void(0);">n</a></li>
+              <li><a href="javascript:void(0);">o</a></li>
+              <li><a href="javascript:void(0);">q</a></li>
+              <li><a href="javascript:void(0);">r</a></li>
+              <li><a href="javascript:void(0);">s</a></li>
+              <li><a href="javascript:void(0);">sh</a></li>
+              <li><a href="javascript:void(0);">t</a></li>
+              <li><a href="javascript:void(0);">w</a></li>
+              <li><a href="javascript:void(0);">x</a></li>
+              <li><a href="javascript:void(0);">y</a></li>
+              <li><a href="javascript:void(0);">z</a></li>
+              <li><a href="javascript:void(0);">zh</a></li>
+            </ul><!--menu-->
+
+            <div class="submenu-box">
+              <ul class="submenu">
+                <li><a href="javascript:void(0);">wa</a></li>
+                <li><a href="javascript:void(0);">wai</a></li>
+                <li><a href="javascript:void(0);">wan</a></li>
+                <li><a href="javascript:void(0);">wang</a></li>
+                <li><a href="javascript:void(0);">wei</a></li>
+                <li><a href="javascript:void(0);">wen</a></li>
+                <li><a href="javascript:void(0);">weng</a></li>
+                <li><a href="javascript:void(0);">wo</a></li>
+                <li><a href="javascript:void(0);">wu</a></li>
+              </ul><!--submenu-->
+              <div class="thirdmenu-box">
+                <ul class="thirdmenu">
+                  <li><a href="javascript:void(0);">兀</a></li>
+                  <li><a href="javascript:void(0);">珷</a></li>
+                  <li><a href="javascript:void(0);">珸</a></li>
+                  <li><a href="javascript:void(0);">武</a></li>
+                  <li><a href="javascript:void(0);">鵡</a></li>
+                  <li><a href="javascript:void(0);">鹉</a></li>
+                  <li><a href="javascript:void(0);">玝</a></li>
+                  <li><a href="javascript:void(0);">璑</a></li>
+                  <li><a href="javascript:void(0);">瑦</a></li>
+                  <li><a href="javascript:void(0);">无</a></li>
+                  <li><a href="javascript:void(0);">圬</a></li>
+                  <li><a href="javascript:void(0);">捂</a></li>
+                  <li><a href="javascript:void(0);">扤</a></li>
+                  <li><a href="javascript:void(0);">墲</a></li>
+                  <li><a href="javascript:void(0);">摀</a></li>
+                  <li><a href="javascript:void(0);">蜈</a></li>
+                  <li><a href="javascript:void(0);">蟱</a></li>
+                  <li><a href="javascript:void(0);">螐</a></li>
+                </ul>
+              </div><!--thirdmenu-box-->
+            </div><!--submenu-box-->
+
+            <div class="result-box">
+              <table cellpadding="0" cellspacing="0">
+                <tbody>
+                <tr>
+                  <td rowspan="2" class="hz">无</td>
+                  <td><b>汉字：</b>无</td>
+                  <td><b>部首：</b>一</td>
+                  <td><b>笔画数：</b>4</td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="py"><b>拼音：</b>mó;wú</td>
+                  <td>
+                    <b>五笔：</b>fqv
+                    <a class="btn-more" href="javascript:void(0);" >more&nbsp;&gt;&gt;</a>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+
+              <div class="result-more">
+                <p><span class="tit">基本内容：</span>无 （無） wú 没有，与“有”相对；不：无辜。无偿。无从（没有门径或找不到头绪）。无度。无端（无缘无故）。无方（不得法，与“有方”相对）。无非（只，不过）。无动于衷。无所适从。 有 笔画数：4； 部首：一； 笔顺编号：1135</p>
+                <p><span class="tit">详细内容：</span>无 無 mó ——“南无”(nāmó):佛教用语,表示对佛尊敬或皈依 另见wú 无 無 wú 【名】 (会意。据甲骨文字形,象一个人持把在跳舞。卜辞、金文中“无、舞”同字。本义:乐舞) 同本义〖singanddance〗 哲学范畴,指无形、无名、虚无等,或指物质的隐微状态〖nihility〗 天下万物生于有,有生于无。——《老子》 无 無 wú 【动】 没有,跟“有”相对〖nothave;thereisnot〗 无,不有也。</p>
+                <p><span class="tit">相关单词：</span>爱憎无常;安然无事;安然无恙;安忍无亲;坐无虚席;坐无公车作辍无常;坐帐无鹤;尊无二上;走投无路;</p>
+                <p><span class="tit">相关成语：</span>案无留牍;黯淡无光;黯然无色;傲慢无礼;白璧无瑕;白玉无瑕;变幻无穷;变幻无常;兵无常势;百无一成;百无一是;卑鄙无耻;别来无恙;别无二致;秉公无私;搏手无策;苍白无力;不识之无;策无遗算;茶饭无心</p>
+              </div>
+            </div><!--result-box-->
+          </div><!--pinyin end-->
+
+          <div class="unit wildcard">
+            <h5>通配符说明</h5>
+            <div class="tip-text">
+              <p>友情提示：</p>
+              <p>【词目】精确检索可用通配符 (如: '中国?' 或 '中国*')</p>
+            </div>
+          </div><!--wildcard end-->
+
+          <div class="unit adv-set">
+            <h5><i class="icon icon-adv-set"></i>高级设置</h5>
+            <dl>
+              <dd>
+                <ul>
+                  <li class="on">记住我的设置</li>
+                </ul>
+              </dd>
+              <dd>
+                <span class="tit">语种：</span>
+                <ul>
+                  <li class="js-all on">任意</li>
+                  <li>zh-中</li>
+                  <li>en-英</li>
+                  <li>la-拉</li>
+                  <li>ru-俄</li>
+                  <li>fr-法</li>
+                  <li>de-德</li>
+                  <li>it-意</li>
+                  <li>es-西</li>
+                  <li>da-丹</li>
+                  <li>zh-中</li>
+                  <li>en-英</li>
+                  <li>la-拉</li>
+                  <li>ru-俄</li>
+                  <li>fr-法</li>
+                  <li>de-德</li>
+                  <li>it-意</li>
+                  <li>es-西</li>
+                  <li>da-丹</li>
+                  <li>zh-中</li>
+                  <li>en-英</li>
+                  <li>la-拉</li>
+                  <li>ru-俄</li>
+                  <li>fr-法</li>
+                  <li>de-德</li>
+                  <li>it-意</li>
+                  <li>es-西</li>
+                  <li>da-丹</li>
+                </ul>
+              </dd>
+
+              <dd>
+                <span class="tit">领域：</span>
+                <ul>
+                  <li class="js-all on">全部</li>
+                  <li>数学</li>
+                  <li>物理</li>
+                  <li>天文</li>
+                  <li>生物</li>
+                  <li>医学</li>
+                  <li>农业</li>
+                  <li>数学</li>
+                  <li>物理</li>
+                  <li>天文</li>
+                  <li>生物</li>
+                  <li>医学</li>
+                  <li>农业</li>
+                  <li>数学</li>
+                  <li>物理</li>
+                  <li>天文</li>
+                  <li>生物</li>
+                  <li>医学</li>
+                  <li>农业</li>
+                  <li>数学</li>
+                  <li>物理</li>
+                  <li>天文</li>
+                  <li>生物</li>
+                  <li>医学</li>
+                  <li>农业</li>
+                </ul>
+              </dd>
+
+              <dd>
+                <span class="tit">格式：</span>
+                <ul>
+                  <li class="js-all on">不限</li>
+                  <li>检索词为缩写</li>
+                </ul>
+              </dd>
+            </dl>
+          </div><!--adv-set end-->
+
+        </div>
+
+      </div><!--drop-box-->
+
+    </div><!--searchmain-->
+
+  </div><!--head-content-->
+
+</div><!--header-->
+
+<div class="wrapper">
+  <div class="module-box language-top">
+    <div class="top-a">
+      <ul class="side-nav-list">
+        <li class="on">汉语</li>
+        <li>汉外</li>
+        <li>英语</li>
+        <li>小语种</li>
+        <li>少数民族语言</li>
+      </ul>
+    </div>
+    <div class="top-b">
+      <ul class="top-submenu">
+        <li class="on">优质图书</li>
+        <li>古汉语</li>
+        <li>现代汉语</li>
+        <li>源流</li>
+        <li>成语</li>
+        <li>熟语</li>
+        <li>谚语</li>
+        <li>歇后语</li>
+        <li>惯用语</li>
+        <li>方言</li>
+        <li>名句</li>
+        <li>鉴赏</li>
+      </ul>
+
+      <div class="box1">
+        <!--scroll-box start-->
+        <div class="scroll-box">
+          <div class="items">
+            <ul class="pics-list">
+              <li class="big-pic">
+                <a target="_blank" href="book-details.html"><img src="images/temp/g-13.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-01.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-02.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-03.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-04.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-05.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-06.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-07.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-08.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-09.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-10.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-11.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-12.jpg" alt="" ></a>
+              </li>
+            </ul>
+            <ul class="pics-list">
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-12.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-10.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-01.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-02.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-03.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-04.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-05.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-06.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-07.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-08.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-09.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-10.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-11.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-12.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-07.jpg" alt="" ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><img src="images/temp/g-08.jpg" alt="" ></a>
+              </li>
+            </ul>
+          </div><!--rollImg-->
+          <div class="nums">
+            <a class="active"></a>
+            <a></a>
+          </div><!--nums-->
+        </div>
+        <!--scroll-box end-->
+      </div>
+
+
+    </div>
+  </div><!--module-box-->
+
+  <div class="module-box">
+    <h5>优质条目</h5>
+    <ul class="list-item1">
+      <li><a href="search-textItem.html" target="_blank">大凡读书，不能无疑。读书而无所疑，是盖学于心无所得故<i>----</i><span class="source">来源于《人生处世名言辞典》</span></a></li>
+      <li><a href="#" target="_blank">庄子：鹪鹩巢于深林，不过一枝。偃鼠饮河，不过满腹<b>（鷦鷯jiāoliáo，就是巧妇鸟，喜好深处而巧于为巢。偃鼠，形大小如牛，赤黑色，獐脚，脚有三甲，耳似象耳，尾端白，好入河饮水）</b><i>----</i><span class="source">《中国名言佳句大辞典》</span></a></li>
+      <li><a href="#" target="_blank">一粥一饭，当思来处不易；半丝半缕，恒念物力维艰<i>----</i><span class="source">《国学句典》</span></a></li>
+      <li><a href="#" target="_blank">爱因斯坦：我每天上百次地提醒自己： 我的精神生活和物质生活都依靠着别人(包括 生者和死者)的劳动，我必须尽力以同样的分量来报偿我所领受了的和至今还在领受着的东西。<i>----</i><span class="source">《犹太箴言录》</span></a></li>
+      <li><a href="#" target="_blank">健康躯体是灵魂的客厅  精神是健康的医生  乐观是人生钟表的发条<i>----</i><span class="source">《精锦赠言大辞典》</span></a></li>
+    </ul>
+
+  </div><!--module-box-->
+
+  <div class="module-box">
+    <h5>成语接龙</h5>
+    <div class="module-idioms">
+      <ul>
+        <li class="fir">
+          <input class="fir-1" type="text" value="???乐">
+        </li>
+        <li class="sec">
+          <input class="sec-1" type="text" value="及时行乐">
+          <input class="sec-2" type="text" value="怏怏不乐">
+          <input class="sec-3" type="text" value="苦中作乐">
+        </li>
+        <li class="third">
+          <input class="third-1" type="text" value="乐不可支">
+        </li>
+        <li class="fourth">
+          <input class="fourth-1" type="text" value="支吾其词">
+          <input class="fourth-2" type="text" value="支支吾吾">
+          <input class="fourth-3" type="text" value="支手舞脚">
+        </li>
+        <li class="fifth">
+          <input class="fifth-1" type="text" value="词穷理屈">
+          <input class="fifth-2" type="text" value="词不达意">
+          <input class="fifth-3" type="text" value="吾？？？">
+          <input class="fifth-4" type="text" value="脚？？？">
+        </li>
+        <li class="sixth">
+          <input class="sixth-1" type="text" value="屈指可数">
+          <p class="sixth-2 tip">
+            <span>想让成语源源不断？试试通配符检索吧！</span>
+            <span>用“?”表示一个字符, “?”可以放在任意位置。</span>
+          </p>
+        </li>
+      </ul>
+    </div>
+
+  </div><!--module-box-->
+
+
+</div><!--wrapper-->
+
+
+
+<div id="FooterDiv" class="footer">
+  <div class="botNav clearfix">
+    <a target="_blank" href="http://cnki.net/gycnki/gycnki.htm">关于我们</a>
+    <a target="_blank" href="http://www.cnki.net/other/gonggao/gongsirongyu.html">CNKI荣誉</a>
+    <a target="_blank" href="http://www.cnki.net/other/gonggao/bqsm.htm">版权公告</a>
+    <a target="_blank" href="http://service.cnki.net/">客服中心</a>
+    <a target="_blank" href="http://help.cnki.net/">在线咨询</a>
+    <a target="_blank" href="http://help.cnki.net/Live800_1_2.aspx?GroupID=503&amp;PageID=101008&amp;Name=&amp;CookieName=TTKN_OnLine_800">用户建议</a>
+    <a target="_blank" href="http://www.cnki.net/other/zhaopin/zhaopin.html">知网招聘</a>
+  </div>
+  <div id="bottom">
+    <div class="botbox">
+      <div class="leftinside">
+        <ul>
+          <li style="width:130px;"><b>读者服务</b>
+            <p>
+              <a target="_blank" href="http://vipcard.cnki.net/ec/skwd/skwd.htm">购买知网卡</a><br>
+              <a target="_blank" href="http://my.cnki.net/CNKIRecharging/czzx.html">充值中心</a><br>
+              <a target="_blank" href="http://my.cnki.net/">我的CNKI</a><br>
+              <a target="_blank" href="http://service.cnki.net/helpcenter/">帮助中心</a>
+            </p>
+          </li>
+          <li style="width:185px;"><b>CNKI常用软件下载</b>
+            <p>
+              <a target="_blank" href="http://cajviewer.cnki.net">CAJViewer浏览器</a><br>
+              <a target="_blank" href="http://www.cnki.net/software/xzydq.htm#CNKIe-Learning">CNKI数字化学习平台</a><br>
+              <a target="_blank" href="http://mall.cnki.net/Reference/Soft/CNKI工具书.rar">工具书桌面检索软件</a>
+            </p>
+          </li>
+          <li style="width:145px;"><b>特色服务</b>
+            <p>
+              <a target="_blank" href="http://wap.cnki.net/">手机知网</a><br>
+              <a target="_blank" href="http://wuxizazhi.cnki.net/">杂志订阅</a><br>
+              <a target="_blank" href="http://mall.cnki.net/">数字出版物订阅</a><br>
+              <a target="_blank" href="http://ad.cnki.net/index.aspx">广告服务</a>
+            </p>
+          </li>
+          <li style="width:155px;"><b>客服咨询</b>
+            <p>订卡热线：400-819-9993<br>
+              服务热线：400-810-9888<br>
+              在线咨询：<a target="_blank" href="http://help.cnki.net">help.cnki.net</a><br>
+              邮件咨询：<a target="_blank" href="mailto:help@cnki.net">help@cnki.net</a>
+              客服微博：<a target="_blank" href="http://e.weibo.com/u/3059308095"><img style="width: 16px; height: 16px;vertical-align:middle;" title="客服新浪微博" src="images/logo_xl.gif"></a><a target="_blank" href="http://t.qq.com/CNKI_kefu" style="margin-left:5px;"><img style="width: 16px; height: 16px;vertical-align:middle;" title="客服腾讯微博" src="images/logo_tx.gif"></a>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="rigfooter">
+        <img src="http://piccache.cnki.net/index/images/gb/footlogo.png" alt="" height="28" width="230">
+        <br>
+        京ICP证040431号 <a target="_blank" href="http://www.cnki.net/images/006.jpg">互联网出版许可证 新出网证(京)字008号</a>
+        <br>
+        <a target="_blank" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202005012100021">经营性网站备案信息</a>  京公网安备11010802014875号
+        <br>
+        © 2014中国知网(CNKI)<br> 《中国学术期刊(光盘版)》电子杂志社有限公司
+        <br>
+        KDN平台基础技术由KBASE 10.0提供.<br>
+        <!--可信网站图片LOGO安装开始-->
+        <a id="___szfw_logo___" href="https://ss.knet.cn/verifyseal.dll?sn=e13111111010043364isll000000&amp;a=1&amp;pa=0.08881110103584755" target="_blank"><img alt="可信网站" src="images/kxwz.jpg" height="33" width="86"></a>
+        <!--可信网站图片LOGO安装结束-->
+        <!--诚信网站图片LOGO安装开始-->
+        <a id="A1" href="https://search.szfw.org/cert/l/CX20140929005220005306" target="_blank" style="margin-left:10px;"><img alt="诚信网站" src="images/cert.jpg" height="33" width="86"></a>
+        <script type="text/javascript">(function () { document.getElementById('___szfw_logo___').oncontextmenu = function () { return false; } })();</script>
+        <!--诚信网站图片LOGO安装结束-->
+      </div>
+
+      <div class="clear"></div>
+    </div>
+  </div><!--bottom-->
+</div>
+
+</body>
+</html>
