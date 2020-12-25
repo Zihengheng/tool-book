@@ -1,4 +1,28 @@
 /*结构部分*/
-.main-content{
-	background: url("../images/index-bjone.png");
+.body{
+	width:100%;
 }
+.main-content{
+	background: url("../images/index-bjone.png") no-repeat center;
+	width:100%;
+}
+.header{
+	height: 461px;
+	background-color: #f5f7fa;
+}
+.content-container{
+	width: 1387px;
+	margin:0 auto;
+	/*版心*/
+}
+/*============== header start ==============*/
+.head-left img{
+	width: 131px;
+	height: 45px;
+	float:left;
+	margin-left: 105px;
+}
+.head-left ul.nav{
+	height:45px;
+}
+/*============== header end ==============*/
