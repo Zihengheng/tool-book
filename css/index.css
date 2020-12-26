@@ -15,6 +15,9 @@
 	margin:0 auto;
 	/*版心*/
 }
+.section{
+	width:100%;
+}
 /*============== header start ==============*/
 .head-left img{
 	width: 131px;
