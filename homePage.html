@@ -61,8 +61,8 @@
             </div>
           <div class="input-box">
             <input class="search-input" type="text" autocomplete="off" placeholder="请输入检索词···" value="请输入检索词···" maxlength="100">
-            <a class="btn-wildcard" href="javascript:void(0);">?</a>
-            <a class="btn-wildcard" href="javascript:void(0);">*</a>
+            <a class="btn-wildcard" href="javascript:void(0);" data-toggle="tooltip" title="通配符”?”代表该位置有且仅有1个字符（=1），如检索“?细胞”可检出“红细胞”、“白细胞”。通配符可放在检索词任意位置，可组合使用，如“细?胞*”可检出“细菌胞质素”。">?</a>
+            <a class="btn-wildcard" href="javascript:void(0);" data-toggle="tooltip" title="通配符”*”代表该位置有任意个字符（≥0），如检索“*细胞”可检出“细胞”、“红细胞”、“白细胞”、“巨噬细胞”等。通配符可放在检索词任意位置，可组合使用，如“细?胞*”可检出“细菌胞质素”。">*</a>
 
             <div class="sort">
               <div class="sort-default">
@@ -301,7 +301,7 @@
                   <p><span class="tit">相关成语：</span>案无留牍;黯淡无光;黯然无色;傲慢无礼;白璧无瑕;白玉无瑕;变幻无穷;变幻无常;兵无常势;百无一成;百无一是;卑鄙无耻;别来无恙;别无二致;秉公无私;搏手无策;苍白无力;不识之无;策无遗算;茶饭无心</p>
                 </div>
               </div><!--result-box-->
-            </div><!--bihua end-->
+            </div>
 
             <div class="unit pinyin">
               <h5>拼音导航</h5>
@@ -403,13 +403,50 @@
                 <p>友情提示：</p>
                 <p>【词目】精确检索可用通配符 (如: '中国?' 或 '中国*')</p>
               </div>
-            </div><!--wildcard end--> -->
+            </div><!--wildcard end-->
           </div>
         </div><!--drop-box-->
       </div><!--searchmain-->
     </div><!-- end of the banner -->
 
-    <div class="hp-book"></div>
+    <div class="hp-book">
+      <div class="tab-content" id="label-content">
+        <div class="tab-pane fade in active" id="zk">
+          <span class="hp-title">总库资源</span>
+          <ul>
+            <li><img src="" alt=""><span class="num">1200</span><span class="des">部工具书</span></li>
+            <li><img src=""><span class="num">2700</span><span class="des">万个词条</span></li>
+            <li><img src="" alt=""><span class="num">9</span><span class="des">个独立子产品</span></li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="child">
+          <span class="hp-title">独立子产品</span>
+          <br>
+          <span class="hp-sub">汉语大词典&康熙字典（知网版）</span>
+          <p>本产品具有专业的检索平台和知识关联功能，全面满足文史工作者一站式查找和研究字词源流、读音、释义与书证的需要</p>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div><!-- end of label-content -->
+      <div class="btn-vertical" id="labels">
+      <a href="#zk" data-toggle="tab"><img src="images/label-5.png" class="nav" alt=""><span>01</span></a>
+      <br>
+      <a href="#child" data-toggle="tab"><img src="images/label-2.png" class="nav" alt=""><span>02</span></a>
+      <br>
+      <a href="#"><img src="images/label-3.png" class="nav" alt=""><span>03</span></a>
+      <br>
+      <a href=""><img src="images/label-5.png" class="nav" alt=""><span>04</span></a>
+      <br>
+      <a href=""><img src="images/label-5.png" class="nav" alt=""><span>05</span></a>
+      <br>
+      <a href=""><img src="images/label-5.png" class="nav" alt=""><span>06</span></a>
+    </div>
+</div>
+
+    </div>
     </div><!-- end of content-container -->
   </div><!-- end of header -->
   
@@ -425,7 +462,7 @@
         <table class="lib-intro">
           <tr>
             <td><div class="ir-box">
-              <div class="ir-icon"><img src="images/icon_jsk.png" alt=""></div>
+              <div class="ir-icon"><img src="images/icon_yck.png" alt=""></div>
               <div class="ir-body">
                 <div class="ir-sub1"><a href="#">语词库</a></div>
                 <p class="intro">"本产品首次将《汉语大词典》、《汉语大词典订补》和《康熙字典》整合在一起，具有专业的检索平台和知识关联功能，全面满足文史工作者一站式查找和研究字词源流、读音、释义与书证的需要。"</p>

@@ -4,8 +4,10 @@
   范围：首页
   说明：功能单一，所以整合为一个文件
  */
+$(function () { $("[data-toggle='tooltip']").tooltip(); });
 $(function(){
 	$('#myTab a[href="#t1"]').tab('show');
+	$('#labels a[href="#zk"]').tab('show');
 
 	// $(".section").pageScroll();//滚屏
 

@@ -163,10 +163,14 @@ border-left:0;
     background:url("../images/downiconh.png") no-repeat right;
     color:#6f6f6f;
 }
-.homepage .drop-box { position:relative; z-index: 999; }
+.search-nav ul{
+    margin-top: 10px;
+}
+.drop-box { position:relative; z-index: 999; }
 .homepage .drop-box .unit{ height: 330px; overflow-y: auto; overflow-x:hidden; }
 /* ====home page book====*/
 div.hp-book{
+    position:relative;
     width: 472px;
     height: 515px;
     display:inline-block;
@@ -174,6 +178,88 @@ div.hp-book{
 .header .content-container{
     background: url("../images/hp-book.png") no-repeat right bottom;
 }
+button.label{
+    width: 9px;
+    height: 40px;
+}
+.hp-book .tab-content{
+    float:left;
+    width:220px;
+    height:200px;
+    margin-top: 90px;
+    margin-left:70px;
+}
+.btn-vertical {
+    position:absolute;
+    top:70px;
+    left:315px;
+    margin-top:-10px;
+    width:10px;
+    z-indez:-1; 
+}
+.btn-vertical span{
+    position:relative;
+    color:white;
+    float:left;
+    top:-40px;
+}
+.btn-vertical a{
+    height:40px;
+}
+.btn-vertical img{
+    height:50px;
+    width:16px;
+    margin-top: -10px;
+}
+#label-content span{
+    color: #ffffff;
+    font-family: MicrosoftYaHei;
+}
+#label-content p{
+    color: #ffffff;
+    font-family: MicrosoftYaHei;
+}
+span.hp-title{   
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+span.num{
+    font-size:25px;
+    font-weight: bold;
+}
+span.des{
+    font-size:16px;
+}
+#label-content ul{
+    margin-top: 20px;
+    line-height:36px;
+}
+span.hp-sub{
+    font-size: 16px;
+    font-weight:bold;
+    font-stretch: normal;
+    line-height: 36px;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+#label-content p{
+    width: 229px;
+    height: 73px;
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+
+/* ==== end of home page book====*/
+
 /*============== header end ==============*/
 /*====== 资源 section start ======*/
 .section-ir{
@@ -281,6 +367,7 @@ div.highlighter{
     margin:0 auto;
     padding-top:30px;
     height:900px;
+    background: url("../images/index-bjtwo.png") no-repeat bottom;
 }
 div.ep-tabs{
     margin-bottom: 50px;
@@ -405,7 +492,13 @@ a.go-right{
     height: 230px;
     margin-top: 10px;
 }
+.ep-box img:hover{
+    box-shadow: 5px 5px 5px 5px  #eeeeee;
+    width:160px;
+    height:260px;
+}
 /*====== 独家合作 section end ======*/
+/*========= a little footer ========*/
 ul.content-container li{
     float:left;
     margin-left: 60px;
@@ -418,7 +511,7 @@ ul.content-container li img{
     padding-right: 200px;
 }
 div.footer{
-    margin-top: 100px;
+    margin-top:150px;
     padding: 0;
     background-color: #36446b;
     height:350px;
