@@ -12,9 +12,9 @@
     background-color: #f5f7fa;
 }
 .content-container{
-    width: 1387px;
     margin:0 auto;
     /*版心*/
+    width:1387px;
 }
 .section{
     width:100%;
@@ -184,10 +184,13 @@ button.label{
 }
 .hp-book .tab-content{
     float:left;
-    width:220px;
-    height:200px;
+    width:250px;
+    height:380px;
+    padding-right:20px;
+    padding-bottom: 180px;
     margin-top: 90px;
     margin-left:70px;
+    z-index:88;  
 }
 .btn-vertical {
     position:absolute;
@@ -195,7 +198,7 @@ button.label{
     left:315px;
     margin-top:-10px;
     width:10px;
-    z-indez:-1; 
+    z-index:0; 
 }
 .btn-vertical span{
     position:relative;
@@ -257,15 +260,9 @@ span.hp-sub{
     letter-spacing: 0px;
     color: #ffffff;
 }
-/*#labels img:hover{
-    width:25px;
-    margin-left:2px;
+#zk ul li img{
+    margin-right: 30px;
 }
-#labels img:focus{
-    width:25px;
-    margin-left:2px;
-}
-*/
 /* ==== end of home page book====*/
 
 /*============== header end ==============*/
@@ -485,7 +482,6 @@ a.go-right{
     font-stretch: normal;
     line-height: 24px;
     letter-spacing: 0px;
-    color: #84e1c0;
 }
 .title{
     margin-top: 10px;
@@ -502,8 +498,40 @@ a.go-right{
 }
 .ep-box img:hover{
     box-shadow: 5px 5px 5px 5px  #eeeeee;
-    width:160px;
-    height:260px;
+    transform: scale(1.08);
+}
+.box1 .count{
+    color:#84e1c0;
+}
+.box2 .count{
+    color:#84e1c0;
+}
+.box3 .count{
+    color:#7f83f3;
+}
+.box4 .count{
+    color:#be55ac;
+}
+.box5 .count{
+    color:#e3a25d;
+}
+.box6 .count{
+    color:#aa9626;
+}
+.box7 .count{
+    color:#5a5dcc;
+}
+div.book-intro{
+    width:267px;
+    position:relative;
+    background-color:#C0C0C0;
+    box-shadow: 0px 0px 10px 0px 
+        rgba(147, 149, 152, 0.18);
+    border-radius: 5px;
+    border: solid 1px #eeeeee;
+    top:40px;
+    left:-18px;
+    display:none;
 }
 /*====== 独家合作 section end ======*/
 /*========= a little footer ========*/
