@@ -8,7 +8,89 @@ $(function () { $("[data-toggle='tooltip']").tooltip(); });
 $(function(){
 	$('#myTab a[href="#t1"]').tab('show');
 	$('#labels a[href="#zk"]').tab('show');
+	//显示书籍注释
+	$(".box1 .book a").hover(
+    function(){
+        $(".box1 .book a").next().stop().fadeTo("slow",1,function(){
+            $(this).css("display", "block");
+        })
+    },
+    function(){
+        $(".box1 .book a").next().stop().fadeTo("slow",0,function(){
+            $(this).css("display","none");
+        })
+    });
+    $(".box2 .book a").hover(
+    function(){
+        $(".box2 .book a").next().stop().fadeTo("slow",1,function(){
+            $(this).css("display", "block");
+        })
+    },
+    function(){
+        $(".box2 .book a").next().stop().fadeTo("slow",0,function(){
+            $(this).css("display","none");
+        })
+    });
 
+    $(".box3 .book a").hover(
+    function(){
+        $(".box3 .book a").next().stop().fadeTo("slow",1,function(){
+            $(this).css("display", "block");
+        })
+    },
+    function(){
+        $(".box3 .book a").next().stop().fadeTo("slow",0,function(){
+            $(this).css("display","none");
+        })
+    });
+
+    $(".box4 .book a").hover(
+    function(){
+        $(".box4 .book a").next().stop().fadeTo("slow",1,function(){
+            $(this).css("display", "block");
+        })
+    },
+    function(){
+        $(".box4 .book a").next().stop().fadeTo("slow",0,function(){
+            $(this).css("display","none");
+        })
+    });
+
+    $(".box5 .book a").hover(
+    function(){
+        $(".box5 .book a").next().stop().fadeTo("slow",1,function(){
+            $(this).css("display", "block");
+        })
+    },
+    function(){
+        $(".box5 .book a").next().stop().fadeTo("slow",0,function(){
+            $(this).css("display","none");
+        })
+    });
+
+    $(".box6 .book a").hover(
+    function(){
+        $(".box6 .book a").next().stop().fadeTo("slow",1,function(){
+            $(this).css("display", "block");
+        })
+    },
+    function(){
+        $(".box6 .book a").next().stop().fadeTo("slow",0,function(){
+            $(this).css("display","none");
+        })
+    });
+
+    $(".box7 .book a").hover(
+    function(){
+        $(".box7 .book a").next().stop().fadeTo("slow",1,function(){
+            $(this).css("display", "block");
+        })
+    },
+    function(){
+        $(".box7 .book a").next().stop().fadeTo("slow",0,function(){
+            $(this).css("display","none");
+        })
+    });
 	// $(".section").pageScroll();//滚屏
 
 	//  $('.js-banner-move').smart3d();//第一屏背景
