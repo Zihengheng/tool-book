@@ -183,7 +183,16 @@ input:-ms-input-placeholder { color:#ddd; }/* Internet Explorer 10+ */
 .foot-top .content{width:1200px;margin:0 auto;overflow:hidden;}
 .foot-top li{float:left;}
 .foot-top li+li{margin-left:105px;}
-.foot-top b{display:block;font-size:14px;color:#54627a;line-height:44px;}
+.foot-top b{width: 55px;
+  height: 14px;
+  font-family: AdobeHeitiStd-Regular;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: 33px;
+  letter-spacing: 0px;
+  color: #333333;
+  margin-bottom: 20px;}
 .foot-top a,.foot-top span{display:block;color:#66758d;}
 .foot-top span a{display:inline;}
 .foot-top .weibo{width:290px;height:90px;padding-top:30px;padding-left:20px;margin-top:17px;text-align:center;border-left:1px solid #506581;}
@@ -209,6 +218,15 @@ div.b{
 div.footer{
   height:300px;
 }
+#ft-logo{
+  margin-top: 40px;
+}
+.ft-code{
+  margin-left: 5px;
+  width:86px;
+  height:86px;
+}
+
 /* 底部 样式end*/
 /* 返回顶部 */
 #return-top {

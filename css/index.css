@@ -257,7 +257,15 @@ span.hp-sub{
     letter-spacing: 0px;
     color: #ffffff;
 }
-
+/*#labels img:hover{
+    width:25px;
+    margin-left:2px;
+}
+#labels img:focus{
+    width:25px;
+    margin-left:2px;
+}
+*/
 /* ==== end of home page book====*/
 
 /*============== header end ==============*/
