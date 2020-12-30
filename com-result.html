@@ -1,0 +1,1408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>工具书首页</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- others -->
+  <link rel="stylesheet" type="text/css" href="css/public.css">
+  <link rel="stylesheet" type="text/css" href="css/result.css">
+  <link rel="stylesheet" type="text/css" href="css/layout.css">
+  <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.input.js"></script><!--输入框事件-->
+  <script type="text/javascript" src="js/homePage.js"></script>
+  <script type="text/javascript" src="js/init.js"></script>
+  <script type="text/javascript" src="js/filter.js"></script>
+</head>
+
+<body>
+  <div class="rst-header">
+    <div class="top-bar">
+      <div class="container">
+        <div class="left-bar">
+          <ul class="navbar-nav">
+            <li><a href="#" target="_blank">中国知网</a></li>
+            <li><a href="#" target="_blank">工具书首页</a></li>
+            <li><a href="#" target="_blank">语词库</a></li>
+            <li><a href="#" target="_blank">鉴赏库</a></li>
+            <li><a href="#" target="_blank">行业库</a></li>
+            <li><a href="#" target="_blank">附录库</a></li>
+            <li><a href="#" target="_blank">书目导览</a></li>
+            <li><a href="#" target="_blank">旧版</a></li>
+          </ul>
+        </div><!-- end of the laft-bar -->
+        <div class="head-right pull-right">
+        <ul class="navbar-nav">
+          <li><a href="#">注册</a></li>
+          <li><a href="#" class="down">机构登陆<img src="images/downiconh.png" alt=""></a></li>
+          <li><a href="#" class="down">个人登陆<img src="images/downiconh.png" alt=""></a></li>
+          <li><a href="#">个人书房</a></li>
+        </ul>
+      </div><!-- end of right bar -->
+      </div><!-- end of the container -->
+    </div><!-- end of the top-bar -->
+    <div class="banner-sm">
+     <div class="container">
+      <img src="images/brand-icon3.png" alt="">
+      <div class="searchmain">
+        <div class="search-form">
+          <div class="sort" id="search-type">
+              <div class="sort-default" id="type">
+                <span>全文</span>
+                <i class="sort-icon">▼</i>
+              </div>
+              <ul class="sort-list" style="display: none;">
+                <li class="cur"><a href="javascript:void(0);">全文</a></li>
+                <li><a href="javascript:void(0);">条头</a></li>
+                <li><a href="javascript:void(0);">书目</a></li>
+                <li><a href="javascript:void(0);">图片</a></li>
+                <li><a href="javascript:void(0);">表格</a></li>
+                <li><a href="javascript:void(0);">人物</a></li>
+              </ul>
+            </div>
+          <div class="input-box">
+            <input class="search-input" type="text" autocomplete="off" placeholder="请输入检索词···" value="请输入检索词···" maxlength="100">
+            <a class="btn-wildcard" href="javascript:void(0);" data-toggle="tooltip" title="通配符”?”代表该位置有且仅有1个字符（=1），如检索“?细胞”可检出“红细胞”、“白细胞”。通配符可放在检索词任意位置，可组合使用，如“细?胞*”可检出“细菌胞质素”。" data-placement = "bottom">?</a>
+            <a class="btn-wildcard" href="javascript:void(0);" data-toggle="tooltip" title="通配符”*”代表该位置有任意个字符（≥0），如检索“*细胞”可检出“细胞”、“红细胞”、“白细胞”、“巨噬细胞”等。通配符可放在检索词任意位置，可组合使用，如“细?胞*”可检出“细菌胞质素”。" data-placement = "bottom">*</a>
+
+            <div class="sort">
+              <div class="sort-default">
+                <span>精确</span>
+                <i class="sort-icon">▼</i>
+              </div>
+              <ul class="sort-list" style="display: none;">
+                <li class="cur"><a href="javascript:void(0);">精确</a></li>
+                <li><a href="javascript:void(0);">模糊</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn" id="search">搜索</button>
+          <button class="btn" id="search-in-result"><a href="#">结果中检索</a></button>
+          <button class="btn" id="gaoji"><a href="#"></a>高级检索</button>
+          <a class="adv-search-btn pull-right" href="#" target="_blank">翻译助手 &gt;&gt;</a>
+          <br>
+        </div><!--search-form-->
+
+        <div class="search-nav">
+          <span class="title">输入助手：</span>
+          <ul class="nav-bar">
+            <li><a href="javascript:void(0);">部首<i class="icon"></i></a></li>
+            <li><a href="javascript:void(0);">笔画<i class="icon"></i></a></li>
+            <li><a href="javascript:void(0);">拼音<i class="icon"></i></a></li>
+          </ul>
+        </div><!--search-nav-->
+
+        <div class="drop-box">
+          <a href="javascript:;" class="close"></a>
+          <div class="bg-color"></div>
+          <div class="subnav-container">
+            <div class="unit bushou">
+              <h5>部首导航</h5>
+              <ul class="menu">
+                <li><a href="javascript:void(0);">1</a></li>
+                <li><a href="javascript:void(0);">2</a></li>
+                <li><a href="javascript:void(0);">3</a></li>
+                <li><a href="javascript:void(0);">4</a></li>
+                <li><a href="javascript:void(0);">5</a></li>
+                <li><a href="javascript:void(0);">6</a></li>
+                <li><a href="javascript:void(0);">7</a></li>
+                <li><a href="javascript:void(0);">8</a></li>
+                <li><a href="javascript:void(0);">9</a></li>
+                <li><a href="javascript:void(0);">10</a></li>
+                <li><a href="javascript:void(0);">11</a></li>
+                <li><a href="javascript:void(0);">12</a></li>
+                <li><a href="javascript:void(0);">13</a></li>
+                <li><a href="javascript:void(0);">14</a></li>
+                <li><a href="javascript:void(0);">15</a></li>
+              </ul><!--menu-->
+
+              <div class="submenu-box">
+                <ul class="submenu">
+                  <li><a href="javascript:void(0);">一</a></li>
+                  <li><a href="javascript:void(0);">丨</a></li>
+                  <li><a href="javascript:void(0);">亅</a></li>
+                  <li><a href="javascript:void(0);">丿</a></li>
+                  <li><a href="javascript:void(0);">丶</a></li>
+                  <li><a href="javascript:void(0);">乛</a></li>
+                  <li><a href="javascript:void(0);">乙</a></li>
+                  <li><a href="javascript:void(0);">乚</a></li>
+                </ul><!--submenu-->
+                <div class="thirdmenu-box">
+                  <ul class="thirdmenu">
+                    <li><a href="javascript:void(0);">1</a></li>
+                    <li><a href="javascript:void(0);">2</a></li>
+                    <li><a href="javascript:void(0);">3</a></li>
+                    <li><a href="javascript:void(0);">4</a></li>
+                    <li><a href="javascript:void(0);">5</a></li>
+                    <li><a href="javascript:void(0);">6</a></li>
+                    <li><a href="javascript:void(0);">7</a></li>
+                    <li><a href="javascript:void(0);">8</a></li>
+                  </ul>
+                  <div class="fourthmenu-box">
+                    <ul class="fourthmenu">
+                      <li><a href="javascript:void(0);">兀</a></li>
+                      <li><a href="javascript:void(0);">无</a></li>
+                      <li><a href="javascript:void(0);">丨</a></li>
+                      <li><a href="javascript:void(0);">卡</a></li>
+                      <li><a href="javascript:void(0);">卡</a></li>
+                      <li><a href="javascript:void(0);">卥</a></li>
+                      <li><a href="javascript:void(0);">临</a></li>
+                      <li><a href="javascript:void(0);">中</a></li>
+                      <li><a href="javascript:void(0);">串</a></li>
+                      <li><a href="javascript:void(0);">串</a></li>
+                      <li><a href="javascript:void(0);">丳</a></li>
+                      <li><a href="javascript:void(0);">丯</a></li>
+                      <li><a href="javascript:void(0);">丬</a></li>
+                      <li><a href="javascript:void(0);">丫</a></li>
+                      <li><a href="javascript:void(0);">丮</a></li>
+                      <li><a href="javascript:void(0);">丩</a></li>
+                      <li><a href="javascript:void(0);">丱</a></li>
+                    </ul>
+                  </div>
+
+                </div><!--thirdmenu-box-->
+              </div><!--submenu-box-->
+
+              <div class="result-box">
+                <table cellpadding="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                    <td rowspan="2" class="hz">无</td>
+                    <td><b>汉字：</b>无</td>
+                    <td><b>部首：</b>一</td>
+                    <td><b>笔画数：</b>4</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="py"><b>拼音：</b>mó;wú</td>
+                    <td>
+                      <b>五笔：</b>fqv
+                      <a class="btn-more" href="javascript:void(0);" >more&nbsp;&gt;&gt;</a>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+
+                <div class="result-more">
+                  <p><span class="tit">基本内容：</span>无 （無） wú 没有，与“有”相对；不：无辜。无偿。无从（没有门径或找不到头绪）。无度。无端（无缘无故）。无方（不得法，与“有方”相对）。无非（只，不过）。无动于衷。无所适从。 有 笔画数：4； 部首：一； 笔顺编号：1135</p>
+                  <p><span class="tit">详细内容：</span>无 無 mó ——“南无”(nāmó):佛教用语,表示对佛尊敬或皈依 另见wú 无 無 wú 【名】 (会意。据甲骨文字形,象一个人持把在跳舞。卜辞、金文中“无、舞”同字。本义:乐舞) 同本义〖singanddance〗 哲学范畴,指无形、无名、虚无等,或指物质的隐微状态〖nihility〗 天下万物生于有,有生于无。——《老子》 无 無 wú 【动】 没有,跟“有”相对〖nothave;thereisnot〗 无,不有也。</p>
+                  <p><span class="tit">相关单词：</span>爱憎无常;安然无事;安然无恙;安忍无亲;坐无虚席;坐无公车作辍无常;坐帐无鹤;尊无二上;走投无路;</p>
+                  <p><span class="tit">相关成语：</span>案无留牍;黯淡无光;黯然无色;傲慢无礼;白璧无瑕;白玉无瑕;变幻无穷;变幻无常;兵无常势;百无一成;百无一是;卑鄙无耻;别来无恙;别无二致;秉公无私;搏手无策;苍白无力;不识之无;策无遗算;茶饭无心</p>
+                </div>
+              </div><!--result-box-->
+
+            </div><!--bushou end-->
+
+            <div class="unit bihua">
+              <h5>笔画导航</h5>
+              <ul class="menu">
+                <li><a href="javascript:void(0);">1</a></li>
+                <li><a href="javascript:void(0);">2</a></li>
+                <li><a href="javascript:void(0);">3</a></li>
+                <li><a href="javascript:void(0);">4</a></li>
+                <li><a href="javascript:void(0);">5</a></li>
+                <li><a href="javascript:void(0);">6</a></li>
+                <li><a href="javascript:void(0);">7</a></li>
+                <li><a href="javascript:void(0);">8</a></li>
+                <li><a href="javascript:void(0);">9</a></li>
+                <li><a href="javascript:void(0);">10</a></li>
+                <li><a href="javascript:void(0);">11</a></li>
+                <li><a href="javascript:void(0);">12</a></li>
+                <li><a href="javascript:void(0);">13</a></li>
+                <li><a href="javascript:void(0);">14</a></li>
+                <li><a href="javascript:void(0);">15</a></li>
+                <li><a href="javascript:void(0);">16</a></li>
+                <li><a href="javascript:void(0);">17</a></li>
+                <li><a href="javascript:void(0);">18</a></li>
+                <li><a href="javascript:void(0);">19</a></li>
+                <li><a href="javascript:void(0);">20</a></li>
+                <li><a href="javascript:void(0);">21</a></li>
+                <li><a href="javascript:void(0);">22</a></li>
+                <li><a href="javascript:void(0);">23</a></li>
+                <li><a href="javascript:void(0);">24</a></li>
+                <li><a href="javascript:void(0);">25以上</a></li>
+              </ul><!--menu-->
+
+              <div class="submenu-box">
+                <ul class="submenu">
+                  <li><a href="javascript:void(0);">卍</a></li>
+                  <li><a href="javascript:void(0);">分</a></li>
+                  <li><a href="javascript:void(0);">乥</a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);">亖</a></li>
+                  <li><a href="javascript:void(0);">丰</a></li>
+                  <li><a href="javascript:void(0);">王</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">开</a></li>
+                  <li><a href="javascript:void(0);">天</a></li>
+                  <li><a href="javascript:void(0);">夫</a></li>
+                  <li><a href="javascript:void(0);">无</a></li>
+                  <li><a href="javascript:void(0);">分</a></li>
+                  <li><a href="javascript:void(0);">乥</a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);">亖</a></li>
+                  <li><a href="javascript:void(0);">丰</a></li>
+                  <li><a href="javascript:void(0);">王</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">开</a></li>
+                  <li><a href="javascript:void(0);">天</a></li>
+                  <li><a href="javascript:void(0);">夫</a></li>
+                  <li><a href="javascript:void(0);">分</a></li>
+                  <li><a href="javascript:void(0);">乥</a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);">亖</a></li>
+                  <li><a href="javascript:void(0);">丰</a></li>
+                  <li><a href="javascript:void(0);">王</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">开</a></li>
+                  <li><a href="javascript:void(0);">天</a></li>
+                  <li><a href="javascript:void(0);">夫</a></li>
+
+                </ul><!--submenu-->
+              </div><!--submenu-box-->
+
+              <div class="result-box">
+                <table cellpadding="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                    <td rowspan="2" class="hz">无</td>
+                    <td><b>汉字：</b>无</td>
+                    <td><b>部首：</b>一</td>
+                    <td><b>笔画数：</b>4</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="py"><b>拼音：</b>mó;wú</td>
+                    <td>
+                      <b>五笔：</b>fqv
+                      <a class="btn-more" href="javascript:void(0);" >more&nbsp;&gt;&gt;</a>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+
+                <div class="result-more">
+                  <p><span class="tit">基本内容：</span>无 （無） wú 没有，与“有”相对；不：无辜。无偿。无从（没有门径或找不到头绪）。无度。无端（无缘无故）。无方（不得法，与“有方”相对）。无非（只，不过）。无动于衷。无所适从。 有 笔画数：4； 部首：一； 笔顺编号：1135</p>
+                  <p><span class="tit">详细内容：</span>无 無 mó ——“南无”(nāmó):佛教用语,表示对佛尊敬或皈依 另见wú 无 無 wú 【名】 (会意。据甲骨文字形,象一个人持把在跳舞。卜辞、金文中“无、舞”同字。本义:乐舞) 同本义〖singanddance〗 哲学范畴,指无形、无名、虚无等,或指物质的隐微状态〖nihility〗 天下万物生于有,有生于无。——《老子》 无 無 wú 【动】 没有,跟“有”相对〖nothave;thereisnot〗 无,不有也。</p>
+                  <p><span class="tit">相关单词：</span>爱憎无常;安然无事;安然无恙;安忍无亲;坐无虚席;坐无公车作辍无常;坐帐无鹤;尊无二上;走投无路;</p>
+                  <p><span class="tit">相关成语：</span>案无留牍;黯淡无光;黯然无色;傲慢无礼;白璧无瑕;白玉无瑕;变幻无穷;变幻无常;兵无常势;百无一成;百无一是;卑鄙无耻;别来无恙;别无二致;秉公无私;搏手无策;苍白无力;不识之无;策无遗算;茶饭无心</p>
+                </div>
+              </div><!--result-box-->
+            </div>
+
+            <div class="unit pinyin">
+              <h5>拼音导航</h5>
+              <ul class="menu">
+                <li><a href="javascript:void(0);">a</a></li>
+                <li><a href="javascript:void(0);">b</a></li>
+                <li><a href="javascript:void(0);">c</a></li>
+                <li><a href="javascript:void(0);">ch</a></li>
+                <li><a href="javascript:void(0);">d</a></li>
+                <li><a href="javascript:void(0);">e</a></li>
+                <li><a href="javascript:void(0);">f</a></li>
+                <li><a href="javascript:void(0);">g</a></li>
+                <li><a href="javascript:void(0);">h</a></li>
+                <li><a href="javascript:void(0);">j</a></li>
+                <li><a href="javascript:void(0);">k</a></li>
+                <li><a href="javascript:void(0);">l</a></li>
+                <li><a href="javascript:void(0);">m</a></li>
+                <li><a href="javascript:void(0);">n</a></li>
+                <li><a href="javascript:void(0);">o</a></li>
+                <li><a href="javascript:void(0);">q</a></li>
+                <li><a href="javascript:void(0);">r</a></li>
+                <li><a href="javascript:void(0);">s</a></li>
+                <li><a href="javascript:void(0);">sh</a></li>
+                <li><a href="javascript:void(0);">t</a></li>
+                <li><a href="javascript:void(0);">w</a></li>
+                <li><a href="javascript:void(0);">x</a></li>
+                <li><a href="javascript:void(0);">y</a></li>
+                <li><a href="javascript:void(0);">z</a></li>
+                <li><a href="javascript:void(0);">zh</a></li>
+              </ul><!--menu-->
+
+              <div class="submenu-box">
+                <ul class="submenu">
+                  <li><a href="javascript:void(0);">wa</a></li>
+                  <li><a href="javascript:void(0);">wai</a></li>
+                  <li><a href="javascript:void(0);">wan</a></li>
+                  <li><a href="javascript:void(0);">wang</a></li>
+                  <li><a href="javascript:void(0);">wei</a></li>
+                  <li><a href="javascript:void(0);">wen</a></li>
+                  <li><a href="javascript:void(0);">weng</a></li>
+                  <li><a href="javascript:void(0);">wo</a></li>
+                  <li><a href="javascript:void(0);">wu</a></li>
+                </ul><!--submenu-->
+                <div class="thirdmenu-box">
+                  <ul class="thirdmenu">
+                    <li><a href="javascript:void(0);">兀</a></li>
+                    <li><a href="javascript:void(0);">珷</a></li>
+                    <li><a href="javascript:void(0);">珸</a></li>
+                    <li><a href="javascript:void(0);">武</a></li>
+                    <li><a href="javascript:void(0);">鵡</a></li>
+                    <li><a href="javascript:void(0);">鹉</a></li>
+                    <li><a href="javascript:void(0);">玝</a></li>
+                    <li><a href="javascript:void(0);">璑</a></li>
+                    <li><a href="javascript:void(0);">瑦</a></li>
+                    <li><a href="javascript:void(0);">无</a></li>
+                    <li><a href="javascript:void(0);">圬</a></li>
+                    <li><a href="javascript:void(0);">捂</a></li>
+                    <li><a href="javascript:void(0);">扤</a></li>
+                    <li><a href="javascript:void(0);">墲</a></li>
+                    <li><a href="javascript:void(0);">摀</a></li>
+                    <li><a href="javascript:void(0);">蜈</a></li>
+                    <li><a href="javascript:void(0);">蟱</a></li>
+                    <li><a href="javascript:void(0);">螐</a></li>
+                  </ul>
+                </div><!--thirdmenu-box-->
+              </div><!--submenu-box-->
+
+              <div class="result-box">
+                <table cellpadding="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                    <td rowspan="2" class="hz">无</td>
+                    <td><b>汉字：</b>无</td>
+                    <td><b>部首：</b>一</td>
+                    <td><b>笔画数：</b>4</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="py"><b>拼音：</b>mó;wú</td>
+                    <td>
+                      <b>五笔：</b>fqv
+                      <a class="btn-more" href="javascript:void(0);" >more&nbsp;&gt;&gt;</a>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+
+                <div class="result-more">
+                  <p><span class="tit">基本内容：</span>无 （無） wú 没有，与“有”相对；不：无辜。无偿。无从（没有门径或找不到头绪）。无度。无端（无缘无故）。无方（不得法，与“有方”相对）。无非（只，不过）。无动于衷。无所适从。 有 笔画数：4； 部首：一； 笔顺编号：1135</p>
+                  <p><span class="tit">详细内容：</span>无 無 mó ——“南无”(nāmó):佛教用语,表示对佛尊敬或皈依 另见wú 无 無 wú 【名】 (会意。据甲骨文字形,象一个人持把在跳舞。卜辞、金文中“无、舞”同字。本义:乐舞) 同本义〖singanddance〗 哲学范畴,指无形、无名、虚无等,或指物质的隐微状态〖nihility〗 天下万物生于有,有生于无。——《老子》 无 無 wú 【动】 没有,跟“有”相对〖nothave;thereisnot〗 无,不有也。</p>
+                  <p><span class="tit">相关单词：</span>爱憎无常;安然无事;安然无恙;安忍无亲;坐无虚席;坐无公车作辍无常;坐帐无鹤;尊无二上;走投无路;</p>
+                  <p><span class="tit">相关成语：</span>案无留牍;黯淡无光;黯然无色;傲慢无礼;白璧无瑕;白玉无瑕;变幻无穷;变幻无常;兵无常势;百无一成;百无一是;卑鄙无耻;别来无恙;别无二致;秉公无私;搏手无策;苍白无力;不识之无;策无遗算;茶饭无心</p>
+                </div>
+              </div><!--result-box-->
+            </div><!--pinyin end-->
+
+            <!-- <div class="unit wildcard">
+              <h5>通配符说明</h5>
+              <div class="tip-text">
+                <p>友情提示：</p>
+                <p>【词目】精确检索可用通配符 (如: '中国?' 或 '中国*')</p>
+              </div>
+            </div><!--wildcard end-->
+          </div>
+        </div> <!--drop-box-->
+      </div> <!--searchmain-->
+      </div> <!-- container -->
+    </div> <!-- end of the banner -->
+  </div> <!-- end of the rst-header -->
+
+ <div class="top-doctype">
+        <div class="container">
+            <ul class="doctype-menus">
+              <li data-id="xsqk" class="cur"><a href="javascript:void(0)"><span>总库</span><em>52318</em></a></li>
+              <li data-id="xsqk" class="cur"><a href="javascript:void(0)"><span>语词库</span><em>12803</em></a></li>
+              <li data-id="baozhi"><a href="javascript:void(0)"><span>鉴赏库</span><em>23800</em></a></li>
+              <li data-id="xwlw" class="haschild">
+              <a href="javascript:void(0)"><span>行业库</span><em>12345</em></a>
+              </li>
+              <li data-id="nj"><a href="javascript:void(0)"><span>附录库</span><em>32802</em></a></li>
+            </ul>
+          <!--   <a class="btn-crossDb-search" href="javascript:void(0);" title="更多资源"><i></i></a> -->
+            <div class="clear"></div>
+        </div>
+
+    </div><!--top-doctype end-->
+
+
+  <div class="main-content">
+    <div class="container">
+
+        <div class="sidebar-filter">
+
+            <!--左侧分组 start-->
+            <div class="js-condition">
+                <!--科技/社科 start-->
+                <div class="sidebar-filter-sort">
+                    <div class="sidedh-bar">
+                        <a class="cur" href="javascript:void(0)">科技</a>
+                        <a href="javascript:void(0)">社科</a>
+                    </div>
+
+                    <div class="sidedh-list">
+                        <!--科技 start-->
+                        <div class="resultlist" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+                            <ul>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">基础研究</a><span>(888)</span></li>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">应用基础研究</a><span>(766)</span></li>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">技术研究</a><span>(722)</span></li>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">技术研究-临床医学试验研究</a><span>(564)</span></li>
+                            </ul>
+                            <ul>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">技术研究-临床研究</a><span>(223)</span></li>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">工程研究</a><span>(441)</span></li>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">工程与项目管理</a><span>(666)</span></li>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">技术开发</a><span>(575)</span></li>
+                            </ul>
+                            <ul>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">实用工程技术</a><span>(23)</span></li>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业技术发展与评论、高级科普、学科教育教学理论研究</a><span>(41)</span></li>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">高级科普</a><span>(66)</span></li>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">学科教育教学理论研究</a><span>(725)</span></li>
+                            </ul>
+                            <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                        </div>
+                        <!--科技 end-->
+
+                        <!--社科 start-->
+                        <div class="resultlist" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))"  style="display: none;">
+                            <ul>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">基础研究</a><span>(888)</span></li>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">应用基础研究</a><span>(688)</span></li>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">应用研究</a><span>(666)</span></li>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">应用研究-政策研究</a><span>(432)</span></li>
+                            </ul>
+                            <ul>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">应用研究-行业研究</a><span>(33)</span></li>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">应用研究-管理研究</a><span>(134)</span></li>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">应用研究-业务研究</a><span>(333)</span></li>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">开发研究</a><span>(333)</span></li>
+                            </ul>
+                            <ul>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">应用研究-行业研究</a><span>(33)</span></li>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">应用研究-管理研究</a><span>(134)</span></li>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">应用研究-业务研究</a><span>(333)</span></li>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">开发研究</a><span>(333)</span></li>
+                            </ul>
+                            <ul>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">实践发展</a><span>(33)</span></li>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">实践发展-政策研究</a><span>(134)</span></li>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">实践发展-行业研究</a><span>(333)</span></li>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">实践发展-管理研究</a><span>(333)</span></li>
+                            </ul>
+                            <ul>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">实践发展-业务研究</a><span>(33)</span></li>
+                                <li><input type="checkbox" /><a href="javascript:void(0)" title="#">学科教育教学</a><span>(134)</span></li>
+                            </ul>
+                            <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                        </div>
+                        <!--社科 end-->
+                    </div>
+
+                </div>
+                <!--科技/社科 end-->
+
+                <!--分组筛选 start-->
+                <div class="sidebar-filter-sort">
+                    <dl class="off">
+                        <dt class="tit"><b>主题</b><i class="icon icon-arrow"></i><i class="icon icon-visual" data-src="iframe-visual-leftSide.html"></i></dt>
+                        <dt class="subtit row-a2">
+                            <a class="cur" href="javascript:void(0)">主要主题</a>
+                            <a href="javascript:void(0)">次要主题</a>
+                        </dt>
+                        <dd>
+                            <div class="resultlist" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">出版社</a><span>(49)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">文化机构</a><span>(33)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">出版业</a><span>(32)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">传统出版</a><span>(31)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">学术期刊</a><span>(30)</span></li>
+                                </ul>
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">优先出版</a><span>(29)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">企业管理</a><span>(28)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">电子书</a><span>(27)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">产业链</a><span>(26)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">科技期刊</a><span>(25)</span></li>
+                                </ul>
+                                <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                            </div><!--resultlist-->
+                        </dd>
+                        <dd style="display: none;">
+                            <div class="resultlist" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">出版社</a><span>(40)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">文化机构</a><span>(33)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">出版业</a><span>(22)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">传统出版</a><span>(31)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">学术期刊</a><span>(15)</span></li>
+                                </ul>
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">优先出版</a><span>(29)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">企业管理</a><span>(28)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">电子书</a><span>(27)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">产业链</a><span>(26)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">科技期刊</a><span>(25)</span></li>
+                                </ul>
+                                <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                            </div><!--resultlist-->
+                        </dd>
+                    </dl>
+
+                    <dl class="off">
+                        <dt class="tit"><b>文献来源</b><i class="icon icon-arrow"></i><i class="icon icon-visual" data-src="iframe-visual-leftSide.html"></i></dt>
+                        <dd class="">
+                            <div class="resultlist" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))" style="">
+                                <ul>
+                                    <li><input type="checkbox"><a href="javascript:void(0)" title="#">中国图象图形学报</a><span>(194)</span></li>
+                                    <li><input type="checkbox"><a href="javascript:void(0)" title="#">软件学报</a><span>(531)</span></li>
+                                    <li><input type="checkbox"><a href="javascript:void(0)" title="#">Journal of Cloud Computing</a><span>(209)</span></li>
+                                    <li><input type="checkbox"><a href="javascript:void(0)" title="#">小型微型计算机系统</a><span>(491)</span></li>
+                                    <li><input type="checkbox"><a href="javascript:void(0)" title="#">Human-centric Computing and Information Sciences</a><span>(373)</span></li>
+                                </ul>
+                                <ul>
+                                    <li><input type="checkbox"><a href="javascript:void(0)" title="#">Journal of Internet Services and Applications</a><span>(11)</span></li>
+                                    <li><input type="checkbox"><a href="javascript:void(0)" title="#">信息网络安全</a><span>(93)</span></li>
+                                    <li><input type="checkbox"><a href="javascript:void(0)" title="#">信息资源管理学报</a><span>(89)</span></li>
+                                    <li><input type="checkbox"><a href="javascript:void(0)" title="#">指挥信息系统与技术</a><span>(34)</span></li>
+                                    <li><input type="checkbox"><a href="javascript:void(0)" title="#">现代计算机(专业版)</a><span>(65)</span></li>
+                                </ul>
+                                <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                            </div><!--resultlist-->
+                        </dd>
+                    </dl>
+
+                    <dl class="off">
+                        <dt class="tit"><b>学科</b><i class="icon icon-arrow"></i><i class="icon icon-visual" data-src="iframe-visual-leftSide.html"></i></dt>
+                        <dd>
+                            <div class="resultlist"  onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">新闻传播</a><span>(246)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">工业经济</a><span>(242)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">图书情报档案</a><span>(200)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">法学</a><span>(154)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">计算机</a><span>(146)</span></li>
+                                </ul>
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">教育</a><span>(106)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">通信经济</a><span>(89)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">文化</a><span>(52)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">工商管理</a><span>(47)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">商业经济</a><span>(32)</span></li>
+                                </ul>
+                                <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                            </div><!--resultlist-->
+                        </dd>
+                    </dl>
+
+                    <dl class="off">
+                        <dt class="tit"><b>作者</b><i class="icon icon-arrow"></i><i class="icon icon-visual" data-src="iframe-visual-leftSide.html"></i></dt>
+                        <dt class="subtit row-a2">
+                            <a class="cur" href="javascript:void(0)">中国</a>
+                            <a href="javascript:void(0)">国外</a>
+                        </dt>
+                        <dd>
+                            <div class="resultlist" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">黄先蓉</a><span>(18)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">陈丹</a><span>(21)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">赵文义</a><span>(20)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">徐丽芳</a><span>(56)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">张志强</a><span>(16)</span></li>
+                                </ul>
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">肖洋</a><span>(14)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">张海新</a><span>(12)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">张新新</a><span>(12)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">方卿</a><span>(12)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">李柏宁</a><span>(12)</span></li>
+                                </ul>
+                                <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                            </div><!--resultlist-->
+                        </dd>
+                        <dd style="display: none;">
+                            <div class="resultlist" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">Marcos André Gonçalves</a><span><3></span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">Christine L. Borgman</a><span><3></span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">Etta D. Pisano</a><span><3></span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">Peter T.A. Reilly</a><span><3></span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">J. Anthony Seibert</a><span><3></span></li>
+                                </ul>
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">Anderson A. Ferreira</a><span><3></span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">Thomas J. Liesegang</a><span><3></span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">Adriano Veloso</a><span><2></span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">Cheick Oumar Bagayok</a><span><2></span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">M. L. Hazen</a><span><2></span></li>
+                                </ul>
+                                <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                            </div><!--resultlist-->
+                        </dd>
+                    </dl>
+
+                    <dl class="off">
+                        <dt class="tit"><b>机构</b><i class="icon icon-arrow"></i><i class="icon icon-visual" data-src="iframe-visual-leftSide.html"></i></dt>
+                        <dt class="subtit row-a2">
+                            <a class="cur" href="javascript:void(0)">中国</a>
+                            <a href="javascript:void(0)">国外</a>
+                        </dt>
+                        <dd>
+                            <div class="resultlist"  onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">武汉大学</a><span>(218)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">北京印刷学院</a><span>(182)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">上海理工大学</a><span>(122)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">南京大学</a><span>(109)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">中国新闻出版研究院</a><span>(92)</span></li>
+                                </ul>
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">四川大学</a><span>(90)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">北京大学</a><span>(75)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">中国传媒大学</a><span>(74)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">河南大学</a><span>(74)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">新闻出版总署</a><span>(59)</span></li>
+                                </ul>
+                                <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                            </div><!--resultlist-->
+                        </dd>
+                        <dd style="display: none;">
+                            <div class="resultlist"  onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">National Center for Biotechnology Information </a><span><123></span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">Australian National University </a><span><38></span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">Paterno Library </a><span><24></span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">Arizona State University </a><span><22></span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">Advanced Science & Technology Ltd. </a><span><21></span></li>
+                                </ul>
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">Maastricht School of Mana</a><span><18></span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">Auburn University Auburn</a><span><16></span></li>
+                                </ul>
+                                <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                            </div><!--resultlist-->
+                        </dd>
+                    </dl>
+
+                    <dl class="off">
+                        <dt class="tit"><b>基金</b><i class="icon icon-arrow"></i><i class="icon icon-visual" data-src="iframe-visual-leftSide.html"></i></dt>
+                        <dd>
+                            <div class="resultlist"  onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">国家社会科学基金</a><span>(35)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">国家自然科学基金</a><span>(37)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">国家科技支撑计划</a><span>(46)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">湖南省社会科学基金</a><span>(121)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">跨世纪优秀人才培养计划</a><span>(16)</span></li>
+                                </ul>
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">湖南省教委科研基金</a><span>(16)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">江苏省教育厅人文社会科学研究基...</a><span>(13)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">中国博士后科学基金</a><span>(12)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">湖南省软科学研究计划</a><span>(11)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">重庆市教委科研基金</a><span>(8)</span></li>
+                                </ul>
+                                <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                            </div><!--resultlist-->
+                        </dd>
+                    </dl>
+
+                    <dl class="off">
+                        <dt class="tit"><b>文献类型</b><i class="icon icon-arrow"></i><i class="icon icon-visual" data-src="iframe-visual-leftSide.html"></i></dt>
+                        <dd>
+                            <div class="resultlist">
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">综述类文献</a><span>(45331)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">政策研究类</a><span>(12)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">书讯、会讯类</a><span>(16)</span></li>
+                                </ul>
+                            </div><!--resultlist-->
+                        </dd>
+                    </dl>
+
+                </div>
+                <!--分组筛选 end-->
+
+            </div>
+            <!--左侧分组 end-->
+
+            <div class="sidebar-filter-btns disableclick">
+                <a class="btn-submit" href="javascript:void(0)">确定</a>
+                <a class="btn-clearall" href="javascript:void(0)">清除</a>
+            </div>
+
+        </div><!--sidebar-filter-->
+
+        <div class="main fr">
+
+            <div class="search-result">
+
+                <div class="toolbar">
+                    <div class="result-conditions">
+                        <div class="result-con-l">
+
+                            <div class="search-his-tip">
+                                <span class="tip-range">检索范围：<b>总库</b>检索条件：</span>
+                                主题：云计算 and 主题：大数据与云计算支持下的特色会计服务探索 and 篇名：面向服务的网络化制造新模式面向服务的网络化制造新模式
+                            </div>
+                            <!--<a class="tiphide" onclick="">x</a>-->
+                            <a class="btn-subscribe js-haslogin" href="javascript:void(0);">主题定制</a>
+                            <a class="btn-search-his" href="检索历史.html" target="_blank">检索历史</a>
+                        </div>
+                        <div id="count" class="result-con-r" style="">共找到<em>14210万</em>条结果</div>
+                    </div>
+
+                    <div class="toolbar-col">
+
+                        <div class="checkcount">
+                            <label class="checkAll"><input type="checkbox">全选</label>
+                            <span>已选：</span>
+                            <em onclick="window.open('文献管理-文献输出-格式引文.html')">1</em>
+                            <a class="clear-allcheck" href="javascript:void(0)">清除</a>
+                        </div><!--checkcount-->
+
+                        <!--导出与分析 start-->
+                        <ul class="dropdown-analysis-btns">
+                            <li>
+                                <a href="javascript:void(0)">导出与分析</a><i class="icon-d"></i>
+                                <ul>
+                                    <li><a href="javascript:void(0)">导出文献</a><i class="icon-r"></i>
+                                        <ul>
+                                            <li><a href="javascript:void(0)">CAJ-CD</a></li>
+                                            <li><a href="javascript:void(0)">查新（引文格式）</a></li>
+                                            <li><a href="javascript:void(0)">查新（自定义引文格式）</a></li>
+                                            <li><a href="javascript:void(0)">CNKI E-Learning</a></li>
+                                            <li><a href="javascript:void(0)">CNKI桌面版个人图书馆</a></li>
+                                            <li><a href="javascript:void(0)">Refworks</a></li>
+                                            <li><a href="javascript:void(0)">EndNote</a></li>
+                                            <li><a href="javascript:void(0)">NoteExpress</a></li>
+                                            <li><a href="javascript:void(0)">NoteFirst</a></li>
+                                            <li><a href="javascript:void(0)">自定义</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:void(0)">可视化分析</a><i class="icon-r"></i>
+                                        <ul>
+                                            <li><a href="javascript:void(0)">已选结果分析(0)</a></li>
+                                            <li><a href="javascript:void(0)">全部检索结果分析</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:void(0)">批量下载</a><i class="icon-r"></i>
+                                        <ul>
+                                            <li><a href="javascript:void(0)">批量下载</a></li>
+                                            <li><a href="javascript:void(0)">批量收藏</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!--导出与分析 end-->
+
+                        <!--详情列表切换 start-->
+                        <ul class="change-list">
+                            <li class="active" data-obj="result-detail-list" title="详情"><i class="icon-detail"></i></li>
+                            <li data-obj="result-table-list" title="列表"><i class="icon-table"></i></li>
+                        </ul>
+                        <!--详情列表切换 end-->
+
+                        <div class="statistic">
+                            <div class="page-show-count">显示
+                                <div class="sort">
+                                    <div class="sort-default">
+                                        <span>10</span><i class="icon icon-sort"></i>
+                                    </div>
+                                    <ul class="sort-list">
+                                        <li class="cur">10</li>
+                                        <li>20</li>
+                                        <li>30</li>
+                                    </ul>
+                                </div>
+                            </div><!--page-show-count-->
+                        </div><!--statistic-->
+
+                        <!--排序 start-->
+                        <div class="order-group">
+                            <span>排序：</span>
+                            <ul class="order">
+                                <li class="descend" data-id="order-date">发表时间</li>
+                                <li>相关度</li>
+                                <li data-id="order-quote">被引</li>
+                                <li data-id="order-download">下载</li>
+                            </ul>
+                        </div>
+                        <!--排序 end-->
+
+                    </div><!--toolbar-col-->
+                </div><!--toolbar-->
+
+                <a href="javascript:void(0)" class="btn-visual" data-src="iframe-visual-year.html" title="点击查看">发表年度趋势图</a>
+
+
+                <!--详情 start-->
+                <dl class="result-detail-list">
+                    <dd>
+                        <div class="seq"><input type="checkbox"><i>1</i></div>
+                        <div class="middle">
+                            <h6><a href="../知网节-20190531-褚超/期刊.html" target="_blank">云制造——面向服务的网络化制造新模式</a></h6>
+                            <div class="authorinfo">
+                                <p><a href="#">李伯虎</a><span>北京航空航天大学复杂产品先进制造系统教育部工程研究中心</span><i class="icon icon-down"></i></p>
+                                <div class="other-authorinfo">
+                                    <p><a href="#">张霖;</a><a href="#">王时龙</a><span>北京仿真中心</span></p>
+                                    <p><a href="#">陶飞;</a><a href="#">曹军威</a><span>重庆大学机械工程学院</span></p>
+                                    <p><a href="#">姜晓丹;</a><a href="#">宋晓</a><span>清华大学信息技术研究院</span></p>
+                                    <p><a href="#">柴旭东</a><span>北京慧点科技开发有限公司</span></p>
+                                </div>
+                            </div>
+                            <p class="baseinfo">
+                                <em>【期刊】</em>
+                                <span><a href="#">计算机集成制造系统</a></span>
+                                <span><a href="#">2010年01期</a></span>
+                                <span class="date" title="发表时间">2010-01-15</span>
+                                <span class="opts-count">被引<em>964</em></span>
+                                <span class="opts-count">下载<em>9685</em></span>
+                            </p>
+                            <p class="abstract"><span>摘要：</span>为求解更加复杂的制造问题和开展更大规模的协同制造,分析了目前应用服务提供商、制造网格等现有网络化制造模式在应用推广等方面遇到的问题,阐述了云计算服务模式、云安全、高性能计算、物联网等理念和新技术对解决网络化制造中运营、安全等问题的契机。在此基础上提出了一种面向服务的网络化制造新模式——云制造。给出了云制造的定义,分析了云制造与应用服务提供商、制造网格等的区别。提出了一种云制造的体系结构,讨论了实施云制造所需攻克的关键技术和所取得的成果。最后,给出了一个云制造的典型应用案例</p>
+                            <p class="keywords"><span>关键词：</span><a href="javascript:void(0)">多元化;</a><a href="javascript:void(0)">前端;</a><a href="javascript:void(0)">框架;</a><a href="javascript:void(0)">移动端</a></p>
+                        </div>
+                        <div class="opts">
+                            <ul class="opts-btn">
+                                <li class="btn-collect"><a class="icon-collect" href="javascript:void(0)"><i></i><b>收藏</b></a></li>
+                                <li class="btn-quote"><a class="icon-quote" href="#"><i></i>引用</a></li>
+                                <li><a class="icon-html" href="#"><i></i>HTML阅读</a></li>
+                                <li><a class="icon-download" href="#"><i></i>下载</a></li>
+                            </ul>
+                        </div>
+                    </dd>
+
+                    <dd>
+                        <div class="seq"><input type="checkbox"><i>2</i></div>
+                        <div class="middle">
+                            <h6><a href="#">试析云计算下网络安全技术实现的路径</a></h6>
+                            <div class="authorinfo">
+                                <p><a href="#">王振</a>; <a href="#">王子霖</a><span>河南林业职业学院</span></p>
+                            </div>
+                            <p class="baseinfo">
+                                <em>【期刊】</em>
+                                <span><a href="#" target="_blank">现代信息科技</a></span>
+                                <span class="date" title="发表时间">2018-10-22</span>
+                                <span class="opts-count">下载<em>183</em></span>
+                            </p>
+
+                            <p class="abstract"><span>摘要：</span>随着我国计算机技术的迅猛发展,网络安全技术水平也得到了显著提高。在云计算技术的加持下,凭借其较高的可靠度以及海量存储空间,通过网络的支撑,借助整合和获取海量网络资源功能,全面提升了办公效率。本文从云计算下网络安全技术的具体实现路径入手,全方位透视了云计算网络技术基础之上的网络安全管理问题,有针对性地提出了专业性解决对策。</p>
+                            <p class="keywords machine-select"><span>关键词：</span><a href="javascript:void(0)">多元化;</a><a href="javascript:void(0)">前端;</a><a href="javascript:void(0)">框架;</a><a href="javascript:void(0)">移动端</a></p>
+                        </div><!--middle-->
+
+                        <div class="opts">
+                            <ul class="opts-btn">
+                                <li class="btn-collect"><a class="icon-collect" href="javascript:void(0)"><i></i><b>收藏</b></a></li>
+                                <li class="btn-quote"><a class="icon-quote" href="#"><i></i>引用</a></li>
+                                <li><a class="icon-play" href="#"><i></i>播放</a></li>
+                                <li><a class="icon-download" href="#"><i></i>下载</a></li>
+                            </ul>
+                        </div>
+
+                    </dd>
+
+                    <dd>
+                        <div class="seq"><input type="checkbox"><i>3</i></div>
+
+                        <div class="middle">
+                            <h6><a href="#">Refined cloud services discovery based on user model including privacy-preserving access control</a></h6>
+                            <div class="authorinfo">
+                                <p><a href="#">Sarra Abidi</a>; <a href="#">Mehrez Essafi</a>; <a href="#">Myriam Fakhri</a><span>Henda Hajjami Ben Ghezala</span></p>
+                            </div>
+                            <p class="baseinfo">
+                                <em>【Elsevierjournal】</em>
+                                <span>RIADI laboratory; National school of computer science; University of Manouba; campus of Manouba; 2010; Tunisia</span>
+                                <span><a href="#">Procedia Computer Science</a></span>
+                                <span class="date" title="发表时间">2018-09-05</span>
+                            </p>
+                            <p class="keywords"><span>keyword:</span><a href="javascript:void(0)">computer science;</a><a href="javascript:void(0)">computer science;</a><a href="javascript:void(0)">privacy-preserving access control</a></p>
+                        </div><!--middle-->
+
+                        <div class="opts">
+                            <ul class="opts-btn">
+                                <li class="btn-collect"><a class="icon-collect" href="javascript:void(0)"><i></i><b>收藏</b></a></li>
+                                <li class="btn-quote"><a class="icon-quote" href="#"><i></i>引用</a></li>
+                                <li><a class="icon-textlink" href="#"><i></i>原文链接</a></li>
+                            </ul>
+                        </div>
+                    </dd>
+
+                    <dd>
+                        <div class="seq"><input type="checkbox"><i>4</i></div>
+                        <div class="middle">
+                            <h6><a href="#">大数据与云计算支持下的特色会计服务探索</a></h6>
+                            <div class="authorinfo">
+                                <p><a href="#">周奕奕</a><span>安徽财经大学</span><i class="icon icon-down"></i></p>
+                                <div class="other-authorinfo">
+                                    <p><a href="#">刘锐; </a><a href="#">周振; </a><a href="#">林红霞</a><span>青田县振华财务有限公司</span></p>
+                                </div>
+                            </div>
+                            <p class="baseinfo">
+                                <em>【期刊】</em>
+                                <span><a href="#" target="_blank">现代商贸工业</a></span>
+                                <span><a href="#">2018年33期</a></span>
+                                <span class="date" title="发表时间">2018-10-19</span>
+                            </p>
+                            <p class="abstract"><span>摘要：</span>大数据和云计算技术的发展影响着会计信息的形成和披露过程,而新技术也带来了新的问题。因此从减少信息失真现象这一问题出发引入新媒体的监督体系,加强新形势下的会计服务,既可以有利于会计管理信息的取得,又可以防范企业会计信息失真现象的发生并极大减少决策失误,具有较好的研究价值。...</p>
+                            <p class="keywords"><span>关键词：</span><a href="javascript:void(0)">多元化;</a><a href="javascript:void(0)">前端;</a><a href="javascript:void(0)">框架;</a><a href="javascript:void(0)">移动端</a></p>
+                        </div><!--middle-->
+
+                        <div class="opts">
+                            <ul class="opts-btn">
+                                <li class="btn-collect"><a class="icon-collect" href="javascript:void(0)"><i></i><b>收藏</b></a></li>
+                                <li class="btn-quote"><a class="icon-quote" href="#"><i></i>引用</a></li>
+                                <li><a class="icon-html" href="#"><i></i>HTML阅读</a></li>
+                                <li><a class="icon-nodownperm" href="#" title="未订购"><i></i>下载</a></li>
+                            </ul>
+                        </div>
+
+                    </dd>
+                    <dd>
+                        <div class="seq"><input type="checkbox"><i>5</i></div>
+                        <div class="middle">
+                            <h6><a href="#">欧美电子政务云服务安全管理框架及其启示</a></h6>
+                            <div class="authorinfo">
+                                <p><a href="#">刘彬芳</a><span>中国人民大学信息资源管理学院</span><i class="icon icon-down"></i></p>
+                                <div class="other-authorinfo">
+                                    <p><a href="#">刘越男</a>; <a href="#">钟端洋</a><span>北京中科飞腾科技有限公司</span></p>
+                                </div>
+                            </div>
+                            <p class="baseinfo">
+                                <em>【期刊】</em>
+                                <span><a href="#">现代情报</a></span>
+                                <span><a href="#">2018年10期</a></span>
+                                <span class="date" title="发表时间">2018-10-15</span>
+                            </p>
+                            <p class="abstract"><span>摘要：</span>如何证明和确保云服务的安全性是当前电子政务建设中的重要问题。本文试图总结欧美政府采购云服务的安全管理经验,为我国构建政府采购电子政务云服务的安全管理框架提供参考。本文主要使用了文献研究法。通过对已有文献及公开资料的分析,先是分别对美国和欧盟的政务云服务安全管理框架进行研究剖析,然后在针对性和系统性的整合对比研究的基础上,得出对我国政务云安全管理工作的启示。分析发现,欧美的安全管理框架在流程与内容上略有区别,但各有优劣。本文综合考虑美国的评估认证机制和欧盟ENISA的流程控...</p>
+                            <p class="keywords"><span>关键词：</span><a href="javascript:void(0)">多元化;</a><a href="javascript:void(0)">前端;</a><a href="javascript:void(0)">框架;</a><a href="javascript:void(0)">移动端</a></p>
+                        </div><!--middle-->
+
+                        <div class="opts">
+                            <ul class="opts-btn">
+                                <li class="btn-collect"><a class="icon-collect" href="javascript:void(0)"><i></i><b>收藏</b></a></li>
+                                <li class="btn-quote"><a class="icon-quote" href="#"><i></i>引用</a></li>
+                                <li><a class="icon-html" href="#"><i></i>HTML阅读</a></li>
+                                <li><a class="icon-notlogged" href="#" title="未登录"><i></i>下载</a></li>
+                            </ul>
+                        </div>
+
+                    </dd>
+
+                    <dd>
+                        <div class="seq"><input type="checkbox"><i>6</i></div>
+                        <div class="middle">
+                            <h6><a href="#"><em>计算</em>机技术基础课程新技术引入与实验环境建设实践</a></h6>
+                            <div class="authorinfo">
+                                <p><a href="#">杨利明;</a><a href="#">单子鹏; </a><a href="#">马剑锋; </a><a href="#">高珏</a><span>上海大学计算中心</span></p>
+                            </div>
+                            <p class="baseinfo">
+                                <em>【期刊】</em>
+                                <span><a href="#"><em>计算</em>机教育</a></span>
+                                <span><a href="#">2018年10期</a></span>
+                                <span class="date" title="发表时间">2018-10-10</span>
+                            </p>
+                            <p class="abstract"><span>摘要：</span>分析新技术教学的必要性,探讨如何在<em>计算</em>机技术基础课程中合理添加云计算等教学内容和要求,本着“教学重在实践”的思想阐述如何利用新技术建设相应的实验环境,使新技术的教学与实验环节相辅相成,从而提升教学内容与教学效果。...</p>
+                            <p class="keywords"><span>关键词：</span><a href="javascript:void(0)">多元化;</a><a href="javascript:void(0)">前端;</a><a href="javascript:void(0)">框架;</a><a href="javascript:void(0)">移动端</a></p>
+                        </div><!--middle-->
+
+                        <div class="opts">
+                            <ul class="opts-btn">
+                                <li class="btn-collect"><a class="icon-collect" href="javascript:void(0)"><i></i><b>收藏</b></a></li>
+                                <li class="btn-quote"><a class="icon-quote" href="#"><i></i>引用</a></li>
+                                <li><a class="icon-html" href="#"><i></i>HTML阅读</a></li>
+                                <li><a class="icon-download" href="#"><i></i>下载</a></li>
+                            </ul>
+                        </div>
+
+                    </dd>
+                    <dd>
+                        <div class="seq"><input type="checkbox"><i>7</i></div>
+                        <div class="middle">
+                            <h6><a href="#">5G无线通信技术概念及相关应用的思考</a></h6>
+                            <div class="authorinfo">
+                                <p><a href="#">龙永策; </a><a href="#">黎亚洲; </a><a href="#">陈健</a><span>北京中网华通设计咨询有限公司; 北京 100070</span></p>
+                            </div>
+                            <p class="baseinfo">
+                                <em>【期刊】</em>
+                                <span><a href="#">中国战略新兴产业</a></span>
+                                <span class="date" title="发表时间">2018-10-08 15:16</span>
+                            </p>
+                            <p class="abstract"><span>摘要：</span>伴随国民经济的飞速发展，5G无线通讯技术在经济提升过程中的推动性作用不断增强。5G通信凭借其持续广域笼罩、热点大容量、低能耗大衔接、高稳定性等特征，在社会各界被广泛运用。本文将主要围绕5G无线技术定义展开分析，并探究其在实际生活工作中的具体运用。</p>
+                            <p class="keywords"><span>关键词：</span><a href="javascript:void(0)">多元化;</a><a href="javascript:void(0)">前端;</a><a href="javascript:void(0)">框架;</a><a href="javascript:void(0)">移动端</a></p>
+                        </div><!--middle-->
+
+                        <div class="opts">
+                            <ul class="opts-btn">
+                                <li class="btn-collect"><a class="icon-collect" href="javascript:void(0)"><i></i><b>收藏</b></a></li>
+                                <li class="btn-quote"><a class="icon-quote" href="#"><i></i>引用</a></li>
+                                <li><a class="icon-read" href="#"><i></i>在线阅读</a></li>
+                                <li><a class="icon-download" href="#"><i></i>下载</a></li>
+                            </ul>
+                        </div>
+
+                    </dd>
+
+                    <dd>
+                        <div class="seq"><input type="checkbox"><i>8</i></div>
+                        <div class="middle">
+                            <h6><a href="#">“技术赋能学习”视域下新兴技术在教育APP中的应用前瞻分析</a></h6>
+                            <div class="authorinfo">
+                                <p><a href="#">张国云</a><span>华中师范大学教育学院</span><i class="icon icon-down"></i></p>
+                                <div class="other-authorinfo">
+                                    <p><a href="#">杨文正</a>; <a href="#">赵梅</a><span>云南师范大学信息学院</span></p>
+                                </div>
+                            </div>
+                            <p class="baseinfo">
+                                <em>【期刊】</em>
+                                <span><a href="#">中国电化教育</a></span>
+                                <span><a href="#">2018年10期</a></span>
+                                <span class="date" title="发表时间">2018-10-08 12:05</span>
+                                <span class="opts-count">下载<em>245</em></span>
+                            </p>
+                            <p class="abstract"><span>摘要：</span>...进。该文从“技术赋能学习”视角分析了以物联网、云计算、大数据、三维计算和人工智能为代表的新兴技术在教育APP中的应用概况,深度阐述了5种新兴技术在教育APP中的应用前景,旨在从技术变化视角来预判教育APP的发展趋势。分析得出:(1)以射频识别为主的物联网技术将促进教育APP对学习情境信息的自动感知,实现根据学习情境的动态变化为用户提供智能化的学习支持服务;(2)云计算技术将促进教育APP向开源化、微云化和增效功能方向发展,为用户提供按需自助的学习服务;(3)大数据技术可以增...</p>
+                            <p class="keywords"><span>关键词：</span><a href="javascript:void(0)">多元化;</a><a href="javascript:void(0)">前端;</a><a href="javascript:void(0)">框架;</a><a href="javascript:void(0)">移动端</a></p>
+                        </div><!--middle-->
+
+                        <div class="opts">
+                            <ul class="opts-btn">
+                                <li class="btn-collect"><a class="icon-collect" href="javascript:void(0)"><i></i><b>收藏</b></a></li>
+                                <li class="btn-quote"><a class="icon-quote" href="#"><i></i>引用</a></li>
+                                <li><a class="icon-read" href="#"><i></i>在线阅读</a></li>
+                                <li><a class="icon-download" href="#"><i></i>下载</a></li>
+                            </ul>
+                        </div>
+
+                    </dd>
+
+                    <dd>
+                        <div class="seq"><input type="checkbox"><i>9</i></div>
+                        <div class="middle">
+                            <h6><a href="#">基于云计算网络的疾病预防控制中心档案管理信息化初探</a></h6>
+                            <div class="authorinfo">
+                                <p><a href="#">王巍</a><span>贵州省疾病预防控制中心</span></p>
+                            </div>
+                            <p class="baseinfo">
+                                <em>【期刊】</em>
+                                <span><a href="#">世界最新医学信息文摘</a></span>
+                                <span><a href="#">2018年81期</a></span>
+                                <span class="date" title="发表时间">2018-10-08</span>
+                            </p>
+                            <p class="abstract"><span>摘要：</span>探讨疾病预防控制中心的档案管理方法,有助于提升档案管理的实际效率,有助于实现对各类疾病的有效预防。本文在对疾病预防控制中心档案管理现状进行综合阐述的基础上,论述了基于云计算网络的疾病预防控制中心档案信息化管理策略,以期为相关人士提供借鉴和参考。...</p>
+                            <p class="keywords"><span>关键词：</span><a href="javascript:void(0)">多元化;</a><a href="javascript:void(0)">前端;</a><a href="javascript:void(0)">框架;</a><a href="javascript:void(0)">移动端</a></p>
+                        </div><!--middle-->
+
+                        <div class="opts">
+                            <ul class="opts-btn">
+                                <li class="btn-collect"><a class="icon-collect" href="javascript:void(0)"><i></i><b>收藏</b></a></li>
+                                <li class="btn-quote"><a class="icon-quote" href="#"><i></i>引用</a></li>
+                                <li><a class="icon-html" href="#"><i></i>HTML阅读</a></li>
+                                <li><a class="icon-download" href="#"><i></i>下载</a></li>
+                            </ul>
+                        </div>
+
+                    </dd>
+
+                    <dd>
+                        <div class="seq"><input type="checkbox"><i>10</i></div>
+                        <div class="middle">
+                            <h6><a href="#">基于李雅普诺夫优化的容器云队列在线任务和资源调度设计</a></h6>
+                            <div class="authorinfo">
+                                <p><a href="#">李磊；</a><a href="#">薛洋</a><span>华南理工大学电子与信息学院</span><i class="icon icon-down"></i></p>
+                                <div class="other-authorinfo">
+                                    <p><a href="#">吕念玲; </a><a href="#">冯敏</a><span>世纪龙信息网络有限责任公司</span></p>
+                                </div>
+                            </div>
+                            <p class="baseinfo">
+                                <em>【期刊】</em>
+                                <span><a href="#">计算机应用</a></span>
+                                <span class="date" title="发表时间">2018-10-01 11:47</span>
+                                <span class="opts-count">下载<em>24</em></span>
+                            </p>
+                            <p class="abstract"><span>摘要：</span>...夫的容器云队列任务和资源调度优化策略。首先,在云计算服务排队模型的基础上,通过李雅普诺夫函数分析任务队列长度的变化。然后,在任务Qo S的约束下,构建资源功耗的最小化目标函数。最后,利用李雅普诺夫优化方法求解最小资源功耗目标函数,获得在线的任务和容器资源的优化调度策略,实现对任务和资源调度进行整体优化,从而保证任务的Qo S并提高资源利用率。Cloud Sim仿真结果表明,所提的任务和资源调度策略在保证任务Qo S的条件下能获得高资源利用率,实现容器云在线任务和资源优化调度...</p>
+                            <p class="keywords"><span>关键词：</span><a href="javascript:void(0)">多元化;</a><a href="javascript:void(0)">前端;</a><a href="javascript:void(0)">框架;</a><a href="javascript:void(0)">移动端</a></p>
+                        </div><!--middle-->
+
+                        <div class="opts">
+                            <ul class="opts-btn">
+                                <li class="btn-collect"><a class="icon-collect" href="javascript:void(0)"><i></i><b>收藏</b></a></li>
+                                <li class="btn-quote"><a class="icon-quote" href="#"><i></i>引用</a></li>
+                                <li><a class="icon-read" href="#"><i></i>在线阅读</a></li>
+                                <li><a class="icon-download" href="#"><i></i>下载</a></li>
+                            </ul>
+                        </div>
+
+                    </dd>
+                </dl>
+                <!--详情 end-->
+
+                <!--列表 start-->
+                <table class="result-table-list" style="display: none">
+                    <thead>
+                    <tr>
+                        <th class="seq"></th>
+                        <th class="name">题名</th>
+                        <th class="author">作者</th>
+                        <th class="source">来源</th>
+                        <th class="date"><a id="order-date" class="descend" href="javascript:void(0)">发表时间</a></th>
+                        <th class="data">数据库</th>
+                        <th class="quote"><a id="order-quote" href="javascript:void(0)">被引</a></th>
+                        <th class="download"><a id="order-download" href="javascript:void(0)">下载</a></th>
+                        <th class="operat">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="seq"><input type="checkbox"><em>1</em></td>
+                        <td class="name"><a href="../知网节-20181205/期刊.html" target="_blank">云制造——面向服务的网络化制造新模式</a></td>
+                        <td class="author">李伯虎;张霖;王时龙;陶飞;曹军威;姜晓丹;宋晓;柴旭东</td>
+                        <td class="source">计算机集成制造系统</td>
+                        <td class="date">2010-01-15 </td>
+                        <td class="data">期刊</td>
+                        <td class="quote">964</td>
+                        <td class="download">9685</td>
+                        <td class="operat">
+                            <a class="icon-download" title="下载" href="javascript:void(0)"><i></i>下载</a>
+                            <a class="icon-html" title="html阅读" href="javascript:void(0)"><i></i>HTML阅读</a>
+                            <a class="icon-collect" title="收藏" href="javascript:void(0)"><i></i>收藏</a>
+                            <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i>引用</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="seq"><input type="checkbox"><em>2</em></td>
+                        <td class="name"><a href="#" target="_blank">试析云计算下网络安全技术实现的路径</a></td>
+                        <td class="author">王振; 王子霖</td>
+                        <td class="source">现代信息科技</td>
+                        <td class="date">2018-10-22</td>
+                        <td class="data">期刊</td>
+                        <td class="quote"></td>
+                        <td class="download">183</td>
+                        <td class="operat">
+                            <a class="icon-download" title="下载" href="javascript:void(0)"><i></i>下载</a>
+                            <a class="icon-play" title="播放" href="javascript:void(0)"><i></i>播放</a>
+                            <a class="icon-collect" title="收藏" href="javascript:void(0)"><i></i>收藏</a>
+                            <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i>引用</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="seq"><input type="checkbox"><em>3</em></td>
+                        <td class="name"><a href="#" target="_blank">Refined cloud services discovery based on user model including privacy-preserving access control</a></td>
+                        <td class="author">Sarra Abidi; Mehrez Essafi; Myriam Fakhri; Henda Hajjami Ben Ghezala</td>
+                        <td class="source">Procedia Computer Science</td>
+                        <td class="date">2018-10-15</td>
+                        <td class="data">Elsevierjournal</td>
+                        <td class="quote"></td>
+                        <td class="download"></td>
+                        <td class="operat">
+                            <a class="icon-textlink" title="原文链接" href="javascript:void(0)"><i></i>原文链接</a>
+                            <a class="icon-collect" title="收藏" href="javascript:void(0)"><i></i>收藏</a>
+                            <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i>引用</a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="seq"><input type="checkbox"><em>4</em></td>
+                        <td class="name"><a href="#" target="_blank">大数据与云计算支持下的特色会计服务探索</a></td>
+                        <td class="author">周奕奕; 刘锐; 周振; 林红霞</td>
+                        <td class="source">现代商贸工业</td>
+                        <td class="date">2018-10-19</td>
+                        <td class="data">期刊</td>
+                        <td class="quote"></td>
+                        <td class="download"></td>
+                        <td class="operat">
+                            <a class="icon-nodownperm" title="未订购" href="javascript:void(0)"><i></i>下载</a>
+                            <a class="icon-html" title="html阅读" href="javascript:void(0)"><i></i>HTML阅读</a>
+                            <a class="icon-collect" title="收藏" href="javascript:void(0)"><i></i>收藏</a>
+                            <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i>引用</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="seq"><input type="checkbox"><em>5</em></td>
+                        <td class="name"><a href="#" target="_blank">欧美电子政务云服务安全管理框架及其启示</a></td>
+                        <td class="author">刘彬芳; 刘越男; 钟端洋</td>
+                        <td class="source">现代情报</td>
+                        <td class="date">2018-10-15</td>
+                        <td class="data">期刊</td>
+                        <td class="quote"></td>
+                        <td class="download"></td>
+                        <td class="operat">
+                            <a class="icon-notlogged" title="无权限" href="javascript:void(0)"><i></i>下载</a>
+                            <a class="icon-html" title="html阅读" href="javascript:void(0)"><i></i>HTML阅读</a>
+                            <a class="icon-collect" title="收藏" href="javascript:void(0)"><i></i>收藏</a>
+                            <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i>引用</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="seq"><input type="checkbox"><em>6</em></td>
+                        <td class="name"><a href="#" target="_blank">计算机技术基础课程新技术引入与实验环境建设实践</a></td>
+                        <td class="author">杨利明; 单子鹏; 马剑锋; 高珏</td>
+                        <td class="source">计算机教育</td>
+                        <td class="date">2018-10-10</td>
+                        <td class="data">期刊</td>
+                        <td class="quote"></td>
+                        <td class="download"></td>
+                        <td class="operat">
+                            <a class="icon-download" title="下载" href="javascript:void(0)"><i></i>下载</a>
+                            <a class="icon-html" title="html阅读" href="javascript:void(0)"><i></i>HTML阅读</a>
+                            <a class="icon-collect" title="收藏" href="javascript:void(0)"><i></i>收藏</a>
+                            <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i>引用</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="seq"><input type="checkbox"><em>7</em></td>
+                        <td class="name"><a href="#" target="_blank">5G无线通信技术概念及相关应用的思考</a></td>
+                        <td class="author">龙永策; 黎亚洲; 陈健</td>
+                        <td class="source">中国战略新兴产业</td>
+                        <td class="date">2018-10-08 15:16</td>
+                        <td class="data">期刊</td>
+                        <td class="quote"></td>
+                        <td class="download">183</td>
+                        <td class="operat">
+                            <a class="icon-download" title="下载" href="javascript:void(0)"><i></i>下载</a>
+                            <a class="icon-read" title="在线阅读" href="javascript:void(0)"><i></i>在线阅读</a>
+                            <a class="icon-collect" title="收藏" href="javascript:void(0)"><i></i>收藏</a>
+                            <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i>引用</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="seq"><input type="checkbox"><em>8</em></td>
+                        <td class="name"><a href="#" target="_blank">“技术赋能学习”视域下新兴技术在教育APP中的应用前瞻分析</a></td>
+                        <td class="author">张国云; 杨文正; 赵梅</td>
+                        <td class="source">中国电化教育</td>
+                        <td class="date">2018-10-08 12:05</td>
+                        <td class="data">期刊</td>
+                        <td class="quote"></td>
+                        <td class="download">245</td>
+                        <td class="operat">
+                            <a class="icon-download" title="下载" href="javascript:void(0)"><i></i>下载</a>
+                            <a class="icon-read" title="在线阅读" href="javascript:void(0)"><i></i>在线阅读</a>
+                            <a class="icon-collect" title="收藏" href="javascript:void(0)"><i></i>收藏</a>
+                            <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i>引用</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="seq"><input type="checkbox"><em>9</em></td>
+                        <td class="name"><a href="#" target="_blank">基于云计算网络的疾病预防控制中心档案管理信息化初探</a></td>
+                        <td class="author">王巍</td>
+                        <td class="source">世界最新医学信息文摘</td>
+                        <td class="date">2018-10-08</td>
+                        <td class="data">期刊</td>
+                        <td class="quote"></td>
+                        <td class="download"></td>
+                        <td class="operat">
+                            <a class="icon-download" title="下载" href="javascript:void(0)"><i></i>下载</a>
+                            <a class="icon-html" title="html阅读" href="javascript:void(0)"><i></i>HTML阅读</a>
+                            <a class="icon-collect" title="收藏" href="javascript:void(0)"><i></i>收藏</a>
+                            <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i>引用</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="seq"><input type="checkbox"><em>10</em></td>
+                        <td class="name"><a href="#" target="_blank">基于李雅普诺夫优化的容器云队列在线任务和资源调度设计</a></td>
+                        <td class="author">李磊; 薛洋; 吕念玲; 冯敏</td>
+                        <td class="source">计算机应用</td>
+                        <td class="date">2018-10-01 11:47</td>
+                        <td class="data">期刊</td>
+                        <td class="quote"></td>
+                        <td class="download">24</td>
+                        <td class="operat">
+                            <a class="icon-download" title="下载" href="javascript:void(0)"><i></i>下载</a>
+                            <a class="icon-read" title="在线阅读" href="javascript:void(0)"><i></i>在线阅读</a>
+                            <a class="icon-collect" title="收藏" href="javascript:void(0)"><i></i>收藏</a>
+                            <a class="icon-quote" title="引用" href="javascript:void(0)"><i></i>引用</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!--列表 end-->
+
+                <div class="pages">
+                    <span class="total">共1054页</span>
+                    <a href="#" class="first" style="display: none">首页</a>
+                    <a href="#" class="pre" style="display: none">上一页</a>
+                    <span class="cur">1</span>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#" class="next">下一页</a>
+                    <a href="#" class="last">末页</a>
+                </div><!--pages-->
+            </div>
+
+
+            <ul class="bottom-commend-list">
+                <li>
+                    <h5>相关搜索：</h5>
+                    <p>
+                        <span><a href="#" title="#" target="_blank">计算机技术</a></span>
+                        <span><a href="#" title="#" target="_blank">计算机</a></span>
+                        <span><a href="#" title="#" target="_blank">云主机</a></span>
+                        <span><a href="#" title="#" target="_blank">物联网</a></span>
+                        <span><a href="#" title="#" target="_blank">云推理</a></span>
+                        <span><a href="#" title="#" target="_blank">云平台</a></span>
+                        <span><a href="#" title="#" target="_blank">云计算技术</a></span>
+                        <span><a href="#" title="#" target="_blank">数据开采技术</a></span>
+                        <span><a href="#" title="#" target="_blank">云计算技术</a></span>
+                        <span><a href="#" title="#" target="_blank">数据开采技术</a></span>
+                        <span><a href="#" title="#" target="_blank">云平台</a></span>
+                        <span><a href="#" title="#" target="_blank">数据开采技术</a></span>
+                        <span><a href="#" title="#" target="_blank">云计算技术计算技术计算技术</a></span>
+                        <span><a href="#" title="#" target="_blank">数据开采的相关计算机技术</a></span>
+                    </p>
+                </li>
+                <li>
+                    <h5>知名专家：</h5>
+                    <p>
+                        <span><a href="#" title="#" target="_blank">张晓云</a></span>
+                        <span><a href="#" title="#" target="_blank">马小帅</a></span>
+                        <span><a href="#" title="#" target="_blank">周星星</a></span>
+                        <span><a href="#" title="#" target="_blank">马小帅</a></span>
+                        <span><a href="#" title="#" target="_blank">刘德华</a></span>
+                        <span><a href="#" title="#" target="_blank">马小帅</a></span>
+                        <span><a href="#" title="#" target="_blank">张晓云</a></span>
+                        <span><a href="#" title="#" target="_blank">王建军</a></span>
+                        <span><a href="#" title="#" target="_blank">张晓云</a></span>
+                        <span><a href="#" title="#" target="_blank">张亚飞</a></span>
+                        <span><a href="#" title="#" target="_blank">李晟敏</a></span>
+                        <span><a href="#" title="#" target="_blank">张晓云</a></span>
+                        <span><a href="#" title="#" target="_blank">张亚飞</a></span>
+                        <span><a href="#" title="#" target="_blank">李晟敏</a></span>
+                    </p>
+                </li>
+            </ul><!--bottom-commend-list-->
+
+
+        </div><!--main-->
+
+        <div class="clearfix"></div>
+
+    </div><!-- content end-->x
+  </div>
+  <!-- end of the main-content -->
+  <!-- jquery -->
+  <!-- script 文件 -->
+<!--   <script src="js/index.js"></script> -->
+  <!-- back to top -->
+  <script type="text/javascript">
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 150) {
+                $("#return-top").show();
+            } else {
+                $("#return-top").hide();
+            }
+        });
+   </script>
+  <!-- Bootstrap js引用 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
