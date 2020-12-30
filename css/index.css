@@ -21,10 +21,13 @@
 }
 .section-ep{
 }
+div.footer{
+    margin-top: 181px;
+}
 
 /*======通用部分=====*/
 ul.navbar-nav{
-    list-style-type:none;
+    list-style-type:none; 
 }
 .section-title{
     text-align: center;
@@ -53,7 +56,7 @@ ul.navbar-nav{
 }
 /*============== header start ==============*/
 div.header.section > div.content-container{
-    padding-left: 105px;
+    padding-left: 100px;
 }
 /* top menu bar*/
 .head-left img{
@@ -84,6 +87,7 @@ div.header.section > div.content-container{
 }
 .head-right ul{
     width:400px;
+    margin-right: 70px;
 }
 .head-right ul li{
     list-style-type:none;

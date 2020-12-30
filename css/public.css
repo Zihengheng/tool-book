@@ -311,6 +311,11 @@ div.footer{
 .foot-bot{
     padding-left:300px;
 }
+.trust-icon{
+  float:left;
+  margin-left:100px;
+  margin-top:-8px;
+}
 /* 底部 样式end*/
 /* 返回顶部 */
 #return-top {
