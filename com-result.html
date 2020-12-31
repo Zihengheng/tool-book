@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- others -->
   <link rel="stylesheet" type="text/css" href="css/public.css">
+   <link rel="stylesheet" type="text/css" href="css/layout.css">
   <link rel="stylesheet" type="text/css" href="css/result.css">
-  <link rel="stylesheet" type="text/css" href="css/layout.css">
   <script type="text/javascript" src="js/lib/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.input.js"></script><!--输入框事件-->
-<!--   <script type="text/javascript" src="js/homePage.js"></script> -->
+  <script type="text/javascript" src="js/homePage.js"></script>
   <script type="text/javascript" src="script.js"></script>
   <script type="text/javascript" src="js/init.js"></script>
   <script type="text/javascript" src="js/filter.js"></script>
@@ -417,14 +417,14 @@
 
  <div class="top-doctype">
         <div class="container">
-            <ul class="doctype-menus">
-              <li data-id="xsqk" class="cur"><a href="javascript:void(0)"><span>总库</span><em>52318</em></a></li>
-              <li data-id="xsqk"><a href="javascript:void(0)"><span>语词库</span><em>12803</em></a></li>
-              <li data-id="baozhi"><a href="javascript:void(0)"><span>鉴赏库</span><em>23800</em></a></li>
+            <ul class="doctype-menus" id="menu-tab">
+              <li data-id="xsqk" class="active"><a href="#zk" data-toggle="tab"><span>总库</span><em>52318</em></a></li>
+              <li data-id="xsqk"><a href="#yck" data-toggle="tab"><span>语词库</span><em>12803</em></a></li>
+              <li data-id="baozhi"><a href="#jsk" data-toggle="tab"><span>鉴赏库</span><em>23800</em></a></li>
               <li data-id="xwlw" class="haschild">
-              <a href="javascript:void(0)"><span>行业库</span><em>12345</em></a>
+              <a href="#hyk" data-toggle="tab"><span>行业库</span><em>12345</em></a>
               </li>
-              <li data-id="nj"><a href="javascript:void(0)"><span>附录库</span><em>32802</em></a></li>
+              <li data-id="nj"><a href="#flk" data-toggle="tab"><span>附录库</span><em>32802</em></a></li>
             </ul>
           <!--   <a class="btn-crossDb-search" href="javascript:void(0);" title="更多资源"><i></i></a> -->
             <div class="clear"></div>
@@ -594,8 +594,8 @@
 
         </div><!--sidebar-filter-->
 
-        <div class="main fr">
-
+        <div class="main fr tab-content" id="menu-tab-content">
+          <div class="tab-pane fade in active" id="zk">
             <div class="search-result">
 
                 <div class="toolbar">
@@ -919,9 +919,9 @@
                   </ul>
                   </div>
                   <!-- end of the page-nav container -->
-                </nav>
+                </nav> <!-- 分页 end -->
             </div>
-            <!-- 分页 end -->
+            <!-- end of search-result -->
 
 
             <ul class="bottom-commend-list">
@@ -945,8 +945,8 @@
                     </p>
                 </li>
             </ul><!--bottom-commend-list-->
-
-
+        </div><!-- end of 总库结果 -->
+        <div class="tab-pane fade" id="yck"><span>测试标签跳转</span></div>
         </div><!--main - fr -->
 
         <div class="clearfix"></div>

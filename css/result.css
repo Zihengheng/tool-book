@@ -18,6 +18,21 @@ div.search-result{
 		rgba(246, 246, 246, 0.58);
 	border: solid 1px #f4f6f9;
 }
+.foot-bot{
+	padding-left: 214px;
+}
+div.b{
+	margin-left: -98px;
+}
+div.t{
+	margin-left: -111px;
+}
+/*========= 升序降序===========*/
+/*.order li.ascend span,
+.order li.descend span{ background:url("../images/updown-icon.png") no-repeat right;  background-repeat: no-repeat; 
+background-position/*:top 5px;}*/*/
+.order li.ascend span{ background-position:right 9px;}
+.order li.descend span{ background-position:right -9px;}
 /*========= rst-header ==========*/
 .top-bar{
 	width:100%;
@@ -26,7 +41,7 @@ div.search-result{
 }
 .top-bar li a{
 	font-size: 14px;
-    color: #535354;
+    color: #333333;
 }
 div.left-bar ul li{
 	float:left;
@@ -46,12 +61,16 @@ div.left-bar ul li{
     line-height:30px;
 }
 .head-right ul li a {
-    color: #242424;
+    color: #333333;
     margin-right: 10px;
     padding-left: 10px;
 }
 .head-right ul li a.down img{
 	margin-left:10px; 
+}
+.head-right .navbar-nav{
+	margin-top:4px;
+	margin-right: -90px;
 }
 /*background*/
 /*.head-right ul li a.down{
@@ -62,9 +81,10 @@ div.left-bar ul li{
 
 /*banner*/
 .banner-sm{
-	height:77px;
-	padding-top:8px;
+	height:89px;
+	padding-top:14px;
 	background: url("../images/banner-bg2.jpg") no-repeat;
+	background-size: 100% 100%;
 }
 /* change search bar */
 #type{
@@ -148,6 +168,10 @@ div.left-bar ul li{
 	width:18%;
 	text-align: center;
 }
+/*选中*/
+.doctype-menus>li.active{ position: relative;color: #333; border-radius: 4px 4px 0 0; background-image: none; background-color: #fff;  }
+.doctype-menus>li.active>a span,
+.doctype-menus>li.active>a em{ color: #0f5de5;  }
 /*=========== 左导航栏 ============*/
 .breadcrumb{
 	margin-bottom: 0px;
@@ -186,22 +210,25 @@ div.left-bar ul li{
 	line-height: 20px;
 	padding:0;
 }
+div.order-group ul li {
+}
 div.order-group ul li img{
 	margin-right: 5px;
 	width:18px;
 	height:18px;
 }
 div.order-group ul li span{
-	padding-right: 20px;
-	background: url("../images/updown-icon.png") no-repeat right center;
+	padding-right:20px;
+	background: url("../images/updown-icon.png") no-repeat;
+	background-position: right 9px;
 }
 #divider{
 	width:1px;
 	height:27px;
 	background-color:  #e9e9e9;
 	float:right;
-	margin-left: 5px;
 	margin-top: -7px;
+	margin-left:5px;
 }
 /*======== 结果列表 ==========*/
 .list-title{

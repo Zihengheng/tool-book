@@ -11,6 +11,14 @@
 *   2、父级添加class "stoptop" "fixed" 控制滚动状态和范围。
 */
 
+$(function(){
+    // 增加搜索结果页显示搜索助手
+    $(".banner-sm input.search-input").focus(function(){$(".search-nav").show();})
+    // $(".banner-sm input.search-input").blur(function(){$(".search-nav").hide();})
+
+    // doctype标签显示 
+    $("#menu-tab a[href='zk']").tab('show')
+});
 function filterFn(){
 	this.filterBox = $(".sidebar-filter");
     if(this.filterBox.length==0) return;
