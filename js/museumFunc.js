@@ -1,29 +1,41 @@
 ﻿// JavaScript Document
 /*
   功能：切换功能集合
-  范围：语言馆、科普馆、专业馆
+  范围：museum 系列
   */
 $(function(){
+    //语词库侧边栏
+   $('#menu-1').collapse('show');
+   $('#menu-1').on('shown.bs.collapse', function () {
+    $("a[href='#menu-1']").text("-");
+});
+    $('#menu-1').on('hidden.bs.collapse', function () {
+    $("a[href='#menu-1']").text("+");
+});
+    //menu-2
+    $('#menu-2').on('shown.bs.collapse', function () {
+    $("a[href='#menu-2']").text("-");});
+    $('#menu-2').on('hidden.bs.collapse', function () {
+    $("a[href='#menu-2']").text("+");});
 
-    $(".scroll-box").scrollTab({ //三大馆的图片列表焦点切换
-        pointBox : ".nums",
-        curClass: "active",
-        showLen: "2",
-        delayTime : 5000 //单位毫秒
-    });
+    //menu-3
+    $('#menu-3').on('shown.bs.collapse', function () {
+    $("a[href='#menu-3']").text("-");});
+    $('#menu-3').on('hidden.bs.collapse', function () {
+    $("a[href='#menu-3']").text("+");});
 
 
-    museumBox = $(".museum-box");
+    //显示标签内容
+    $('#menu1-tab a[href="#hycd"]').tab('show')
+    //显示成语
+    $('#section-tab a[href="#chengyu"]').tab('show')
+    //显示政治格言
+    $('#moto-type-change a[href="#politics"]').tab('show')
 
-    museumBox.find(".side-nav-list li").click(function () {//“语言馆”头部左侧导航切换
-        $(this).addClass("on").siblings().removeClass("on");
-    });
+    //翻转卡片
+    $("#a").click(function(event){
+    $("#a").parents(".sq-box").toggleClass("flipped");})
 
-    topSubMenu = museumBox.find(".top-submenu");
-    topSubMenu.find("li").on("click",function () {//三大馆头部二级导航切换
-        $(this).addClass("on").siblings().removeClass("on");
-    });
-
-
-
+    $("#b").click(function(event){
+    $("#b").parents(".sq-box").toggleClass("flipped");})
 });
