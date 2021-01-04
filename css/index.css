@@ -182,11 +182,9 @@ button.label{
     width: 9px;
     height: 40px;
 }
-/*.hp-book{
-    width: 472px;
+.hp-book{
     height: 515px;
-    float:left;
-}*/
+}
 .hp-book .tab-content{
     float:left;
     width:250px;
@@ -198,7 +196,7 @@ button.label{
 }
 .btn-vertical {
     float:left;
-    margin-top:-10px;
+    margin-top:49px;
     width:10px;
 }
 .btn-vertical span{
@@ -268,9 +266,12 @@ span.hp-sub{
 
 /*============== header end ==============*/
 /*====== 资源 section start ======*/
+.section-ir .section-title{
+    margin-top: 35px;
+}
 .section-ir{
     padding-top:45px;
-    height:600px;
+    height:650px;
 }
 .lib-intro{
     width:1200px;
@@ -372,7 +373,7 @@ div.highlighter{
     width:1200px;
     margin:0 auto;
     padding-top:60px;
-    height:900px;
+    height:953px;
     background: url("../images/index-bjtwo.png") no-repeat bottom;
 }
 div.ep-tabs{
