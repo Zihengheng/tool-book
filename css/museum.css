@@ -474,10 +474,250 @@ div.section-search input.search-btn{
 	color:white;
 }
 #di-content{
-	padding:22px 15px 0 15px;
+	height:600px;
+	padding-top: 20px;
+	padding-left: 15px;
+}
+/*成语 start*/
+div.chart-container{
+	width:100%;
+	height:571px;
+	padding-top: 50px;
+	padding-left: 0px;
+}
+div.chart-start{
+	float:left;
+	width:172px;
+}
+#chengyu  div.start-word{
+	width: 172px;
+	height: 59px;
+	background-color: #6e90ff;
+	border-radius: 30px;
+	padding-left: 47px;
+}
+div.start-word span{
+	line-height: 59px;
+	font-family: MicrosoftYaHei;
+	font-size: 18px;
+	color:white;
+}
+div.other-words{
+	padding-top: 20px;
+}
+div.other-words li{
+	width: 148px;
+	height: 41px;
+	border: solid 3px #6e90ff;
+	margin-top: 8px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+div.other-words li span{
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	color: #333333;
+	line-height: 37px;
+}
+div.other-words ul{
+	margin-bottom:24px;
+}
+a.next-group{
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	color: #6e90ff;
+	margin-left:63px;
+}
+div.chart-col{
+	float:left;
+	width:170px;
 	height:500px;
 }
+div.chart-box{
+	width:170px;
+	height:250px;
+}
+div.line-word{
+	width: 123px;
+	height: 48px;
+	border-radius: 24px;
+	float:left;
+	margin-top: 6px;
+	text-align: center;
+}
+div.line-word span{
+	font-family: MicrosoftYaHei;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 48px;
+	letter-spacing: 0px;
+	color: #ffffff;
+}
+div.line-other-words{
+	clear:both;
+	width: 96px;
+	height: 145px;
+	background:url("../images/show-words.png") no-repeat left;
+	margin-left: 50px;
+}
+div.line-other-words ul{
+	float:right;
+	margin-top: 43px;
+	line-height: 33px;
+}
+div.line-other-words li span{
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	color: #333333;
+}
+div.line-other-words li a{
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	color: #6e90ff;
+}
+/*成语连接线, 成语框*/
+div.connection{
+	float:left;
+	width: 47px;
+	height: 4px;
+	margin-top: 29px;
+}
+img.minus{
+	width: 13px;
+	height: 13px;
+}
+#line1{
+	position: relative;
+	width: 85px;
+	background-image: linear-gradient(96deg, 
+		#6e90ff 0%, 
+		#58a8d0 100%), 
+	linear-gradient(
+		#eff4fe, 
+		#eff4fe);
+	background-blend-mode: normal, 
+		normal;
+}
+#line1 .minus{
+	position:absolute;
+	top:-5px;
+}
+#chart-1 div.line-word, #chart-1 div.connection{
+	background-color: #7ecff6;
+}
+#chart-2 div.line-word, #chart-2 div.connection{
+	background-color: #6e90ff;
+}
+#chart-3 div.line-word, #chart-3 div.connection{
+	background-color:#94c552 ;
+}
+#chart-4 div.line-word, #chart-4 div.connection{
+	background-color:#7ecb83 ;
+}
+#chart-5 div.line-word, #chart-5 div.connection{
+	background-color:#f6d258 ;
+}
+#chart-6 div.line-word, #chart-6 div.connection{
+	background-color:#eabfed ;
+}
+#chart-7 div.line-word, #chart-7 div.connection{
+	background-color:#ed9548;
+}
+#chart-8 div.line-word, #chart-8 div.connection{
+	background-color:#efab94;
+}
+#chart-9 div.line-word, #chart-9 div.connection{
+	background-color:#6585e8;
+}
+#chart-10 div.line-word, #chart-10 div.connection{
+	background-color:#918edd;
+}
+.chart-border{
+	position:relative;
+	left:-16px;
+	top:29px;
+	float:right;
+	width:65px;
+	height:254px;
+	border-top: 4px solid #6585e8;
+	border-radius: 0px;
+	border-right: 4px solid #6585e8;
+	border-bottom:4px solid #918edd;
+}
+/*精彩典故*/
+.story-title{
+	width: 111px;
+	height: 39px;
+	background-image: linear-gradient(0deg, 
+		#f3f6f9 0%, 
+		#f7f9fb 100%), 
+	linear-gradient(
+		#ffffff, 
+		#ffffff);
+	background-blend-mode: normal, 
+		normal;
+	border: solid 1px #eeeeee;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.story-title span{
+	font-family: MicrosoftYaHei;
+	font-size: 16px;
+	line-height: 36px;
+	color: #333333;
+}
+.story-box{
+	width: 590px;
+	height: 192px;
+	box-shadow: 0px 9px 20px 1px 
+		rgba(234, 234, 234, 0.58);
+	border: solid 1px #eeeeee;
+	float:left;
+	padding:10px 15px 10px 15px;
+}
+.story-box.right{
+	margin-left: 5px;
+}
+.story-box span{
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	line-height: 36px;
+	color: #333333;
+	font-weight: bold;
+}
+.story-box p{
+	width: 496px;
+	margin: 0px auto 0px auto;
+	font-family: MicrosoftYaHei;
+	font-size: 13px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 36px;
+	letter-spacing: 0px;
+	color: #333333;
+}
+.story-box a{
+	font-family: MicrosoftYaHei;
+	font-size: 12px;
+	line-height: 36px;
+	letter-spacing: 0px;
+	color: #5b86ff;
+}
+div.story-links{
+	width: 496px;
+	margin: 0 auto;
+}
+a.story-src{
+	float:left;
+}
+a.story-more{
+	float:right;
+}
+/*成语 end*/
 /*格言 start*/
+
 div.moto-type{
 	width:130px;
 	float:left;
@@ -505,6 +745,10 @@ div.moto-type{
 	background-color:#f6f8fc; 
 }
 /*#moto-type-change li.active*/
+#geyan{
+	width:100%;
+	padding-top: 20px;
+}
 div#moto-list{
 	float:left;
 	width:900px;
@@ -599,7 +843,6 @@ div.sq-box{
 .flipped{
 	transform: rotateY(180deg);
 }
-
 .box-icon{
 	position:absolute;
 	top:-30px;
