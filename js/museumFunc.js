@@ -5,6 +5,7 @@
   */
 $(function(){
     //语词库侧边栏
+    //menu-1
    $('#menu-1').collapse('show');
    $('#menu-1').on('shown.bs.collapse', function () {
     $("a[href='#menu-1']").text("-");
@@ -23,6 +24,20 @@ $(function(){
     $("a[href='#menu-3']").text("-");});
     $('#menu-3').on('hidden.bs.collapse', function () {
     $("a[href='#menu-3']").text("+");});
+
+
+    //显示书籍注释
+    $(".booksec-box img").hover(
+    function(){
+        $(this).next().stop().fadeTo("slow",1,function(){
+            $(this).css("display", "block");
+        })
+    },
+    function(){
+        $(this).next().stop().fadeTo("slow",0,function(){
+            $(this).css("display","none");
+        })
+    });
 
 
     //显示标签内容
