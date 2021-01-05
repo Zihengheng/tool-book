@@ -1,4 +1,4 @@
-/*===== 通用结构 ======*/
+===== 通用结构 ======*/
 .body{
 	width:100%;
 	padding:0;
@@ -28,12 +28,15 @@ div.t{
 /*======= 语词库 header start =========*/
 .msm-topbar{
 	height:36px;
-	background-color:#f4f4f4;
+	background-color:#f4f6f9;
 }
 .topbar-left ul li{
 	width:80px;
 	text-align: center;
 	line-height: 36px;
+}
+.topbar-left ul li a{
+	color:#333333;
 }
 .topbar-left ul li a:hover{
 	text-decoration:none;
@@ -42,6 +45,9 @@ div.t{
 	width:80px;
 	text-align: center;
 	line-height: 36px;
+}
+.topbar-right ul li a{
+	color:#333333;
 }
 .topbar-right ul li a:hover{
 	text-decoration:none;
@@ -279,7 +285,13 @@ div.left-menu{
 	font-stretch: normal;
 	line-height: 23px;
 	letter-spacing: 0px;
-	color: #666666;
+	color: #333333;
+}
+.left-menu li a:hover{
+	color:#6e90ff;
+}
+.left-menu li.active a{
+	color:#6e90ff;
 }
 div.book-sec{
 	float:right;
@@ -870,3 +882,45 @@ div.sq-box{
 /*谜语 end*/
 /*======= 内容挖掘部分 end =========*/
 /*=================== 语词库主要内容结束 =====================* /
+
+/*=================== 语词库条目内容开始 =====================*/
+/*===== 标题栏 =====*/
+.msm-banner.dt-page{
+	height:342px;
+}
+ul.breadcrumb{
+	background: none;
+}
+/*===== 标题栏结束 =====*/
+/*===== 左右分栏， 分栏标题 =====*/
+.dt-leftbar{
+	width:289px;
+	border-top: 1px solid #DCDCDC;
+	background-color: #fbfbfb;
+	height:100px;
+	float:left;
+}
+.dt-rightbar{
+	width:911px;
+	border-top:1px solid #DCDCDC; 
+	height:100px;
+	float:left;
+}
+.dt-leftbar-title{
+	width:100%;
+	border-bottom:1px solid #DCDCDC;
+	height:38px;
+	line-height:38px;
+	padding-left:15px;
+}
+.dt-leftbar-title{
+	font-family: SimSun;
+	font-size: 14px;
+	font-weight: bold;
+	font-stretch: normal;
+	line-height: 35px;
+	letter-spacing: 0px;
+	color: #2c3f6a;
+}
+/*===== 左右分栏， 分栏标题 end =====*/
+/*=================== 语词库条目内容结束 =====================

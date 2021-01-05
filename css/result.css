@@ -12,7 +12,7 @@ div.footer{
 }
 div.search-result{
 	width: 938px;
-	height: 1765px;
+	height: 1800px;
 	background-color: #ffffff;
 	box-shadow: 0px 5px 4px 0px 
 		rgba(246, 246, 246, 0.58);
@@ -30,16 +30,18 @@ div.t{
 /*========= 升序降序===========*/
 /*.order li.ascend span,
 .order li.descend span{ background:url("../images/updown-icon.png") no-repeat right;  background-repeat: no-repeat; 
-background-position/*:top 5px;}*/*/
+background-position/*:top 5px;}*/
 /*========= rst-header ==========*/
-.top-bar{
+
+body > div.rst-header > div.top-bar{
 	width:100%;
 	height:36px;
-	background-color:#e9e9e7;
+	background-color: #f4f6f9;
 }
 .top-bar li a{
 	font-size: 14px;
     color: #333333;
+    text-decoration: none;
 }
 div.left-bar ul li{
 	float:left;
@@ -240,12 +242,12 @@ div.order-group i.as-ds{
 	font-size:16px;
 	margin-top: -5px;
 }
-.key{
+.list-title a .key{
 	color:#f96868;
 	font-weight: bold;
 	margin-right: 10px;
 }
-.list-title a span{
+.list-title span{
 	color: #2b4167;
 }
 p.abstract{
@@ -257,7 +259,7 @@ p.abstract{
 	font-stretch: normal;
 	line-height: 23px;
 	letter-spacing: 0px;
-	color: #555555;
+	color:black;
 	text-align: left;
 }
 ul.basic-info{
@@ -268,10 +270,10 @@ ul.basic-info{
 ul.basic-info li{
 	float:left;
 	width:120px;
-	color:#a5adb8;
+	color:#696969;
 }
 ul.basic-info li a{
-	color:#a5adb8
+	color:#696969;
 }
 .info-divider{
 	width:1px;
