@@ -48,9 +48,22 @@ $(function(){
     $('#moto-type-change a[href="#politics"]').tab('show')
 
     //翻转卡片
-    $("#a").click(function(event){
-    $("#a").parents(".sq-box").toggleClass("flipped");})
+    $(".flip").click(function () {
+        var _this= $(this);
+        if(_this.parents(".card").hasClass("cur")){
+            $(this).parents(".card").removeClass("cur").siblings().removeClass("cur");
+        }else{
+            $(this).parents(".card").addClass("cur").siblings().addClass("cur");
+        }
+    });
 
-    $("#b").click(function(event){
-    $("#b").parents(".sq-box").toggleClass("flipped");})
+    //翻转-包在谜底
+    $(".rst-flip").click(function () {
+        var _this= $(this);
+        if(_this.parents(".rst-card").hasClass("cur")){
+            $(this).parents(".rst-card").removeClass("cur").siblings().removeClass("cur");
+        }else{
+            $(this).parents(".rst-card").addClass("cur").siblings().addClass("cur");
+        }
+    });
 });

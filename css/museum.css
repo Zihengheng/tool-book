@@ -817,6 +817,7 @@ a.moto-more{
 	height:20px;
 	line-height: 23px;
 }
+/* 谜语 boxes */
 div.show-quiz-boxes{
 	width:100%;
 	padding-top:50px;
@@ -829,32 +830,111 @@ div.sq-box{
 	float:left;
 	width: 278px;
 	height: 330px;
-	background-color: #ffffff;
-	box-shadow: 0px 0px 16px 2px 
-		rgba(234, 234, 234, 0.58);
-	transform-style: preserve-3d;
-    transition: transform 1s;
 }
 .card{
 	display:block;
 	position:absolute;
-	width:100%;
-	height:100%;
-	background-color: pink;
-	backface-visibility: hidden;
-}
-.back{
-	transform: rotateY(200deg);
-	left:2px;
-	top:10px;
+	left:0;
+    top:0;
+    right:0;
+    bottom:0;
+	transition:all 1s ease-in-out;
 	width: 278px;
 	height: 330px;
-	/*width:200px;
-	height:200px;*/
+	background-color: #ffffff;
+	box-shadow: 0px 0px 16px 2px 
+		rgba(234, 234, 234, 0.58);
 }
-.flipped{
-	transform: rotateY(180deg);
+.card.back{
+	z-index: 1;
+	transform:rotateY(180deg);
+	backface-visibility: hidden;
 }
+.card.front{
+	 z-index: 2;
+	 backface-visibility: hidden;
+}
+.card.front.cur{
+    z-index: 1;
+    transform:rotateY(180deg);
+    backface-visibility: hidden;
+}
+.card.back.cur{
+    z-index: 2;
+    transform:rotateY(360deg);
+}
+div.top-banner{
+	width: 278px;
+	height: 34px;
+	background-color: #f6fafc;
+	box-shadow: 0px 0px 3px 0px 
+		rgba(234, 234, 234, 0.58);
+}
+div.quiz-content p{
+	width: 233px;
+	height: 258px;
+	font-family: SimSun;
+	font-size: 12px;
+	line-height: 36px;
+	letter-spacing: 0px;
+	color: #333333;
+	margin:0 auto;
+	padding-top: 22px;
+}
+div.ft-banner{
+	width: 278px;
+	height: 42px;
+	background-color: #fcfcfc;
+	box-shadow: 0px 0px 3px 0px 
+		rgba(234, 234, 234, 0.58);
+	text-align: center;
+}
+span.flip{
+	cursor: pointer;
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 40px;
+	color: #283f6b;
+}
+img.flip{
+	cursor: pointer;
+}
+div.quiz-back-content{
+	padding-top: 40px;
+	width: 278px;
+	height:288px;
+	background-color: #f6fafc;
+	box-shadow: 0px 0px 3px 0px 
+		rgba(234, 234, 234, 0.58);
+}
+div.quiz-back-content p{
+	width: 233px;
+	height: 192px;
+	font-family: SimSun;
+	font-size: 12px;
+	line-height: 36px;
+	letter-spacing: 0px;
+	color: #333333;
+	margin:0 auto;
+}
+img.flip{
+	position:absolute;
+	left:260px;
+	top:130px;
+}
+div.quiz-back-src{
+	font-family: MicrosoftYaHei;
+	font-size: 13px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 41px;
+	letter-spacing: 0px;
+	color: #283f6b;
+	text-align: center
+}
+/* end of miyu boxes*/
+
 .box-icon{
 	position:absolute;
 	top:-30px;
@@ -871,13 +951,92 @@ div.sq-box{
 	padding-top: 35px;
 }
 .rst-box{
+	position:relative;
 	margin-left: 14px;
 	float:left;
 	width: 278px;
 	height: 116px;
-	background-color: #ffffff;
+	/*background-color: #ffffff;
+	box-shadow: 0px 2px 12px 1px 
+		rgba(234, 234, 234, 0.58);*/
+}
+div.rst-card{
+	width: 278px;
+	height: 116px;
+	position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    transition:all 1s ease-in-out;
+    background-color: #ffffff;
 	box-shadow: 0px 2px 12px 1px 
 		rgba(234, 234, 234, 0.58);
+}
+.rst-card.front{
+	z-index: 2;
+}
+.rst-card.back{
+	 z-index: 1;
+    transform:rotateY(180deg);
+}
+.rst-card.front.cur{
+	z-index: 1;
+    backface-visibility: hidden;
+    transform:rotateY(180deg);
+}
+.rst-card.back.cur{
+	z-index: 2;
+    transform:rotateY(360deg);
+}
+div.rst-content{
+	padding-top: 22px;
+	width:100%;
+	height:74px;
+}
+div.rst-content p{
+	width:233px;
+	margin:0 auto;
+	text-align: center;
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	line-height: 36px;
+	color: #333333;
+}
+div.rst-ft-banner{
+	width:100%;
+	height:42px;
+	background-color: #fcfcfc;
+	box-shadow: 0px 0px 3px 0px 
+		rgba(234, 234, 234, 0.58);
+	text-align: center;
+}
+span.rst-flip{
+	font-family: MicrosoftYaHei;
+	font-size: 13px;
+	line-height: 24px;
+	color: #283f6b;
+	line-height: 42px;
+	cursor: pointer;
+}
+span.rst-src{
+	font-family: MicrosoftYaHei;
+	font-size: 13px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 41px;
+	letter-spacing: 0px;
+	color: #283f6b;
+	text-align: center
+}
+div.rst-flip{
+	width:12px;
+	height:24px;
+	background: url("../images/right_icon.png") no-repeat;
+	cursor: pointer;
+	position:absolute;
+	top:30px;
+	left:258px;
 }
 /*谜语 end*/
 /*======= 内容挖掘部分 end =========*/
