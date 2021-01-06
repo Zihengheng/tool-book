@@ -435,21 +435,182 @@
           <li><a href="#">语词库</a></li>
           <li><a href="#">《塔吉克汉词典》</a></li>
           <li><a href="#">栏目名称</a></li>
-          <li class="active"><a href="#">aluyid</a></li>
+          <li class="active">aluyid</li>
         </ul>
       </div><!-- end of the root part -->
 
+      <!-- 左边栏 -->
       <!-- dt-leftbar start -->
       <div class="dt-leftbar">
         <div class="dt-leftbar-title">
           <span>词条索引</span>
+        </div><!-- end of leftbar-title -->
+        <div class="dt-book-title">
+          <span>塔吉克汉词典</span>
+        </div>
+        <div class="dt-book-navbar panel-group" id="dt-book-nav">
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-one" data-toggle="collapse" data-parent="#dt-book-nav" class="toggle-btn">-</a>
+              <ul class="dt-chapters" id="">
+                <li><a href="#a" data-toggle="tab">Aa</a></li>
+              </ul>
+            </div>
+            <div id="bnav-one" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <ul id="nav1-sections" class="nav-sections">
+                  <li>
+                    <a href="#sx" data-toggle="tab">数学</a>
+                  </li>
+                  <li><a href="#cdsx" data-toggle="tab">初等数学</a></li>
+                  <li><a href="#sjx" data-toggle="tab">三角学</a></li>
+                  <li><a href="#dsx" data-toggle="tab">代数学</a></li>
+                  <li><a href="#jhx" data-toggle="tab">几何学</a></li>
+                  <li><a href="#jxjh" data-toggle="tab">解析几何</a></li>
+                  <li><a href="#zbjh" data-toggle="tab">坐标几何</a></li>
+                  <li><a href="#gdsx" data-toggle="tab">高等数学</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-two" data-toggle="collapse" data-parent="#dt-book-nav" class="toggle-btn">+</a>
+              <ul class="dt-chapters">
+                <li><a href="#b" data-toggle="tab">Bb</a></li>
+              </ul>
+            </div>
+            <div id="bnav-two" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="nav2-sections" class="nav-sections">
+                  <li>
+                    <a href="#nav2-cha1" data-toggle="tab">章节1</a>
+                  </li>
+                  <li><a href="#nav2-cha2" data-toggle="tab">章节2</a></li>
+                  <li><a href="#nav2-cha3" data-toggle="tab">章节3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-three" data-toggle="collapse" data-parent="#dt-book-nav" class="toggle-btn">+</a>
+              <ul class="dt-chapters">
+                <li><a href="#c" data-toggle="tab">Cc</a></li>
+              </ul>
+            </div>
+            <div id="bnav-three" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="nav3-sections" class="nav-sections">
+                  <li>
+                    <a href="#nav3-cha1" data-toggle="tab">章节1</a>
+                  </li>
+                  <li><a href="#nav3-cha2" data-toggle="tab">章节2</a></li>
+                  <li><a href="#nav3-cha3" data-toggle="tab">章节3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-four" data-toggle="collapse" data-parent="#dt-book-nav" class="toggle-btn">+</a>
+              <ul class="dt-chapters">
+                <li><a href="#d" data-toggle="tab">Dd</a></li>
+              </ul>
+            </div>
+            <div id="bnav-four" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="nav4-sections" class="nav-sections">
+                  <li>
+                    <a href="#nav4-cha1" data-toggle="tab">章节1</a>
+                  </li>
+                  <li><a href="#nav4-cha2" data-toggle="tab">章节2</a></li>
+                  <li><a href="#nav4-cha3" data-toggle="tab">章节3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+        </div>
+        <!-- end of the panel group -->
+        <div class="chi-knowledge">
+          <div class="chi-title">
+            <span>汉语言知识</span>
+          </div>
         </div>
       </div>
       <!-- end of dt-leftbar -->
 
+      <!-- 右边拦 -->
       <!-- dt-rightbar start -->
       <div class="dt-rightbar">
-        <div class="dt-rightbar-title"></div>
+        <div class="dt-rightbar-title">
+          <ul class="actions navbar-nav">
+            <li><span><img src="images/star.png" alt="">收藏</span></li>
+            <li><span><img src="images/share-2.png" alt="">分享</span></li>
+            <li><span><img src="images/quote.png" alt="">引用</span></li>
+          </ul>
+          <ul class="size-change navbar-nav">
+            <li><a href="#">[大]</a></li>
+            <li><a href="#">[中]</a></li>
+            <li><a href="#">[小]</a></li>
+          </ul>
+          <div class="dt-search-bar">
+            <input class="search-input" type="text" autocomplete="off" placeholder="请输入检索内容" value="请输入检索内容">
+            <sapn class="btn" id="search-book">查本书</a>
+            <a href="#" class="btn" id="search-collection">查全辑</a>
+          </div>
+        </div><!-- end of dt-rightbar-title -->
+        <div class="dt-container">
+        <div id="word-intro" class="tab-content">
+          <div class="tab-pane fade in active" id="sx">数学</div>
+          <div class="tab-pane fade" id="cdsx">初等数学</div>
+          <div class="tab-pane fade" id="sjx">三角学</div>
+          <div class="tab-pane fade" id="nav2-cha1">Bb章节1</div>
+          <div class="tab-pane fade" id="nav2-cha2">Bb章节1</div>
+          <div class="tab-pane fade" id="nav2-cha3">Bb章节1</div>
+          <div class="tab-pane fade" id="nav3-cha1">Cc章节1</div>
+          <div class="tab-pane fade" id="nav3-cha2">Cc章节1</div>
+          <div class="tab-pane fade" id="nav3-cha3">Cc章节1</div>
+          <div class="tab-pane fade" id="a">a栏目内容</div>
+          <div class="tab-pane fade" id="b">b栏目内容</div>
+          <div class="tab-pane fade" id="c">c栏目内容</div>
+          <div class="tab-pane fade" id="d">d栏目内容</div>
+        </div><!-- end of the tab-content -->
+
+        <!-- 语词知识 section start-->
+        <div class="word-knowledge">        
+            <div class="dt-section-title">
+              <span>语词知识</span>
+              <ul id="word-knowledge-tabs">
+                <li>
+                  <a href="#hanzi" data-toggle="tab">汉字卡</a>
+                </li>
+                <li>
+                  <a href="#duoyin" data-toggle="tab">多音辨析</a>
+                </li>
+                <li class="active">
+                  <a href="#xingyi" data-toggle="tab">形义演释</a>
+                </li>
+              </ul>
+            </div>
+            <div id="word-knowledge-content" class="tab-content">
+              <div class="tab-pane fade" id="hanzi">
+                hanzi
+              </div>
+              <div class="tab-pane fade" id="duoyin">
+                duoyin
+              </div>
+              <div class="tab-pane fade in active" id="xingyi">
+                xingyi
+              </div>
+            </div>
+        </div>
+        <!-- 语词知识 section end -->
+      </div><!-- end of the dt-container -->
       </div>
       <!-- end of dt-rightbar -->
 

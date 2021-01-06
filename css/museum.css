@@ -1,4 +1,4 @@
-===== 通用结构 ======*/
+/*===== 通用结构 ======*/
 .body{
 	width:100%;
 	padding:0;
@@ -1045,18 +1045,34 @@ div.rst-flip{
 /*=================== 语词库条目内容开始 =====================*/
 /*===== 标题栏 =====*/
 .msm-banner.dt-page{
-	height:342px;
+	height:333px;
 }
 ul.breadcrumb{
 	background: none;
+	margin-bottom: 0px;
+}
+ul.breadcrumb li a, ul.breadcrumb span{
+	font-family: MicrosoftYaHei;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 23px;
+	color: #293e6b;
+}
+ul.breadcrumb li.active{
+	font-family: SimSun;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 35px;
+	letter-spacing: 0px;
+	color: #fb6969;
 }
 /*===== 标题栏结束 =====*/
 /*===== 左右分栏， 分栏标题 =====*/
 .dt-leftbar{
 	width:289px;
+	height:3111px;
 	border-top: 1px solid #DCDCDC;
 	background-color: #fbfbfb;
-	height:100px;
 	float:left;
 }
 .dt-rightbar{
@@ -1074,12 +1090,187 @@ ul.breadcrumb{
 }
 .dt-leftbar-title{
 	font-family: SimSun;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: bold;
 	font-stretch: normal;
 	line-height: 35px;
 	letter-spacing: 0px;
 	color: #2c3f6a;
 }
+.dt-rightbar-title{
+	width:100%;
+	border-bottom:1px solid #DCDCDC;
+	height:38px;
+	line-height:38px;
+	padding-left:30px;
+}
+ul.actions{
+	width: 197px;
+}
+ul.actions li{
+	width:33%;
+	line-height: 38px;
+	cursor: pointer;
+}
+ul.actions img{
+	width:16px;
+	height:16px;
+	margin-right: 10px;
+	margin-top: -5px;
+}
+div.dt-search-bar{
+	float:right;
+}
 /*===== 左右分栏， 分栏标题 end =====*/
+/*==== 左侧边栏 start=====*/
+.dt-book-title{
+	margin-top:30px;
+	width:100%;
+	font-family: SimSun;
+	font-size: 15px;
+	line-height: 35px;
+	color: #cc0000;
+	font-weight:bold;
+	margin-left: 15px;
+}
+.dt-book-navbar{
+	width:100%;
+	margin-top: 30px;
+	height:380px;
+}
+#dt-book-nav .panel{
+	background: none;
+	border:0;
+}
+a.toggle-btn{
+	display:inline-block;
+	width: 15px;
+	height:15px;
+	line-height: 15px;
+	font-size:15px;
+	border:1px solid #333333;
+	text-align: center;
+	vertical-align: center;
+	text-decoration: none;
+}
+ul.dt-chapters{
+	float:right;
+	margin-right:210px;
+}
+ul.dt-chapters a{
+	font-family: MicrosoftYaHei;
+	font-size: 16px;
+	color:#2a3f6a;
+	font-weight: bold;
+}
+#dt-book-nav div.panel-heading{
+	line-height:18px;
+	border:0;
+}
+#dt-book-nav div.panel-body{
+	max-height:200px;
+	overflow: scroll;
+	border:0;
+}
+ul.nav-sections li{
+	display: block;
+	position: relative;
+	width:100%;
+	line-height: 36px;
+	padding-left: 28px;
+	cursor: pointer;
+}
+ul.nav-sections li a{
+	text-decoration: none;
+	font-family: SimSun;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 36px;
+	letter-spacing: 0px;
+	color: #2a3f6a;
+	padding-right: 100px;
+}
+ul.nav-sections li.active{
+	background-color: #f3f7fa;
+}
+ul.nav-sections li:hover{
+	background-color: #f3f7fa;
+}
+/*汉语言知识部分*/
+div.chi-knowledge{
+	width: 289px;
+	height: 451px;
+}
+div.chi-title{
+	width:100%;
+	border-top: 1px solid #e3ecf1;
+	border-bottom: 1px solid #e3ecf1;
+	height:41px;
+}
+div.chi-title span{
+	line-height: 41px;
+	font-family: SimSun;
+	font-size: 15px;
+	font-weight: bold;
+	color: #0d50ab;
+	margin-left: 15px;
+}
+/*汉语言知识部分 end */
+/*==== 左侧边栏 end=====*/
+
+/*==== right侧边栏 start=====*/
+#word-intro{
+	height:460px;
+}
+div.dt-container{
+	padding-left: 30px;
+	padding-right: 15px;
+}
+div.dt-section-title{
+	padding-left: 30px;
+	padding-right: 15px;
+	width: 890px;
+	height: 41px;
+	background-color: #f3f7fa;
+}
+
+/*语词知识部分*/
+div.dt-section-title span{
+	font-family: MicrosoftYaHei;
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 28px;
+	letter-spacing: 0px;
+	color: #2a416a;
+	line-height: 41px;
+}
+div.dt-section-title ul{
+	float:right;
+}
+div.dt-section-title ul li{
+	float:left;
+	width: 81px;
+	height: 41px;
+	text-align: center;
+	line-height: 41px;
+	cursor: pointer;
+}
+div.dt-section-title ul li:hover{
+	background-color: #f9de19;
+}
+div.dt-section-title ul li.active{
+	background-color: #f9de19;
+}
+div.dt-section-title ul li a{
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 35px;
+	letter-spacing: 0px;
+	color: #2a416a;
+	text-decoration: none;
+	padding:5px 10px 5px 10px;
+}
+/*==== right侧边栏 end=====*/
 /*=================== 语词库条目内容结束 =====================

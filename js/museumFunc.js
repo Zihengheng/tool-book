@@ -66,4 +66,22 @@ $(function(){
             $(this).parents(".rst-card").addClass("cur").siblings().addClass("cur");
         }
     });
+
+    //语词库条目页
+    //显示数学标签
+    $('#nav1-sections a[href="#sx"]').tab('show')
+    //边栏+-转换
+    $('.dt-book-navbar .panel-collapse').on('shown.bs.collapse', function () {
+       $(this).prev().children(".toggle-btn").text("-");
+    })
+    $('.dt-book-navbar .panel-collapse').on('hidden.bs.collapse', function () {
+       $(this).prev().children(".toggle-btn").text("+");
+    })
+
+    //边栏自动收缩
+    // $('.dt-book-navbar .panel-collapse').on('show.bs.collapse', function () {
+    //     $(this).parents(".panel").
+    // })
+    //边栏两类菜单切换
+    
 });
