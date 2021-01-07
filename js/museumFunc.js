@@ -83,5 +83,7 @@ $(function(){
     //     $(this).parents(".panel").
     // })
     //边栏两类菜单切换
+    // var pathname = window.location.pathname; 
+    // console.log(pathname);
     
 });
