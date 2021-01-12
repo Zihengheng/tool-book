@@ -1068,6 +1068,7 @@ ul.breadcrumb li.active{
 }
 /*===== 标题栏结束 =====*/
 /*===== 左右分栏， 分栏标题 =====*/
+/*left*/
 .dt-leftbar{
 	width:289px;
 	height:3111px;
@@ -1097,6 +1098,7 @@ ul.breadcrumb li.active{
 	letter-spacing: 0px;
 	color: #2c3f6a;
 }
+/*right*/
 .dt-rightbar-title{
 	width:100%;
 	border-bottom:1px solid #DCDCDC;
@@ -1105,7 +1107,7 @@ ul.breadcrumb li.active{
 	padding-left:30px;
 }
 ul.actions{
-	width: 197px;
+	width: 220px;
 }
 ul.actions li{
 	width:33%;
@@ -1120,6 +1122,43 @@ ul.actions img{
 }
 div.dt-search-bar{
 	float:right;
+}
+ul.size-change{
+	margin-left: 30px;
+}
+ul.size-change li{
+	width:35px;
+	text-align: center;
+}
+ul.size-change li a{
+	font-family: SimSun;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 35px;
+	letter-spacing: 0px;
+	color: #6f6f6f;
+}
+ul.size-change li.active a{
+	color:#0d4eac;
+}
+ul.size-change li a:hover{
+	color:#0d4eac;
+}
+.dt-search-bar .search-input{
+	width: 233px;
+	height: 25px;
+	border: solid 1px #eeeeee;
+}
+.dt-search-bar .btn{
+	width: 68px;
+	height: 25px;
+	background-color: #f3f7fa;
+	font-family: SimSun;
+	font-size: 12px;
+	line-height: 12px;
+	color: #2a3f6a;
+	text-align:center;
 }
 /*===== 左右分栏， 分栏标题 end =====*/
 /*==== 左侧边栏 start=====*/
@@ -1220,7 +1259,7 @@ div.chi-title span{
 
 /*==== right侧边栏 start=====*/
 #word-intro{
-	height:460px;
+	height:430px;
 }
 div.dt-container{
 	padding-left: 30px;
@@ -1233,7 +1272,35 @@ div.dt-section-title{
 	height: 41px;
 	background-color: #f3f7fa;
 }
-
+/*词条简介*/
+.word-intro-container{
+	width:100%;
+	padding-top: 30px;
+}
+.word-title{
+	display: inline-block;
+	font-family: MicrosoftYaHei;
+	font-size: 33px;
+	font-weight:normal;
+	line-height: 36px;
+	color: #cc0000;
+	margin-bottom: 30px;
+}
+.word-intro-container p{
+	padding-left: 15px;
+	padding-right: 15px;
+	text-indent: 2em;
+	font-family: SimSun;
+	font-size: 15px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 32px;
+	letter-spacing: 0px;
+	color: #010e1f;
+}
+.intro-source{
+	margin-top: 50px;
+}
 /*语词知识部分*/
 div.dt-section-title span{
 	font-family: MicrosoftYaHei;

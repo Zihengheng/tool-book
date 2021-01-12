@@ -82,8 +82,16 @@ $(function(){
     // $('.dt-book-navbar .panel-collapse').on('show.bs.collapse', function () {
     //     $(this).parents(".panel").
     // })
-    //边栏两类菜单切换
-    // var pathname = window.location.pathname; 
-    // console.log(pathname);
-    
+    //防止高亮重叠
+    $(".nav-sections a").click(function(){
+        var _this = this;
+        var fPanel = $(_this).parents(".panel");
+        fPanel.siblings(".panel").find("li").each(function(){
+            if($(this).hasClass("active")){
+                $(this).removeClass();
+            }
+        })
+    });
+
+
 });
