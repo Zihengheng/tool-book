@@ -93,5 +93,14 @@ $(function(){
         })
     });
 
+    //栏目点击事件
+    $("ul.dt-chapters li").click(function(){
+        $("ul.nav-sections li").removeClass("active");
+        $(this).parents(".panel").siblings(".panel").
+        find("li").removeClass("active");
+    });
+    $("ul.nav-sections li").click(function(){
+        $("ul.dt-chapters li").removeClass("active");
+    });
 
 });
