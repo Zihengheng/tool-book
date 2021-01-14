@@ -4,6 +4,7 @@
 	padding:0;
 	margin:0;
 	font-family: MicrosoftYaHei, SimSun;
+	color:#333333;
 }
 .container{
 	width:1200px;
@@ -31,6 +32,10 @@ ul.words-list li{
 	border-bottom: solid 1px #e2ecf1;
 	height:100px;
 	padding-top: 20px;
+	padding-left: 20px;
+}
+ul.words-list li:hover{
+	/*background-color: #f8f8f8;*/
 }
 .words-list-title span{
 	font-family: SimSun;
@@ -75,6 +80,12 @@ ul.words-list p{
 div.pn-container{
 	width:600px;
 	margin:0 auto;
+}
+/*===== section input ========*/
+.dt-input{
+	border:1px solid #ededed;
+	line-height:26px;
+	padding-left:5px;
 }
 /*======= 语词库 header start =========*/
 .msm-topbar{
@@ -1117,6 +1128,9 @@ ul.breadcrumb li.active{
 ul.actions{
 	width: 220px;
 }
+ul.actions span:hover{
+	color:#53a2e4;
+}
 ul.actions li{
 	width:33%;
 	line-height: 38px;
@@ -1142,14 +1156,14 @@ ul.size-change li a{
 	font-family: SimSun;
 	font-size: 12px;
 	line-height: 35px;
-	letter-spacing: 0px;
+	text-decoration: none;
 	color: #6f6f6f;
 }
 ul.size-change li.active a{
-	color:#0d4eac;
+	color:#53a2e4;
 }
 ul.size-change li a:hover{
-	color:#0d4eac;
+	color:#53a2e4;
 }
 .dt-search-bar .search-input{
 	width: 233px;
@@ -1344,7 +1358,7 @@ div.word-change a{
 div.word-change em{
 	color:#cc0000;
 }
-/*语词知识部分*/
+/*=== section-title ===*/
 div.dt-section-title span{
 	font-family: MicrosoftYaHei;
 	font-size: 16px;
@@ -1378,5 +1392,251 @@ div.dt-section-title ul li a{
 	text-decoration: none;
 	padding:5px 10px 5px 10px;
 }
+/*语词知识部分*/
+#word-knowledge-content{
+	padding:22px 22px 22px 15px;
+	height:470px;
+}
+.word-table td{
+	width:80px;
+	border:1px solid #eeeeee;
+	text-align: center;
+	padding:5px;
+}
+.word-table{
+	margin-bottom: 15px;
+}
+#word-knowledge-content p{
+	font-size: 13px;
+	line-height: 26px;
+	color: #333333;
+	margin-top: 15px;
+	padding-left: 5px;
+	/*text-indent: 1em;*/
+}
+#word-knowledge-content p.word-source{
+	color:#6f6f6f;
+}
+p.word-graph{
+	padding-top: 15px;
+}
+p.word-graph span{
+	margin-right: 69px;
+	vertical-align: top;
+}
+.chart-operators{
+	float:right;
+}
+.chart-operators a{
+	line-height: 41px;
+	color: #2a416a;
+	text-decoration: none;
+	margin-left:15px;
+}
+.chart-operators a:hover{
+	color:#53a2e4;
+}
+/* 词链导图 section*/
+.chart-content{
+	padding:15px 0px 15px 22px;
+	color:#333333;
+	height:1082px;
+}
+.chart-control label{
+	width:115px;
+	text-align: left;
+	height:37px;
+}
+.checkbox-inline+.checkbox-inline, .radio-inline+.radio-inline{
+	margin-left: 0px;
+}
+.line-start{
+	font-weight: bold;
+	font-size: 15px;
+}
+.chart-content a{
+	color:#333333;
+	text-decoration: none;
+	margin-right: 40px;
+}
+.chart-content a:hover{
+	color:#53a2e4;
+}
+.chart{
+	width:500px;
+	height:500px;
+	background: url("../images/yck-4.jpg") no-repeat center;
+	margin:0 auto;
+}
+.word-tree{
+	padding-top:40px;
+}
+.word-tree-root{
+	width:120px;
+	height:280px;
+	float:left;
+	padding-top: 120px;
+}
+.word-tree-branches{
+	float:left;
+	height:280px;
+	width:700px;
+	border-radius: 10px;
+	border-left: 3px solid #50aac1;
+}
+.word-tree-start{
+	width:80px;
+	height:40px;
+	background-color: #50aac1;
+	color:white;
+	text-align: center;
+	border-radius: 5px;
+	line-height: 40px;
+	float:left;
+	font-size:16px;
+}
+.connector{
+	width:40px;
+	height:3px;
+	float:left;
+	position:relative;
+	top:17px;
+}
+.connector img{
+	position:absolute;
+	top:-5px;
+}
+.connector.root{
+	background-color: #50aac1; 
+}
+.branch{
+	width:100%;
+	height:50px;
+	position:relative;
+}
+.linker{
+	width:50px;
+	height:100%;
+	margin-left: -2px;
+}
+.branch.top .linker{
+	border-top-left-radius: 8px;
+}
+.branch.bottom .linker{
+	border-bottom-left-radius:8px;
+}
+#branch1 .linker,#branch3 .linker {
+	border-left:3px solid #a7e0c7;
+	border-top: 3px solid #a7e0c7;
+}
+#branch2 .linker{
+	border-left:3px solid #f2d107;
+	border-top: 3px solid #f2d107;
+}
+#branch4 .linker, #branch6 .linker{
+	border-left:3px solid #f2d107;
+	border-bottom: 3px solid #f2d107;
+}
+#branch4{margin-top: -20px}
+#branch5 .linker{
+	border-left:3px solid #a7e0c7;
+	border-bottom: 3px solid #a7e0c7;
+}
+.top .world-col{
+	position:absolute;
+	width:90px;
+	height:40px;
+	top:-18px;
+	left:45px;
+	color:white;
+	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+}
+.bottom .world-col{
+	position:absolute;
+	width:90px;
+	height:40px;
+	top:27px;
+	left:45px;
+	color:white;
+	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+}
+#branch1 .world-col, #branch3 .world-col,#branch5 .world-col{
+	background-color:#a7e0c7;
+}
+#branch2 .world-col, #branch4 .world-col,#branch6 .world-col{
+	background-color:#f2d107; 
+}
+.top .branch-connector{
+	width:30px;
+	height:1px;
+	background-color: grey;
+	position:absolute;
+	left:134px;
+	top:2px;
+}
+.branch-connector img{
+	position:absolute;
+	top:-6px;
+	left:8px;
+}
+.bottom .branch-connector{
+	width:30px;
+	height:1px;
+	background-color: grey;
+	position:absolute;
+	left:134px;
+	top:48px;
+}
+.top .branch-info{
+	width:400px;
+	border-bottom-left-radius: 15px;
+	border-bottom: 1px solid grey;
+	position:absolute;
+	top:-9px;
+	left:163px;
+	padding-left:20px;
+}
+.bottom .branch-info{
+	width:400px;
+	border-bottom-left-radius: 15px;
+	border-bottom: 1px solid grey;
+	position:absolute;
+	top:36px;
+	left:163px;
+	padding-left: 20px;
+}
+/* 少数民族语言知识 section */
+.lan-knowledge{
+	height:150px;
+}
+#lan-knowledge-content{
+	padding:22px 15px 22px 15px;
+}
+.lan-list li{
+	float:left;
+	line-height: 33px;
+	width:265px;
+	text-align: left;
+}
+.lan-list li a{
+	color: #2a416a;
+	text-decoration: none;
+}
+.lan-list li a:hover{
+	color:#6e90ff;
+}
+.lan-list .lan-list-icon{
+	width:10px;
+	height:10px;
+	background-color: grey;
+	float:left;
+	margin-top:10px;
+	margin-right: 20px;
+}
+/* 相关解释 section*/
 /*==== right侧边栏 end=====*/
 /*=================== 语词库条目内容结束 =====================

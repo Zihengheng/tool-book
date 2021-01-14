@@ -81,7 +81,7 @@ div.left-bar ul li{
 
 /*banner*/
 .banner-sm{
-	height:89px;
+	height:100px;
 	padding-top:14px;
 	background: url("../images/banner-bg2.jpg") no-repeat;
 	background-size: 100% 100%;
@@ -122,6 +122,24 @@ div.left-bar ul li{
 }
 .search-form{
 	margin-left: 20px;
+	margin-top:9px;
+}
+#type span{
+	line-height: 40px;
+}
+#search-type .sort-icon {
+	line-height: 40px;
+	font-size:12px;
+}
+.sort-list li{
+	height:37px;
+	line-height:37px;
+}
+.searchmain .btn-wildcard {
+	margin-top: 10px;
+}
+.sort-default .sort-icon{
+	line-height:27px;
 }
 .adv-search-btn{
 	margin-top: 10px;

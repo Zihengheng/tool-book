@@ -571,7 +571,7 @@
             <li><a href="#">[小]</a></li>
           </ul>
           <div class="dt-search-bar">
-            <input class="search-input" type="text" autocomplete="off" placeholder="请输入检索内容" value="请输入检索内容">
+            <input class="dt-input" type="text" autocomplete="off" placeholder="请输入检索内容" value="请输入检索内容">
             <button class="btn" id="search-book">查本书</button>
             <button class="btn" id="search-collection">查全辑</button>
           </div>
@@ -685,17 +685,284 @@
             </div>
             <div id="word-knowledge-content" class="tab-content">
               <div class="tab-pane fade" id="hanzi">
-                hanzi
+                <p>注音：</p>
+                <p>笔画：</p>
+                <p>笔画提示：</p>
+                <p class="word-source">来源：汉字形义演绎字典 四川出版集团&sdot;四川辞书出版社 2006-11</p>
               </div>
+              <!-- 汉字卡 end -->
               <div class="tab-pane fade" id="duoyin">
-                duoyin
+                <p>辩形：</p>
+                <p>辨义：</p>
+                <p>辨误：</p>
+                <p>注意：</p>
+                <p class="word-source">来源：汉字形义演绎字典 四川出版集团&sdot;四川辞书出版社 2006-11</p>
               </div>
+              <!-- 多音辨析 end -->
               <div class="tab-pane fade in active" id="xingyi">
-                xingyi
+                <table class="word-table">
+                  <tr><td>甲</td><td>金</td><td>篆</td><td>隶</td></tr>
+                  <tr><td></td><td><img src="images/yck-1.png" alt=""></td><td><img src="images/yck-2.png" alt=""></td><td></td></tr>
+                </table>
+                <p>【形义】金文和小篆左边是“言”，指跟人说话;右边是“吾”，即“我”。合起来， 我跟人言，表示谈论。《说文》：“语，论也。从言，吾声。”“语”的本义是“谈 论”。的本义是“谈 论”。</p>
+                <p class="word-source">来源：汉字形义演绎字典 四川出版集团&sdot;四川辞书出版社 2006-11</p>
+                <p class="word-graph">
+                  <span>字义发展图示</span>
+                  <img src="images/yck-3.png" alt="发展流程图">
+                </p>
+                <p class="word-source">来源：汉字形义演绎字典 四川出版集团&sdot;四川辞书出版社 2006-11</p>
               </div>
+              <!-- 形义演释 end -->
             </div>
         </div>
         <!-- 语词知识 section end -->
+
+        <!-- 词链导图 section start -->
+        <div class="word-chart">
+          <div class="dt-section-title">
+            <span>词链导图</span>
+            <div class="chart-operators">
+              <a>全选</a>
+              <a>删除</a>
+              <a>建立导图 >></a>
+            </div>
+          </div><!-- section-title -->
+          <div class="chart-content">
+            <div class="chart-control">
+              <label class="checkbox-inline line-start">
+                <input type="checkbox" id="class1" value="class1">汉语辞典
+              </label>
+               <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section1">源流
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section2">金文
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section3">虚词
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section4">通假
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section5">组词
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section6">造句
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section7">书证
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section8">辨析
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section9">方言
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section10">俗/熟语
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section11">谜语
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section12">楹联
+              </label>
+
+              <br><br>
+
+              <label class="checkbox-inline line-start">
+                <input type="checkbox" id="class2" value="class2">
+                少数民族语言
+              </label>
+               <label class="checkbox-inline">
+                <input type="checkbox" id="class2-section1">源流
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class2-section2">金文
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class2-section3">虚词
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class2-section4">通假
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class2-section5">组词
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class2-section6">造句
+              </label>
+              <br><br>
+              <a>导图1</a><a>导图2</a>
+            </div><!-- chart-control -->
+            <div class="chart"></div>
+            <div class="word-tree">
+              <div class="word-tree-root">
+                <div class="word-tree-start">源流</div>
+                <div class="connector root"><img src="images/minus.png" alt="minus"></div>
+              </div>
+              <div class="word-tree-branches">
+                <div class="branch top" id="branch1">
+                  <div class="linker"></div>
+                  <div class="world-col">字形</div>
+                  <div class="branch-connector">
+                    <img src="images/minus.png" alt="minus">
+                  </div>
+                  <div class="branch-info"><span>篆</span></div>
+                </div>
+                <div class="branch top" id="branch2">
+                  <div class="linker"></div>
+                  <div class="world-col"><span>构造</span></div>
+                  <div class="branch-connector">
+                    <img src="images/minus.png" alt="minus">
+                  </div>
+                  <div class="branch-info"><span>形声字，篆文从后...</span></div>
+                </div>
+                <div class="branch top" id="branch3">
+                  <div class="linker"></div>
+                  <div class="world-col">本义</div>
+                  <div class="branch-connector">
+                    <img src="images/minus.png" alt="minus">
+                  </div>
+                  <div class="branch-info"><span>形声字，篆文从后...</span></div>
+                </div>
+                <div class="branch bottom" id="branch4">
+                  <div class="linker"></div>
+                  <div class="world-col">演变</div>
+                  <div class="branch-connector">
+                    <img src="images/minus.png" alt="minus">
+                  </div>
+                  <div class="branch-info"><span>形声字，篆文从后...</span></div>
+                </div>
+                <div class="branch bottom" id="branch5">
+                  <div class="linker"></div>
+                  <div class="world-col">组字</div>
+                  <div class="branch-connector">
+                    <img src="images/minus.png" alt="minus">
+                  </div>
+                  <div class="branch-info"><span>形声字，篆文从后...</span></div>
+                </div>
+                <div class="branch bottom" id="branch6">
+                  <div class="linker"></div>
+                  <div class="world-col">相关辞书</div>
+                  <div class="branch-connector">
+                    <img src="images/minus.png" alt="minus">
+                  </div>
+                  <div class="branch-info"><span>形声字，篆文从后...</span></div>
+                </div>
+              </div><!-- word-tree-branches -->
+            </div><!-- word-tree -->
+          </div> <!-- chart-content -->
+        </div>
+        <!-- 词链导图 section end -->
+
+        <!-- 少数民族语言知识 section start -->
+        <div class="lan-knowledge">
+          <div class="dt-section-title">
+              <span>少数民族语言知识</span>
+              <ul id="lan-knowledge-tabs">
+                <li class="active">
+                  <a href="#lan1" data-toggle="tab">景颇语</a>
+                </li>
+                <li>
+                  <a href="#lan2" data-toggle="tab">塔吉克语</a>
+                </li>
+                <li>
+                  <a href="#lan3" data-toggle="tab">白语</a>
+                </li>
+                <li>
+                  <a href="#lan4" data-toggle="tab">苗语</a>
+                </li>
+                <li>
+                  <a href="#lan5" data-toggle="tab">满语</a>
+                </li>
+                <li>
+                  <a href="#lan6" data-toggle="tab">佤语</a>
+                </li>
+              </ul>
+            </div>
+            <div id="lan-knowledge-content" class="tab-content">
+              <div class="tab-pane fade in active" id="lan1">
+                <ul class="lan-list">
+                  <li><div class="lan-list-icon"></div><a href="#">景颇族姓氏简表</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇文字母表及声韵母表景</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">我国各民族名称人口和主要分布地区</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇语语法简况 </a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">颇语语音系统及文字表示法</a></li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="lan2">
+                <ul class="lan-list">
+                  <li><div class="lan-list-icon"></div><a href="#">景颇族姓氏简表</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇文字母表及声韵母表景</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">我国各民族名称人口和主要分布地区</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇语语法简况 </a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">颇语语音系统及文字表示法</a></li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="lan3">
+                <ul class="lan-list">
+                  <li><div class="lan-list-icon"></div><a href="#">景颇族姓氏简表</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇文字母表及声韵母表景</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">我国各民族名称人口和主要分布地区</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇语语法简况 </a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">颇语语音系统及文字表示法</a></li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="lan4">
+                <ul class="lan-list">
+                  <li><div class="lan-list-icon"></div><a href="#">景颇族姓氏简表</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇文字母表及声韵母表景</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">我国各民族名称人口和主要分布地区</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇语语法简况 </a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">颇语语音系统及文字表示法</a></li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="lan5">
+                <ul class="lan-list">
+                  <li><div class="lan-list-icon"></div><a href="#">景颇族姓氏简表</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇文字母表及声韵母表景</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">我国各民族名称人口和主要分布地区</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇语语法简况 </a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">颇语语音系统及文字表示法</a></li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="lan6">
+                <ul class="lan-list">
+                  <li><div class="lan-list-icon"></div><a href="#">景颇族姓氏简表</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇文字母表及声韵母表景</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">我国各民族名称人口和主要分布地区</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇语语法简况 </a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">颇语语音系统及文字表示法</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <!-- 少数民族语言知识 section end -->
+
+        <!-- 相关解释 section start -->
+        <div class="related-info">
+           <div class="dt-section-title">
+              <span>少数民族语言知识</span>
+              <ul id="related-info-tabs">
+                <li class="active">
+                  <a href="#yck" data-toggle="tab">语词库 </a>
+                </li>
+                <li>
+                  <a href="#jsk" data-toggle="tab">鉴赏库</a>
+                </li>
+                <li>
+                  <a href="#hyk" data-toggle="tab">行业库</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <!-- 相关解释 section end -->
+
+        <!-- 相关文章 section start -->
+        <!-- 相关文章 section end -->
+
       </div><!-- end of the dt-container -->
       </div>
       <!-- end of dt-rightbar -->
