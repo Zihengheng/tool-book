@@ -14,7 +14,7 @@
 }
 /*== footer 补丁 ==*/
 div.footer{
-	margin-top: 100px;
+	margin-top:0px;
 }
 .foot-bot{
 	padding-left: 214px;
@@ -48,7 +48,7 @@ ul.words-list p{
 	font-family: SimSun;
 	font-size: 12px;
 	line-height: 23px;
-	color: #555555;
+	color: #333333;
 	padding-top: 15px; 
 }
 /*===== 分页 ========*/
@@ -471,6 +471,9 @@ a.control-icon{
 }
 /*======= 书目导览 end =========*/
 /*======= 内容挖掘部分 start =========*/
+.dive-in{
+	height:1000px;
+}
 div.section-menu{
 	width:100%;
 	padding:0 15px 0 15px;
@@ -1091,7 +1094,7 @@ ul.breadcrumb li.active{
 /*left*/
 .dt-leftbar{
 	width:289px;
-	height:3111px;
+	height:3340px;
 	border-top: 1px solid #DCDCDC;
 	background-color: #fbfbfb;
 	float:left;
@@ -1365,6 +1368,7 @@ div.dt-section-title span{
 	line-height: 28px;
 	color: #2a416a;
 	line-height: 41px;
+	font-weight: bold;
 }
 div.dt-section-title ul{
 	float:right;
@@ -1552,8 +1556,10 @@ p.word-graph span{
 	line-height: 40px;
 	text-align: center;
 	font-size: 16px;
+	cursor: pointer;
 }
 .bottom .world-col{
+	cursor: pointer;
 	position:absolute;
 	width:90px;
 	height:40px;
@@ -1609,6 +1615,24 @@ p.word-graph span{
 	left:163px;
 	padding-left: 20px;
 }
+/*流程图选中样式*/
+div.world-col:hover{
+	transform: scale(1.1);
+	background-color:#827dbd !important;
+}
+div.world-col.cur{
+	transform: scale(1.1);
+	background-color:#827dbd !important;
+}
+div.world-col.cur + .branch-connector{
+	left:138px;
+}
+div.world-col.cur + .branch-connector +.branch-info{
+	left:167px;
+	border-bottom-left-radius:0px;
+	border:0px;
+	background-color: #c1bfdb;
+}
 /* 少数民族语言知识 section */
 .lan-knowledge{
 	height:150px;
@@ -1629,7 +1653,7 @@ p.word-graph span{
 .lan-list li a:hover{
 	color:#6e90ff;
 }
-.lan-list .lan-list-icon{
+.lan-list-icon{
 	width:10px;
 	height:10px;
 	background-color: grey;
@@ -1638,5 +1662,48 @@ p.word-graph span{
 	margin-right: 20px;
 }
 /* 相关解释 section*/
+.result-detail-list dd {
+	padding-right: 0;
+}
+p.abstract{
+	width:800px;
+	height:45px;
+	overflow: hidden;
+	/*white-space: nowrap;*/
+	text-overflow: ellipsis;
+}
+ul.basic-info {
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+.result-detail-list dd:hover{
+	background-color: white;
+}
+.related-info{
+	padding-bottom: 20px;
+}
+/* 相关文章section */
+.reference div.dt-section-title ul li{
+	width:105px;
+}
+ul.refer-list li{
+    font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	letter-spacing: 0px;
+	color: #555555;
+	line-height:35px;
+}
+ul.refer-list li em{
+	color:#2582f1;
+}
+#reference-content{
+	padding-top:35px;
+	padding-left: 15px;
+	height:400px;
+}
+.reference{
+	height:450px;
+}
 /*==== right侧边栏 end=====*/
 /*=================== 语词库条目内容结束 =====================

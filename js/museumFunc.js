@@ -67,7 +67,7 @@ $(function(){
         }
     });
 
-    //语词库条目页
+    //*****************************语词库条目页**********************
     //显示数学标签
     $('#nav1-sections a[href="#sx"]').tab('show')
     //边栏+-转换
@@ -103,4 +103,9 @@ $(function(){
         $("ul.dt-chapters li").removeClass("active");
     });
 
+    //词链导图效果
+    $(".world-col").click(function(){
+        $(this).addClass("cur");
+        $(this).parents(".branch").siblings(".branch").find(".world-col").removeClass("cur");
+    });
 });

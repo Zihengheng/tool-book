@@ -734,7 +734,55 @@ a.SinglePubMark{ color: #b92afb!important; }
 .result-detail-list .seq{ float: left; /*position: absolute; left:0; width: 80px;*/ padding-top: 3px; padding-left: 20px; /*margin-right: 10px;*/ text-align: center; color: #343434; font-size: 14px; /*font-family: "Times New Roman";*/ }
 .result-detail-list .seq i{ display: inline-block; vertical-align: middle; margin-left: 3px; font-style: normal; }
 .result-detail-list .middle{padding-left: 15px; padding-right: 15px; overflow: hidden; font-family: Arial,"Microsoft yehei"; }
-
+/*======== 结果列表 ==========*/
+.list-title{
+    line-height:36px;
+    font-family: MicrosoftYaHei, SimSun;
+    font-size:16px;
+    margin-top: -5px;
+}
+.list-title a .key{
+    color:#f96868;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.list-title span{
+    color: #2b4167;
+}
+p.abstract{
+    width: 878px;
+    height: 35px;
+    font-family: SimSun;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 23px;
+    letter-spacing: 0px;
+    color:black;
+    text-align: left;
+}
+ul.basic-info{
+    margin-top:24px;
+    width:900px;
+    margin-bottom: 48px;
+}
+ul.basic-info li{
+    float:left;
+    width:120px;
+    color:#696969;
+}
+ul.basic-info li a{
+    color:#696969;
+}
+.info-divider{
+    width:1px;
+    height:15px;
+    background-color:#a5adb8;
+    margin-right: 20px;
+    float:right;
+    margin-top: 2px;
+}
+/*======== end of 结果列表 ==========*/
 /*列表页*/
 .result-table-list{ width:100%; margin-top: 10px; font-size: 12px; /*text-align:center;*/ /*border: 1px solid #d1dff4;*/ background-color: #fff; table-layout:fixed; /*font-family: "微软雅黑";*/  }
 .result-table-list th { font-size:14px; color: #343434; line-height: 18px; font-weight:normal; text-align: center; background-color: #f2f2f2; }
