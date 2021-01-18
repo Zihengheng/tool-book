@@ -108,4 +108,13 @@ $(function(){
         $(this).addClass("cur");
         $(this).parents(".branch").siblings(".branch").find(".world-col").removeClass("cur");
     });
+
+    //***************************** 鉴赏库首页 **********************
+    //边栏+-转换
+    $('#appre-menu .panel-collapse').on('shown.bs.collapse', function () {
+       $(this).prev().find(".control-icon").text("-");
+    })
+    $('#appre-menu .panel-collapse').on('hidden.bs.collapse', function () {
+       $(this).prev().find(".control-icon").text("+");
+    })
 });

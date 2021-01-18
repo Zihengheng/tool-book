@@ -159,7 +159,7 @@ border-left:0;
 }
 .adv-search-btn{ 
   display:inline-block;
-  color: #6f6f6f;
+  color: #333333;
   margin-left: 18px;
   margin-top: 4px;
   font-size: 13px;
@@ -170,7 +170,7 @@ border-left:0;
 .search-nav .title{ float:left; margin-right: 5px; }
 .search-nav .nav-bar li{ float: left; margin-right: 20px; }
 .search-nav .title,
-.search-nav .nav-bar a{ color: #6f6f6f; font-size: 13px; }
+.search-nav .nav-bar a{ color: #333333; font-size: 13px; }
 .search-nav .icon{ display: inline-block; width: 9px; height: 7px; margin-left: 4px; background: url("../images/icon-dropbox.png") no-repeat 0 -23px; *vertical-align: middle; }
 .search-nav .cur a{ color:#f96; }
 .search-nav .cur .icon{ font-size: 16px; color:#f96968; font-weight: bold; background-position: 0 -30px; }
