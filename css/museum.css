@@ -270,8 +270,11 @@ li.rec3{
 /*=================== 语词库主要内容开始 =====================* /
 /*======= 书目导览 start =========* /
 /*info bar*/
+.msm-header.yck{
+	height:427px;
+}
 div.info-bar{
-	height:39px;
+	height:45px;
 	width:100%;
 	border-bottom: 1px solid  #eeeeee;
 }
