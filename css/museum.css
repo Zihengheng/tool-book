@@ -2105,3 +2105,53 @@ dl.nav-sections ul.nav-sections li{
 	height:3200px;
 }
 /*========================= 行业库 end =========================*/
+/*========================= 附录库 start =========================*/
+#flk-banner{
+	background: url("../images/flk_banner.jpg") no-repeat;
+}
+.appendix-col{
+	float:left;
+	width: 380px;
+	height: 1084px;
+	border: solid 1px #e5e5e5;
+	margin-bottom:50px;
+	margin-top: 10px;
+	overflow-y: scroll;
+}
+.appendix-col.left-col{
+	margin-right: 30px;
+}
+.appendix-col-tit{
+	height:55px;
+	line-height:55px;
+	width:100%;
+	border-bottom: 1px solid #e5e5e5;
+	text-align: center;
+	font-family: MicrosoftYaHei;
+	font-size: 16px;
+	font-weight: bold;
+	color: #d83b39;
+}
+.apd-content-container{
+	padding:30px 20px;
+}
+.apd-content-container p{
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	line-height: 33px;
+	color: #333333;
+}
+.apd-content-container em{
+	color:#d83b39;
+}
+.apd-list-item p{
+	padding-left: 22px;
+	font-family: MicrosoftYaHei;
+	font-size: 13px;
+	line-height: 33px;
+	color: #333333;
+}
+/*========================= 附录库 end =========================*/
+/*========================= 附录库条目页 start ==================*/
+
+/*========================= 附录库条目页 end ==================*/
