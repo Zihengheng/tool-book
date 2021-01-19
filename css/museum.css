@@ -12,6 +12,8 @@
 	/*设置版心*/
 	padding:0;
 }
+.main-content{
+}
 /*== footer 补丁 ==*/
 div.footer{
 	margin-top:0px;
@@ -1098,7 +1100,7 @@ ul.breadcrumb li.active{
 /*left*/
 .dt-leftbar{
 	width:289px;
-	height:3340px;
+	height:4100px;
 	border-top: 1px solid #DCDCDC;
 	background-color: #fbfbfb;
 	float:left;
@@ -1203,7 +1205,6 @@ ul.size-change li a:hover{
 .dt-book-navbar{
 	width:100%;
 	margin-top: 30px;
-	height:380px;
 }
 .dt-book-navbar .panel{
 	background: none;
@@ -1235,8 +1236,9 @@ ul.dt-chapters a{
 	border:0;
 }
 .dt-book-navbar div.panel-body{
-	max-height:200px;
-	overflow: scroll;
+	/*max-height:200px;*/
+	/*overflow-y:scroll;*/
+	overflow-x: hidden;
 	border:0;
 }
 ul.nav-sections li{
@@ -1254,7 +1256,6 @@ ul.nav-sections li a{
 	line-height: 36px;
 	letter-spacing: 0px;
 	color: #2a3f6a;
-	padding-right: 100px;
 }
 ul.nav-sections li.active{
 	background-color: #f3f7fa;
@@ -1310,8 +1311,7 @@ div.chi-list ul li a{
 
 /*==== right侧边栏 start=====*/
 #word-intro{
-	height:430px;
-	overflow: scroll;
+	padding-bottom: 42px;
 }
 div.dt-container{
 	padding-left: 30px;
@@ -1349,6 +1349,7 @@ div.dt-section-title{
 }
 .intro-source{
 	margin-top: 50px;
+	color:#333;
 }
 div.word-change{
 	padding-top: 50px;
@@ -1401,9 +1402,11 @@ div.dt-section-title ul li a{
 	padding:5px 10px 5px 10px;
 }
 /*语词知识部分*/
+.word-knowledge{
+	padding-bottom:22px;
+}
 #word-knowledge-content{
 	padding:22px 22px 22px 15px;
-	height:470px;
 }
 .word-table td{
 	width:80px;
@@ -1639,10 +1642,10 @@ div.world-col.cur + .branch-connector +.branch-info{
 }
 /* 少数民族语言知识 section */
 .lan-knowledge{
-	height:150px;
 }
 #lan-knowledge-content{
-	padding:22px 15px 22px 15px;
+	padding:32px 15px 22px 22px;
+	height:124px;
 }
 .lan-list li{
 	float:left;
@@ -1678,13 +1681,24 @@ p.abstract{
 }
 ul.basic-info {
 	margin-top:10px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 .result-detail-list dd:hover{
 	background-color: white;
 }
 .related-info{
 	padding-bottom: 20px;
+}
+.pic-list li{
+	float:left;
+    width: 96px;
+    height: 94px;
+    padding: 1px;
+    text-align: center;
+    line-height: 94px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    margin-right: 20px;
 }
 /* 相关文章section */
 .reference div.dt-section-title ul li{
@@ -1987,7 +2001,8 @@ div.img-box-img{
 }
 /*pics*/
 .jsk-resouces{
-	height:995px;
+	/*height:995px;*/
+	padding-bottom: 36px;
 }
 #jsk-resouces-content{
 	padding-top: 16px;
@@ -2018,11 +2033,75 @@ div.img-box-img{
 	color:#333333;
 }
 .dt-leftbar.jsk{
-	height:3380px;
+	height:4200px;
 }
 /*======================= 鉴赏库条目 end =======================*/
 /*========================= 行业库 start =========================*/
 #hyk-banner{
 	background: url("../images/hyk_banner.jpg") no-repeat;
+}
+.nav-section-title{
+   height: 32px;
+}
+.nav-section-title span{
+	font-family: MicrosoftYaHei;
+	font-size:14px;
+	font-weight:bold;
+	line-height: 32px;
+	color: #2a3f6a;
+	margin-left: 15px;
+}
+dl.nav-sections dd{
+	padding-left: 20px;
+}
+dl.nav-sections ul.nav-sections li{
+	padding-left:34px;
+}
+#prof-intro{
+	padding:36px 10px 36px 10px;
+}
+#prof-intro .word-change{
+	width:368px;
+}
+.prof-tit{
+	font-family: MicrosoftYaHei;
+	font-size: 30px;
+	font-weight: normal;
+	line-height: 36px;
+	color: #cc0000;
+}
+.prof-info-bar{
+	float:right;
+	margin-top:6px;
+	margin-right:280px;
+}
+.prof-info-bar span{
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	line-height: 36px;
+	color: #000000;
+}
+.prof-inter{
+	margin-top: 36px;
+}
+.prof-inter p{
+	text-indent:2em;
+	font-family: MicrosoftYaHei;
+	font-size: 15px;
+	line-height: 42px;
+	color: #333333;
+}
+.prof-keep-content{
+	padding:42px 22px 42px 22px;
+}
+.prof-keep-content{
+	font-family: MicrosoftYaHei;
+	font-size: 15px;
+	line-height: 36px;
+	color: #333333;
+	text-indent: 2em;
+}
+.dt-leftbar.prof{
+	height:3200px;
 }
 /*========================= 行业库 end =========================*/
