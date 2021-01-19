@@ -12,7 +12,6 @@ div.footer{
 }
 div.search-result{
 	width: 938px;
-	height: 1800px;
 	background-color: #ffffff;
 	box-shadow: 0px 5px 4px 0px 
 		rgba(246, 246, 246, 0.58);
@@ -270,7 +269,7 @@ div.order-group i.as-ds{
 }
 p.abstract{
 	width: 878px;
-	height: 35px;
+	height: 45px;
 	font-family: SimSun;
 	font-size: 12px;
 	font-weight: normal;
@@ -281,9 +280,11 @@ p.abstract{
 	text-align: left;
 }
 ul.basic-info{
-	margin-top:24px;
+	margin-top:15px;
 	width:900px;
-	margin-bottom: 48px;
+	height:33px;
+	line-height: 33px;
+	margin-bottom: 0px;
 }
 ul.basic-info li{
 	float:left;
@@ -300,6 +301,21 @@ ul.basic-info li a{
 	margin-right: 20px;
 	float:right;
 	margin-top: 2px;
+}
+.pic-list li{
+	float:left;
+    width: 96px;
+    height: 94px;
+    padding: 1px;
+    text-align: center;
+    line-height: 94px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.result-detail-list dd{
+	padding-bottom:20px;
 }
 /*======== end of 结果列表 ==========*/
 

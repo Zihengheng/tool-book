@@ -27,14 +27,55 @@ div.b{
 div.t{
 	margin-left: -111px;
 }
+/* 相关解释 section*/
+.result-detail-list dd {
+	padding-right: 0;
+}
+p.abstract{
+	width:800px;
+	height:45px;
+	overflow: hidden;
+	/*white-space: nowrap;*/
+	text-overflow: ellipsis;
+}
+ul.basic-info {
+	margin-top:10px;
+	margin-bottom: 20px;
+}
+.result-detail-list dd:hover{
+	background-color: white;
+}
+.related-info{
+	padding-bottom: 20px;
+}
+.pic-list li{
+	float:left;
+    width: 96px;
+    height: 94px;
+    padding: 1px;
+    text-align: center;
+    line-height: 94px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.words-list .pic-list li{
+	float:left;
+    width: 96px;
+    height: 94px;
+    padding: 1px;
+    text-align: center;
+    line-height: 94px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    margin-right: 20px;
+}
 /*===== end of 通用结构 ======*/
 /*======= 书目栏目词列表 ========*/
 ul.words-list li{
 	width:100%;
 	border-bottom: solid 1px #e2ecf1;
-	height:100px;
-	padding-top: 20px;
-	padding-left: 20px;
+	padding:20px;
 }
 ul.words-list li:hover{
 	/*background-color: #f8f8f8;*/
@@ -49,12 +90,13 @@ ul.words-list li:hover{
 ul.words-list p{
 	font-family: SimSun;
 	font-size: 12px;
-	line-height: 23px;
+	line-height: 40px;
 	color: #333333;
-	padding-top: 15px; 
+	height:40px;
 }
 /*===== 分页 ========*/
-.pagination{
+.pagination.msm li a{
+	padding:5px 10px;
 }
 .pagination li{
 	display:block;
@@ -80,7 +122,7 @@ ul.words-list p{
 	margin-left: 20px;
 }
 div.pn-container{
-	width:600px;
+	width:540px;
 	margin:0 auto;
 }
 /*===== section input ========*/
@@ -477,6 +519,11 @@ p.intro span{
 a.control-icon{
 	text-decoration: none;
 	font-size: 18px;
+}
+#yck-menu .panel-body{
+	max-height: 400px;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 /*======= 书目导览 end =========*/
 /*======= 内容挖掘部分 start =========*/
@@ -1076,6 +1123,9 @@ div.rst-flip{
 
 /*=================== 语词库条目内容开始 =====================*/
 /*===== 标题栏 =====*/
+.dt-leftbar.yck{
+	height:4600px;
+}
 .msm-banner.dt-page{
 	height:333px;
 }
@@ -1314,7 +1364,7 @@ div.chi-list ul li a{
 
 /*==== right侧边栏 start=====*/
 #word-intro{
-	padding-bottom: 42px;
+	padding-bottom: 22px;
 }
 div.dt-container{
 	padding-left: 30px;
@@ -1671,38 +1721,7 @@ div.world-col.cur + .branch-connector +.branch-info{
 	margin-top:10px;
 	margin-right: 20px;
 }
-/* 相关解释 section*/
-.result-detail-list dd {
-	padding-right: 0;
-}
-p.abstract{
-	width:800px;
-	height:45px;
-	overflow: hidden;
-	/*white-space: nowrap;*/
-	text-overflow: ellipsis;
-}
-ul.basic-info {
-	margin-top:10px;
-	margin-bottom: 20px;
-}
-.result-detail-list dd:hover{
-	background-color: white;
-}
-.related-info{
-	padding-bottom: 20px;
-}
-.pic-list li{
-	float:left;
-    width: 96px;
-    height: 94px;
-    padding: 1px;
-    text-align: center;
-    line-height: 94px;
-    border: 1px solid #ccc;
-    overflow: hidden;
-    margin-right: 20px;
-}
+
 /* 相关文章section */
 .reference div.dt-section-title ul li{
 	width:105px;
@@ -1738,7 +1757,8 @@ ul.refer-list li em{
 }
 #appre-menu .panel-body{
 	max-height:397px;
-	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 .sub-highlighter{
 	float:left;
@@ -1891,8 +1911,32 @@ ul.refer-list li em{
 	letter-spacing: 0px;
 	color: #cc0000;
 }
-.jsk-img-box.left-box img{
-	margin-top: 12px;
+.jsk-img{
+	float:left;
+	width:196px;
+	height:169px;
+	background-color: pink;
+	margin-left:10px;
+	margin-top:12px;
+}
+#jsk-img1, #jsk-img3{
+	margin-right: 60px;
+}
+#jsk-img1{
+	background: url("../images/jsk-1.png") no-repeat;
+	background-position: 0 0;
+}
+#jsk-img2{
+	background: url("../images/jsk-1.png") no-repeat;
+	background-position: -253px 0px;
+}
+#jsk-img3{
+	background: url("../images/jsk-1.png") no-repeat;
+	background-position: 0px -186px;
+}
+#jsk-img4{
+	background: url("../images/jsk-1.png") no-repeat;
+	background-position: -253px -186px;
 }
 .img-intro{
 	float:left;
@@ -1955,7 +1999,7 @@ div.img-box-img{
 	color: #666666;
 	margin-left: 20px;
 }
-.pinfo-bar em{
+.pinfo-bar em, .pinfo-bar em a{
 	color:#2a3f6a;
 }
 .ptext{
