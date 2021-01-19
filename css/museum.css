@@ -1298,15 +1298,15 @@ ul.nav-sections li{
 	display: block;
 	position: relative;
 	width:100%;
-	line-height: 36px;
+	line-height: 40px;
 	padding-left: 28px;
 	cursor: pointer;
 }
 ul.nav-sections li a{
 	text-decoration: none;
 	font-family: SimSun;
-	font-size: 13px;
-	line-height: 36px;
+	font-size: 14px;
+	line-height:40px;
 	letter-spacing: 0px;
 	color: #2a3f6a;
 }
@@ -1315,6 +1315,10 @@ ul.nav-sections li.active{
 }
 ul.nav-sections li:hover{
 	background-color: #f3f7fa;
+}
+ul.nav-sections li.active a,
+ul.nav-sections li:hover a {
+	font-weight: bold;
 }
 ul.dt-chapters li.active a{
 	font-size: 20px;
@@ -2200,5 +2204,46 @@ dl.nav-sections ul.nav-sections li{
 }
 /*========================= 附录库 end =========================*/
 /*========================= 附录库条目页 start ==================*/
-
+#apd-nav{
+	padding:10px 15px 22px 15px;
+	border-bottom:1px solid #e3ecf1;  
+}
+.grammar-intro-container{
+	padding:42px 15px;
+}
+.gram-intro-tit{
+	font-size: 30px;
+	line-height: 36px;
+	color: #cc0000;
+}
+.gram-subtit{
+	font-size:18px;
+	font-weight: bold;
+	line-height:33px;
+	color: #2c3f6a;
+	margin-top: 38px;
+}
+#apd-nav ul.nav-sections li{
+	height:40px;
+	line-height:40px;
+}
+.gram-tips{
+	padding-left: 15px;
+	margin-top: 38px;
+	font-size:16px;
+	line-height:32px;
+	color: #333333;
+	padding-left: 33px;
+	font-family: MicrosoftYaHei
+}
+.gram-tips em{
+	display: block;
+	color:#2c3f6a;
+	font-weight: bold;
+	line-height:33px;
+	font-family: MicrosoftYaHei;
+}
+.dt-leftbar.apd{
+	height:1767px;
+}
 /*========================= 附录库条目页 end ==================*/

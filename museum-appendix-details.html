@@ -1,0 +1,656 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>附录库进入条目页</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- others -->
+  <link rel="stylesheet" type="text/css" href="css/public.css">
+   <link rel="stylesheet" type="text/css" href="css/layout.css">
+  <link rel="stylesheet" type="text/css" href="css/museum.css">
+  <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.input.js"></script>
+  <!--输入框事件-->
+  <script type="text/javascript" src="js/homePage.js"></script>
+  <script type="text/javascript" src="js/init.js"></script>
+  <script type="text/javascript" src="js/museumFunc.js"></script>
+</head>
+
+<body>
+  <div class="msm-header">
+    <div class="msm-topbar">
+      <div class="container">
+        <div class="topbar-left">
+          <ul class="navbar-nav">
+            <li><a href="#">中国知网</a></li>
+            <li><a href="#">工具书首页</a></li>
+            <li><a href="#">语词库</a></li>
+            <li><a href="#">鉴赏库</a></li>
+            <li><a href="#">行业库</a></li>
+            <li><a href="#">附录库</a></li>
+            <li><a href="#">书目导览</a></li>
+            <li><a href="#">旧版</a></li>
+          </ul>
+        </div><!-- end of the topbar-left -->
+        <div class="topbar-right pull-right">
+          <ul class="navbar-nav">
+            <li><a href="#">注册</a></li>
+            <li class="login"><a href="#" id="jg-login">机构登陆</a></li>
+            <li class="login"><a href="#" id="gr-login">个人登陆</a></li>
+            <li><a href="#">个人书房</a></li>
+          </ul>
+        </div><!-- end of the topbar-right -->
+      </div><!-- end of the container -->
+    </div><!-- end of the msm top-bar -->
+    <div class="msm-banner dt-page" id="flk-banner">
+      <div class="container">
+        <h1 class="ysk-title">附录库</h1>
+        <div class="yck-search-box">
+           <div class="searchmain">
+          <div class="search-form">
+          <div class="sort" id="search-type">
+              <div class="sort-default" id="type">
+                <span>全文</span>
+                <i class="sort-icon" id="first">▼</i>
+              </div>
+              <ul class="sort-list" style="display: none;">
+                <li class="cur"><a href="javascript:void(0);">全文</a></li>
+                <li><a href="javascript:void(0);">条头</a></li>
+                <li><a href="javascript:void(0);">书目</a></li>
+                <li><a href="javascript:void(0);">图片</a></li>
+                <li><a href="javascript:void(0);">表格</a></li>
+                <li><a href="javascript:void(0);">人物</a></li>
+              </ul>
+            </div>
+          <div class="input-box">
+            <input class="search-input" type="text" autocomplete="off" placeholder="请输入检索词···" value="请输入检索词···" maxlength="100">
+            <a class="btn-wildcard" href="javascript:void(0);" data-toggle="tooltip" title="通配符”?”代表该位置有且仅有1个字符（=1），如检索“?细胞”可检出“红细胞”、“白细胞”。通配符可放在检索词任意位置，可组合使用，如“细?胞*”可检出“细菌胞质素”。">?</a>
+            <a class="btn-wildcard" href="javascript:void(0);" data-toggle="tooltip" title="通配符”*”代表该位置有任意个字符（≥0），如检索“*细胞”可检出“细胞”、“红细胞”、“白细胞”、“巨噬细胞”等。通配符可放在检索词任意位置，可组合使用，如“细?胞*”可检出“细菌胞质素”。">*</a>
+
+            <div class="sort">
+              <div class="sort-default">
+                <span>精确</span>
+                <i class="sort-icon">▼</i>
+              </div>
+              <ul class="sort-list" style="display: none;">
+                <li class="cur"><a href="javascript:void(0);">精确</a></li>
+                <li><a href="javascript:void(0);">模糊</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <input class="search-btn" type="button" value="检索">
+          <div class="adv-group">
+          <a class="adv-search-btn" href="#" target="_blank">翻译助手 &gt;&gt;</a>
+          <br>
+          <a class="adv-search-btn" href="#" target="_blank">高级检索 &gt;&gt;</a>
+          </div><!-- end of the adv-group -->
+        </div><!--search-form-->
+
+        <div class="search-nav">
+          <span class="title">输入助手：</span>
+          <ul class="nav-bar">
+            <li><a href="javascript:void(0);">部首<i class="icon"></i></a></li>
+            <li><a href="javascript:void(0);">笔画<i class="icon"></i></a></li>
+            <li><a href="javascript:void(0);">拼音<i class="icon"></i></a></li>
+             <li><a href="javascript:void(0);">通配符说明<i class="icon"></i></a></li>
+          </ul>
+        </div><!--search-nav-->
+
+        <div class="drop-box">
+          <a href="javascript:;" class="close"></a>
+          <div class="bg-color"></div>
+          <div class="subnav-container">
+            <div class="unit bushou">
+              <h5>部首导航</h5>
+              <ul class="menu">
+                <li><a href="javascript:void(0);">1</a></li>
+                <li><a href="javascript:void(0);">2</a></li>
+                <li><a href="javascript:void(0);">3</a></li>
+                <li><a href="javascript:void(0);">4</a></li>
+                <li><a href="javascript:void(0);">5</a></li>
+                <li><a href="javascript:void(0);">6</a></li>
+                <li><a href="javascript:void(0);">7</a></li>
+                <li><a href="javascript:void(0);">8</a></li>
+                <li><a href="javascript:void(0);">9</a></li>
+                <li><a href="javascript:void(0);">10</a></li>
+                <li><a href="javascript:void(0);">11</a></li>
+                <li><a href="javascript:void(0);">12</a></li>
+                <li><a href="javascript:void(0);">13</a></li>
+                <li><a href="javascript:void(0);">14</a></li>
+                <li><a href="javascript:void(0);">15</a></li>
+              </ul><!--menu-->
+
+              <div class="submenu-box">
+                <ul class="submenu">
+                  <li><a href="javascript:void(0);">一</a></li>
+                  <li><a href="javascript:void(0);">丨</a></li>
+                  <li><a href="javascript:void(0);">亅</a></li>
+                  <li><a href="javascript:void(0);">丿</a></li>
+                  <li><a href="javascript:void(0);">丶</a></li>
+                  <li><a href="javascript:void(0);">乛</a></li>
+                  <li><a href="javascript:void(0);">乙</a></li>
+                  <li><a href="javascript:void(0);">乚</a></li>
+                </ul><!--submenu-->
+                <div class="thirdmenu-box">
+                  <ul class="thirdmenu">
+                    <li><a href="javascript:void(0);">1</a></li>
+                    <li><a href="javascript:void(0);">2</a></li>
+                    <li><a href="javascript:void(0);">3</a></li>
+                    <li><a href="javascript:void(0);">4</a></li>
+                    <li><a href="javascript:void(0);">5</a></li>
+                    <li><a href="javascript:void(0);">6</a></li>
+                    <li><a href="javascript:void(0);">7</a></li>
+                    <li><a href="javascript:void(0);">8</a></li>
+                  </ul>
+                  <div class="fourthmenu-box">
+                    <ul class="fourthmenu">
+                      <li><a href="javascript:void(0);">兀</a></li>
+                      <li><a href="javascript:void(0);">无</a></li>
+                      <li><a href="javascript:void(0);">丨</a></li>
+                      <li><a href="javascript:void(0);">卡</a></li>
+                      <li><a href="javascript:void(0);">卡</a></li>
+                      <li><a href="javascript:void(0);">卥</a></li>
+                      <li><a href="javascript:void(0);">临</a></li>
+                      <li><a href="javascript:void(0);">中</a></li>
+                      <li><a href="javascript:void(0);">串</a></li>
+                      <li><a href="javascript:void(0);">串</a></li>
+                      <li><a href="javascript:void(0);">丳</a></li>
+                      <li><a href="javascript:void(0);">丯</a></li>
+                      <li><a href="javascript:void(0);">丬</a></li>
+                      <li><a href="javascript:void(0);">丫</a></li>
+                      <li><a href="javascript:void(0);">丮</a></li>
+                      <li><a href="javascript:void(0);">丩</a></li>
+                      <li><a href="javascript:void(0);">丱</a></li>
+                    </ul>
+                  </div>
+
+                </div><!--thirdmenu-box-->
+              </div><!--submenu-box-->
+
+              <div class="result-box">
+                <table cellpadding="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                    <td rowspan="2" class="hz">无</td>
+                    <td><b>汉字：</b>无</td>
+                    <td><b>部首：</b>一</td>
+                    <td><b>笔画数：</b>4</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="py"><b>拼音：</b>mó;wú</td>
+                    <td>
+                      <b>五笔：</b>fqv
+                      <a class="btn-more" href="javascript:void(0);" >more&nbsp;&gt;&gt;</a>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+
+                <div class="result-more">
+                  <p><span class="tit">基本内容：</span>无 （無） wú 没有，与“有”相对；不：无辜。无偿。无从（没有门径或找不到头绪）。无度。无端（无缘无故）。无方（不得法，与“有方”相对）。无非（只，不过）。无动于衷。无所适从。 有 笔画数：4； 部首：一； 笔顺编号：1135</p>
+                  <p><span class="tit">详细内容：</span>无 無 mó ——“南无”(nāmó):佛教用语,表示对佛尊敬或皈依 另见wú 无 無 wú 【名】 (会意。据甲骨文字形,象一个人持把在跳舞。卜辞、金文中“无、舞”同字。本义:乐舞) 同本义〖singanddance〗 哲学范畴,指无形、无名、虚无等,或指物质的隐微状态〖nihility〗 天下万物生于有,有生于无。——《老子》 无 無 wú 【动】 没有,跟“有”相对〖nothave;thereisnot〗 无,不有也。</p>
+                  <p><span class="tit">相关单词：</span>爱憎无常;安然无事;安然无恙;安忍无亲;坐无虚席;坐无公车作辍无常;坐帐无鹤;尊无二上;走投无路;</p>
+                  <p><span class="tit">相关成语：</span>案无留牍;黯淡无光;黯然无色;傲慢无礼;白璧无瑕;白玉无瑕;变幻无穷;变幻无常;兵无常势;百无一成;百无一是;卑鄙无耻;别来无恙;别无二致;秉公无私;搏手无策;苍白无力;不识之无;策无遗算;茶饭无心</p>
+                </div>
+              </div><!--result-box-->
+
+            </div><!--bushou end-->
+
+            <div class="unit bihua">
+              <h5>笔画导航</h5>
+              <ul class="menu">
+                <li><a href="javascript:void(0);">1</a></li>
+                <li><a href="javascript:void(0);">2</a></li>
+                <li><a href="javascript:void(0);">3</a></li>
+                <li><a href="javascript:void(0);">4</a></li>
+                <li><a href="javascript:void(0);">5</a></li>
+                <li><a href="javascript:void(0);">6</a></li>
+                <li><a href="javascript:void(0);">7</a></li>
+                <li><a href="javascript:void(0);">8</a></li>
+                <li><a href="javascript:void(0);">9</a></li>
+                <li><a href="javascript:void(0);">10</a></li>
+                <li><a href="javascript:void(0);">11</a></li>
+                <li><a href="javascript:void(0);">12</a></li>
+                <li><a href="javascript:void(0);">13</a></li>
+                <li><a href="javascript:void(0);">14</a></li>
+                <li><a href="javascript:void(0);">15</a></li>
+                <li><a href="javascript:void(0);">16</a></li>
+                <li><a href="javascript:void(0);">17</a></li>
+                <li><a href="javascript:void(0);">18</a></li>
+                <li><a href="javascript:void(0);">19</a></li>
+                <li><a href="javascript:void(0);">20</a></li>
+                <li><a href="javascript:void(0);">21</a></li>
+                <li><a href="javascript:void(0);">22</a></li>
+                <li><a href="javascript:void(0);">23</a></li>
+                <li><a href="javascript:void(0);">24</a></li>
+                <li><a href="javascript:void(0);">25以上</a></li>
+              </ul><!--menu-->
+
+              <div class="submenu-box">
+                <ul class="submenu">
+                  <li><a href="javascript:void(0);">卍</a></li>
+                  <li><a href="javascript:void(0);">分</a></li>
+                  <li><a href="javascript:void(0);">乥</a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);">亖</a></li>
+                  <li><a href="javascript:void(0);">丰</a></li>
+                  <li><a href="javascript:void(0);">王</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">开</a></li>
+                  <li><a href="javascript:void(0);">天</a></li>
+                  <li><a href="javascript:void(0);">夫</a></li>
+                  <li><a href="javascript:void(0);">无</a></li>
+                  <li><a href="javascript:void(0);">分</a></li>
+                  <li><a href="javascript:void(0);">乥</a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);">亖</a></li>
+                  <li><a href="javascript:void(0);">丰</a></li>
+                  <li><a href="javascript:void(0);">王</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">开</a></li>
+                  <li><a href="javascript:void(0);">天</a></li>
+                  <li><a href="javascript:void(0);">夫</a></li>
+                  <li><a href="javascript:void(0);">分</a></li>
+                  <li><a href="javascript:void(0);">乥</a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);">亖</a></li>
+                  <li><a href="javascript:void(0);">丰</a></li>
+                  <li><a href="javascript:void(0);">王</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">开</a></li>
+                  <li><a href="javascript:void(0);">天</a></li>
+                  <li><a href="javascript:void(0);">夫</a></li>
+
+                </ul><!--submenu-->
+              </div><!--submenu-box-->
+
+              <div class="result-box">
+                <table cellpadding="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                    <td rowspan="2" class="hz">无</td>
+                    <td><b>汉字：</b>无</td>
+                    <td><b>部首：</b>一</td>
+                    <td><b>笔画数：</b>4</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="py"><b>拼音：</b>mó;wú</td>
+                    <td>
+                      <b>五笔：</b>fqv
+                      <a class="btn-more" href="javascript:void(0);" >more&nbsp;&gt;&gt;</a>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+
+                <div class="result-more">
+                  <p><span class="tit">基本内容：</span>无 （無） wú 没有，与“有”相对；不：无辜。无偿。无从（没有门径或找不到头绪）。无度。无端（无缘无故）。无方（不得法，与“有方”相对）。无非（只，不过）。无动于衷。无所适从。 有 笔画数：4； 部首：一； 笔顺编号：1135</p>
+                  <p><span class="tit">详细内容：</span>无 無 mó ——“南无”(nāmó):佛教用语,表示对佛尊敬或皈依 另见wú 无 無 wú 【名】 (会意。据甲骨文字形,象一个人持把在跳舞。卜辞、金文中“无、舞”同字。本义:乐舞) 同本义〖singanddance〗 哲学范畴,指无形、无名、虚无等,或指物质的隐微状态〖nihility〗 天下万物生于有,有生于无。——《老子》 无 無 wú 【动】 没有,跟“有”相对〖nothave;thereisnot〗 无,不有也。</p>
+                  <p><span class="tit">相关单词：</span>爱憎无常;安然无事;安然无恙;安忍无亲;坐无虚席;坐无公车作辍无常;坐帐无鹤;尊无二上;走投无路;</p>
+                  <p><span class="tit">相关成语：</span>案无留牍;黯淡无光;黯然无色;傲慢无礼;白璧无瑕;白玉无瑕;变幻无穷;变幻无常;兵无常势;百无一成;百无一是;卑鄙无耻;别来无恙;别无二致;秉公无私;搏手无策;苍白无力;不识之无;策无遗算;茶饭无心</p>
+                </div>
+              </div><!--result-box-->
+            </div>
+
+            <div class="unit pinyin">
+              <h5>拼音导航</h5>
+              <ul class="menu">
+                <li><a href="javascript:void(0);">a</a></li>
+                <li><a href="javascript:void(0);">b</a></li>
+                <li><a href="javascript:void(0);">c</a></li>
+                <li><a href="javascript:void(0);">ch</a></li>
+                <li><a href="javascript:void(0);">d</a></li>
+                <li><a href="javascript:void(0);">e</a></li>
+                <li><a href="javascript:void(0);">f</a></li>
+                <li><a href="javascript:void(0);">g</a></li>
+                <li><a href="javascript:void(0);">h</a></li>
+                <li><a href="javascript:void(0);">j</a></li>
+                <li><a href="javascript:void(0);">k</a></li>
+                <li><a href="javascript:void(0);">l</a></li>
+                <li><a href="javascript:void(0);">m</a></li>
+                <li><a href="javascript:void(0);">n</a></li>
+                <li><a href="javascript:void(0);">o</a></li>
+                <li><a href="javascript:void(0);">q</a></li>
+                <li><a href="javascript:void(0);">r</a></li>
+                <li><a href="javascript:void(0);">s</a></li>
+                <li><a href="javascript:void(0);">sh</a></li>
+                <li><a href="javascript:void(0);">t</a></li>
+                <li><a href="javascript:void(0);">w</a></li>
+                <li><a href="javascript:void(0);">x</a></li>
+                <li><a href="javascript:void(0);">y</a></li>
+                <li><a href="javascript:void(0);">z</a></li>
+                <li><a href="javascript:void(0);">zh</a></li>
+              </ul><!--menu-->
+
+              <div class="submenu-box">
+                <ul class="submenu">
+                  <li><a href="javascript:void(0);">wa</a></li>
+                  <li><a href="javascript:void(0);">wai</a></li>
+                  <li><a href="javascript:void(0);">wan</a></li>
+                  <li><a href="javascript:void(0);">wang</a></li>
+                  <li><a href="javascript:void(0);">wei</a></li>
+                  <li><a href="javascript:void(0);">wen</a></li>
+                  <li><a href="javascript:void(0);">weng</a></li>
+                  <li><a href="javascript:void(0);">wo</a></li>
+                  <li><a href="javascript:void(0);">wu</a></li>
+                </ul><!--submenu-->
+                <div class="thirdmenu-box">
+                  <ul class="thirdmenu">
+                    <li><a href="javascript:void(0);">兀</a></li>
+                    <li><a href="javascript:void(0);">珷</a></li>
+                    <li><a href="javascript:void(0);">珸</a></li>
+                    <li><a href="javascript:void(0);">武</a></li>
+                    <li><a href="javascript:void(0);">鵡</a></li>
+                    <li><a href="javascript:void(0);">鹉</a></li>
+                    <li><a href="javascript:void(0);">玝</a></li>
+                    <li><a href="javascript:void(0);">璑</a></li>
+                    <li><a href="javascript:void(0);">瑦</a></li>
+                    <li><a href="javascript:void(0);">无</a></li>
+                    <li><a href="javascript:void(0);">圬</a></li>
+                    <li><a href="javascript:void(0);">捂</a></li>
+                    <li><a href="javascript:void(0);">扤</a></li>
+                    <li><a href="javascript:void(0);">墲</a></li>
+                    <li><a href="javascript:void(0);">摀</a></li>
+                    <li><a href="javascript:void(0);">蜈</a></li>
+                    <li><a href="javascript:void(0);">蟱</a></li>
+                    <li><a href="javascript:void(0);">螐</a></li>
+                  </ul>
+                </div><!--thirdmenu-box-->
+              </div><!--submenu-box-->
+
+              <div class="result-box">
+                <table cellpadding="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                    <td rowspan="2" class="hz">无</td>
+                    <td><b>汉字：</b>无</td>
+                    <td><b>部首：</b>一</td>
+                    <td><b>笔画数：</b>4</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="py"><b>拼音：</b>mó;wú</td>
+                    <td>
+                      <b>五笔：</b>fqv
+                      <a class="btn-more" href="javascript:void(0);" >more&nbsp;&gt;&gt;</a>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+
+                <div class="result-more">
+                  <p><span class="tit">基本内容：</span>无 （無） wú 没有，与“有”相对；不：无辜。无偿。无从（没有门径或找不到头绪）。无度。无端（无缘无故）。无方（不得法，与“有方”相对）。无非（只，不过）。无动于衷。无所适从。 有 笔画数：4； 部首：一； 笔顺编号：1135</p>
+                  <p><span class="tit">详细内容：</span>无 無 mó ——“南无”(nāmó):佛教用语,表示对佛尊敬或皈依 另见wú 无 無 wú 【名】 (会意。据甲骨文字形,象一个人持把在跳舞。卜辞、金文中“无、舞”同字。本义:乐舞) 同本义〖singanddance〗 哲学范畴,指无形、无名、虚无等,或指物质的隐微状态〖nihility〗 天下万物生于有,有生于无。——《老子》 无 無 wú 【动】 没有,跟“有”相对〖nothave;thereisnot〗 无,不有也。</p>
+                  <p><span class="tit">相关单词：</span>爱憎无常;安然无事;安然无恙;安忍无亲;坐无虚席;坐无公车作辍无常;坐帐无鹤;尊无二上;走投无路;</p>
+                  <p><span class="tit">相关成语：</span>案无留牍;黯淡无光;黯然无色;傲慢无礼;白璧无瑕;白玉无瑕;变幻无穷;变幻无常;兵无常势;百无一成;百无一是;卑鄙无耻;别来无恙;别无二致;秉公无私;搏手无策;苍白无力;不识之无;策无遗算;茶饭无心</p>
+                </div>
+              </div><!--result-box-->
+            </div><!--pinyin end-->
+
+             <div class="unit wildcard">
+              <h5>通配符说明</h5>
+              <div class="tip-text">
+                <p>友情提示：</p>
+                <p>【词目】精确检索可用通配符 (如: '中国?' 或 '中国*')</p>
+              </div>
+            </div> <!-- unit wildcard end -->
+          </div>
+        </div><!--drop-box-->
+      </div><!--searchmain-->
+      </div><!-- yck-search-box -->
+      </div><!-- end of the banner container -->
+    </div>  <!-- banner -->
+  </div>
+  <!-- end of the museum header -->
+
+
+  <!-- main content -->
+  <div class="main-content">
+    <div class="container">
+
+      <!-- root part start -->
+      <div class="root">
+        <ul class="breadcrumb">
+          <span>位置：</span>
+          <li><a href="#">首页</a></li>
+          <li><a href="#">附录库</a></li>
+          <li><a href="#">景汉词典</a></li>
+        </ul>
+      </div><!-- end of the root part -->
+
+      <!-- 左边栏 -->
+      <!-- dt-leftbar start -->
+      <div class="dt-leftbar apd">
+        <div class="dt-leftbar-title">
+          <span>辅文列表</span>
+        </div><!-- end of leftbar-title -->
+        <div class="dt-book-navbar" id="apd-nav">         
+            <ul class="nav-sections">
+              <li class="active">
+                <a href="#nav1" data-toggle="tab">TSUN SHADAN</a>
+              </li>
+              <li><a href="#" data-toggle="tab">说明</a></li>
+              <li><a href="#" data-toggle="tab">景颇文字母表及声韵母表</a></li>
+              <li><a href="#" data-toggle="tab">景颇语语音系统及文字表示法</a></li>
+              <li><a href="#" data-toggle="tab">景颇语语法简况</a></li>
+              <li><a href="#" data-toggle="tab">景颇族姓氏简表</a></li>
+              <li><a href="#" data-toggle="tab">我国各民族名称人口和主要分布地区</a></li>
+              <li><a href="#" data-toggle="tab">我国各省自治区直辖市名称表</a></li>
+              <li><a href="#" data-toggle="tab">世界各国家和地区面积人口首都</a></li>
+              <li><a href="#" data-toggle="tab">Ginhtip Ga</a></li>
+              <li><a href="#" data-toggle="tab">后记</a></li>
+            </ul>
+        </div>
+        <!-- end of the panel group -->
+      </div>
+      <!-- end of dt-leftbar -->
+
+      <!-- 右边拦 -->
+      <!-- dt-rightbar start -->
+      <div class="dt-rightbar">
+        <div class="dt-rightbar-title">
+          <ul class="actions navbar-nav">
+            <li><span><img src="images/star.png" alt="">收藏</span></li>
+            <li><span><img src="images/share-2.png" alt="">分享</span></li>
+            <li><span><img src="images/quote.png" alt="">引用</span></li>
+          </ul>
+          <ul class="size-change navbar-nav">
+            <li><a href="#">[大]</a></li>
+            <li class="active"><a href="#">[中]</a></li>
+            <li><a href="#">[小]</a></li>
+          </ul>
+          <div class="dt-search-bar">
+            <input class="dt-input" type="text" autocomplete="off" placeholder="请输入检索内容" value="请输入检索内容">
+            <button class="btn" id="search-book">查本书</button>
+            <button class="btn" id="search-collection">查全辑</button>
+          </div>
+        </div><!-- end of dt-rightbar-title -->
+
+        <div class="dt-container">
+        <div id="grammar-intro" class="tab-content">
+          <div class="tab-pane fade in active" id="nav1">
+            <div class="grammar-intro-container">
+            <span class="gram-intro-tit">景颇语语法简况</span>
+            <p class="gram-subtit">一、 构词法</p>
+            <p class="gram-tips">
+              <em>(一) 复合词构词法: 由两个或两个以上的词 (或词根) 构成新词的方法。</em><br>
+              1.并列式: 由意义相关的成分并列起来构成新词。又可分为三类:<br>
+              ①名词加名词构成名词:<br>
+              naimam 粮食 <br>
+              [nai31mam33] <br>
+              芋头　　谷子 <br><br>
+              lamu ga 地方 <br>
+              [la31mu31ka55] <br>
+              天　　地 <br>
+              ②动词加动词构成名词: <br>
+              lu sha 食物 <br>
+              [] <br>
+              喝 吃 <br>
+            </p>
+            <p class="gram-subtit">二、 形态构词法: 用词 (或词根) 加附加成分或改变语音的方法构成新词。</p>
+            <p class="gram-tips">
+              1.前加式: 由中心成分加前加成分构成新词。 如: a [a33],加在形容词或动词前构成名词;a[a55],加在部分形容词前构成副词;chya[或]加在形容词前构成名词; ning[]和ga[], 加在表示第一人称的亲属称谓名词前, 构成分别表示第二和第三人称(包括泛称) 的亲属称谓名词。 <br>
+              chyang[]黑——achyang[]黑的 <br>
+              hkrung[]活——ahkrung[]活的 <br>
+              tsom[tsom31]好看——atsom[]好好地loi[loi31]容易——aloi[a55loi51]容易地 <br>
+              hkri[]酸——chyahkri[]酸的 <br>
+              hten[then31]坏——chyahten[]坏的 <br>
+              hpro[]白——chyahpro[]白的 <br>
+              nu[]母亲——ningnu[]你母亲——ganu[]他母亲、 母亲 <br>
+              wa[wa51]父亲——ningwa[]你父亲——gawa[ka31wa31]他父亲、 父亲 <br>
+              2.后加式:由中心成分加后加成分构成新词。 如:hte[the33],加在代词后表示多数;tung[], 加在名词 (或名词词根)后表示“大”;shi[], 加在名词后表示“小”; jeng[],加在动植物名词后表示“小品种” 。 <br>
+              shan[]他俩——shanhte[]他们 <br>
+              dai[tai33]那——daihte[tai33the33]那些 <br>
+              hkon[khon31]姑娘——hkontung[]大姑娘 <br>
+              nu[nu51]母亲——nutung[]大姨妈 <br>
+              pu[pu31]肠子——pushi[]小肠 <br>
+              hka[]溪——hka-shi[]小溪 <br>
+              gui[kui31]象——guijeng[]小品种象 <br>
+              gau[kau31]葱蒜类——gaujeng[]韭菜 <br>
+              3.中加式: 由中心成分加中加成分构成新词。 主要有两个:ma[] (或mi[mi33]), 加在两个相同的单音节动词或形容词当中, 构成含有“所有的”意思的名词;la [], 加在重叠的单音节动词当中, 构成含有“明明”意思的动词。 <br>
+              sha[]吃——sha masha[]所有吃的 <br>
+              hkye[khje33]红——hkye mahkye[khje33ma33khje33]所有红的 <br>
+              mu[mu31]看见——mu lamu[mu31la55mu51]明明看见 <br>
+            </p>
+            </div><!-- grammar-intro-container -->
+          </div>
+          </div><!-- end of the tab-content -->
+
+
+      </div><!-- end of the dt-container -->
+      </div>
+      <!-- end of dt-rightbar -->
+
+    </div><!-- end of the main content container -->
+  </div>
+  <!-- end of the main content -->
+  <!-- footer start -->
+  <div class="footer">
+     <div class="foot-top" data-edit="y">
+          <ul class="ft-container">
+              <li><img id="ft-logo" src="images/footer-icon.png" alt=""></li>
+              <li>
+                  <b>客服咨询</b>
+                  <span>服务热线：010-82439137</span>
+                  <span>QQ咨询：2172396729</span>
+                  <span>服务邮箱：zwsk@cnki.net</span>
+              </li>
+              <li>
+                  <b>特色服务</b>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://sk.cnki.net/#/product/detail?id=4028e9b27298f48701729d7ed68b00bc">免费试用</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://sk.cnki.net/#/activity">活动中心</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://sk.cnki.net/#/contact">订购咨询</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://sk.cnki.net/">知识服务超市</a>
+              </li>
+              <li>
+                  <b>读者服务</b>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://skcard.cnki.net/">购买知网卡</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://zhifu.cnki.net/?platform=skpt">充值中心</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://i.cnki.net/?platform=skpt">我的CNKI</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://sk.cnki.net/#/">帮助中心</a>
+              </li>
+               <li>
+                  <b>CNKI常用软件下载</b>
+                  <a target="_blank"  rel="noopener noreferrer" href="//cajviewer.cnki.net">CAJViewer浏览器</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="//www.cnki.net/software/xzydq.htm#CNKIe-Learning">CNKI数字化学习平台</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="//refbook.cnki.net/download.html">工具书桌面检索软件</a>
+              </li>
+              <img src="images/ewm_code.png" class="ft-code" alt="">
+              <img src="images/rq_code.png" class="ft-code" alt="">
+          </ul>
+      </div>
+      <div class="foot-bot clearfix content-container" data-edit="y">
+          <div class="t">
+              <p class="mid">
+                  <span>
+                      <a target="_blank"  rel="noopener noreferrer" href="//www.cnki.net/gycnki/gycnki.htm">关于我们</a>
+                      <a target="_blank"  rel="noopener noreferrer" href="//www.cnki.net/other/gonggao/gongsirongyu.html">CNKI 荣誉</a>
+                      <a target="_blank"  rel="noopener noreferrer" href="//www.cnki.net/other/gonggao/bqsm.htm">版权公告</a>
+                      <a target="_blank"  rel="noopener noreferrer" href="//service.cnki.net/">客服中心</a>
+                      <a target="_blank"  rel="noopener noreferrer" href="//help.cnki.net/">在线咨询</a>
+                      <a target="_blank"  rel="noopener noreferrer"
+                         href="//help.cnki.net/Live800_1_2.aspx?GroupID=503&amp;PageID=101008&amp;Name=&amp;CookieName=TTKN_OnLine_800">用户建议</a>
+                      <a target="_blank"  rel="noopener noreferrer" href="//piccache.cnki.net/index/CNKIRecruit/index.html">知网招聘</a>
+                      <a target="_blank"  rel="noopener noreferrer" href="//piccache.cnki.net/index/CNKIRecruit/index.html">知网推广</a>
+                  </span>
+                  <div class="trust-icon"> <img src="images/trust-icon.png" alt=""></div>
+                  <!-- <span id="copyright">© 1998-2019 中国知网（CNKI）</span>
+                  <script type="text/javascript">
+                      var date = new Date;
+                      document.getElementById('copyright').innerHTML = "© 1998-" + date.getFullYear() + " 中国知网（CNKI）";
+                  </script>
+              </p> -->
+            <!--   <p class="right"> -->
+                  <!--可信网站图片LOGO安装开始-->
+                  <!-- <a id="___szfw_logo___">
+                      <img alt="可信网站" src="images/footer/kxwz.jpg" height="33" width="86">
+                  </a> -->
+                  <!--可信网站图片LOGO安装结束-->
+                  <!--诚信网站图片LOGO安装开始-->
+                  <!-- <a id="A1">
+                      <img alt="诚信网站" src="footer/cert.jpg" height="33" width="86">
+                  </a>
+                  <script type="text/javascript">
+                      (function () {
+                          document.getElementById('___szfw_logo___').oncontextmenu = function () {
+                              return false;
+                          }
+                      })();
+                  </script> -->
+                  <!--诚信网站图片LOGO安装结束-->
+              </p>
+          </div>
+          <div class="b">
+              <span>
+                  京 ICP 证 040431 号
+                  <a target="_blank"  rel="noopener noreferrer" href="//piccache.cnki.net/index/images/gb/271.jpg">网络出版服务许可证 (总)网出证(京)字第 271 号</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="//piccache.cnki.net/index/images/gb/170001.jpg">出版物经营许可证</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202005012100021">经营性网站备案信息</a> 京公网安备 11010802020460 号
+              </span>
+              <span>《中国学术期刊（光盘版）》电子杂志社有限公司</span>
+              <span>KDN 平台基础技术由 KBASE 11.0 提供.</span>
+          </div>
+      </div>
+</div>
+<div id="return-top">
+        <a href="javascript:scroll(0,0);" title="返回顶部" alt="返回顶部"></a>
+ </div>
+  </div>
+  <!-- end of the footer -->
+  
+  <!-- jquery -->
+  <!-- script 文件 -->
+  <!--   <script src="js/index.js"></script> -->
+  <!-- back to top -->
+  <script type="text/javascript">
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 150) {
+                $("#return-top").show();
+            } else {
+                $("#return-top").hide();
+            }
+        });
+   </script>
+  <!-- Bootstrap js引用 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
