@@ -80,15 +80,16 @@ div.left-bar ul li{
 
 /*banner*/
 .banner-sm{
-	height:100px;
+	/*height:100px;*/
 	padding-top:14px;
+	padding-bottom:10px;
 	background: url("../images/banner-bg2.jpg") no-repeat;
 	background-size: 100% 100%;
 }
 /* change search bar */
 #type{
 	height:40px;
-	line-height:37px;
+	line-height:40px;
 	width:104px;
 	padding-left:20px;
 }
@@ -100,7 +101,7 @@ div.left-bar ul li{
 }
 .searchmain .search-input{
 	/*padding: 0;*/
-	line-height:37px;
+	line-height:40px;
 	padding-left: 20px;
 	height:38px;
 }
@@ -122,20 +123,28 @@ div.left-bar ul li{
 .search-form{
 	margin-left: 20px;
 	margin-top:9px;
+	margin-bottom:10px;
 }
 #type span{
 	line-height: 40px;
+	margin-right: 6px;
 }
 #search-type .sort-icon {
 	line-height: 40px;
 	font-size:12px;
 }
 .sort-list li{
-	height:37px;
-	line-height:37px;
+	height:30px;
+	line-height:30px;
 }
 .searchmain .btn-wildcard {
 	margin-top: 10px;
+	vertical-align: center;
+	height:21px;
+	padding-top: 1px;
+}
+.searchmain .sort-default{
+
 }
 .sort-default .sort-icon{
 	line-height:27px;
@@ -145,29 +154,35 @@ div.left-bar ul li{
 	margin-left: 10px;
 }
 .search-nav{
-	padding-left:250px;
+	padding-left:267px;
 	display:none;
 }
 #search{
 	background:url("../images/btn-search.png") no-repeat center;
-	background-position: 0 0;
+	background-position: -2px -2px;
 	width:40px;
 	height:40px; 
 	box-shadow: 0px 0px 3px 0px 
 		rgba(31, 30, 30, 0.09);
 	border:1px solid #e9e9e9;
+	outline: none;
+}
+#search:hover{
+	background-position: -48px -2px;
 }
 #search-in-result{
 	height:40px;
 	box-shadow: 0px 0px 3px 0px 
 		rgba(31, 30, 30, 0.09);
 	border:1px solid #e9e9e9;
+	outline: none;
 }
 #gaoji{
 	height:40px;
 	box-shadow: 0px 0px 3px 0px 
 		rgba(31, 30, 30, 0.09);
 	border:1px solid #e9e9e9;
+	outline: none;
 }
 /* finish change search bar */
 /*========= rst-header end ==========*/
