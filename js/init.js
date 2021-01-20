@@ -844,10 +844,10 @@ $(function(){
                     });
                 }
 
-                _thID = $(this).attr("data-id");
-                _className = $(this).attr("class");
-                $(".result-table-list").find("th a").removeClass();
-                $(".result-table-list").find("#"+_thID).addClass(_className);
+                // _thID = $(this).attr("data-id");
+                // _className = $(this).attr("class");
+                // $(".result-table-list").find("th a").removeClass();
+                // $(".result-table-list").find("#"+_thID).addClass(_className);
             });
 
             //点击表格标题：例：发表时间、被引、下载

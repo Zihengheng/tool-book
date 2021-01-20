@@ -242,6 +242,10 @@ div.left-bar ul li{
 	line-height: 20px;
 	padding:0;
 }
+.toolbar .order-group{
+	float:right;
+	margin-right:10px;
+}
 div.order-group ul li {
 	width:113px;
 }
@@ -266,6 +270,20 @@ div.order-group i.as-ds{
 	background-color:  #e9e9e9;
 	float:right;
 	margin-top: -7px;
+}
+.page-show-count span{
+	float:left;
+}
+.page-show-count .sort{
+	margin-left: 5px;
+}
+.page-show-count .icon-sort {
+	width:7px;
+	margin-top:6px;
+	margin-left:22px;
+}
+.page-show-count .sort span{
+	padding-left: 0px;
 }
 /*======== 结果列表 ==========*/
 .list-title{
@@ -361,3 +379,48 @@ div.pn-container{
 	position:relative;
 	left:140px;
 }
+/*=================== 检索结果书目页 start =================*/
+.search-result.book-result{
+	border:0px;
+	box-shadow:none; 
+}
+.toolbar.book-rst{}
+.toolbar .change-list .icon-detail{
+    background-position:-2px -3px;
+}
+.toolbar .change-list .icon-table{
+    background-position:-22px -3px;
+}
+.toolbar .active .icon-detail{
+	background-position:-2px -23px;
+}
+.toolbar .active .icon-table{
+	background-position:-22px -23px;
+}
+#dt-booklist dd{
+	border-bottom: 0px;
+	padding:10px 8px;
+}
+#dt-booklist dd:hover{
+	background:none;
+}
+.booklist-box{
+	float:left;
+	width: 297px;
+	height: 150px;
+	background-color: #ffffff;
+	box-shadow: 0px 6px 14px 2px 
+		rgba(237, 236, 236, 0.53);
+}
+.booklist-box.left-box{
+	margin-right: 13px;
+}
+.result-table-list{
+	display: none;
+}
+.book-search-bar{
+	width: 202px;
+	height: 25px;
+	border: solid 1px #eeeeee;
+}
+/*=================== 检索结果书目页 end =================*/
