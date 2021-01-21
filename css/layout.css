@@ -144,6 +144,7 @@ p.cbook-info{
 }
 .table-list{
     width:100%;
+    margin-bottom: 42px;
 }
 .table-list tr{
     height:42px;
