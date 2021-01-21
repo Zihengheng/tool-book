@@ -610,4 +610,29 @@ td.book-col a{
 	color: #293e6b;
 }
 /*=========== 书目列表 end =============*/
-/*=================== 检索结果书目页 end =================
+/*=================== 检索结果书目页 end =================*/
+
+/*=================== 检索结果表格页 start =================*/
+#result-table td.book-col1{
+	width:580px;
+}
+#result-table td.book-col2{
+	width:210px;
+}
+#result-table .title-col .book-col7{
+	padding-left: 15px;
+}
+#result-table .title-col .book-col1{
+	padding-left: 57px;
+}
+#result-table .title-col .book-col2{
+	padding-left: 32px;
+}
+#result-table{
+	margin-bottom: 25px;
+}
+.search-result div.pn-container{
+	width:700px;
+	left:131px;
+}
+/*=================== 检索结果表格页 end =================*/
