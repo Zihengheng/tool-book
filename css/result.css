@@ -206,11 +206,19 @@ div.left-bar ul li{
 /*选中*/
 .doctype-menus>li.active{ position: relative;color: #333; border-radius: 4px 4px 0 0; background-image: none; background-color: #fff;  }
 .doctype-menus>li.active>a span,
-.doctype-menus>li.active>a em{ color: #0f5de5;  }
+.doctype-menus>li.active>a em{ color: #0f5de5; text-decoration: none;}
+
 /*=========== 左导航栏 ============*/
 .breadcrumb{
 	margin-bottom: 0px;
 	background-color:white;
+}
+.breadcrumb li a, .breadcrumb span {
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+  /*  font-weight: bold;*/
+    line-height: 23px;
+    color: #293e6b;
 }
 .tit img{
 	margin-right: 10px;
@@ -497,7 +505,7 @@ input.book-input{
 	float:left;
 	margin-right:5px;
 }
-.booklist-title span{
+.booklist-title span,.booklist-title span a {
 	float:left;
 	font-family: MicrosoftYaHei;
 	font-size: 14px;
@@ -574,18 +582,18 @@ tr.title-col td.book-col1{
 	width:200px;
 }
 .op-group{
-	width: 13px;
+	width: 14px;
 	height: 13px;
 	margin-right: 5px;
 }
 .op-group.op1{
-	background: url("../images/op1.png");
+	background: url("../images/op1.png") no-repeat;
 }
 .op-group.op2{
-	background: url("../images/op2.png");
+	background: url("../images/op2.png") no-repeat;
 }
 .op-group.op3{
-	background: url("../images/op3.png");
+	background: url("../images/op3.png") no-repeat;
 }
 input.booklist-chck{
 	margin-top: 0px;

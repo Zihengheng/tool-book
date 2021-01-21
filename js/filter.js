@@ -12,6 +12,17 @@
 */
 
 $(function(){
+    //增加个人收藏书目条目切换
+    $("#tiaomu").hide();
+    $("a[href='#tiaomu']").click(function(){
+        $("#shumu").hide();
+        $("#tiaomu").show();
+    });
+    $("a[href='#shumu']").click(function(){
+        $("#tiaomu").hide();
+        $("#shumu").show();
+    });
+
     // 增加搜索结果页显示搜索助手
     $(".banner-sm input.search-input").focus(function(){$(".search-nav").show();})
     // $(".banner-sm input.search-input").blur(function(){$(".search-nav").hide();})

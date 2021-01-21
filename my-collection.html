@@ -417,118 +417,830 @@
  <div class="top-doctype">
         <div class="container">
             <ul class="doctype-menus" id="menu-tab">
-              <li data-id="xsqk" class="active"><a href="#zk" data-toggle="tab"><span>我的收藏</span><em>52318</em></a></li>
-              <li data-id="xsqk"><a href="#yck" data-toggle="tab"><span>条目</span><em>12803</em></a></li>
-              <li data-id="baozhi"><a href="#jsk" data-toggle="tab"><span>书目</span><em>23800</em></a></li>
+              <li id="my-collection"><a href="#"><span>我的收藏</span><em>52318</em></a></li>
+              <li><a href="#tiaomu" data-toggle="tab"><span>条目</span><em>12803</em></a></li>
+              <li class="active"><a href="#shumu" data-toggle="tab"><span>书目</span><em>23800</em></a></li>
             </ul>
-          <!--   <a class="btn-crossDb-search" href="javascript:void(0);" title="更多资源"><i></i></a> -->
             <div class="clear"></div>
         </div>
 
-    </div><!--top-doctype end-->
+  </div><!--top-doctype end-->
 
-
-  <div class="main-content">
+  <div class="main-content collection-content">
     <div class="container">
+      <div class="tab-content">
+        <div id="shumu">
+          <div class="collection-topmenu">
+            <div class="breadcumb-nav">
+                <ol class="breadcrumb">
+                  <li><span>位置：</span></li>
+                  <li><a href="#">首页</a></li>
+                  <li><a href="#">个人书房</a></li>
+                </ol>
+            </div><!-- breadcrumb-nav -->
+             <div class="toolbar book-rst">
+                    <div class="result-conditions">
+                        <div class="change-page pull-right">
+                          <input type="text" placeholder="1" value="">
+                          <span>/300</span>
+                          <a href="#" class="btn"> > </a>
+                        </div>
+                        <div id="count" class="result-con-r" style="">共找到<em>14210万</em>条结果</div>
+                    </div>
 
-       
-    </div><!-- content end-->
-  </div><!-- end of the main-content -->
+                    <div class="toolbar-col">
 
+                        <div class="checkcount">
+                            <label class="checkAll"><input type="checkbox">全选</label>
+                            <span>已选：</span>
+                            <em onclick="window.open('文献管理-文献输出-格式引文.html')">1</em>
+                            <a class="clear-allcheck" href="javascript:void(0)">清除</a>
+                            <a class="delete" href="javascript:void(0)">删除</a>
+                        </div><!--checkcount-->
 
-  <!-- footer start -->
-  <div class="footer">
-     <div class="foot-top" data-edit="y">
-          <ul class="ft-container">
-              <li><img id="ft-logo" src="images/footer-icon.png" alt=""></li>
-              <li>
-                  <b>客服咨询</b>
-                  <span>服务热线：010-82439137</span>
-                  <span>QQ咨询：2172396729</span>
-                  <span>服务邮箱：zwsk@cnki.net</span>
-              </li>
-              <li>
-                  <b>特色服务</b>
-                  <a target="_blank"  rel="noopener noreferrer" href="https://sk.cnki.net/#/product/detail?id=4028e9b27298f48701729d7ed68b00bc">免费试用</a>
-                  <a target="_blank"  rel="noopener noreferrer" href="https://sk.cnki.net/#/activity">活动中心</a>
-                  <a target="_blank"  rel="noopener noreferrer" href="https://sk.cnki.net/#/contact">订购咨询</a>
-                  <a target="_blank"  rel="noopener noreferrer" href="https://sk.cnki.net/">知识服务超市</a>
-              </li>
-              <li>
-                  <b>读者服务</b>
-                  <a target="_blank"  rel="noopener noreferrer" href="https://skcard.cnki.net/">购买知网卡</a>
-                  <a target="_blank"  rel="noopener noreferrer" href="https://zhifu.cnki.net/?platform=skpt">充值中心</a>
-                  <a target="_blank"  rel="noopener noreferrer" href="https://i.cnki.net/?platform=skpt">我的CNKI</a>
-                  <a target="_blank"  rel="noopener noreferrer" href="https://sk.cnki.net/#/">帮助中心</a>
-              </li>
-               <li>
-                  <b>CNKI常用软件下载</b>
-                  <a target="_blank"  rel="noopener noreferrer" href="//cajviewer.cnki.net">CAJViewer浏览器</a>
-                  <a target="_blank"  rel="noopener noreferrer" href="//www.cnki.net/software/xzydq.htm#CNKIe-Learning">CNKI数字化学习平台</a>
-                  <a target="_blank"  rel="noopener noreferrer" href="//refbook.cnki.net/download.html">工具书桌面检索软件</a>
-              </li>
-              <img src="images/ewm_code.png" class="ft-code" alt="">
-              <img src="images/rq_code.png" class="ft-code" alt="">
-          </ul>
+                        <!-- 详情列表切换 start -->
+                        <ul class="change-list">
+                          <li data-obj="result-detail-list" title="详情" class="active">
+                            <i class="icon-detail"></i>
+                          </li>
+                          <li data-obj="result-table-list" title="列表">
+                            <i class="icon-table"></i>
+                          </li>
+                        </ul>
+                        <!-- 详情列表切换 end -->
+
+                        <div class="statistic">
+                            <div class="page-show-count">
+                              <span>显示</span>
+                                <div class="sort">
+                                    <div class="sort-default">
+                                        <span>10</span>
+                                        <div class="icon icon-sort"></div>
+                                    </div>
+                                    <ul class="sort-list">
+                                        <li class="cur">10</li>
+                                        <li>20</li>
+                                        <li>30</li>
+                                    </ul>
+                                </div>
+                            </div><!--page-show-count-->
+                        </div><!--statistic-->
+
+                        <!--排序 start-->
+                        <div class="order-group">
+                            <ul class="order navbar-nav">
+                                <li>
+                                  <img src="images/relativity.png" alt="" class="pull-left">
+                                  <span>相关度</span>
+                                  <i class="as-ds"></i>
+                                  <div id="divider"></div>
+                                </li>
+                                <li data-id="">
+                                  <img src="images/sort.png" alt="" class="pull-left">
+                                  <span>文字量</span>
+                                  <i class="as-ds"></i>
+                                  <div id="divider"></div>
+                                </li>
+                                <li data-id="">
+                                   <img src="images/time.png" alt="" class="pull-left">
+                                  <span>出版时间</span>
+                                  <i class="as-ds"></i>
+                                  <div id="divider"></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--排序 end-->
+
+                    </div><!--toolbar-col-->
+                </div><!--toolbar-->
+
+                <!--书目详情 start-->
+                <dl class="result-detail-list" id="collection-booklist">
+                  <div class="book-search-bar clearfix">
+                    <div class="book-search-box">
+                      <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="search-book" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          书名
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="search-book" id="book-menu">
+                          <li><a >书名1</a></li>
+                          <li><a >书名2</a></li>
+                          <li><a >书名3</a></li>
+                        </ul>
+                      </div><!-- drop-down -->
+                       <input type="text" placeholder="按文献主题检索"class="book-input">
+                    </div>
+                    <button class="btn" id="find-book">找书</button>
+                  </div><!-- end of the book-search-bar -->
+                  <dd class="first-line">
+                    <div class="collection-box left-box">
+                      <div class="c-img">
+                        <img src="images/qikan/qk1.png" alt="qikan1">
+                      </div>
+                      <div class="c-content">
+                        <h5><a href="#">英语常见问题解答大词典</a></h5>
+                        <div class="c-divider"></div>
+                      </div>
+                      <div class="c-operation"></div>
+                    </div>
+                    <!-- end of a booklist-box -->
+                    <div class="collection-box left-box">
+                      
+                    </div>
+                    <!-- end of a booklist-box -->
+                    <div class="collection-box">
+                      
+                    </div>
+                    <!-- end of a booklist-box -->
+                  </dd>
+                  <!-- end of a dd -->
+                  <dd>
+                    <div class="booklist-box left-box">
+                      <div class="book-list-img">
+                        <img src="images/qikan/qk1.png" alt="">
+                      </div>
+                      <div class="book-operation"></div>
+                      <div class="booklist-title">
+                        <input type="checkbox">
+                        <span><a href="#">英语常见问题解答大词典</a></span>
+                      </div>
+                      <div class="booklist-content">
+                        <div class="score-icon"></div>
+                        <div class="booklist-divider"></div>
+                        <div class="book-list-wall"></div>
+                        <span>责任者:赵振才编著</span>
+                        <span>出版者:黑龙江人民出版社</span>
+                        <span>总被引频次：2048次</span>
+                      </div>
+                    </div>
+                    <!-- end of a booklist-box -->
+                    <div class="booklist-box left-box">
+                      <div class="book-list-img">
+                        <img src="images/qikan/qk1.png" alt="">
+                      </div>
+                      <div class="book-operation"></div>
+                      <div class="booklist-title">
+                        <input type="checkbox">
+                        <span><a href="#">英语常见问题解答大词典</a></span>
+                      </div>
+                      <div class="booklist-content">
+                        <div class="score-icon"></div>
+                        <div class="booklist-divider"></div>
+                        <div class="book-list-wall"></div>
+                        <span>责任者:赵振才编著</span>
+                        <span>出版者:黑龙江人民出版社</span>
+                        <span>总被引频次：2048次</span>
+                      </div>
+                    </div>
+                    <!-- end of a booklist-box -->
+                    <div class="booklist-box">
+                      <div class="book-list-img">
+                        <img src="images/qikan/qk1.png" alt="">
+                      </div>
+                      <div class="book-operation"></div>
+                      <div class="booklist-title">
+                        <input type="checkbox">
+                        <span><a href="#">英语常见问题解答大词典</a></span>
+                      </div>
+                      <div class="booklist-content">
+                        <div class="score-icon"></div>
+                        <div class="booklist-divider"></div>
+                        <div class="book-list-wall"></div>
+                        <span>责任者:赵振才编著</span>
+                        <span>出版者:黑龙江人民出版社</span>
+                        <span>总被引频次：2048次</span>
+                      </div>
+                    </div>
+                    <!-- end of a booklist-box -->
+                  </dd>
+                  <!-- end of a dd -->
+                </dl>
+                
+                <!--书目详情 end-->
+
+                <!--书目列表 start-->
+                <table class="result-table-list">
+                  <tr class="table-search">
+                    <td colspan="7"><div class="book-search-bar clearfix">
+                    <div class="book-search-box">
+                      <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="search-book" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          书名
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="search-book" id="book-menu">
+                          <li><a >书名1</a></li>
+                          <li><a >书名2</a></li>
+                          <li><a >书名3</a></li>
+                        </ul>
+                      </div><!-- drop-down -->
+                       <input type="text" placeholder="按文献主题检索"class="book-input">
+                    </div>
+                    <button class="btn" id="find-book">找书</button>
+                  </div><!-- end of the book-search-bar -->
+                </td>
+                  </tr>
+                  <tr class="title-col">
+                    <td class="book-col1">
+                      <span>书名</span>
+                    </td>
+                    <td class="book-col2">
+                      <span>被引频次</span>
+                    </td>
+                    <td class="book-col3">
+                      <span>责任者</span>
+                    </td>
+                    <td class="book-col4">
+                      <span>出版者</span>
+                    </td>
+                    <td class="book-col5">
+                      <span>SBN号</span>
+                    </td>
+                    <td class="book-col6">
+                      <span>出版日期</span>
+                    </td>
+                    <td class="book-col7">
+                      <span>操作</span>
+                    </td>
+                  </tr>
+                  <!-- 表头结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>1</span>
+                      <a href="#">英语常见问题解答大词典</a>             
+                    </td>
+                    <td class="book-col2">
+                      <span>2000</span>
+                    </td>
+                    <td class="book-col3">
+                      <span>赵振才</span>
+                    </td>
+                    <td class="book-col4">
+                      <span>黑龙江人民出版社</span>
+                    </td>
+                    <td class="book-col5">
+                      <span>978-7-5326-4945-0</span>
+                    </td>
+                    <td class="book-col6">
+                      <span>2017-08</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>2</span>
+                      <a href="#">英语常见问题解答大词典</a>             
+                    </td>
+                    <td class="book-col2">
+                      <span>2000</span>
+                    </td>
+                    <td class="book-col3">
+                      <span>赵振才</span>
+                    </td>
+                    <td class="book-col4">
+                      <span>黑龙江人民出版社</span>
+                    </td>
+                    <td class="book-col5">
+                      <span>978-7-5326-4945-0</span>
+                    </td>
+                    <td class="book-col6">
+                      <span>2017-08</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>3</span>
+                      <a href="#">英语常见问题解答大词典</a>             
+                    </td>
+                    <td class="book-col2">
+                      <span>2000</span>
+                    </td>
+                    <td class="book-col3">
+                      <span>赵振才</span>
+                    </td>
+                    <td class="book-col4">
+                      <span>黑龙江人民出版社</span>
+                    </td>
+                    <td class="book-col5">
+                      <span>978-7-5326-4945-0</span>
+                    </td>
+                    <td class="book-col6">
+                      <span>2017-08</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>4</span>
+                      <a href="#">英语常见问题解答大词典</a>             
+                    </td>
+                    <td class="book-col2">
+                      <span>2000</span>
+                    </td>
+                    <td class="book-col3">
+                      <span>赵振才</span>
+                    </td>
+                    <td class="book-col4">
+                      <span>黑龙江人民出版社</span>
+                    </td>
+                    <td class="book-col5">
+                      <span>978-7-5326-4945-0</span>
+                    </td>
+                    <td class="book-col6">
+                      <span>2017-08</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>5</span>
+                      <a href="#">英语常见问题解答大词典</a>             
+                    </td>
+                    <td class="book-col2">
+                      <span>2000</span>
+                    </td>
+                    <td class="book-col3">
+                      <span>赵振才</span>
+                    </td>
+                    <td class="book-col4">
+                      <span>黑龙江人民出版社</span>
+                    </td>
+                    <td class="book-col5">
+                      <span>978-7-5326-4945-0</span>
+                    </td>
+                    <td class="book-col6">
+                      <span>2017-08</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>6</span>
+                      <a href="#">英语常见问题解答大词典</a>             
+                    </td>
+                    <td class="book-col2">
+                      <span>2000</span>
+                    </td>
+                    <td class="book-col3">
+                      <span>赵振才</span>
+                    </td>
+                    <td class="book-col4">
+                      <span>黑龙江人民出版社</span>
+                    </td>
+                    <td class="book-col5">
+                      <span>978-7-5326-4945-0</span>
+                    </td>
+                    <td class="book-col6">
+                      <span>2017-08</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>7</span>
+                      <a href="#">英语常见问题解答大词典</a>             
+                    </td>
+                    <td class="book-col2">
+                      <span>2000</span>
+                    </td>
+                    <td class="book-col3">
+                      <span>赵振才</span>
+                    </td>
+                    <td class="book-col4">
+                      <span>黑龙江人民出版社</span>
+                    </td>
+                    <td class="book-col5">
+                      <span>978-7-5326-4945-0</span>
+                    </td>
+                    <td class="book-col6">
+                      <span>2017-08</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>8</span>
+                      <a href="#">英语常见问题解答大词典</a>             
+                    </td>
+                    <td class="book-col2">
+                      <span>2000</span>
+                    </td>
+                    <td class="book-col3">
+                      <span>赵振才</span>
+                    </td>
+                    <td class="book-col4">
+                      <span>黑龙江人民出版社</span>
+                    </td>
+                    <td class="book-col5">
+                      <span>978-7-5326-4945-0</span>
+                    </td>
+                    <td class="book-col6">
+                      <span>2017-08</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>9</span>
+                      <a href="#">英语常见问题解答大词典</a>             
+                    </td>
+                    <td class="book-col2">
+                      <span>2000</span>
+                    </td>
+                    <td class="book-col3">
+                      <span>赵振才</span>
+                    </td>
+                    <td class="book-col4">
+                      <span>黑龙江人民出版社</span>
+                    </td>
+                    <td class="book-col5">
+                      <span>978-7-5326-4945-0</span>
+                    </td>
+                    <td class="book-col6">
+                      <span>2017-08</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>10</span>
+                      <a href="#">英语常见问题解答大词典</a>             
+                    </td>
+                    <td class="book-col2">
+                      <span>2000</span>
+                    </td>
+                    <td class="book-col3">
+                      <span>赵振才</span>
+                    </td>
+                    <td class="book-col4">
+                      <span>黑龙江人民出版社</span>
+                    </td>
+                    <td class="book-col5">
+                      <span>978-7-5326-4945-0</span>
+                    </td>
+                    <td class="book-col6">
+                      <span>2017-08</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>11</span>
+                      <a href="#">英语常见问题解答大词典</a>             
+                    </td>
+                    <td class="book-col2">
+                      <span>2000</span>
+                    </td>
+                    <td class="book-col3">
+                      <span>赵振才</span>
+                    </td>
+                    <td class="book-col4">
+                      <span>黑龙江人民出版社</span>
+                    </td>
+                    <td class="book-col5">
+                      <span>978-7-5326-4945-0</span>
+                    </td>
+                    <td class="book-col6">
+                      <span>2017-08</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>12</span>
+                      <a href="#">英语常见问题解答大词典</a>             
+                    </td>
+                    <td class="book-col2">
+                      <span>2000</span>
+                    </td>
+                    <td class="book-col3">
+                      <span>赵振才</span>
+                    </td>
+                    <td class="book-col4">
+                      <span>黑龙江人民出版社</span>
+                    </td>
+                    <td class="book-col5">
+                      <span>978-7-5326-4945-0</span>
+                    </td>
+                    <td class="book-col6">
+                      <span>2017-08</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>13</span>
+                      <a href="#">英语常见问题解答大词典</a>             
+                    </td>
+                    <td class="book-col2">
+                      <span>2000</span>
+                    </td>
+                    <td class="book-col3">
+                      <span>赵振才</span>
+                    </td>
+                    <td class="book-col4">
+                      <span>黑龙江人民出版社</span>
+                    </td>
+                    <td class="book-col5">
+                      <span>978-7-5326-4945-0</span>
+                    </td>
+                    <td class="book-col6">
+                      <span>2017-08</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>14</span>
+                      <a href="#">英语常见问题解答大词典</a>             
+                    </td>
+                    <td class="book-col2">
+                      <span>2000</span>
+                    </td>
+                    <td class="book-col3">
+                      <span>赵振才</span>
+                    </td>
+                    <td class="book-col4">
+                      <span>黑龙江人民出版社</span>
+                    </td>
+                    <td class="book-col5">
+                      <span>978-7-5326-4945-0</span>
+                    </td>
+                    <td class="book-col6">
+                      <span>2017-08</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>15</span>
+                      <a href="#">英语常见问题解答大词典</a>             
+                    </td>
+                    <td class="book-col2">
+                      <span>2000</span>
+                    </td>
+                    <td class="book-col3">
+                      <span>赵振才</span>
+                    </td>
+                    <td class="book-col4">
+                      <span>黑龙江人民出版社</span>
+                    </td>
+                    <td class="book-col5">
+                      <span>978-7-5326-4945-0</span>
+                    </td>
+                    <td class="book-col6">
+                      <span>2017-08</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>16</span>
+                      <a href="#">英语常见问题解答大词典</a>             
+                    </td>
+                    <td class="book-col2">
+                      <span>2000</span>
+                    </td>
+                    <td class="book-col3">
+                      <span>赵振才</span>
+                    </td>
+                    <td class="book-col4">
+                      <span>黑龙江人民出版社</span>
+                    </td>
+                    <td class="book-col5">
+                      <span>978-7-5326-4945-0</span>
+                    </td>
+                    <td class="book-col6">
+                      <span>2017-08</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>17</span>
+                      <a href="#">英语常见问题解答大词典</a>             
+                    </td>
+                    <td class="book-col2">
+                      <span>2000</span>
+                    </td>
+                    <td class="book-col3">
+                      <span>赵振才</span>
+                    </td>
+                    <td class="book-col4">
+                      <span>黑龙江人民出版社</span>
+                    </td>
+                    <td class="book-col5">
+                      <span>978-7-5326-4945-0</span>
+                    </td>
+                    <td class="book-col6">
+                      <span>2017-08</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>18</span>
+                      <a href="#">英语常见问题解答大词典</a>             
+                    </td>
+                    <td class="book-col2">
+                      <span>2000</span>
+                    </td>
+                    <td class="book-col3">
+                      <span>赵振才</span>
+                    </td>
+                    <td class="book-col4">
+                      <span>黑龙江人民出版社</span>
+                    </td>
+                    <td class="book-col5">
+                      <span>978-7-5326-4945-0</span>
+                    </td>
+                    <td class="book-col6">
+                      <span>2017-08</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>19</span>
+                      <a href="#">英语常见问题解答大词典</a>             
+                    </td>
+                    <td class="book-col2">
+                      <span>2000</span>
+                    </td>
+                    <td class="book-col3">
+                      <span>赵振才</span>
+                    </td>
+                    <td class="book-col4">
+                      <span>黑龙江人民出版社</span>
+                    </td>
+                    <td class="book-col5">
+                      <span>978-7-5326-4945-0</span>
+                    </td>
+                    <td class="book-col6">
+                      <span>2017-08</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>20</span>
+                      <a href="#">英语常见问题解答大词典</a>             
+                    </td>
+                    <td class="book-col2">
+                      <span>2000</span>
+                    </td>
+                    <td class="book-col3">
+                      <span>赵振才</span>
+                    </td>
+                    <td class="book-col4">
+                      <span>黑龙江人民出版社</span>
+                    </td>
+                    <td class="book-col5">
+                      <span>978-7-5326-4945-0</span>
+                    </td>
+                    <td class="book-col6">
+                      <span>2017-08</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                </table>
+                <!--书目列表 end-->
+        </div><!-- end of shumu tab -->
       </div>
-      <div class="foot-bot clearfix content-container" data-edit="y">
-          <div class="t">
-              <p class="mid">
-                  <span>
-                      <a target="_blank"  rel="noopener noreferrer" href="//www.cnki.net/gycnki/gycnki.htm">关于我们</a>
-                      <a target="_blank"  rel="noopener noreferrer" href="//www.cnki.net/other/gonggao/gongsirongyu.html">CNKI 荣誉</a>
-                      <a target="_blank"  rel="noopener noreferrer" href="//www.cnki.net/other/gonggao/bqsm.htm">版权公告</a>
-                      <a target="_blank"  rel="noopener noreferrer" href="//service.cnki.net/">客服中心</a>
-                      <a target="_blank"  rel="noopener noreferrer" href="//help.cnki.net/">在线咨询</a>
-                      <a target="_blank"  rel="noopener noreferrer"
-                         href="//help.cnki.net/Live800_1_2.aspx?GroupID=503&amp;PageID=101008&amp;Name=&amp;CookieName=TTKN_OnLine_800">用户建议</a>
-                      <a target="_blank"  rel="noopener noreferrer" href="//piccache.cnki.net/index/CNKIRecruit/index.html">知网招聘</a>
-                      <a target="_blank"  rel="noopener noreferrer" href="//piccache.cnki.net/index/CNKIRecruit/index.html">知网推广</a>
-                  </span>
-                  <div class="trust-icon"> <img src="images/trust-icon.png" alt=""></div>
-                  <!-- <span id="copyright">© 1998-2019 中国知网（CNKI）</span>
-                  <script type="text/javascript">
-                      var date = new Date;
-                      document.getElementById('copyright').innerHTML = "© 1998-" + date.getFullYear() + " 中国知网（CNKI）";
-                  </script>
-              </p> -->
-            <!--   <p class="right"> -->
-                  <!--可信网站图片LOGO安装开始-->
-                  <!-- <a id="___szfw_logo___">
-                      <img alt="可信网站" src="images/footer/kxwz.jpg" height="33" width="86">
-                  </a> -->
-                  <!--可信网站图片LOGO安装结束-->
-                  <!--诚信网站图片LOGO安装开始-->
-                  <!-- <a id="A1">
-                      <img alt="诚信网站" src="footer/cert.jpg" height="33" width="86">
-                  </a>
-                  <script type="text/javascript">
-                      (function () {
-                          document.getElementById('___szfw_logo___').oncontextmenu = function () {
-                              return false;
-                          }
-                      })();
-                  </script> -->
-                  <!--诚信网站图片LOGO安装结束-->
-              </p>
-          </div>
-          <div class="b">
-              <span>
-                  京 ICP 证 040431 号
-                  <a target="_blank"  rel="noopener noreferrer" href="//piccache.cnki.net/index/images/gb/271.jpg">网络出版服务许可证 (总)网出证(京)字第 271 号</a>
-                  <a target="_blank"  rel="noopener noreferrer" href="//piccache.cnki.net/index/images/gb/170001.jpg">出版物经营许可证</a>
-                  <a target="_blank"  rel="noopener noreferrer" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202005012100021">经营性网站备案信息</a> 京公网安备 11010802020460 号
-              </span>
-              <span>《中国学术期刊（光盘版）》电子杂志社有限公司</span>
-              <span>KDN 平台基础技术由 KBASE 11.0 提供.</span>
-          </div>
+      <div id="tiaomu">
+      33
       </div>
-</div>
-<div id="return-top">
-        <a href="javascript:scroll(0,0);" title="返回顶部" alt="返回顶部"></a>
- </div>
-  </div>
-  <!-- end of footer -->
+      <!-- end of tiaomu tab -->
+    </div><!-- tab-content-->
+  
+
+  </div><!-- end of the main-content container-->
+  </div><!-- main-content -->
+
+
+  
 
   <!-- jquery -->
   <!-- script 文件 -->
