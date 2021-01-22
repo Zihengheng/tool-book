@@ -239,7 +239,7 @@ border-left:0;
 /* 底部内容 样式s*/
 .footer{width:100%;height:379px;color:#a4acb7;font-family:"Microsoft Yahei";line-height:22px;font-size: 12px;}
 .footer a{color:#66758d;font-family:"Microsoft Yahei";}
-.foot-top{width:100%;height:181px;padding-top:28px;clear:both;background:url("../images/footer/foot-bg.png") top center #e6e9ee;    font-size: 12px;}
+.foot-top{width:100%;height:181px;padding-top:28px;clear:both; background-color:#e6e9ee;    font-size: 12px;}
 .foot-top .content{width:1200px;margin:0 auto;overflow:hidden;}
 .foot-top li{float:left;}
 .foot-top li+li{margin-left:50px;}

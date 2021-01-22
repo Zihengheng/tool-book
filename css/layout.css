@@ -279,7 +279,7 @@ p.cbook-info{
 .doctype-menus .is-hide{ display: none; }
 .doctype-menus>li:hover,
 .doctype-menus>li.cur{ position: relative;color: #333; border-radius: 4px 4px 0 0; background-image: none; background-color: #fff;  }
-.doctype-menus li.haschild>a{ background-image: url(../images/icon-up.png); background-position: center 64px; background-repeat: no-repeat; }
+.doctype-menus li.haschild>a{/* background-image: url(../images/icon-up.png);*/ background-position: center 64px; background-repeat: no-repeat; }
 .doctype-menus li.haschild:hover>a{ background-image: url(../images/icon-down.png); }
 .doctype-menus li:hover ul{ display: block; }
 .doctype-menus>li:hover>a,
@@ -556,8 +556,8 @@ line-height:38px;}
 
 
 /*左侧分组筛选的确定、清除全部*/
-.sidebar-filter-btns{ position: absolute; bottom:160px; margin-left: -23px; width: 226px; /*height: 40px;*/ line-height: 26px; text-align:center; *margin-left: -125px; }
-.sidebar-filter-btns.fixed{ position: fixed; bottom: 30%; margin-left: -35px; z-index: 4; }
+.sidebar-filter-btns{ position: absolute; bottom:160px; margin-left: -30px; width: 226px; /*height: 40px;*/ line-height: 26px; text-align:center; *margin-left: -125px; }
+.sidebar-filter-btns.fixed{ position: fixed; bottom: 30%; margin-left: -30px; z-index: 4;width:31px; }
 .sidebar-filter-btns.stopTop{ top: 0; }
 .sidebar-filter-btns a{ display: block; width:25px; padding: 3px; line-height: 18px; font-size: 14px; }
 .sidebar-filter-btns .btn-submit{ color:#fff; letter-spacing: 2px; border: 1px solid #53a2e3; background-color: #53a2e3;}
