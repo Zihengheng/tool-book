@@ -284,7 +284,7 @@ input[type="text"].disable-editor{ color: #999!important; }
 /*.btn-unfold{ display: block; vertical-align: middle; width: 20px; height: 20px; !*background-image: url("../images/icon-sprite.png"); background-repeat: no-repeat;*! }*/
 /*.btn-unfold .icon-unfold{ display: inline-block; vertical-align: middle; width: 20px; height: 20px; background-image: url("../images/icon-sprite.png"); background-repeat: no-repeat; }*/
 .btn-unfold{ position: absolute; left: 50%; display: block; width: 30px; height: 30px; margin-top: 13px; margin-left: -15px; background-image: url(../images/icon-btns.png); background-repeat: no-repeat; background-position: 0 -160px; *margin-top: -16px; }
-
+.btn-fold{ position: absolute; left: 50%; bottom:-70px;display: block; width: 30px; height: 30px; margin-top: 13px; margin-left: -15px; background-image: url(../images/icon-btns.png); background-repeat: no-repeat; background-position: 0 -128px; *margin-top: -16px; }
 /*检索项目集合*/
 /*
 .searched-mode-list{ width: 845px; padding-top: 10px; padding-right: 235px; margin-bottom: 12px; border-bottom: 1px dashed #f4f4f4; }

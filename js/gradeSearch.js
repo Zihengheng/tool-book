@@ -13,7 +13,19 @@
  *     （8）“高级检索”检索后，折叠条件，点击底部箭头可展开
  *     （9）"中国专利"的专利类别切换（左侧分类导航相应改变）,详情见 patentClassify()
  * */
-
+$(function(){
+    //修改高级搜索展开折叠
+    $(".btn-unfold").click(function(){
+        $(".search-condition").hide();
+        $("#js-gradeSearch").show();
+    });
+    $(".btn-fold").click(function(){
+        $("#js-gradeSearch").hide();
+        $(".search-condition").show();
+        
+    });
+   
+});
 
 $(function () {
     var mysearch = new searchClassify();
@@ -53,7 +65,7 @@ searchClassify.prototype = {
 
         that.inputFunc(); //输入框事件
 
-        that.bindConditionFold();//“高级检索”的检索条件折叠/展开
+        // that.bindConditionFold();//“高级检索”的检索条件折叠/展开
 
         // that.setTimeoutShowGrade();//初次打开页面，展开高级检索盒子
 
