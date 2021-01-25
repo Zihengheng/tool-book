@@ -4,6 +4,11 @@
   范围：museum 系列
   */
 $(function(){
+
+    new inputFunc({ //调用首屏页面输入框事件
+        duration: 400
+    });
+    // sort(".sort","cur"); //分类
     //语词库侧边栏
     //menu-1
    $('#menu-1').collapse('show');

@@ -316,8 +316,6 @@ p.abstract{
 	height: 45px;
 	font-family: SimSun;
 	font-size: 12px;
-	font-weight: normal;
-	font-stretch: normal;
 	line-height: 23px;
 	letter-spacing: 0px;
 	color:black;
@@ -636,3 +634,10 @@ td.book-col a{
 	left:131px;
 }
 /*=================== 检索结果表格页 end =================*/
+
+/*=================== 检索结果图片页 start =================*/
+
+/*=================== 检索结果图片页 end =================*/
+
+/*=================== 高级检索页 start =================*/
+/*=================== 高级检索页 end =================*/
