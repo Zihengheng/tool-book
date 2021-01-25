@@ -437,6 +437,10 @@ div.booksec-box img{
 div.booksec-box img:hover{
 	box-shadow: 5px 5px 5px 5px  #eeeeee;
     transform: scale(1.08);
+    -ms-transform: scale(1.08);   
+   -moz-transform: scale(1.08); 
+   -webkit-transform: scale(1.08); 
+   -o-transform: scale(1.08); 
 }
 div.book-annotation{
 	position:absolute;

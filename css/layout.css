@@ -206,20 +206,18 @@ p.cbook-info{
 }
 .translate-box{
     width: 1201px;
-    height: 165px;
     background-color: #ffffff;
     box-shadow: 0px 3px 12px 1px 
         rgba(225, 225, 225, 0.68);
     border-radius: 5px;
     position:relative;
+    padding-bottom: 10px;
 }
 div.input-box{
-    height:100%;
     width:600px;
     float:left;
 }
 div.reuslt-box{
-    height:100%;
     width:600px;
     float:left;
 }
@@ -272,20 +270,24 @@ div.translate-header span{
     overflow-y: scroll;
     font-size: 14px;
 }
+.trans-info{padding-top: 10px;}
 .trans-input{
     padding:20px 20px 20px 20px;
 }
 .edit-btn{
-    width:30px;
-    height:28px;
+    width:28px;
+    height:27px;
     border:1px solid #dcdcdc;
     margin-left: 10px;
     position:relative;
     top:3px;
+    background: url("../images/ita.png") no-repeat center;
+    background-color: #dcdcdc;
 }
-.trans-wcount{
+.trans-info{float:right; margin-right:20px;}
+/*.trans-wcount{
     padding-left: 480px;
-}
+}*/
 .trans-rstbox{
     padding:20px;
 }
@@ -322,9 +324,12 @@ div.translate-header span{
     margin-right:64px;
 }
 .show-more{
-    position:absolute;
-    left:877px;
-    top:144px;
+    float:right;
+    margin-right: 300px;
+}
+.more-rst-box{
+    height:60px;
+    /*display:none;*/
 }
 .trans-section-title{
     width: 1192px;
@@ -482,15 +487,40 @@ div.translate-header span{
     padding:22px 50px 0px 50px;
 }
 .dt-box-book{
-    width: 125px;
-    height: 187px;
+    position:relative;
+    width: 131px;
+    height: 192px;
     float:left;
     margin-top: 10px;
     margin-left: 10px;
+    background-color: #eeeeee;
+    box-shadow: 0px 3px 10px 0px 
+        rgba(202, 202, 202, 0.59);
 }
 .dt-box-book img{
     width:100%;
     height:100%;
+}
+.dt-box-book:hover{
+    box-shadow: 5px 5px 5px 5px  #eeeeee;
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);   
+   -moz-transform: scale(1.1); 
+   -webkit-transform: scale(1.1); 
+   -o-transform: scale(1.1); 
+}
+div.book-annotation{
+    position: absolute;
+    width: 131px;
+    height: 26px;
+    background-color: grey;
+    opacity: 0.9;
+    top: 163px;
+    left:0px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    display: none;
 }
 .dt-box-con{
     float:right;

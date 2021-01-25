@@ -1,7 +1,7 @@
 // JavaScript Document
 /* 
   工具书库 20170317
-  范围：首页, book-detail page, 
+  范围：首页, book-detail page, translate page
   说明：功能单一，所以整合为一个文件
  */
 $(function () { $("[data-toggle='tooltip']").tooltip(); });
@@ -39,8 +39,23 @@ $(function(){
         }
     });
 
+    //范围：书目详情页
+    //说明：显示书籍注释
+    $(".dt-box-book").hover(
+    function(){
+        $(this).children(".book-annotation").stop().fadeTo("slow",1,function(){
+            $(this).css("display", "block");
+        })
+    },
+    function(){
+        $(this).children(".book-annotation").stop().fadeTo("slow",0,function(){
+            $(this).css("display","none");
+        })
+    });
+
 	//  $('.js-banner-move').smart3d();//第一屏背景
         $('#myTab li:eq(1) a').tab('show'); 
+
 	new inputFunc({ //调用首屏页面输入框事件
 		duration: 400
 	});

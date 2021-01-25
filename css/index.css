@@ -523,6 +523,10 @@ a.go-right{
 .ep-box img:hover{
     box-shadow: 5px 5px 5px 5px  #eeeeee;
     transform: scale(1.08);
+     -ms-transform: scale(1.08);   
+   -moz-transform: scale(1.08); 
+   -webkit-transform: scale(1.08); 
+   -o-transform: scale(1.08); 
 }
 .box1 .count{
     color:#84e1c0;
