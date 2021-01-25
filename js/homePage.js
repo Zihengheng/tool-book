@@ -1,97 +1,43 @@
 // JavaScript Document
 /* 
   工具书库 20170317
-  范围：首页
+  范围：首页, book-detail page, 
   说明：功能单一，所以整合为一个文件
  */
 $(function () { $("[data-toggle='tooltip']").tooltip(); });
 $(function(){
 	$('#myTab a[href="#t1"]').tab('show');
 	$('#labels a[href="#zk"]').tab('show');
-	//显示书籍注释
-	$(".box1 .book a").hover(
-    function(){
-        $(".box1 .book a").next().stop().fadeTo("slow",1,function(){
-            $(this).css("display", "block");
-        })
-    },
-    function(){
-        $(".box1 .book a").next().stop().fadeTo("slow",0,function(){
-            $(this).css("display","none");
-        })
-    });
-    $(".box2 .book a").hover(
-    function(){
-        $(".box2 .book a").next().stop().fadeTo("slow",1,function(){
-            $(this).css("display", "block");
-        })
-    },
-    function(){
-        $(".box2 .book a").next().stop().fadeTo("slow",0,function(){
-            $(this).css("display","none");
-        })
-    });
 
-    $(".box3 .book a").hover(
+    //范围：首页
+    //说明：显示书籍注释
+	
+	$(".ep-box .book a").hover(
     function(){
-        $(".box3 .book a").next().stop().fadeTo("slow",1,function(){
+        $(this).next().stop().fadeTo("slow",1,function(){
             $(this).css("display", "block");
         })
     },
     function(){
-        $(".box3 .book a").next().stop().fadeTo("slow",0,function(){
+        $(this).next().stop().fadeTo("slow",0,function(){
             $(this).css("display","none");
         })
     });
-
-    $(".box4 .book a").hover(
-    function(){
-        $(".box4 .book a").next().stop().fadeTo("slow",1,function(){
-            $(this).css("display", "block");
-        })
-    },
-    function(){
-        $(".box4 .book a").next().stop().fadeTo("slow",0,function(){
-            $(this).css("display","none");
-        })
+	
+    //范围：book-detiail page
+    //说明：show-more
+    $(".show-more-dt-col").click(function(){
+        if($(this).hasClass("open")){
+        	$(this).removeClass("open");
+        	$(".dt-col-more").hide();
+        	$(this).text("展示更多");
+        }
+        else{
+            $(this).addClass("open");
+            $(".dt-col-more").show();
+            $(this).text("收起");
+        }
     });
-
-    $(".box5 .book a").hover(
-    function(){
-        $(".box5 .book a").next().stop().fadeTo("slow",1,function(){
-            $(this).css("display", "block");
-        })
-    },
-    function(){
-        $(".box5 .book a").next().stop().fadeTo("slow",0,function(){
-            $(this).css("display","none");
-        })
-    });
-
-    $(".box6 .book a").hover(
-    function(){
-        $(".box6 .book a").next().stop().fadeTo("slow",1,function(){
-            $(this).css("display", "block");
-        })
-    },
-    function(){
-        $(".box6 .book a").next().stop().fadeTo("slow",0,function(){
-            $(this).css("display","none");
-        })
-    });
-
-    $(".box7 .book a").hover(
-    function(){
-        $(".box7 .book a").next().stop().fadeTo("slow",1,function(){
-            $(this).css("display", "block");
-        })
-    },
-    function(){
-        $(".box7 .book a").next().stop().fadeTo("slow",0,function(){
-            $(this).css("display","none");
-        })
-    });
-	// $(".section").pageScroll();//滚屏
 
 	//  $('.js-banner-move').smart3d();//第一屏背景
         $('#myTab li:eq(1) a').tab('show'); 
@@ -155,32 +101,4 @@ $(function(){
 		subLi.removeClass("active").eq(_index).addClass("active");
 	});
 
-
-	/*========返回顶部 start=========*/
-	// backBtn = $(".back-top");
-
-
-	// $(window).load(function(){
-	// 	initBackTop = backBtn.offset().top;//初始加载时
-	// 	// console.log(initBackTop );
-	// 	if(initBackTop<1000){
-	// 		backBtn.hide();
-	// 	}
-	// });
-
-	// $(window).scroll(function(){
-	// 	if ($(window).scrollTop()>1000){//滚动页面时
-	// 		backBtn.show();
-	// 	}
-	// 	else
-	// 	{
-	// 		backBtn.hide();
-	// 	}
-	// });
-
-	// backBtn.click(function(){//当点击跳转链接后，回到页面顶部位置
-	// 	$('body,html').animate({scrollTop:0},1000);
-	// 	return false;
-	// });
-	/*==========返回顶部 end=============*/
 });

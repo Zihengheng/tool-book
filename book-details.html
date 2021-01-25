@@ -9,9 +9,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- others -->
   <link rel="stylesheet" type="text/css" href="css/public.css">
-  <link rel="stylesheet" type="text/css" href="css/result.css">
   <link rel="stylesheet" type="text/css" href="css/layout.css">
-  <link rel="stylesheet" type="text/css" href="css/museum.css">
+  <link rel="stylesheet" type="text/css" href="css/book-detail.css">
   <script type="text/javascript" src="js/lib/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.input.js"></script><!--输入框事件-->
   <script type="text/javascript" src="js/homePage.js"></script>
@@ -87,7 +86,7 @@
           <br>
         </div><!--search-form-->
 
-        <div class="search-nav show">
+        <div class="search-nav">
           <span class="title">输入助手：</span>
           <ul class="nav-bar">
             <li><a href="javascript:void(0);">部首<i class="icon"></i></a></li>
@@ -458,6 +457,15 @@
                 <span>定价:298.00(全二册)</span>
               </p>
             </div>
+            <div class="dt-col-more">
+              <p class="col-con-para">
+                <span>字数:7092千字</span><br>
+                <span>页码:3309 </span><br>
+                <span>开本:16</span><br>
+                <span>中图分类号:H164</span><br>
+                <span>定价:298.00(全二册)</span>
+              </p>
+            </div>
           </div>
           <div class="dt-con-col2">
             <div class="dt-col-tit">附录</div>
@@ -470,10 +478,22 @@
                 <span>汉语大词典</span>
               </p>
             </div>
+            <div class="dt-col-more">
+              <p class="col-con-para">
+                <span>字数:7092千字</span><br>
+                <span>页码:3309 </span><br>
+                <span>开本:16</span><br>
+                <span>中图分类号:H164</span><br>
+                <span>定价:298.00(全二册)</span>
+              </p>
+            </div>
           </div>
+          <a href="javascript:void(0)" class="show-more-dt-col">展示更多</a>
         </div>
+        <!-- dt-box-con -->
       </div>
-    </div>
+      <div class="clear"></div>
+    </div> <!-- dt-book-box -->
   </div><!--container -->
  </div><!--翻译 banner end-->
 
@@ -481,19 +501,16 @@
     <div class="container">
        <!-- 左边栏 -->
       <!-- dt-leftbar start -->
-      <div class="dt-leftbar prof">
+      <div class="dt-leftbar book-detail">
         <div class="dt-leftbar-title">
           <span>词条索引</span>
         </div><!-- end of leftbar-title -->
-        <div class="dt-book-title">
-          <span>马克思主义哲学大辞典</span>
-        </div>
         <div class="dt-book-navbar panel-group" id="hyk-book-nav">
           <div class="panel">
             <div class="panel-heading">
               <a href="#bnav-one" data-toggle="collapse" data-parent="#dt-book-nav" class="toggle-btn">-</a>
               <ul class="dt-chapters">
-                <li><a href="#" data-toggle="tab">诗</a></li>
+                <li><a href="#">马部</a></li>
               </ul>
             </div>
             <div id="bnav-one" class="panel-collapse collapse in">
@@ -502,27 +519,27 @@
                     <dd>
                       <div class="nav-section-title">
                       <a href="#subsection-1" data-toggle="collapse" class="toggle-btn">-</a>
-                        <span>辩证唯物主义</span>
+                        <span>归</span>
                       </div>
                       <ul id="subsection-1" class="collapse in nav-sections">
-                        <li><a href="#" data-toggle="tab">客观辩证法</a></li>
-                        <li><a href="#" data-toggle="tab">主观辩证法</a></li>
-                        <li><a href="#" data-toggle="tab">马克思主义辩证法</a></li>
-                        <li class="active"><a href="#ziran" data-toggle="tab">自然辩证法</a></li>
-                        <li><a href="#" data-toggle="tab">历史辩证法</a></li>
+                        <li><a href="#" data-toggle="tab">归一</a></li>
+                        <li><a href="#" data-toggle="tab">归十归一</a></li>
+                        <li><a href="#" data-toggle="tab">归人</a></li>
+                        <li class="active"><a href="#ziran" data-toggle="tab">归心似箭</a></li>
+                        <li><a href="#" data-toggle="tab">归了包堆</a></li>
                         <li><a href="#" data-toggle="tab">军事辩证法</a></li>
-                        <li><a href="#" data-toggle="tab">形而上学</a></li>
-                        <li><a href="#" data-toggle="tab">庸俗进化论</a></li>
+                        <li><a href="#" data-toggle="tab">归公</a></li>
+                        <li><a href="#" data-toggle="tab">归心如箭</a></li>
                       </ul>
                     </dd>
                     <dd>
                       <div class="nav-section-title">
                       <a href="#subsection-2" data-toggle="collapse" class="toggle-btn">-</a>
-                        <span>历史唯物主义</span>
+                        <span>归</span>
                       </div>
                       <ul id="subsection-2" class="collapse nav-sections">
-                        <li><a href="#" data-toggle="tab">客观辩证法</a></li>
-                        <li><a href="#" data-toggle="tab">主观辩证法</a></li>
+                        <li><a href="#" data-toggle="tab">归一</a></li>
+                        <li><a href="#" data-toggle="tab">归一</a></li>
                       </ul>
                     </dd>
                   </dl>
@@ -531,23 +548,6 @@
           </div><!-- end of a panel -->
         </div>
         <!-- end of the panel group -->
-        <div class="chi-knowledge">
-          <div class="chi-title">
-            <span>相关词</span>
-          </div>
-          <div class="chi-list">
-            <ul class="navbar-nav">
-              <li><a href="#">马克思主义辩证法</a></li>
-              <li><a href="#">历史辩证法</a></li>
-              <li><a href="#">马克思主义辩证法</a></li>
-              <li><a href="#">历史辩证法</a></li>
-              <li><a href="#">马克思主义辩证法</a></li>
-              <li><a href="#">历史辩证法</a></li>
-              <li><a href="#">马克思主义辩证法</a></li>
-              <li><a href="#">历史辩证法</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
       <!-- end of dt-leftbar -->
 
@@ -573,206 +573,146 @@
         </div><!-- end of dt-rightbar-title -->
 
         <div class="dt-container">
-        <div id="prof-intro" class="tab-content">
-          <div class="tab-pane fade in active" id="ziran">
-            <div class="prof-intro-container">
-            <span class="prof-tit">自然辩证法</span>
-            <div class="prof-info-bar">
-              <span>英 dialecitics of nature;</span>
-              <span>德 Dialektik der Natur</span>
-            </div>
-            <div class="prof-inter clearfix">
-              <p>恩格斯提出的一个哲学概念，有二层含义：1.指自然界本身存在的辩证发展的规律性;2.指马克思主义哲学的一个组成部分，马克思主义哲学自然观、科学观和自然科学方法论的理论体系</p>
-              <p>在第一层含义上，自然辩证法作为自然界所固有的辩证规律，与历史辩证法即历史规律一起，共同构成客观辩证法的内容。恩格斯说：“所谓客观辩证法是支配着整个自然界的，而所谓主观辩证法即辩证的思维，不过是自然界中到处盛行的对立中的运动的反映而已。”(《马克思恩格斯选集》第3卷，第534页)。自然辩证法即“自然界中到处盛行的对立中的运动”，比如：数学中的正和负、微分和积分;力学中的作用与反作用;物理学中的阳电和阴电;化学中原子的化合和分解;生物学中的遗传与变异;……等等。我们所面对的自然界形成一个统一的体系，即各种物体相互联系的总体。这些物体的相互联系、互相作用，构成了自然界有规律的运动。自然界遵循着自身辩证的运动规律而向前发展。</p>
-              <p>在第二层含义上，作为马克思主义哲学的一个组成部分，自然辩证法是研究自然界的辩证过程和辩证联系的哲学理论。它研究的对象和辩证唯物主义、各门自然科学是有区别的。各门自然科学研究客观世界某个方面、某个领域的特殊规律。辩证唯物主义则是对自然界、人类社会和思维发展的最一般规律的概括和总结。自然辩证法研究的，是各门自然科学都共同存在的普遍规律。具体地说，它是以辩证唯物主义为基础，通过深入研究自然科学史和自然科学，来描绘自然界发展变化的辩证图景;从自然科学产生和发展的历史，研究它的性质、作用、社会属性、社会职能、发展规律等问题，以概括出自然科学观;从自然科学一般研究方法的规律性，来探讨自然科学的方法论。因此，自然辩证法是介于辩证唯物主义和自然科学之间的学科，它能为各门自然科学提供具体的世界观和方法论的指导，推动自然科学的发展。同时，自然辩证法还能为马克思主义哲学提供自然科学的根据，帮助科技工作者树立正确的世界观和方法论，并批判歪曲自然科学最新成就的唯心主义。</p>
-              <p>对于恩格斯的自然辩证法概念，哲学界长期存在争论。有人认为在马克思主义哲学中不存在历史辩证法之外的非历史的自然辩证法。在当代所谓“西方马克思主义”思潮中，一般对“自然辩证法”持否定、拒绝的态度。</p>
-            </div>
+        <div  class="tab-content">
+          <ul class="words-list">
+              <li>
+                <div class="words-list-title">
+                  <span>归一</span><span>guī yī</span>
+                </div>
+                <p class="words-list-description">
+                  方言。完善;.........
+                </p>
+                <ul class="pic-list clearfix">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>
+                <div class="words-list-title">
+                  <span>归一</span><span>guī yī</span>
+                </div>
+                <p class="words-list-description">
+                  方言。完善;.........
+                </p>
+                <ul class="pic-list clearfix">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>
+                <div class="words-list-title">
+                  <span>归一</span><span>guī yī</span>
+                </div>
+                <p class="words-list-description">
+                  方言。完善;.........
+                </p>
+                <ul class="pic-list clearfix">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>
+                <div class="words-list-title">
+                  <span>归一</span><span>guī yī</span>
+                </div>
+                <p class="words-list-description">
+                  方言。完善;.........
+                </p>
+                <ul class="pic-list clearfix">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>
+                <div class="words-list-title">
+                  <span>归一</span><span>guī yī</span>
+                </div>
+                <p class="words-list-description">
+                  方言。完善;.........
+                </p>
+                <ul class="pic-list clearfix">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>
+                <div class="words-list-title">
+                  <span>归一</span><span>guī yī</span>
+                </div>
+                <p class="words-list-description">
+                  方言。完善;.........
+                </p>
+                <ul class="pic-list clearfix">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>
+                <div class="words-list-title">
+                  <span>归一</span><span>guī yī</span>
+                </div>
+                <p class="words-list-description">
+                  方言。完善;.........
+                </p>
+                <ul class="pic-list clearfix">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>
+                <div class="words-list-title">
+                  <span>归一</span><span>guī yī</span>
+                </div>
+                <p class="words-list-description">
+                  方言。完善;.........
+                </p>
+                <ul class="pic-list clearfix">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li>
+                <div class="words-list-title">
+                  <span>归一</span><span>guī yī</span>
+                </div>
+                <p class="words-list-description">
+                  方言。完善;.........
+                </p>
+                <ul class="pic-list clearfix">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+            </ul>
 
-            <p class="intro-source">知识来源：上海辞书出版社文学鉴赏辞典编纂中心编;李白诗歌鉴赏词典；上海辞书出版社；2012-5</p>
-            </div>
-            <div class="word-change">
-              <a href="#">上一条：<em>马克思主义辩证法 </em></a>
-              <a href="#">下一条：<em>历史辩证法</em></a>
-            </div>
-          </div>
-          </div><!-- end of the tab-content -->
-
-        <!-- 相关资源 section start-->
-        <div class="prof-keep">        
-            <div class="dt-section-title">
-              <span>预留</span>
-            </div>
-            <div class="prof-keep-content">
-              <p> 在第二层含义上，作为马克思主义哲学的一个组成部分，自然辩证法是研究自然界的辩证过程和辩证联系的哲学理论。它研究的对象和
-              辩证唯物主义、各门自然科学是有区别的。各门自然科学研究客观世界某个方面、某个领域的特殊规律。辩证唯物主义则是对自然界、人类社
-              会和思维发展的最一般规律的概括和总结。自然辩证法研究的，是各门自然科学都共同存在的普遍规律。具体地说，它是以辩证唯物主义为基
-              础，通过深入研究自然科学史和自然科学，来描绘自然界发展变化的辩证图景;从自然科学产生和发展的历史，研究它的性质、作用、社会属
-              性、社会职能、发展规律等问题。</p>
-            </div>
-        </div>
-        <!-- 相关资源 section end -->
-
-        <!-- 相关解释 section start -->
-        <div class="related-info">
-           <div class="dt-section-title">
-              <span>“自然辩证法” 在其他工具书的解释</span>
-              <ul id="related-info-tabs">
-                <li class="active">
-                  <a href="#yck" data-toggle="tab">语词库 </a>
-                </li>
-                <li>
-                  <a href="#jsk" data-toggle="tab">鉴赏库</a>
-                </li>
-                <li>
-                  <a href="#hyk" data-toggle="tab">行业库</a>
-                </li>
-              </ul>
-            </div>
-            <div id="related-info-content" class="tab-content">
-              <div class="tab-pane fade in active" id="yck">
-                <dl class="result-detail-list">
-                  <dd>
-                        <div class="seq"><div class="lan-list-icon"></div></div>
-                        <div class="middle">
-                          <!-- <div class="list-title">
-                            <a href="#"><span class="key">drift</span></a>
-                            <span>汉语大辞典&康熙字典</span>
-                            <span class="position"></span>
-                            <span class="chuban"></span>
-                          </div> -->
-                            <p class="abstract">床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”。明胡应麟说:“太白诸绝句床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”.</p>
-                            <ul class="basic-info clearfix">
-                              <li><span>字数：3621</span><div class="info-divider"></div></li>
-                              <li><span>图片数：12</span><div class="info-divider"></div></li>
-                              <li><span>表格数：3</span><div class="info-divider"></div></li>
-                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
-                              <li><a href="#"><span>进入条目</span></a></li>
-                            </ul>
-                              <ul class="pic-list clearfix">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                              </ul>
-                        </div>
-                        <!-- end of the content box -->
-                    </dd>
-                    <!-- end of a list -->
-                    <dd>
-                        <div class="seq"><div class="lan-list-icon"></div></div>
-                        <div class="middle">
-                          <!-- <div class="list-title">
-                            <a href="#"><span class="key">drift</span></a>
-                            <span>汉语大辞典&康熙字典</span>
-                            <span class="position"></span>
-                            <span class="chuban"></span>
-                          </div> -->
-                            <p class="abstract">床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”。明胡应麟说:“太白诸绝句床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”.</p>
-                            <ul class="basic-info clearfix">
-                              <li><span>字数：3621</span><div class="info-divider"></div></li>
-                              <li><span>图片数：12</span><div class="info-divider"></div></li>
-                              <li><span>表格数：3</span><div class="info-divider"></div></li>
-                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
-                              <li><a href="#"><span>进入条目</span></a></li>
-                            </ul>
-                              <ul class="pic-list clearfix">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                              </ul>
-                        </div>
-                        <!-- end of the content box -->
-                    </dd>
-                    <!-- end of a list -->
-                    <dd>
-                        <div class="seq"><div class="lan-list-icon"></div></div>
-                        <div class="middle">
-                          <!-- <div class="list-title">
-                            <a href="#"><span class="key">drift</span></a>
-                            <span>汉语大辞典&康熙字典</span>
-                            <span class="position"></span>
-                            <span class="chuban"></span>
-                          </div> -->
-                            <p class="abstract">床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”。明胡应麟说:“太白诸绝句床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”.</p>
-                            <ul class="basic-info clearfix">
-                              <li><span>字数：3621</span><div class="info-divider"></div></li>
-                              <li><span>图片数：12</span><div class="info-divider"></div></li>
-                              <li><span>表格数：3</span><div class="info-divider"></div></li>
-                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
-                              <li><a href="#"><span>进入条目</span></a></li>
-                            </ul>
-                              <ul class="pic-list clearfix">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                              </ul>
-                        </div>
-                        <!-- end of the content box -->
-                    </dd>
-                    <!-- end of a list -->
-                    <dd>
-                        <div class="seq"><div class="lan-list-icon"></div></div>
-                        <div class="middle">
-                          <!-- <div class="list-title">
-                            <a href="#"><span class="key">drift</span></a>
-                            <span>汉语大辞典&康熙字典</span>
-                            <span class="position"></span>
-                            <span class="chuban"></span>
-                          </div> -->
-                            <p class="abstract">床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”。明胡应麟说:“太白诸绝句床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”.</p>
-                            <ul class="basic-info clearfix">
-                              <li><span>字数：3621</span><div class="info-divider"></div></li>
-                              <li><span>图片数：12</span><div class="info-divider"></div></li>
-                              <li><span>表格数：3</span><div class="info-divider"></div></li>
-                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
-                              <li><a href="#"><span>进入条目</span></a></li>
-                            </ul>
-                              <ul class="pic-list clearfix">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                              </ul>
-                        </div>
-                        <!-- end of the content box -->
-                    </dd>
-                    <!-- end of a list -->
-                    <dd>
-                        <div class="seq"><div class="lan-list-icon"></div></div>
-                        <div class="middle">
-                          <!-- <div class="list-title">
-                            <a href="#"><span class="key">drift</span></a>
-                            <span>汉语大辞典&康熙字典</span>
-                            <span class="position"></span>
-                            <span class="chuban"></span>
-                          </div> -->
-                            <p class="abstract">床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”。明胡应麟说:“太白诸绝句床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”.</p>
-                            <ul class="basic-info clearfix">
-                              <li><span>字数：3621</span><div class="info-divider"></div></li>
-                              <li><span>图片数：12</span><div class="info-divider"></div></li>
-                              <li><span>表格数：3</span><div class="info-divider"></div></li>
-                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
-                              <li><a href="#"><span>进入条目</span></a></li>
-                            </ul>
-                              <ul class="pic-list clearfix">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                              </ul>
-                        </div>
-                        <!-- end of the content box -->
-                    </dd>
-                    <!-- end of a list -->
-                </dl>
-                <!-- 分页 -->
+            <!-- 分页 -->
                 <nav aria-label="Page navigation" class="fenye">
                   <div class="pn-container">
                   <ul class="pagination msm">
@@ -810,591 +750,7 @@
                   </div>
                   <!-- end of the page-nav container -->
                 </nav> <!-- 分页 end -->
-              </div>
-              <div class="tab-pane fade" id="jsk">
-                 <dl class="result-detail-list">
-                   <dd>
-                        <div class="seq"><div class="lan-list-icon"></div></div>
-                        <div class="middle">
-                          <!-- <div class="list-title">
-                            <a href="#"><span class="key">drift</span></a>
-                            <span>汉语大辞典&康熙字典</span>
-                            <span class="position"></span>
-                            <span class="chuban"></span>
-                          </div> -->
-                            <p class="abstract">床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”。明胡应麟说:“太白诸绝句床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”.</p>
-                            <ul class="basic-info clearfix">
-                              <li><span>字数：3621</span><div class="info-divider"></div></li>
-                              <li><span>图片数：12</span><div class="info-divider"></div></li>
-                              <li><span>表格数：3</span><div class="info-divider"></div></li>
-                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
-                              <li><a href="#"><span>进入条目</span></a></li>
-                            </ul>
-                              <ul class="pic-list clearfix">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                              </ul>
-                        </div>
-                        <!-- end of the content box -->
-                    </dd>
-                    <!-- end of a list -->
-                    <dd>
-                        <div class="seq"><div class="lan-list-icon"></div></div>
-                        <div class="middle">
-                          <!-- <div class="list-title">
-                            <a href="#"><span class="key">drift</span></a>
-                            <span>汉语大辞典&康熙字典</span>
-                            <span class="position"></span>
-                            <span class="chuban"></span>
-                          </div> -->
-                            <p class="abstract">床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”。明胡应麟说:“太白诸绝句床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”.</p>
-                            <ul class="basic-info clearfix">
-                              <li><span>字数：3621</span><div class="info-divider"></div></li>
-                              <li><span>图片数：12</span><div class="info-divider"></div></li>
-                              <li><span>表格数：3</span><div class="info-divider"></div></li>
-                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
-                              <li><a href="#"><span>进入条目</span></a></li>
-                            </ul>
-                              <ul class="pic-list clearfix">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                              </ul>
-                        </div>
-                        <!-- end of the content box -->
-                    </dd>
-                    <!-- end of a list -->
-                    <dd>
-                        <div class="seq"><div class="lan-list-icon"></div></div>
-                        <div class="middle">
-                          <!-- <div class="list-title">
-                            <a href="#"><span class="key">drift</span></a>
-                            <span>汉语大辞典&康熙字典</span>
-                            <span class="position"></span>
-                            <span class="chuban"></span>
-                          </div> -->
-                            <p class="abstract">床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”。明胡应麟说:“太白诸绝句床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”.</p>
-                            <ul class="basic-info clearfix">
-                              <li><span>字数：3621</span><div class="info-divider"></div></li>
-                              <li><span>图片数：12</span><div class="info-divider"></div></li>
-                              <li><span>表格数：3</span><div class="info-divider"></div></li>
-                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
-                              <li><a href="#"><span>进入条目</span></a></li>
-                            </ul>
-                              <ul class="pic-list clearfix">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                              </ul>
-                        </div>
-                        <!-- end of the content box -->
-                    </dd>
-                    <!-- end of a list -->
-                    <dd>
-                        <div class="seq"><div class="lan-list-icon"></div></div>
-                        <div class="middle">
-                          <!-- <div class="list-title">
-                            <a href="#"><span class="key">drift</span></a>
-                            <span>汉语大辞典&康熙字典</span>
-                            <span class="position"></span>
-                            <span class="chuban"></span>
-                          </div> -->
-                            <p class="abstract">床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”。明胡应麟说:“太白诸绝句床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”.</p>
-                            <ul class="basic-info clearfix">
-                              <li><span>字数：3621</span><div class="info-divider"></div></li>
-                              <li><span>图片数：12</span><div class="info-divider"></div></li>
-                              <li><span>表格数：3</span><div class="info-divider"></div></li>
-                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
-                              <li><a href="#"><span>进入条目</span></a></li>
-                            </ul>
-                              <ul class="pic-list clearfix">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                              </ul>
-                        </div>
-                        <!-- end of the content box -->
-                    </dd>
-                    <!-- end of a list -->
-                    <dd>
-                        <div class="seq"><div class="lan-list-icon"></div></div>
-                        <div class="middle">
-                          <!-- <div class="list-title">
-                            <a href="#"><span class="key">drift</span></a>
-                            <span>汉语大辞典&康熙字典</span>
-                            <span class="position"></span>
-                            <span class="chuban"></span>
-                          </div> -->
-                            <p class="abstract">床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”。明胡应麟说:“太白诸绝句床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”.</p>
-                            <ul class="basic-info clearfix">
-                              <li><span>字数：3621</span><div class="info-divider"></div></li>
-                              <li><span>图片数：12</span><div class="info-divider"></div></li>
-                              <li><span>表格数：3</span><div class="info-divider"></div></li>
-                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
-                              <li><a href="#"><span>进入条目</span></a></li>
-                            </ul>
-                              <ul class="pic-list clearfix">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                              </ul>
-                        </div>
-                        <!-- end of the content box -->
-                    </dd>
-                    <!-- end of a list -->
-                </dl>
-                <!-- 分页 -->
-                <nav aria-label="Page navigation" class="fenye">
-                  <div class="pn-container">
-                  <ul class="pagination">
-                    <li>
-                      <a href="#" aria-label="front">
-                        <span aria-hidden="true">首页</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" aria-label="Previous">
-                        <span aria-hidden="true"><<</span>
-                      </a>
-                    </li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">6</a></li>
-                    <li><a href="#">7</a></li>
-                    <li><a href="#">8</a></li>
-                    <li><a href="#">9</a></li>
-                    <li><a href="#">...</a></li>
-                    <li>
-                      <a href="#" aria-label="Next">
-                        <span aria-hidden="true">>></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" aria-label="end">
-                        <span aria-hidden="true">尾页</span>
-                      </a>
-                    </li>
-                  </ul>
-                  </div>
-                  <!-- end of the page-nav container -->
-                </nav> <!-- 分页 end -->
-              </div>
-              <div class="tab-pane fade" id="hyk">
-                 <dl class="result-detail-list">
-                  <dd>
-                        <div class="seq"><div class="lan-list-icon"></div></div>
-                        <div class="middle">
-                          <div class="list-title">
-                            <a href="#"><span class="key">drift</span></a>
-                            <span>汉语大辞典&康熙字典</span>
-                            <span class="position"></span>
-                            <span class="chuban"></span>
-                          </div>
-                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
-                            <ul class="basic-info">
-                              <li><span>字数：3621</span><div class="info-divider"></div></li>
-                              <li><span>图片数：12</span><div class="info-divider"></div></li>
-                              <li><span>表格数：3</span><div class="info-divider"></div></li>
-                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
-                              <li><a href="#"><span>进入条目</span></a></li>
-                            </ul>
-                        </div>
-                        <!-- end of the content box -->
-                    </dd>
-                    <!-- end of a list -->
-                    <dd>
-                        <div class="seq"><div class="lan-list-icon"></div></div>
-                        <div class="middle">
-                          <div class="list-title">
-                            <a href="#"><span class="key">drift</span></a>
-                            <span>汉语大辞典&康熙字典</span>
-                            <span class="position"></span>
-                            <span class="chuban"></span>
-                          </div>
-                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
-                            <ul class="basic-info">
-                              <li><span>字数：3621</span><div class="info-divider"></div></li>
-                              <li><span>图片数：12</span><div class="info-divider"></div></li>
-                              <li><span>表格数：3</span><div class="info-divider"></div></li>
-                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
-                              <li><a href="#"><span>进入条目</span></a></li>
-                            </ul>
-                        </div>
-                        <!-- end of the content box -->
-                    </dd>
-                    <!-- end of a list -->
-                    <dd>
-                        <div class="seq"><div class="lan-list-icon"></div></div>
-                        <div class="middle">
-                          <div class="list-title">
-                            <a href="#"><span class="key">drift</span></a>
-                            <span>汉语大辞典&康熙字典</span>
-                            <span class="position"></span>
-                            <span class="chuban"></span>
-                          </div>
-                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
-                            <ul class="basic-info">
-                              <li><span>字数：3621</span><div class="info-divider"></div></li>
-                              <li><span>图片数：12</span><div class="info-divider"></div></li>
-                              <li><span>表格数：3</span><div class="info-divider"></div></li>
-                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
-                              <li><a href="#"><span>进入条目</span></a></li>
-                            </ul>
-                        </div>
-                        <!-- end of the content box -->
-                    </dd>
-                    <!-- end of a list -->
-                </dl>
-                <!-- 分页 -->
-                <nav aria-label="Page navigation" class="fenye">
-                  <div class="pn-container">
-                  <ul class="pagination">
-                    <li>
-                      <a href="#" aria-label="front">
-                        <span aria-hidden="true">首页</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" aria-label="Previous">
-                        <span aria-hidden="true"><<</span>
-                      </a>
-                    </li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">6</a></li>
-                    <li><a href="#">7</a></li>
-                    <li><a href="#">8</a></li>
-                    <li><a href="#">9</a></li>
-                    <li><a href="#">...</a></li>
-                    <li>
-                      <a href="#" aria-label="Next">
-                        <span aria-hidden="true">>></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" aria-label="end">
-                        <span aria-hidden="true">尾页</span>
-                      </a>
-                    </li>
-                  </ul>
-                  </div>
-                  <!-- end of the page-nav container -->
-                </nav> <!-- 分页 end -->
-              </div>
-            </div>
-        </div>
-        <!-- 相关解释 section end -->
-
-        <!-- 相关文章 section start -->
-        <div class="reference">
-          <div class="dt-section-title">
-              <span>相关文章</span>
-              <ul id="related-info-tabs">
-                <li class="active">
-                  <a href="#qikan" data-toggle="tab">期刊杂志</a>
-                </li>
-                <li>
-                  <a href="#baozhi" data-toggle="tab">报纸</a>
-                </li>
-                <li>
-                  <a href="#shuoshi" data-toggle="tab">硕士学位论文</a>
-                </li>
-                <li>
-                  <a href="#boshi" data-toggle="tab">博士学位论文</a>
-                </li>
-                <li>
-                  <a href="#huiyi" data-toggle="tab">会议论文</a>
-                </li>
-                <li>
-                  <a href="#nianjian" data-toggle="tab">年鉴</a>
-                </li>
-              </ul>
-            </div>
-            <div id="reference-content" class="tab-content">
-              <div class="tab-pane fade in active" id="qikan">
-                <ul class="refer-list">
-                  <li><a href="#">
-                    <span>[1]崔义中;</span><em>割不断的教师缘.</em>
-                    <span>紫光阁,1999,(09)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[2]乔丹;</span><em>浅析“非遗”融入中学历史课堂的重要性.</em>
-                    <span>科学大众(科学教育) ,2020,(01)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[3]贺申杰;</span><em>日本人为何选择了战争?.</em>
-                    <span> 读书 ,2020,(02)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[4]史海燕;</span><em>学生为什么不喜欢历史课？——原因考察及解决策略.</em>
-                    <span>人民教育,2019,(23)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[5]李清秀;</span><em>高中历史课情境教学法开展思路与技巧探究.</em>
-                    <span>华夏教师 ,2019,(36)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[6]喻莘博;</span><em>核心素养视域中高中历史课堂教学策略研究.</em>
-                    <span>现代交际 ,2020,(06)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[7]易梦颖;</span><em>浅谈从提高教师语言素养的角度提升历史课的魅力. </em>
-                    <span>品位经典 ,2020,(01)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[8]宋东映;</span><em>落实核心素养，上好“有料”的历史课.科教导刊(中旬刊),</em>
-                    <span>2020,(05)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[9]关培凤;万佳;</span><em> 历史教育与国族认同:台湾地区高中历史课纲变迁研究. </em>
-                    <span>闽台关系研究 ,2020,(02)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[10]胡常海;</span><em>新课标视域下中职历史课堂有效教学探析.</em>
-                    <span> 中国职业技术教育 ,2020,(20)</span>
-                  </a></li>
-                </ul>
-              </div>
-              <div class="tab-pane fade" id="baozhi">
-                <ul class="refer-list">
-                  <li><a href="#">
-                    <span>[1]崔义中;</span><em>割不断的教师缘.</em>
-                    <span>紫光阁,1999,(09)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[2]乔丹;</span><em>浅析“非遗”融入中学历史课堂的重要性.</em>
-                    <span>科学大众(科学教育) ,2020,(01)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[3]贺申杰;</span><em>日本人为何选择了战争?.</em>
-                    <span> 读书 ,2020,(02)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[4]史海燕;</span><em>学生为什么不喜欢历史课？——原因考察及解决策略.</em>
-                    <span>人民教育,2019,(23)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[5]李清秀;</span><em>高中历史课情境教学法开展思路与技巧探究.</em>
-                    <span>华夏教师 ,2019,(36)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[6]喻莘博;</span><em>核心素养视域中高中历史课堂教学策略研究.</em>
-                    <span>现代交际 ,2020,(06)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[7]易梦颖;</span><em>浅谈从提高教师语言素养的角度提升历史课的魅力. </em>
-                    <span>品位经典 ,2020,(01)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[8]宋东映;</span><em>落实核心素养，上好“有料”的历史课.科教导刊(中旬刊),</em>
-                    <span>2020,(05)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[9]关培凤;万佳;</span><em> 历史教育与国族认同:台湾地区高中历史课纲变迁研究. </em>
-                    <span>闽台关系研究 ,2020,(02)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[10]胡常海;</span><em>新课标视域下中职历史课堂有效教学探析.</em>
-                    <span> 中国职业技术教育 ,2020,(20)</span>
-                  </a></li>
-                </ul>
-              </div>
-              <div class="tab-pane fade" id="shuoshi">
-                <ul class="refer-list">
-                  <li><a href="#">
-                    <span>[1]崔义中;</span><em>割不断的教师缘.</em>
-                    <span>紫光阁,1999,(09)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[2]乔丹;</span><em>浅析“非遗”融入中学历史课堂的重要性.</em>
-                    <span>科学大众(科学教育) ,2020,(01)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[3]贺申杰;</span><em>日本人为何选择了战争?.</em>
-                    <span> 读书 ,2020,(02)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[4]史海燕;</span><em>学生为什么不喜欢历史课？——原因考察及解决策略.</em>
-                    <span>人民教育,2019,(23)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[5]李清秀;</span><em>高中历史课情境教学法开展思路与技巧探究.</em>
-                    <span>华夏教师 ,2019,(36)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[6]喻莘博;</span><em>核心素养视域中高中历史课堂教学策略研究.</em>
-                    <span>现代交际 ,2020,(06)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[7]易梦颖;</span><em>浅谈从提高教师语言素养的角度提升历史课的魅力. </em>
-                    <span>品位经典 ,2020,(01)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[8]宋东映;</span><em>落实核心素养，上好“有料”的历史课.科教导刊(中旬刊),</em>
-                    <span>2020,(05)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[9]关培凤;万佳;</span><em> 历史教育与国族认同:台湾地区高中历史课纲变迁研究. </em>
-                    <span>闽台关系研究 ,2020,(02)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[10]胡常海;</span><em>新课标视域下中职历史课堂有效教学探析.</em>
-                    <span> 中国职业技术教育 ,2020,(20)</span>
-                  </a></li>
-                </ul>
-              </div>
-              <div class="tab-pane fade" id="boshi">
-                <ul class="refer-list">
-                  <li><a href="#">
-                    <span>[1]崔义中;</span><em>割不断的教师缘.</em>
-                    <span>紫光阁,1999,(09)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[2]乔丹;</span><em>浅析“非遗”融入中学历史课堂的重要性.</em>
-                    <span>科学大众(科学教育) ,2020,(01)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[3]贺申杰;</span><em>日本人为何选择了战争?.</em>
-                    <span> 读书 ,2020,(02)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[4]史海燕;</span><em>学生为什么不喜欢历史课？——原因考察及解决策略.</em>
-                    <span>人民教育,2019,(23)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[5]李清秀;</span><em>高中历史课情境教学法开展思路与技巧探究.</em>
-                    <span>华夏教师 ,2019,(36)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[6]喻莘博;</span><em>核心素养视域中高中历史课堂教学策略研究.</em>
-                    <span>现代交际 ,2020,(06)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[7]易梦颖;</span><em>浅谈从提高教师语言素养的角度提升历史课的魅力. </em>
-                    <span>品位经典 ,2020,(01)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[8]宋东映;</span><em>落实核心素养，上好“有料”的历史课.科教导刊(中旬刊),</em>
-                    <span>2020,(05)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[9]关培凤;万佳;</span><em> 历史教育与国族认同:台湾地区高中历史课纲变迁研究. </em>
-                    <span>闽台关系研究 ,2020,(02)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[10]胡常海;</span><em>新课标视域下中职历史课堂有效教学探析.</em>
-                    <span> 中国职业技术教育 ,2020,(20)</span>
-                  </a></li>
-                </ul>
-              </div>
-              <div class="tab-pane fade" id="huiyi">
-                <ul class="refer-list">
-                  <li><a href="#">
-                    <span>[1]崔义中;</span><em>割不断的教师缘.</em>
-                    <span>紫光阁,1999,(09)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[2]乔丹;</span><em>浅析“非遗”融入中学历史课堂的重要性.</em>
-                    <span>科学大众(科学教育) ,2020,(01)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[3]贺申杰;</span><em>日本人为何选择了战争?.</em>
-                    <span> 读书 ,2020,(02)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[4]史海燕;</span><em>学生为什么不喜欢历史课？——原因考察及解决策略.</em>
-                    <span>人民教育,2019,(23)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[5]李清秀;</span><em>高中历史课情境教学法开展思路与技巧探究.</em>
-                    <span>华夏教师 ,2019,(36)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[6]喻莘博;</span><em>核心素养视域中高中历史课堂教学策略研究.</em>
-                    <span>现代交际 ,2020,(06)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[7]易梦颖;</span><em>浅谈从提高教师语言素养的角度提升历史课的魅力. </em>
-                    <span>品位经典 ,2020,(01)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[8]宋东映;</span><em>落实核心素养，上好“有料”的历史课.科教导刊(中旬刊),</em>
-                    <span>2020,(05)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[9]关培凤;万佳;</span><em> 历史教育与国族认同:台湾地区高中历史课纲变迁研究. </em>
-                    <span>闽台关系研究 ,2020,(02)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[10]胡常海;</span><em>新课标视域下中职历史课堂有效教学探析.</em>
-                    <span> 中国职业技术教育 ,2020,(20)</span>
-                  </a></li>
-                </ul>
-              </div>
-              <div class="tab-pane fade" id="nianjian">
-                <ul class="refer-list">
-                  <li><a href="#">
-                    <span>[1]崔义中;</span><em>割不断的教师缘.</em>
-                    <span>紫光阁,1999,(09)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[2]乔丹;</span><em>浅析“非遗”融入中学历史课堂的重要性.</em>
-                    <span>科学大众(科学教育) ,2020,(01)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[3]贺申杰;</span><em>日本人为何选择了战争?.</em>
-                    <span> 读书 ,2020,(02)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[4]史海燕;</span><em>学生为什么不喜欢历史课？——原因考察及解决策略.</em>
-                    <span>人民教育,2019,(23)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[5]李清秀;</span><em>高中历史课情境教学法开展思路与技巧探究.</em>
-                    <span>华夏教师 ,2019,(36)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[6]喻莘博;</span><em>核心素养视域中高中历史课堂教学策略研究.</em>
-                    <span>现代交际 ,2020,(06)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[7]易梦颖;</span><em>浅谈从提高教师语言素养的角度提升历史课的魅力. </em>
-                    <span>品位经典 ,2020,(01)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[8]宋东映;</span><em>落实核心素养，上好“有料”的历史课.科教导刊(中旬刊),</em>
-                    <span>2020,(05)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[9]关培凤;万佳;</span><em> 历史教育与国族认同:台湾地区高中历史课纲变迁研究. </em>
-                    <span>闽台关系研究 ,2020,(02)</span>
-                  </a></li>
-                  <li><a href="#">
-                    <span>[10]胡常海;</span><em>新课标视域下中职历史课堂有效教学探析.</em>
-                    <span> 中国职业技术教育 ,2020,(20)</span>
-                  </a></li>
-                </ul>
-              </div>
-            </div>
-        </div>
-        <!-- 相关文章 section end -->
+        </div><!-- end of the tab-content -->
 
       </div><!-- end of the dt-container -->
       </div>
