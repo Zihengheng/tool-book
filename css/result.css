@@ -636,7 +636,32 @@ td.book-col a{
 /*=================== 检索结果表格页 end =================*/
 
 /*=================== 检索结果图片页 start =================*/
+.grid { margin-top: 20px; margin-left:40px;}
+.grid:after { content: ''; display: block; clear: both; }/* clear fix */
+/* ---- .grid-item ---- */
+.grid-item { float: left; width: 200px; padding: 4px 4px 7px 4px; margin-right: 17px; margin-bottom: 17px; border: 1px solid #dcdee0; background: url("../images/icon-waterfall-bg.jpg") no-repeat left bottom #fff;  }
+.grid-item .pic { display: block; width: 100%; text-align: center; }
+.grid-item img { min-width: 50%; max-width: 100%; margin: 0 auto; cursor: pointer; background: url(../images/loding.gif) no-repeat center; }
+.grid-item h6 { padding: 6px; line-height: 20px; font-weight: normal; font-size: 12px;  }
+.grid-item h6 a { color: #061c3b; }
+.grid-item p { display: none; padding: 0 6px; line-height: 20px; }
+.grid-item p i { display: inline-block; vertical-align: middle; width: 14px; height: 14px; margin-right: 6px; background: url("../images/icon-opts.png") no-repeat; }
+.grid-item p a { color: #061c3b; }
+.grid-item a:hover { color: #53a2e3; }
+.grid-item p .icon-booktitle{ background-position: -25px -60px; }
+.grid-item p .icon-item{ background-position: -25px -74px; }
 
+.side-tit-bar{ height: 40px; padding: 0 20px; line-height: 40px; border-bottom: 1px dashed #e2ecf1; background-color: #f6fafc; }
+.side-tit-bar span{ height: 40px; color: #2a3f6e; font-size: 14px; line-height: 40px; font-weight: bold; border-bottom: 1px dashed #e2ecf1; background-color: #f6fafc; }
+.similar-books-list li{ width: 270px; min-height: 130px; height: auto; padding-left: 10px; padding-bottom: 15px; padding-right: 0; margin: 0 10px; }
+.similar-books-list .books-detials { width: 160px; }
+.similar-books-list .books-detials h1{ font-size: 13px; }
+h6.tit input{margin-top:-2px; margin-right: 8px;}
+.left-commend-list{margin-top:30px;}
+.left-commend-list h5{font-size:14px;font-weight:bold; color:#333333; margin-bottom: 9px;}
+.left-commend-list li a{color:#4480b8;}
+.left-commend-list{line-height: 33px;}
+.left-commend-list span{display:inline-block; width:105px; text-align: left}
 /*=================== 检索结果图片页 end =================*/
 
 /*=================== 高级检索页 start =================*/
