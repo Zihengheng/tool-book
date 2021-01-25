@@ -326,10 +326,18 @@ div.translate-header span{
 .show-more{
     float:right;
     margin-right: 300px;
+    background: url("../images/icon-jt.png") no-repeat;
+    background-position: 0px 0px;
+    width:10px;
+    height:10px;
+}
+.show-more.open{
+    background: url("../images/icon-jt.png") no-repeat;
+    background-position: 0px -10px;
 }
 .more-rst-box{
     height:60px;
-    /*display:none;*/
+    display:none;
 }
 .trans-section-title{
     width: 1192px;

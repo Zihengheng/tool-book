@@ -53,6 +53,21 @@ $(function(){
         })
     });
 
+    //范围：translate page
+    //说明: show-more,set divider height
+    $(".translate-box .show-more").click(function(){
+    	if($(this).hasClass("open")){
+    		$(this).removeClass("open");
+    		$(".more-rst-box").hide();
+    		$(".trans-box-divider").css("height", "122px");
+    	}
+    	else{
+    		$(this).addClass("open");
+    		$(".more-rst-box").show();
+    		$(".trans-box-divider").css("height", "182px");
+    	}
+    });
+
 	//  $('.js-banner-move').smart3d();//第一屏背景
         $('#myTab li:eq(1) a').tab('show'); 
 
