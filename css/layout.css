@@ -680,7 +680,7 @@ p.col-con-para{
 .doctype-menus>li:hover,
 .doctype-menus>li.cur{ position: relative;color: #333; border-radius: 4px 4px 0 0; background-image: none; background-color: #fff;  }
 .doctype-menus li.haschild>a{/* background-image: url(../images/icon-up.png);*/ background-position: center 64px; background-repeat: no-repeat; }
-.doctype-menus li.haschild:hover>a{ background-image: url(../images/icon-down.png); }
+/*.doctype-menus li.haschild:hover>a{ background-image: url(../images/icon-down.png); }*/
 .doctype-menus li:hover ul{ display: block; }
 .doctype-menus>li:hover>a,
 .doctype-menus>li>a{display: block; width:238px; /*min-width: 50px;*/ height:65px; padding: 15px 12px 0; color: #333; /*font-size: 17px;*/ text-decoration: none;}
