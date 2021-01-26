@@ -1,4 +1,4 @@
-===== 通用结构 ======*/
+/*===== 通用结构 ======*/
 .body{
 	width:100%;
 	padding:0;
@@ -147,6 +147,9 @@ div.pn-container{
 }
 .topbar-left ul li a:hover{
 	text-decoration:none;
+	color:#53a2e3;
+	font-weight:bold;
+	font-size:15px;
 }
 .topbar-right ul li{
 	width:80px;
@@ -158,6 +161,9 @@ div.pn-container{
 }
 .topbar-right ul li a:hover{
 	text-decoration:none;
+	color:#53a2e3;
+	font-weight:bold;
+	font-size:15px;
 }
 ul li.login{
 	width:100px;

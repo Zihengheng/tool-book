@@ -11,7 +11,7 @@ $(function(){
 
     //范围：首页
     //说明：书签标签切换
-    tabFunc(".hp-book", "#labels li", "cur", ".label-con", "active", "mousedown");
+    // tabFunc(".hp-book", "#labels li", "cur", ".label-con", "active", "mousedown");
     tabFunc(".trans-dt", "#trans-tabs li", "cur", ".trans-con", "active", "mousedown");
 
     //范围：首页

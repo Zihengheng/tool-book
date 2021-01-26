@@ -3,6 +3,7 @@
   功能：切换功能集合
   范围：museum 系列
   */
+$(function () { $("[data-toggle='tooltip']").tooltip(); });
 $(function(){
 
     new inputFunc({ //调用首屏页面输入框事件
