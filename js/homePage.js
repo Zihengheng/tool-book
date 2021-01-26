@@ -10,6 +10,11 @@ $(function(){
 	$('#labels a[href="#zk"]').tab('show');
 
     //范围：首页
+    //说明：书签标签切换
+    tabFunc(".hp-book", "#labels li", "cur", ".label-con", "active", "mousedown");
+    tabFunc(".trans-dt", "#trans-tabs li", "cur", ".trans-con", "active", "mousedown");
+
+    //范围：首页
     //说明：显示书籍注释
 	
 	$(".ep-box .book a").hover(
@@ -132,3 +137,19 @@ $(function(){
 	});
 
 });
+
+// 2021 tab标签切换
+ function tabFunc(boxDom, tablist, current, tabcont, active, mouseEvent){
+     $(boxDom).each(function () {
+                var _this = $(this);
+                var index = 0;
+                _this.on(mouseEvent, tablist, function () {
+                    if ($(this).hasClass(current)) {
+                        return
+                    }
+                    index = $(this).index();
+                    $(this).addClass(current).siblings().removeClass(current);
+                    _this.find(tabcont).removeClass(active).eq(index).addClass(active)
+                })
+            })
+  }

@@ -20,9 +20,11 @@
     width:100%;
 }
 .section-ep{
+    padding-bottom:120px;
+    background:url("../images/index-bjtwo.png") no-repeat bottom;
 }
 div.footer{
-    margin-top: 181px;
+    margin-top:0px;
 }
 
 /*======通用部分=====*/
@@ -78,13 +80,15 @@ div.header.section > div.content-container{
 .head-left ul li{
     width:60px;
     font-family: MicrosoftYaHei;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 50px;
     margin-left:15px;
 }
 .head-left ul li a {
     color:#333333;
+    text-decoration: none;
 }
+.head-left ul li a:hover{color:#53a2e3;}
 .head-right ul{
     width:400px;
     margin-right: 70px;
@@ -92,7 +96,7 @@ div.header.section > div.content-container{
 .head-right ul li{
     list-style-type:none;
     font-family: MicrosoftYaHei;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 50px;
     margin-top: -2px;
 }
@@ -100,7 +104,9 @@ div.header.section > div.content-container{
     color: #242424;
     margin-right: 10px;
     padding-left: 10px;
+    text-decoration: none;
 }
+.head-right ul li a:hover{color:#53a2e3;}
 .head-right ul li a.down{
     padding-right: 20px;
     background: url("../images/downiconh.png") no-repeat right center;
@@ -113,6 +119,7 @@ div.divider{
     position:relative;
     top:3px;
 }
+a.adv-search-btn{text-decoration:none;}
 /* end of top menu bar */
 .banner{
     display:block;
@@ -146,7 +153,7 @@ div.divider{
 .searchmain .input-box{ float: left; width:450px; height: 50px; border: 1px solid #e6e6e6; background-color: #fff; 
 border-left:0;
 }
-.searchmain .search-input { float: left;padding: 4px 10px; font-size: 14px; color: #7d7d7d; line-height: 39px; vertical-align: bottom; border: none; background-color: #fff;
+.searchmain .search-input { float: left;padding: 4px 10px; font-size: 14px; color: #7d7d7d; line-height:40px; vertical-align: bottom; border: none; background-color: #fff;
     width:320px;
     box-shadow: 5px 5px 100px #ededed;
     -o-box-shadow: 5px 5px 100px #ededed;
@@ -155,7 +162,8 @@ border-left:0;
     -webkit-box-shadow: 5px 5px 100px #ededed;
 }
 
-.searchmain .btn-wildcard{ width: 22px; height:18px; margin-top:16x; margin-right: 3px; line-height: 20px; border: 1px solid #a1a5a8; }
+.searchmain .btn-wildcard{ width: 24x; height:23px; margin-top:16x; margin-right: 3px; line-height: 20px; border: 1px solid #a1a5a8; 
+padding:2px;text-decoration:none;}
 .searchmain .btn-wildcard:active{ border: 1px solid #a1a5a8; }
 .searchmain .search-btn { width:117px; height: 50px; line-height: 50px; }
 .searchmain .sort{ margin-top: 10px; }
@@ -163,6 +171,8 @@ border-left:0;
 .searchmain .sort span{ width: 36px; }
 /*输入助手*/
 .search-nav { width: 980px; float:left; margin-left: 20px;}
+.search-nav a{text-decoration:none;}
+.search-nav a:hover{color:orange;}
 .search-nav li{
     background:url("../images/downiconh.png") no-repeat right;
     color:#6f6f6f;
@@ -380,6 +390,7 @@ div.ir-sub2{
     margin-left: auto;
     margin-right: auto;
 }
+.ir-body a{text-decoration: none;}
 div.highlighter{
     width: 44px;
     height: 2px;
@@ -393,23 +404,16 @@ div.highlighter{
     width:1200px;
     margin:0 auto;
     padding-top:60px;
-    height:953px;
     background: url("../images/index-bjtwo.png") no-repeat bottom;
 }
+.ep-container a{text-decoration:none;}
 div.ep-tabs{
     margin-bottom: 50px;
 }
 #ep-content .tab-pane{
     width: 1200px;
-    height: 842px;
-    background-image: linear-gradient(0deg, 
-        #ffffff 0%, 
-        #f7fbfc 100%), 
-    linear-gradient(
-        #f7fbfc, 
-        #f7fbfc);
-    background-blend-mode: normal, 
-        normal;
+    background-color:#f7fbfc;
+    padding-bottom: 22px;
 }
 #ul-tab1 li{
    width:140px;
@@ -422,7 +426,9 @@ div.ep-tabs{
     color:black;
 }
 #ul-tab1 li a:hover{
-   color: #666666;
+   color: #333333;
+   font-weight:bold;
+   font-size:15px;
 }
 #ul-tab1{
     margin-left:20px;
@@ -509,16 +515,20 @@ a.go-right{
 }
 .title{
     margin-top: 10px;
-    color:#333333;
-    font-size: 14px;
 }
+.title a{
+    color:#333333;
+    font-size: 15px;
+    font-weight: bold;
+}
+.title a:hover{color:#53a2e3;}
 .author{
     margin-top: 5px;
 }
 .book img{
-    width: 154px;
-    height: 230px;
-    margin-top: 10px;
+    width:152px;
+    height:227px;
+    margin-top: 13px;
 }
 .ep-box img:hover{
     box-shadow: 5px 5px 5px 5px  #eeeeee;
