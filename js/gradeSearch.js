@@ -14,16 +14,8 @@
  *     （9）"中国专利"的专利类别切换（左侧分类导航相应改变）,详情见 patentClassify()
  * */
 $(function(){
-    //修改高级搜索展开折叠
-    $(".btn-unfold").click(function(){
-        $(".search-condition").hide();
-        $("#js-gradeSearch").show();
-    });
-    $(".btn-fold").click(function(){
-        $("#js-gradeSearch").hide();
-        $(".search-condition").show();
-        
-    });
+    // var mainboxH = $(".search-mainbox").height();
+    // console.log(mainboxH);
    
 });
 
@@ -65,7 +57,7 @@ searchClassify.prototype = {
 
         that.inputFunc(); //输入框事件
 
-        // that.bindConditionFold();//“高级检索”的检索条件折叠/展开
+        that.bindConditionFold();//“高级检索”的检索条件折叠/展开
 
         // that.setTimeoutShowGrade();//初次打开页面，展开高级检索盒子
 
@@ -372,7 +364,7 @@ searchClassify.prototype = {
             var newDd ='';
             baseId = $(this).parents("dl").attr("id");//父级id，也是基础id
             seq = $("#"+baseId).attr("data-seq");//<dd>的序号历史记录
-            maxLen = $("#"+baseId).attr("data-maxLen")||10;//输入框的最大个数：高级检索10个、作者发文检索5个,如果没有数据，默认10个
+            maxLen = $("#"+baseId).attr("data-maxLen")||4;//输入框的最大个数：高级检索10个、作者发文检索5个,如果没有数据，默认10个
             minLen = $("#"+baseId).attr("data-minLen")||2;//输入框的最小个数：默认2个
             actLen = $("#"+baseId).find("dd").length;//输入框的实际个数
 
@@ -505,7 +497,7 @@ searchClassify.prototype = {
             mainSearch = $(this).closest(".search-mainbox");
 
             baseId = $(this).parents("dl").attr("id");//父级id，也是基础id
-            maxLen = parseInt($("#"+baseId).attr("data-maxLen"))||10;//输入框的最大个数：高级检索10个、作者发文检索5个
+            maxLen = parseInt($("#"+baseId).attr("data-maxLen"))||4;//输入框的最大个数：高级检索10个、作者发文检索5个
             minLen = parseInt($("#"+baseId).attr("data-minLen"))||2;//输入框的最小个数：默认2个
             actLen = $("#"+baseId).find("dd").length;//输入框的实际个数
 
@@ -530,25 +522,25 @@ searchClassify.prototype = {
     /* 功能：计算左右高度，使之相等
     *  说明：obj：“+-”按钮的父级".search-mainbox"对象；
     * */
-   _equalHeight : function (obj) {
+    _equalHeight : function (obj) {
 
-        navBox = obj.find(".nav-content-list");
-        topBar = navBox.prev(".top-bar");
+         navBox = obj.find(".nav-content-list");
+         topBar = navBox.prev(".top-bar");
         rightSearch = obj.siblings(".search-sidebar-b");//右侧盒子
 
-        //比较左右默认高度,选取最大值为目标高度
-        defaultMainH = obj.innerHeight();
+         //比较左右默认高度,选取最大值为目标高度
+         defaultMainH = obj.innerHeight();
         defaultRightH = rightSearch.innerHeight();//包含padding,不计算border
-        if(defaultMainH > defaultRightH){
-            navBox.height(defaultMainH - topBar.outerHeight(true) - 20);  //bottom 20px
-            rightSearch.height(defaultMainH - parseInt(rightSearch.css("padding-top"))*2);
+         if(defaultMainH > defaultRightH){
+             navBox.height(defaultMainH - topBar.outerHeight(true) - 20);  //bottom 20px
+             rightSearch.height(defaultMainH - parseInt(rightSearch.css("padding-top"))*2);
         }else if(defaultMainH < defaultRightH){
             navBox.height(defaultRightH - topBar.outerHeight(true) - 20);
             obj.height(defaultRightH);
         }else{
             navBox.height(defaultRightH - topBar.outerHeight(true) - 20);
         }
-        //console.log(navBox.height(),rightSearch.height());
+        console.log(navBox.height(),rightSearch.height());
         this._rightRecommendH(rightSearch); //计算右侧推荐列表高度
    },
 
@@ -1068,8 +1060,8 @@ searchClassify.prototype = {
     bindConditionFold: function () {
         $(".btn-search,.resultsearch-btn").on("click",function () {
 
-            conditionFold = $(this).closest("#js-gradeSearch").find(".search-condition");
-            condition = $(this).closest(".grade-search-content");
+            conditionFold = $(this).closest(".search-classify-content").find(".search-condition");
+            condition = $(this).closest("#js-gradeSearch");
 
            if(condition.length>0){
                condition.slideUp();
@@ -1079,8 +1071,18 @@ searchClassify.prototype = {
 
 
         $(".btn-unfold").on("click",function () {
-            conditionFold = $("#js-gradeSearch").find(".search-condition");
-            condition = $("#js-gradeSearch").find(".grade-search-content");
+            conditionFold = $(".search-classify-content").find(".search-condition");
+            condition = $(".search-classify-content").find("#js-gradeSearch");
+            // $(".search-mainbox").removeClass("is-off");
+            // $(".search-mainbox").addClass("is-on");
+            condition.slideDown();
+            conditionFold.slideUp();
+        });
+        $(".btn-fold").on("click",function () {
+            condition = $(".search-classify-content").find(".search-condition");
+            conditionFold = $(".search-classify-content").find("#js-gradeSearch");
+            // $(".search-mainbox").removeClass("is-on");
+            // $(".search-mainbox").addClass("is-off");
             condition.slideDown();
             conditionFold.slideUp();
         });
