@@ -276,7 +276,7 @@ input[type="text"].disable-editor{ color: #999!important; }
 /*检索词*/
 .search-condition .reopt { width: 120px;border: none;}
 .search-condition .reopt span { min-width: 68px; color: #010101; }
-/*.search-condition .icon-sort { background: url(../images/icon-jt.png) no-repeat 0 -27px;  }*/
+.search-condition .icon-sort { background: url(../images/icon-jt.png) no-repeat 0 -27px;  }
 /*精确、模糊*/
 .search-condition .special {border: none;}
 /*.btn-unfold{ display: block; vertical-align: middle; width: 20px; height: 20px; !*background-image: url("../images/icon-sprite.png"); background-repeat: no-repeat;*! }*/

@@ -146,7 +146,7 @@ div.divider{
 .searchmain .input-box{ float: left; width:450px; height: 50px; border: 1px solid #e6e6e6; background-color: #fff; 
 border-left:0;
 }
-.searchmain .search-input { float: left;padding: 4px 10px; font-size: 14px; color: #7d7d7d; line-height: 36px; vertical-align: bottom; border: none; background-color: #fff;
+.searchmain .search-input { float: left;padding: 4px 10px; font-size: 14px; color: #7d7d7d; line-height: 39px; vertical-align: bottom; border: none; background-color: #fff;
     width:320px;
     box-shadow: 5px 5px 100px #ededed;
     -o-box-shadow: 5px 5px 100px #ededed;
@@ -155,7 +155,7 @@ border-left:0;
     -webkit-box-shadow: 5px 5px 100px #ededed;
 }
 
-.searchmain .btn-wildcard{ width: 22px; height:18px; margin-top: 12px; margin-right: 3px; line-height: 20px; border: 1px solid #a1a5a8; }
+.searchmain .btn-wildcard{ width: 22px; height:18px; margin-top:16x; margin-right: 3px; line-height: 20px; border: 1px solid #a1a5a8; }
 .searchmain .btn-wildcard:active{ border: 1px solid #a1a5a8; }
 .searchmain .search-btn { width:117px; height: 50px; line-height: 50px; }
 .searchmain .sort{ margin-top: 10px; }

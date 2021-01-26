@@ -8,7 +8,40 @@ $(function(){
     new inputFunc({ //调用首屏页面输入框事件
         duration: 400
     });
-    // sort(".sort","cur"); //分类
+    sort(".sort","cur"); //分类
+
+     function sort(sortSelector,curClass){  //分类
+        $(sortSelector).mouseenter(function(){ //分类排序模块
+            $selectList = $(this).find("ul");
+            $selectList.show();
+            $selectList.find("a").click(function(){
+                $selectList.siblings().find("span").html($(this).html());
+                $(this).parent().addClass(curClass).siblings().removeClass(curClass);
+                $selectList.hide();
+            });
+        }).mouseleave(function(){
+            console.log("1");
+            $selectList.hide();
+        });
+    }
+
+    type(".type","cur"); //分类
+
+     function type(typeSelector,curClass){  //分类
+        $(typeSelector).mouseenter(function(){ //分类排序模块
+            $selectList = $(this).find("ul");
+            $selectList.show();
+            $selectList.find("a").click(function(){
+                $selectList.siblings().find("span").html($(this).html());
+                $(this).parent().addClass(curClass).siblings().removeClass(curClass);
+                $selectList.hide();
+            });
+        }).mouseleave(function(){
+            console.log("1");
+            $selectList.hide();
+        });
+    }
+    
     //语词库侧边栏
     //menu-1
    $('#menu-1').collapse('show');

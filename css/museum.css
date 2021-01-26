@@ -1,4 +1,4 @@
-/*===== 通用结构 ======*/
+===== 通用结构 ======*/
 .body{
 	width:100%;
 	padding:0;
@@ -2093,7 +2093,150 @@ div.img-box-img{
 	height:4200px;
 }
 /*======================= 鉴赏库条目 end =======================*/
-/*========================= 行业库 start =========================*/
+/*======================= 行业库 start =======================*/
+#hyk-recomm{padding-left:5px; padding-bottom: 10px;padding-right:0px;}
+#hyk-recomm span{padding-right:11px;}
+li.rec{
+	height: 41px;
+	border-radius: 5px;
+	border: solid 1px #dcdcdc;
+	padding:0px 10px 0px 35px;
+}
+li.rec.left{margin-right:12px;}
+li.rec a{
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 36px;
+	letter-spacing: 0px;
+	color: #333333;
+}
+#hyk-rec1{
+	background:url("../images/hyk-rec1.png") no-repeat left;
+	background-size: 22px 22px;
+	background-position:7px 8px;
+}
+#hyk-rec2{
+	background:url("../images/hyk-rec2.png") no-repeat left;
+	background-size: 22px 22px;
+	background-position:7px 8px;
+}
+#hyk-rec3{
+	background:url("../images/hyk-rec3.png") no-repeat left;
+	background-size: 22px 22px;
+	background-position:7px 8px;
+}
+#hyk-rec4{
+	background:url("../images/hyk-rec4.png") no-repeat left;
+	background-size: 22px 22px;
+	background-position:7px 8px;
+}
+#hyk-left-menu{height:610px;}
+/*行业分析部分*/
+.hy-section-title{
+	float:left;
+	width: 241px;
+	height: 39px;
+	background-color:#f3f6f9; 
+	border: solid 1px #eeeeee;
+	line-height:39px;
+	text-align:left;
+	padding-left: 15px;
+}
+.hy-analysis .section-menu{
+	padding-left: 0px;
+}
+.hy-graph{
+	padding-top: 42px;
+	padding-bottom:42px;
+}
+.hy-graph-bg{
+	position:relative;
+	width:540px;
+	height:540px;
+	margin:0 auto;
+	background:url("../images/hy-bg.png") no-repeat center;
+}
+.topic-words span{
+	font-family: MicrosoftYaHei;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 36px;
+	color: #fff;
+	cursor: pointer;
+}
+.topic-words div{position:absolute;}
+#center{top:259px; left:256px;}
+#float1{top:124px; left:258px;}
+#float2{top:262px; left:440px;}
+#center-branch1{top:76px; left:62px;}
+#center-branch2{top:267px; left:102px;}
+#center-branch3{top:429px; left:245px;}
+#center-branch3 span{line-height: 24px;text-align: center;}
+#center-branch4{top:426px; left:413px;}
+#center-branch5{top:70px; left:434px;}
+/*报告展示部分*/
+.report-display{
+	padding-top: 50px;
+}
+.report-box{
+	position:relative;
+	width: 588px;
+	height: 236px;
+	background-color: #ffffff;
+	box-shadow: 0px 3px 10px 0px 
+		rgba(202, 202, 202, 0.59);
+	border-radius: 3px;
+	float:left;
+	margin-bottom:99px;
+	padding:26px;
+}
+.report-box.left{
+	margin-right: 22px;
+}
+.rp-img{
+	position:absolute;
+	top:-24px;
+	left:;
+	width: 157px;
+	height: 216px;
+	box-shadow: 0px 2px 11px 0px 
+		rgba(234, 234, 234, 0.58);
+	background:url("../images/book.png") no-repeat center;
+}
+.rp-img a{width:157px; height:216px; display: inline-block;} 
+.rp-img:hover{
+	box-shadow: 5px 5px 5px 5px  #eeeeee;
+    transform: scale(1.08);
+    -ms-transform: scale(1.08);   
+   -moz-transform: scale(1.08); 
+   -webkit-transform: scale(1.08); 
+   -o-transform: scale(1.08); 
+}
+.rp-tit{
+	position:absolute;
+	top:247px;
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 36px;
+	letter-spacing: 0px;
+	color: #333333;
+}
+.rp-intro{
+	float:right;
+	width: 322px;
+	margin-right: 8px;
+}
+.rp-intro p{
+	font-family: MicrosoftYaHei;
+	font-size: 13px;
+	line-height: 36px;
+	color: #666666;
+}
+/*======================= 行业库 end =======================*/
+/*======================= 行业库条目页 start =======================*/
 #hyk-banner{
 	background: url("../images/hyk_banner.jpg") no-repeat;
 }
@@ -2161,7 +2304,7 @@ dl.nav-sections ul.nav-sections li{
 .dt-leftbar.prof{
 	height:3200px;
 }
-/*========================= 行业库 end =========================*/
+/*========================= 行业库条目页 end ======================*/
 /*========================= 附录库 start =========================*/
 #flk-banner{
 	background: url("../images/flk_banner.jpg") no-repeat;
@@ -2252,4 +2395,4 @@ dl.nav-sections ul.nav-sections li{
 .dt-leftbar.apd{
 	height:1767px;
 }
-/*========================= 附录库条目页 end ==================*/
+/*========================= 附录库条目页 end ==================
