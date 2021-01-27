@@ -14,6 +14,8 @@
 }
 .main-content{
 }
+a.adv-search-btn{text-decoration:none;}
+a.btn-wildcard{text-decoration:none;}
 button, .btn{outline: none;}
 /*== footer 补丁 ==*/
 div.footer{
@@ -486,7 +488,9 @@ div.details a{
 	line-height: 26px;
 	border: solid 1px #6e90ff;
 	padding:5px 5px 5px 5px;
+	text-decoration:none;
 }
+div.details a:hover{font-weight:bold; background-color:#6e90ff;color:#fff;}
 p.intro{
 	clear:both;
 }
