@@ -266,7 +266,9 @@ $(function(){
     //“引用”弹出框
     $.quote();
 
-    //2021 标签切换
+    //2021 标签切换：翻译页
+    tabFunc(".trans-dt", "#trans-tabs li", "cur", ".trans-con", "active", "mousedown");
+    //2021 标签切换：语词库首页
     tabFunc(".trans-dt", "#trans-tabs li", "cur", ".trans-con", "active", "mousedown");
 });
 

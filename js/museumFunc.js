@@ -43,6 +43,8 @@ $(function(){
         });
     }
     
+    //2021 标签切换：语词库首页
+    tabFunc(".dive-in", "#section-tab li", "cur", ".tab-pane", "active", "mousedown");
     //语词库侧边栏
     //menu-1
    $('#menu-1').collapse('show');
@@ -157,3 +159,18 @@ $(function(){
        $(this).prev().find(".control-icon").text("+");
     })
 });
+  // 2021 tab标签切换
+ function tabFunc(boxDom, tablist, current, tabcont, active, mouseEvent){
+     $(boxDom).each(function () {
+                var _this = $(this);
+                var index = 0;
+                _this.on(mouseEvent, tablist, function () {
+                    if ($(this).hasClass(current)) {
+                        return
+                    }
+                    index = $(this).index();
+                    $(this).addClass(current).siblings().removeClass(current);
+                    _this.find(tabcont).removeClass(active).eq(index).addClass(active)
+                })
+            })
+  }
