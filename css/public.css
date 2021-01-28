@@ -105,7 +105,6 @@ input:-ms-input-placeholder { color:#ddd; }/* Internet Explorer 10+ */
 }
 /*检索框*/
 #search-type{
-    float:100px;
     margin-top:0;
 }
 #type{
@@ -162,7 +161,7 @@ a.adv-search-btn{
   display:inline-block;
   color: #6f6f6f;
   margin-left: 18px;
-  margin-top: 4px;
+  margin-top:8px;
   font-size: 13px;
   text-decoration:underline; 
   font-family: SimSun;
@@ -242,13 +241,20 @@ a.adv-search-btn{
 
 /*---------------------------footer 样式 start---------------------------*/
 /* 底部内容 样式s*/
+div.footer{
+    margin-top:0px;
+}
+a.adv-search-btn.top{
+    margin-top:0px;
+}
 .footer{width:100%;height:379px;color:#a4acb7;font-family:"Microsoft Yahei";line-height:22px;font-size: 12px;}
-.footer a{color:#66758d;font-family:"Microsoft Yahei";}
-.foot-top{width:100%;height:181px;padding-top:28px;clear:both; background-color:#e6e9ee;    font-size: 12px;}
+.footer a{color:#66758d;font-family:"Microsoft Yahei";text-decoration:none;}
+.foot-top{width:100%;height:211px;padding-top:28px;clear:both; background-color:#f4f6f9;font-size: 12px;}
 .foot-top .content{width:1200px;margin:0 auto;overflow:hidden;}
 .foot-top li{float:left;}
-.foot-top li+li{margin-left:50px;}
-.foot-top b{width: 55px;
+.foot-top li+li{margin-left:60px;}
+.foot-top b{
+  display:inline-block;
   height: 14px;
   font-family: AdobeHeitiStd-Regular;
   font-size: 14px;
@@ -257,8 +263,8 @@ a.adv-search-btn{
   line-height: 33px;
   letter-spacing: 0px;
   color: #333333;
-  margin-bottom: 20px;}
-.foot-top a,.foot-top span{display:block;color:#66758d;}
+  margin-bottom:33px;}
+.foot-top a,.foot-top span{display:block;color:#66758d;line-height:28px;}
 .foot-top span a{display:inline;}
 .foot-top .weibo{width:290px;height:90px;padding-top:30px;padding-left:20px;margin-top:17px;text-align:center;border-left:1px solid #506581;}
 .foot-top .weibo a{display:inline-block;line-height:40px;}
@@ -288,14 +294,18 @@ div.footer{
   margin-top: 40px;
 }
 .ft-code{
-  margin-left: 20px;
-  margin-right: -10px;
+  float:left;
+  margin-top:42px;
+}
+#code1{
+   width:90px;
+   height:90px;
+   margin-right:15px;
+   margin-top:41px;
+}
+#code2{
   width:86px;
   height:86px;
-  float:left;
-}
-.ft-container{
-  padding-left: 80px;
 }
 ul.content-container li{
     float:left;
@@ -304,9 +314,10 @@ ul.content-container li{
 ul.content-container li img{
     margin-left: 0px;
 }
-.foot-top{
-    padding-left: 100px;
-    padding-right: 200px;
+.ft-container{
+    width:1200px;
+    margin:0 auto;
+    padding-left:55px;
 }
 div.footer{
     margin-top:150px;
@@ -364,6 +375,6 @@ ul.ft-container li{
   -webkit-box-shadow: 2px 1px 5px #CCCBCB;
 }
 .sort-list a{ padding:0 6px; color:#333; text-align:center;}
-.sort-list li{ height: 27px; line-height: 27px;}
+.sort-list li{ height:28px; line-height: 28px;}
 .sort-list li.cur a{ color:#53a2e4;}
 .sort-list li a:hover{ text-decoration:none; background-color: #f5f5f5; }

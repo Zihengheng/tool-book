@@ -19,6 +19,9 @@
 <body>
 <div class="header section">
     <div class="content-container">
+      <div class="hp-decor1">
+        <img src="images/hp-decor1.png" alt="">
+      </div>
     <div class="top-menu">
       <div class="head-left">
         <img src="images/brand-icon.png" alt="品牌图标">
@@ -43,40 +46,41 @@
     </div><!-- end of top menu -->
     <div class="clearfix"></div>
     <div class="banner">
-      <img src="images/title-logo.png" alt="标题">
+      <img src="images/hp-tit.png" alt="标题">
       <div class="searchmain">
         <div class="search-form">
-          <div class="sort" id="search-type">
-              <div class="sort-default" id="type">
-                <span>全文</span>
-                <i class="sort-icon">▼</i>
-              </div>
-              <ul class="sort-list" style="display: none;">
-                <li class="cur"><a href="javascript:void(0);">全文</a></li>
-                <li><a href="javascript:void(0);">条头</a></li>
-                <li><a href="javascript:void(0);">书目</a></li>
-                <li><a href="javascript:void(0);">图片</a></li>
-                <li><a href="javascript:void(0);">表格</a></li>
-                <li><a href="javascript:void(0);">人物</a></li>
-              </ul>
+          <div class="search-box">
+            <div class="sort" id="search-type">
+                <div class="sort-default" id="type">
+                  <span>全文</span>
+                  <i class="sort-icon">▼</i>
+                </div>
+                <ul class="sort-list" style="display: none;">
+                  <li class="cur"><a href="javascript:void(0);">全文</a></li>
+                  <li><a href="javascript:void(0);">条头</a></li>
+                  <li><a href="javascript:void(0);">书目</a></li>
+                  <li><a href="javascript:void(0);">图片</a></li>
+                  <li><a href="javascript:void(0);">表格</a></li>
+                  <li><a href="javascript:void(0);">人物</a></li>
+                </ul>
             </div>
-          <div class="input-box">
-            <input class="search-input" type="text" autocomplete="off" placeholder="请输入检索词···" value="请输入检索词···" maxlength="100">
-            <a class="btn-wildcard" href="javascript:void(0);" data-toggle="tooltip" title="通配符”?”代表该位置有且仅有1个字符（=1），如检索“?细胞”可检出“红细胞”、“白细胞”。通配符可放在检索词任意位置，可组合使用，如“细?胞*”可检出“细菌胞质素”。">?</a>
-            <a class="btn-wildcard" href="javascript:void(0);" data-toggle="tooltip" title="通配符”*”代表该位置有任意个字符（≥0），如检索“*细胞”可检出“细胞”、“红细胞”、“白细胞”、“巨噬细胞”等。通配符可放在检索词任意位置，可组合使用，如“细?胞*”可检出“细菌胞质素”。">*</a>
+            <div class="input-box">
+              <input class="search-input" type="text" autocomplete="off" placeholder="请输入检索词···" value="请输入检索词···" maxlength="100">
+              <a class="btn-wildcard" href="javascript:void(0);" data-toggle="tooltip" title="通配符”?”代表该位置有且仅有1个字符（=1），如检索“?细胞”可检出“红细胞”、“白细胞”。通配符可放在检索词任意位置，可组合使用，如“细?胞*”可检出“细菌胞质素”。">?</a>
+              <a class="btn-wildcard" href="javascript:void(0);" data-toggle="tooltip" title="通配符”*”代表该位置有任意个字符（≥0），如检索“*细胞”可检出“细胞”、“红细胞”、“白细胞”、“巨噬细胞”等。通配符可放在检索词任意位置，可组合使用，如“细?胞*”可检出“细菌胞质素”。">*</a>
 
-            <div class="sort">
-              <div class="sort-default">
-                <span>精确</span>
-                <i class="sort-icon">▼</i>
+              <div class="sort">
+                <div class="sort-default">
+                  <span>精确</span>
+                  <i class="sort-icon">▼</i>
+                </div>
+                <ul class="sort-list" style="display: none;">
+                  <li class="cur"><a href="javascript:void(0);">精确</a></li>
+                  <li><a href="javascript:void(0);">模糊</a></li>
+                </ul>
               </div>
-              <ul class="sort-list" style="display: none;">
-                <li class="cur"><a href="javascript:void(0);">精确</a></li>
-                <li><a href="javascript:void(0);">模糊</a></li>
-              </ul>
-            </div>
-
-          </div>
+            </div> <!-- input-box -->
+          </div><!-- end of the search-box -->
 
           <input class="search-btn" type="button" value="检索">
           <a class="adv-search-btn top" href="translate.html" target="_blank">翻译助手 &gt;&gt;</a>
@@ -455,78 +459,79 @@
       </div>
     </div><!-- end of hp-book -->
 
-    </div>
     </div><!-- end of content-container -->
-  </div><!-- end of header -->
+</div><!-- end of header -->
   
   <div class="main-content">
     <!---------- 收录资源section --------->
     <div class="section section-ir">
-      <div class="section-title">
+      <div class="section-title" id="ir-title">
         <span>收录资源</span>
         <br>
         <span class="eng">INCLUDE RESOURCES</span>
       </div>
-      <div class="ir-container content-container">
-        <table class="lib-intro">
-          <tr>
-            <td><div class="ir-box">
+      <div class="ir-container content-container">        
+            <div class="ir-box left">
               <div class="ir-icon"><img src="images/icon_yck.png" alt=""></div>
               <div class="ir-body">
-                <div class="ir-sub1"><a href="#">语词库</a></div>
-                <p class="intro">"本产品首次将《汉语大词典》、《汉语大词典订补》和《康熙字典》整合在一起，具有专业的检索平台和知识关联功能，全面满足文史工作者一站式查找和研究字词源流、读音、释义与书证的需要。"</p>
-                <div class="ir-sub2">资源主要收录:</div>
-                <div class="highlighter"></div>
+                <div class="ir-sub" id="sub1"><a href="museum-words.html" target="_blank">语词库</a></div>
+                <p class="intro">本产品首次将《汉语大词典》、《汉语大词典订补》和《康熙字典》整合在一起，具有专业的检索平台和知识关联功能，全面满足文史工作者一站式查找和研究字词源流、读音、释义与书证的需要。"</p>
+                <div class="ir-sub2">资源主要收录</div>
+                <div class="highlighter" id="hl1"></div>
                   <ul>
                     <li><a href="#">汉语辞典</a></li>
                     <li><a href="#">少数民族语言辞典</a></li>
                   </ul>
               </div><!-- end of ir-body -->
-            </div></td>
-            <td><div class="ir-box">
+            </div>
+            <!--a ir-box -->
+            <div class="ir-box left">
               <div class="ir-icon"><img src="images/icon_jsk.png" alt=""></div>
               <div class="ir-body">
-                 <div class="ir-sub1"><a href="#">鉴赏库</a></div>
-                 <p class="intro">"是4000多部优质工具书的数字化集成，通过配备先进的全文检索系统，为在校师生提供了一个内容权威、方便快捷的的百科知识检索平台，是中小学师生释疑解惑和进行语文教学研究的重要工具。该库收录工具书的主要类型包括：汉语辞典、双语词典、专科辞典、百科全书、鉴赏辞典、图录图鉴等。研究字词源流、读音、释义与书证的需要。"</p>
-                 <div class="ir-sub2">资源主要收录:</div>
-                 <div class="highlighter"></div>
+                 <div class="ir-sub" id="sub2"><a href="museum-appre.html" target="_blank">鉴赏库</a></div>
+                 <p class="intro">是4000多部优质工具书的数字化集成，通过配备先进的全文检索系统，为在校师生提供了一个内容权威、方便快捷的的百科知识检索平台，是中小学师生释疑解惑和进行语文教学研究的重要工具。该库收录工具书的主要类型包括：汉语辞典、双语词典、专科辞典、百科全书、鉴赏辞典、图录图鉴等。研究字词源流、读音、释义与书证的需要。"</p>
+                 <div class="ir-sub2">资源主要收录</div>
+                 <div class="highlighter" id="hl2"></div>
+
                   <table>
                     <tr><td><a href="#">国学鉴赏（23）</a></td><td> <a href="#">文学鉴赏（83)</a></td></tr>
                     <tr><td><a href="#">艺术鉴赏（28)</a></td><td> <a href="#">其他鉴赏（85)</a></td></tr>
                   </table>
               </div><!-- end of ir-body -->
-              </div>
-            </div></td>
-            <td><div class="ir-box">
-              <div class="ir-icon"><img src="images/icon_jsk.png" alt=""></div>
+            </div>
+            <!--a ir-box -->
+            <div class="ir-box left">
+              <div class="ir-icon"><img src="images/icon_hy.png" alt=""></div>
               <div class="ir-body">
-                <div class="ir-sub1"><a href="#">行业库</a></div>
+                <div class="ir-sub" id="sub3"><a href="museum-profession.html" target="_blank">行业库</a></div>
                  <p class="intro">是4000多部优质工具书的数字化集成，通过配备先进的全文检索系统，为在校师生提供了一个内容权威、方便快捷的的百科知识检索平台，是中小学师生释疑解惑和进行语文教学研究的重要工具。该库收录工具书的主要类型包括：汉语辞典、双语词典、专科辞典、百科全书、鉴赏辞典、图录图鉴等。研究字词源流、读音、释义与书证的需要</p>
-                 <div class="ir-sub2">资源主要收录:</div>
-                 <div class="highlighter"></div>
+                 <div class="ir-sub2">资源主要收录</div>
+                 <div class="highlighter" id="hl3"></div>
                   <table>
                     <tr><td><a href="#">国学鉴赏（23）</a></td><td> <a href="#">文学鉴赏（83)</a></td></tr>
                     <tr><td><a href="#">艺术鉴赏（28)</a></td><td> <a href="#">其他鉴赏（85)</a></td></tr>
                   </table>
               </div><!-- end of ir-body -->
-            </div></td>
-            <td><div class="ir-box">
+            </div>
+             <!--a ir-box -->
+            <div class="ir-box">
               <div class="ir-icon"><img src="images/icon_fl.png" alt=""></div>
               <div class="ir-body">
-                 <div class="ir-sub1"><a href="#">附录库</a></div>
+                 <div class="ir-sub" id="sub4"><a href="museum-appendix.html" target="_blank">附录库</a></div>
                 <p class="intro">是4000多部优质工具书的数字化集成，通过配备先进的全文检索系统，为在校师生提供了一个内容权威、方便快捷的的百科知识检索平台，是中小学师生释疑解惑和进行语文教学研究的重要工具。该库收录工具书的主要类型包括：汉语辞典、双语词典、专科辞典、百科全书、鉴赏辞典、图录图鉴等。研究字词源流、读音、释义与书证的需要</p>
-                <div class="ir-sub2">资源主要收录:</div>
-                <div class="highlighter"></div>
+                <div class="ir-sub2">资源主要收录</div>
+                <div class="highlighter" id="hl4"></div>
                   <ul>
                     <li><a href="#">中国地名雅称集释</a></li>
                     <li><a href="#">中华人民共和国大事记</a></li>
                     <li><a href="#">标点符号用法说明</a></li>
                   </ul>
               </div> <!-- end of ir-body -->
-            </div></td>
-          </tr>
-        </table>
+            </div>
+            <!--a ir-box -->
+            <div class="clearfix"></div>
       </div>
+      <!-- content-container -->
     </div>
     <!------- 独家合作 sectction -------->
     <div class="section section-ep">
@@ -549,6 +554,7 @@
             <li><a href="#t8" data-toggle="tab">中央编译出版社</a></li>
           </ul>
           <a href="" class="go-right"> > </a>
+          <div class="clearfix"></div>
         </div><!-- end of ep-tabs -->
         <div id="ep-content" class="tab-content">
            <div class="tab-pane fade in active" id="shanghai">
@@ -691,8 +697,11 @@
                   <a target="_blank"  rel="noopener noreferrer" href="//www.cnki.net/software/xzydq.htm#CNKIe-Learning">CNKI数字化学习平台</a>
                   <a target="_blank"  rel="noopener noreferrer" href="//refbook.cnki.net/download.html">工具书桌面检索软件</a>
               </li>
-              <img src="images/ewm_code.png" class="ft-code" alt="">
-              <img src="images/rq_code.png" class="ft-code" alt="">
+              <li>
+                <img src="images/ewm_code.png" class="ft-code" id="code1" alt="">
+               <img src="images/rq_code.png" class="ft-code" id="code2" alt="">
+              </li>
+              <div class="clearfix"></div>
           </ul>
       </div>
       <div class="foot-bot clearfix content-container" data-edit="y">
