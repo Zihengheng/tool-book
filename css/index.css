@@ -20,10 +20,19 @@
     width:100%;
 }
 .section-ep{
-    padding-bottom:120px;
+    padding-bottom:53px;
     background:url("../images/index-bjtwo.png") no-repeat bottom;
 }
-
+/*change tool-tip*/
+.tooltip-inner{
+    background-color:#fff;
+    color:#333333;
+    padding:20px;
+    border:1px solid grey;
+}
+.tooltip.top .tooltip-arrow{
+    border-top-color: #333333;
+}
 /*======通用部分=====*/
 ul.navbar-nav{
     list-style-type:none; 
@@ -207,12 +216,10 @@ button.label{
 }
 .hp-book .tab-content{
     float:left;
-    width:264px;
+    width:287px;
     height:380px;
-    padding-right:24px;
-    padding-bottom: 180px;
-    margin-top:100px;
-    margin-left:60px; 
+    padding:100px 25px 180px 25px;
+    margin-left:36px;
 }
 .btn-vertical {
     float:left;
@@ -437,7 +444,7 @@ div.highlighter{
     width:1200px;
     margin:0 auto;
     padding-top:39px;
-    background: url("../images/index-bjtwo.png") no-repeat bottom;
+    height:990px;
 }
 .ep-container a{text-decoration:none;}
 #ep-content .tab-pane{
@@ -472,29 +479,33 @@ div.ep-tabs{
 }
 a.go-left{
     float:left;
-    line-height: 30px;
+    line-height: 46px;
     font-size: 18px;
 }
 a.go-right{
     float:right;
-     line-height: 30px;
+     line-height: 46px;
      font-size: 18px;
 }
 #cooperate{
     width: 878px;
     height: 172px;
     background: url("../images/cooperate.png");
-    z-index:0; 
+    position:absolute;
 }
 /*展示书籍*/
+#ep-content{
+    position:relative;
+}
 .ep-row1{
     height:365px;
     position:relative;
-    top:-110px;
+    top:69px;
 }
 .ep-row2{
     height:365px;
-    margin-top: -60px;
+    position:relative;
+    top:144px;
 }
 .ep-intro{
     width: 267px;
