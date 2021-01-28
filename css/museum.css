@@ -16,6 +16,12 @@
 }
 a.btn-wildcard{text-decoration:none;}
 button, .btn{outline: none;}
+a.adv-search-btn{
+	margin-top: 2px;
+}
+a.adv-search-btn.top{
+	margin-top: 4px;
+}
 /* 相关解释 section*/
 .result-detail-list dd {
 	padding-right: 0;
@@ -529,7 +535,7 @@ a.control-icon{
 /*======= 书目导览 end =========*/
 /*======= 内容挖掘部分 start =========*/
 .dive-in{
-	height:1000px;
+	padding-bottom: 52px;
 }
 div.section-menu{
 	width:100%;
@@ -592,7 +598,6 @@ div.section-search input.search-btn{
 	color:white;
 }
 #di-content{
-	height:600px;
 	padding-top: 20px;
 	padding-left: 15px;
 }
