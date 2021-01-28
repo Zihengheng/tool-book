@@ -3,7 +3,7 @@
 	width:100%;
 	padding:0;
 	margin:0;
-	font-family: MicrosoftYaHei, SimSun;
+	font-family: MicrosoftYaHei, SimSun，sans-serif;
 	color:#333333;
 }
 .container{
@@ -14,7 +14,6 @@
 }
 .main-content{
 }
-a.adv-search-btn{text-decoration:none;}
 a.btn-wildcard{text-decoration:none;}
 button, .btn{outline: none;}
 /*== footer 补丁 ==*/

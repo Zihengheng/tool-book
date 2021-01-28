@@ -158,12 +158,15 @@ border-left:0;
   float:left;
 /*  width:800px;*/
 }
-.adv-search-btn{ 
+a.adv-search-btn{ 
   display:inline-block;
-  color: #333333;
+  color: #6f6f6f;
   margin-left: 18px;
   margin-top: 4px;
   font-size: 13px;
+  text-decoration:underline; 
+  font-family: SimSun;
+
 }
 .adv-search-btn:hover{ color: #53a2e3; }
 /*底部切换按钮*/

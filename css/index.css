@@ -65,7 +65,8 @@ div.header.section > div.content-container{
     width: 131px;
     height: 45px;
     float:left;
-    margin-right:10px;
+    margin-right:25px;
+    margin-top:3px;
 }
 .head-left ul.nav{
     height:45px;
@@ -74,21 +75,23 @@ div.header.section > div.content-container{
     height:50px;
     padding-top:10px;
 }
-.head-left ul{
-    list-style-type:none;
-}
 .head-left ul li{
-    width:60px;
-    font-family: MicrosoftYaHei;
-    font-size: 13px;
-    line-height: 50px;
-    margin-left:15px;
+    margin-right:26px;
+    line-height:28px;
+     list-style-type:none;
+    margin-top:16px;
 }
 .head-left ul li a {
     color:#333333;
     text-decoration: none;
+    font-family: MicrosoftYaHei, SimSun;
+    font-size: 12px;
 }
 .head-left ul li a:hover{color:#53a2e3;}
+.head-right{
+    float:right;
+    padding-top:16px;
+}
 .head-right ul{
     width:400px;
     margin-right: 70px;
@@ -97,19 +100,21 @@ div.header.section > div.content-container{
     list-style-type:none;
     font-family: MicrosoftYaHei;
     font-size: 13px;
-    line-height: 50px;
+    line-height:28px;
     margin-top: -2px;
 }
 .head-right ul li a {
     color: #242424;
     margin-right: 10px;
-    padding-left: 10px;
+    padding-left: 13px;
     text-decoration: none;
+    font-family:SimSun; 
 }
 .head-right ul li a:hover{color:#53a2e3;}
 .head-right ul li a.down{
-    padding-right: 20px;
-    background: url("../images/downiconh.png") no-repeat right center;
+    padding-right:16px;
+    background: url("../images/downiconh.png") no-repeat;
+    background-position:75px 22px;
 }
 div.divider{
     display: inline-block;
@@ -119,7 +124,6 @@ div.divider{
     position:relative;
     top:3px;
 }
-a.adv-search-btn{text-decoration:none;}
 /* end of top menu bar */
 .banner{
     display:block;
@@ -128,8 +132,8 @@ a.adv-search-btn{text-decoration:none;}
     margin-top: 98px;
 }
 .banner img{
-    width: 282px;
-    height: 53px;
+    width: 340px;
+    height:56px;
     margin-bottom: 42px;
 }
 /*检索框*/
@@ -138,19 +142,22 @@ a.adv-search-btn{text-decoration:none;}
     margin-top:0;
 }
 #type{
-    width:80px;
+    width:84px;
     height:50px;
     border:1px solid #e6e6e6;
     line-height: 50px;
 }
+.sort .sort-icon{
+    font-size:12px;
+}
 #type span{
-    margin-right: 4px;
+    margin-right:10px;
     font-family: SimSun;
     font-size: 12px;
-    padding-left: 7px;
+    padding-left:10px;
 }
 .searchmain{padding:0 !important;}
-.searchmain .input-box{ float: left; width:450px; height: 50px; border: 1px solid #e6e6e6; background-color: #fff; 
+.searchmain .input-box{ float: left; width:445px; height: 50px; border: 1px solid #e6e6e6; background-color: #fff; 
 border-left:0;
 }
 .searchmain .search-input { float: left;padding: 4px 10px; font-size: 14px; color: #7d7d7d; line-height:40px; vertical-align: bottom; border: none; background-color: #fff;
@@ -183,17 +190,14 @@ padding:2px;text-decoration:none;}
 .drop-box { position:relative; z-index: 999; }
 .homepage .drop-box .unit{ height: 330px; overflow-y: auto; overflow-x:hidden; }
 /* ====home page book====*/
-div.hp-book{
-}
-.header .content-container{
-    background: url("../images/hp-book.png") no-repeat right bottom;
-}
 button.label{
     width: 9px;
     height: 40px;
 }
 .hp-book{
     height: 515px;
+    background: url("../images/hp-book.png") no-repeat;
+    background-position: 463px -25px;
 }
 .hp-book .tab-content{
     float:left;
@@ -206,7 +210,7 @@ button.label{
 }
 .btn-vertical {
     float:left;
-    margin-top:49px;
+    margin-top:68px;
     width:10px;
 }
 .btn-vertical span{
@@ -219,6 +223,7 @@ button.label{
     height:40px;
     margin-left:-2px;
 }
+#labels{margin-left:4px;}
 #labels li {
     width:20px;
 }
