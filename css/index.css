@@ -103,17 +103,20 @@ div.header.section > div.content-container{
 }
 .head-right ul li a {
     color: #242424;
-    margin-right: 10px;
+    margin-right:10px;
     padding-left: 13px;
     text-decoration: none;
     font-family:SimSun; 
     font-size:12px;
 }
 .head-right ul li a:hover{color:#53a2e3;}
-.head-right ul li a.down{
-    padding-right:16px;
-    background: url("../images/downiconh.png") no-repeat;
-    background-position:75px 22px;
+i.down-icon{
+    display:inline-block;
+    width:15px;
+    height:11px;
+    margin-right: 8px;
+    margin-left: -5px;
+    background: url("../images/downiconh.png") no-repeat center;
 }
 div.divider{
     display: inline-block;
