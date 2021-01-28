@@ -7,9 +7,7 @@
 	margin-left: auto;
 	margin-right: auto;
 }
-div.footer{
-	margin-top: 68px;
-}
+
 div.search-result{
 	width: 938px;
 	background-color: #ffffff;
@@ -17,15 +15,7 @@ div.search-result{
 		rgba(246, 246, 246, 0.58);
 	border: solid 1px #f4f6f9;
 }
-.foot-bot{
-	padding-left: 214px;
-}
-div.b{
-	margin-left: -98px;
-}
-div.t{
-	margin-left: -111px;
-}
+
 .toolbar-col{
 	height:38px;
 }

@@ -14,7 +14,7 @@
 .content-container{
     margin:0 auto;
     /*版心*/
-    width:1387px;
+    width:1200px;
 }
 .section{
     width:100%;
@@ -22,12 +22,6 @@
 .section-ep{
     padding-bottom:120px;
     background:url("../images/index-bjtwo.png") no-repeat bottom;
-}
-div.footer{
-    margin-top:0px;
-}
-a.adv-search-btn.top{
-    margin-top:0px;
 }
 
 /*======通用部分=====*/
@@ -57,12 +51,14 @@ ul.navbar-nav{
 }
 /*============== header start ==============*/
 div.header.section > div.content-container{
-    padding-left: 100px;
+   width:1270px;
+   padding-left:45px;
+   position:relative;
 }
 .hp-decor1{
     position:absolute;
     z-index:0; 
-    left:810px; 
+    left:750px; 
 }
 /* top menu bar*/
 .head-left img{
@@ -78,6 +74,7 @@ div.header.section > div.content-container{
 .top-menu{
     height:50px;
     padding-top:10px;
+    z-index:1; 
 }
 .head-left ul li{
     margin-right:26px;
@@ -97,7 +94,6 @@ div.header.section > div.content-container{
     padding-top:12px;
 }
 .head-right ul{
-    width:400px;
     margin-right: 70px;
 }
 .head-right ul li{
@@ -281,7 +277,7 @@ span.des{
     font-size:16px;
 }
 #label-content ul{
-    margin-top: 31px;
+    margin-top: 25px;
     line-height:36px;
     padding-left:27px;
 }
@@ -420,7 +416,7 @@ div.ir-sub2{
     margin-left: auto;
     margin-right: auto;
 }
-.ir-body table td{width:116px;}
+.ir-body table td{width:116px;height:24px;}
 .ir-body a{text-decoration: none;}
 div.highlighter{
     width: 44px;
