@@ -121,23 +121,7 @@ $(function(){
 	// 	timing: "500"
 	// });
 
-
-
-
-	/*第2屏*/
-	pageSource = $(".section-source");
-	pageSource.find(".list li").click(function () {
-		if ($(this).hasClass("on")) {
-			return;
-		}
-		_index = pageSource.find(".list li").index($(this));
-		$(this).addClass("on").siblings().removeClass("on");
-		subLi = pageSource.find(".sublist dl");
-		subLi.removeClass("active").eq(_index).addClass("active");
-	});
-
 });
-
 // 2021 tab标签切换
  function tabFunc(boxDom, tablist, current, tabcont, active, mouseEvent){
      $(boxDom).each(function () {
@@ -152,4 +136,4 @@ $(function(){
                     _this.find(tabcont).removeClass(active).eq(index).addClass(active)
                 })
             })
-  }
+}

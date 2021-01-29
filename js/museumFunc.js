@@ -67,7 +67,6 @@ $(function(){
     $('#menu-3').on('hidden.bs.collapse', function () {
     $("a[href='#menu-3']").text("+");});
 
-
     //显示书籍注释
     $(".booksec-box img").hover(
     function(){
@@ -81,6 +80,21 @@ $(function(){
         })
     });
 
+    //2021 显示典故：语词库首页
+    $(".show-story").click(function(){
+        if($(this).hasClass("on-show")){
+            $(this).next().slideUp(300);
+            $(this).removeClass("on-show");
+        }
+        else{
+           $(this).next().slideDown(300);
+           $(this).addClass("on-show"); 
+        }
+    });
+    $(".close-story").click(function(){
+        $(this).parent().slideUp(300);
+        $(this).parent().prev().removeClass("on-show");
+    });
 
     //显示标签内容
     $('#menu1-tab a[href="#hycd"]').tab('show')

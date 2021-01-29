@@ -355,6 +355,7 @@ div.intro{
 }
 .result-count{
 	float:right;
+	line-height:45px;
 }
 .result-count span{
 	color: #999999;
@@ -373,21 +374,22 @@ div.show-more{
 div.show-more a{
 	color: #999999;
 	font-size: 13px;
-	line-height: 39px;
 	text-decoration:none;
+	line-height:45px;
 }
 div.show-more a:hover{color:#53a2e3;}
 /*书目展示*/
 .book-nav{
 	padding-top: 25px;
-	height:778px;
+	padding-bottom:65px;
+	/*height:778px;*/
 }
 div.left-menu{
 	float:left;
 	margin-top: 20px;
 	border: solid 1px #dcdcdc;
 	width: 241px;
-	height:606px;
+	height:563px;
 	background-color: #f6f8fc;
 }
 .left-menu li{
@@ -439,10 +441,14 @@ div.booksec-box{
 	position:relative;
 	width:100%;
 	height:100%;
-	padding:15px;
+	padding-left:15px;
+	padding-right:15px;
+}
+div.booksec-box.top{
+	padding-bottom: 46px;
 }
 div.booksec-box img{
-	margin-bottom: 22px;
+	margin-bottom: 17px;
 	margin-right: 22px;
 	width: 118px;
 	height: 166px;
@@ -465,7 +471,7 @@ div.book-annotation{
 	height:26px;
 	background-color:grey;
 	opacity:0.9;
-	top:160px;
+	top:145px;
 	left:11px;
 	color:white;
 	font-size: 15px;
@@ -474,21 +480,22 @@ div.book-annotation{
 }
 div.details{
 	float:left;
-	margin-top: 17px;
+	margin-top: 12px;
 }
 div.details span{
 	font-family: SimSun;
-	font-size: 16px;
+	font-size: 14px;
 	color: #333333;
 	font-weight: bold;
+	line-height:36px;
 }
 div.details p{
-	margin-top: 19px;
+	margin-top:6px;
 	font-family: MicrosoftYaHei;
 	font-size: 12px;
 	color: #333333;
 	line-height: 23px;
-	margin-bottom: 10px;
+	margin-bottom: 14px;
 }
 div.details a{
 	color:#6e90ff;
@@ -496,7 +503,7 @@ div.details a{
 	font-size: 12px;
 	line-height: 26px;
 	border: solid 1px #6e90ff;
-	padding:5px 5px 5px 5px;
+	padding:5px 3px 5px 3px;
 	text-decoration:none;
 }
 div.details a:hover{font-weight:bold; background-color:#6e90ff;color:#fff;}
@@ -640,7 +647,8 @@ div.chart-start{
 	height: 59px;
 	background-color: #6e90ff;
 	border-radius: 30px;
-	padding-left: 47px;
+	text-align:center;
+	position:relative;
 }
 div.start-word span{
 	line-height: 59px;
@@ -691,6 +699,7 @@ div.line-word{
 	float:left;
 	margin-top: 6px;
 	text-align: center;
+	position:relative;
 }
 div.line-word span{
 	font-family: MicrosoftYaHei;
@@ -786,6 +795,10 @@ img.minus{
 	border-bottom:4px solid #918edd;
 }
 /*精彩典故*/
+.close-story{
+	float:right;
+	margin-right: 34px;
+}
 .story-title{
 	width: 111px;
 	height: 39px;
@@ -802,17 +815,23 @@ img.minus{
 }
 .story-box{
 	width: 590px;
-	height: 192px;
 	box-shadow: 0px 9px 20px 1px 
 		rgba(234, 234, 234, 0.58);
 	border: solid 1px #eeeeee;
 	float:left;
 	padding:10px 15px 10px 15px;
+	display:none;
+	position:absolute;
+	top:66px;
+	left:0px;
+	z-index:999;  
+	background: #fff;
+	text-align:left;
 }
 .story-box.right{
 	margin-left: 5px;
 }
-.story-box span{
+div.story-box span{
 	font-family: MicrosoftYaHei;
 	font-size: 14px;
 	line-height: 36px;
@@ -1852,10 +1871,6 @@ ul.refer-list li em{
 	border-radius: 3px;
 	margin-top: 43px;
 	padding:22px 15px 22px 15px;
-}
-.book-nav.jsk{
-	height:778px;
-	padding-top:0px;
 }
 .left-menu.jsk{
 	height:611px;
