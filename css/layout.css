@@ -911,7 +911,7 @@ line-height:38px;}
 .sidebar-filter .off dd{ /*display:none;*/ }
 .sidebar-filter .off dd{ padding-bottom: 5px; overflow: hidden; }
 .sidebar-filter .off .resultlist{ max-height: 65px; }
-.sidebar-filter dd .btn{ position: absolute; right: 5px; /*top: 50%;*/ top: 65px; width: 8px; height: 6px; padding: 7px 2px; /*margin-top: -22px;*/  cursor:pointer; background-image:url(../images/icon-jt.png); background-repeat: no-repeat; background-position: 0 -33px; }
+.sidebar-filter dd .btn{ position: absolute; right: 5px; /*top: 50%;*/ top: 65px; width:11px; height: 6px; padding: 7px 2px; /*margin-top: -22px;*/  cursor:pointer; background-image:url(../images/icon-jt.png); background-repeat: no-repeat; background-position: 0 -33px; }
 .sidebar-filter dd .btn.on{ background-position: -10px -33px; }
 .sidebar-filter dl li.on a{ color: #2267c7; }
 /*确定、清除*/

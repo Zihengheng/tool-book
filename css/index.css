@@ -447,10 +447,11 @@ div.highlighter{
     height:990px;
 }
 .ep-container a{text-decoration:none;}
-#ep-content .tab-pane{
+#ep-content{
     width: 1200px;
     background-color:#f7fbfc;
     padding-bottom: 22px;
+    height:900px;
 }
 div.ep-tabs{
     border-bottom:1px solid  #e5e5e5;
@@ -505,7 +506,7 @@ a.go-right{
 .ep-row2{
     height:365px;
     position:relative;
-    top:144px;
+    top:135px;
 }
 .ep-intro{
     width: 267px;

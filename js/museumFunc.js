@@ -44,7 +44,8 @@ $(function(){
     }
     
     //2021 标签切换：语词库首页
-    tabFunc(".dive-in", "#section-tab li", "cur", ".tab-pane", "active", "mousedown");
+    tabFunc(".dive-in", "#section-tab li", "cur", ".di-con", "active", "mousedown");
+    tabFunc(".dive-in", "#section-tab li", "cur", ".di-con", "active", "mousedown");
     //语词库侧边栏
     //menu-1
    $('#menu-1').collapse('show');
