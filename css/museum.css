@@ -13,6 +13,7 @@
 	padding:0;
 }
 .main-content{
+	/*padding-bottom: 45px;*/
 }
 a.btn-wildcard{text-decoration:none;}
 button, .btn{outline: none;}
@@ -355,33 +356,33 @@ div.intro{
 }
 .result-count{
 	float:right;
-	line-height:45px;
+	margin-top:18px;
+	line-height: 24px;
 }
 .result-count span{
 	color: #999999;
 	font-size: 13px;
-	line-height: 39px;
 }
 .result-count em{
 	color: #6e90ff;
 	font-size: 13px;
-	line-height: 39px;
 }
 div.show-more{
 	float:right;
 	margin-left: 22px;
+	margin-top:18px;
+	line-height: 24px;
 }
 div.show-more a{
 	color: #999999;
 	font-size: 13px;
 	text-decoration:none;
-	line-height:45px;
 }
 div.show-more a:hover{color:#53a2e3;}
 /*书目展示*/
 .book-nav{
 	padding-top: 25px;
-	padding-bottom:65px;
+	padding-bottom:75px;
 	/*height:778px;*/
 }
 div.left-menu{
@@ -389,7 +390,7 @@ div.left-menu{
 	margin-top: 20px;
 	border: solid 1px #dcdcdc;
 	width: 241px;
-	height:563px;
+	height:572px;
 	background-color: #f6f8fc;
 }
 .left-menu li{
@@ -515,19 +516,13 @@ h5{
 	font-size: 15px;
 	font-weight: bold;
 	line-height: 23px;
-	letter-spacing: 0px;
 	color: #333333;
-	margin-bottom: 10px;
+	margin-bottom:9px;
 }
-p.intro span{
-	width: 246px;
-	height: 35px;
+h5+span{
 	font-family: MicrosoftYaHei;
 	font-size: 12px;
-	font-weight: normal;
-	font-stretch: normal;
-	line-height: 23px;
-	letter-spacing: 0px;
+	line-height: 24px;
 	color: #666666;
 	overflow: hidden;
 }
@@ -1171,9 +1166,6 @@ div.rst-flip{
 
 /*=================== 语词库条目内容开始 =====================*/
 /*===== 标题栏 =====*/
-.dt-leftbar.yck{
-	height:4600px;
-}
 .msm-banner.dt-page{
 	height:333px;
 }
@@ -1201,15 +1193,16 @@ ul.breadcrumb li.active{
 /*left*/
 .dt-leftbar{
 	width:289px;
-	height:4100px;
+	/*height:100%;*/
 	border-top: 1px solid #DCDCDC;
 	background-color: #fbfbfb;
 	float:left;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 .dt-rightbar{
 	width:911px;
 	border-top:1px solid #DCDCDC; 
-	height:100px;
 	float:left;
 }
 .dt-leftbar-title{
@@ -1224,7 +1217,7 @@ ul.breadcrumb li.active{
 	font-size: 15px;
 	font-weight: bold;
 	line-height: 35px;
-	letter-spacing: 0px;
+	background: url("../images/bg-dt-section.png") no-repeat;
 	color: #2c3f6a;
 }
 /*right*/
@@ -1382,6 +1375,7 @@ div.chi-title{
 	border-top: 1px solid #e3ecf1;
 	border-bottom: 1px solid #e3ecf1;
 	height:41px;
+	background:url("../images/bg-dt-section.png") no-repeat;
 }
 div.chi-title span{
 	line-height: 41px;
@@ -1554,10 +1548,12 @@ p.word-graph span{
 	color:#53a2e4;
 }
 /* 词链导图 section*/
+.word-chart{
+	padding-bottom: 68px;
+}
 .chart-content{
 	padding:15px 0px 15px 22px;
 	color:#333333;
-	height:1082px;
 }
 .chart-control label{
 	width:115px;
@@ -1570,6 +1566,9 @@ p.word-graph span{
 .line-start{
 	font-weight: bold;
 	font-size: 15px;
+	display:block;
+}
+.line-tiles{
 }
 .chart-content a{
 	color:#333333;
@@ -1807,6 +1806,9 @@ ul.refer-list li em{
 }
 #jsk-banner{
 	background: url("../images/jsk_banner.jpg") no-repeat;
+}
+.book-nav.jsk{
+	padding-top:0px;
 }
 #appre-menu .panel-body{
 	max-height:397px;
@@ -2129,9 +2131,6 @@ div.img-box-img{
 .pic-brick .tit a{
 	color:#333333;
 }
-.dt-leftbar.jsk{
-	height:4200px;
-}
 /*======================= 鉴赏库条目 end =======================*/
 /*======================= 行业库 start =======================*/
 #hyk-recomm{padding-left:5px; padding-bottom: 10px;padding-right:0px;}
@@ -2341,9 +2340,6 @@ dl.nav-sections ul.nav-sections li{
 	color: #333333;
 	text-indent: 2em;
 }
-.dt-leftbar.prof{
-	height:3200px;
-}
 /*========================= 行业库条目页 end ======================*/
 /*========================= 附录库 start =========================*/
 #flk-banner{
@@ -2431,8 +2427,5 @@ dl.nav-sections ul.nav-sections li{
 	font-weight: bold;
 	line-height:33px;
 	font-family: MicrosoftYaHei;
-}
-.dt-leftbar.apd{
-	height:1767px;
 }
 /*========================= 附录库条目页 end ==================

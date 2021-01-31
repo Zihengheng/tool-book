@@ -43,6 +43,9 @@ $(function(){
         });
     }
     
+    //2021 范围：所有museum 条目页（detail page）
+    //说明：设置左边栏高度等于内容高度
+    setHeight();
     //2021 标签切换：语词库首页
     tabFunc(".dive-in", "#section-tab li", "cur", ".di-con", "active", "mousedown");
     tabFunc(".dive-in", "#section-tab li", "cur", ".di-con", "active", "mousedown");
@@ -188,4 +191,20 @@ $(function(){
                     _this.find(tabcont).removeClass(active).eq(index).addClass(active)
                 })
             })
-  }
+  };
+  //2021 范围：所有museum 条目页（detail page）
+  //说明：设置左边栏高度等于内容高度
+  function setHeight(){
+    var contentHeight =$(".dt-rightbar").outerHeight();
+    var newHeight = null;
+    if ($(".dt-leftbar").hasClass("yck")){
+        newHeight = 245 + contentHeight;
+    }
+    else if($(".dt-leftbar").hasClass("jsk")){
+        newHeight = contentHeight + 650;
+    }
+    else{
+        newHeight = 45+contentHeight;
+    }
+    $(".dt-leftbar").css("height", newHeight);
+  };
