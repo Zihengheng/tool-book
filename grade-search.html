@@ -378,15 +378,16 @@
   </div> <!-- end of the rst-header -->
 
  <div class="top-doctype">
-        <div class="container">
+         <div class="container">
             <ul class="doctype-menus" id="menu-tab">
-              <li data-id="xsqk" class="active"><a href="#zk" data-toggle="tab"><span>总库</span><em>52318</em></a></li>
-              <li data-id="xsqk"><a href="#yck" data-toggle="tab"><span>语词库</span><em>12803</em></a></li>
-              <li data-id="baozhi"><a href="#jsk" data-toggle="tab"><span>鉴赏库</span><em>23800</em></a></li>
-              <li data-id="xwlw" class="haschild">
-              <a href="#hyk" data-toggle="tab"><span>行业库</span><em>12345</em></a>
-              </li>
-              <li data-id="nj"><a href="#flk" data-toggle="tab"><span>附录库</span><em>32802</em></a></li>
+              <li class="active"><a href="javascript:void(0);"><span>总库</span><em>52318</em></a></li>
+              <li><a href="#yck"><span>语词库</span><em>12803</em></a>
+                <div class="nav-divider"></div></li>
+              <li><a href="#jsk"><span>鉴赏库</span><em>23800</em></a><div class="nav-divider"></div></li>
+              <li>
+              <a href="#hyk"><span>行业库</span><em>12345</em></a>
+              <div class="nav-divider"></div></li>
+              <li><a href="#flk"><span>附录库</span><em>32802</em></a><div class="nav-divider"></div></li>
             </ul>
           <!--   <a class="btn-crossDb-search" href="javascript:void(0);" title="更多资源"><i></i></a> -->
             <div class="clear"></div>
@@ -424,7 +425,7 @@
                                     <li><input type="checkbox"><a href="javascript:void(0)" title="#">中国古代史</a><span class="num">7911</span></li>
                                     <li><input type="checkbox"><a href="javascript:void(0)" title="#">考古</a><span>5673</span class="num"></li>
                                 </ul>
-                                <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                                <!-- <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a> -->
                             </div><!--resultlist-->
                         </dd>
                     </dl>
@@ -470,18 +471,48 @@
 
                     <dl class="off">
                         <dt class="tit"><b><img src="images/leixing.png" alt="">类型</b><i class="icon icon-arrow"></i><i class="icon icon-visual" data-src="iframe-visual-leftSide.html"></i></dt>
-                        <dd>
-                            <div class="resultlist"  onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
-                                <ul>
-                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业一</a><span>8172</span></li>
-                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业二</a><span>21312</span></li>
-                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业三</a><span>12323</span></li>
-                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业四</a><span>4432</span></li>
-                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业五</a><span>3244</span></li>
-                                </ul>
-                                <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
-                            </div><!--resultlist-->
+                        <dt class="subtit row-a2">
+                        <a class="cur" href="javascript:void(0)">类型1</a>
+                        <a href="javascript:void(0)">类型2</a>
+                      </dt>
+                      <dd>
+                        <div class="resultlist" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+                          <ul>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">出版社</a><span>(49)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">文化机构</a><span>(33)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">出版业</a><span>(32)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">传统出版</a><span>(31)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">学术期刊</a><span>(30)</span></li>
+                          </ul>
+                          <ul>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">优先出版</a><span>(29)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">企业管理</a><span>(28)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">电子书</a><span>(27)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">产业链</a><span>(26)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">科技期刊</a><span>(25)</span></li>
+                          </ul>
+                          <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                        </div><!--resultlist-->
                         </dd>
+                         <dd style="display: none;">
+                        <div class="resultlist" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+                          <ul>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">出版社</a><span>(40)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">文化机构</a><span>(33)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">出版业</a><span>(22)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">传统出版</a><span>(31)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">学术期刊</a><span>(15)</span></li>
+                          </ul>
+                          <ul>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">优先出版</a><span>(29)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">企业管理</a><span>(28)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">电子书</a><span>(27)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">产业链</a><span>(26)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">科技期刊</a><span>(25)</span></li>
+                          </ul>
+                          <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                        </div><!--resultlist-->
+                      </dd>
                     </dl>
 
                     <dl class="off">
@@ -533,14 +564,35 @@
                     <dl class="off">
                     <dt class="tit">
                       <b>
-                        <img src="images/goumai.png" alt="">购买情况
+                        <img src="images/calender.png" alt="">产品年度
                         <!-- <i class="yesorno"><img src="images/choose-btn.png" alt=""></i> -->
                        </b>
+                       <i class="icon icon-arrow"></i>
                     </dt>
+                    <dd class="product">
+                      <div class="product-year">
+                        <!-- <div class="sort" id="product-sort">
+                        <div class="sort-default" id="year">
+                          <span>2008年</span>
+                          <i class="sort-icon">▼</i>
+                        </div>
+                        <ul class="sort-list" style="display: none;">
+                          <li class="cur"><a href="javascript:void(0);">2008年</a></li>
+                          <li><a href="javascript:void(0);">2009年</a></li>
+                          <li><a href="javascript:void(0);">2010年</a></li>
+                          <li><a href="javascript:void(0);">2011年</a></li>
+                          <li><a href="javascript:void(0);">2012年</a></li>
+                          <li><a href="javascript:void(0);">2013年</a></li>
+                        </ul>
+                      </div> -->
+                      </div>
+                    </dd>
                     </dl>
 
                     <dl class="off" id="pro">
-                    <dt class="tit"><b><img src="images/tongyin.png" alt="">同音提示</b></dt>
+                    <dt class="tit"><b><img src="images/tongyin.png" alt="">同音提示</b>
+                    <i class="icon icon-arrow"></i></dt>
+                    <dd></dd>
                     </dl>
 
                 </div>
@@ -556,10 +608,8 @@
 
         </div><!--sidebar-filter-->
 
-        <div class="main fr tab-content" id="menu-tab-content">
-          <div class="tab-pane fade in active" id="zk">
+        <div class="main fr" id="menu-tab-content">
             <div class="search-result">
-
                 <div class="toolbar">
                     <div class="result-conditions">
                         <div class="result-con-l">
@@ -982,7 +1032,7 @@
                     </p>
                 </li>
             </ul><!--bottom-commend-list-->
-        </div><!-- end of 总库结果 -->
+      
         <div class="tab-pane fade" id="yck"><span>测试标签跳转</span></div>
         </div><!--main - fr -->
 

@@ -28,7 +28,7 @@ a.adv-search-btn.top{
 	padding-right: 0;
 }
 p.abstract{
-	width:800px;
+	width:785px;
 	height:45px;
 	overflow: hidden;
 	/*white-space: nowrap;*/
@@ -1194,7 +1194,7 @@ ul.breadcrumb li.active{
 .dt-leftbar{
 	width:289px;
 	/*height:100%;*/
-	border-top: 1px solid #DCDCDC;
+	border: 1px solid #DCDCDC;
 	background-color: #fbfbfb;
 	float:left;
 	overflow-x: hidden;
@@ -1203,6 +1203,7 @@ ul.breadcrumb li.active{
 .dt-rightbar{
 	width:911px;
 	border-top:1px solid #DCDCDC; 
+	/*border-right:1px solid #DCDCDC;*/
 	float:left;
 }
 .dt-leftbar-title{
@@ -1227,6 +1228,7 @@ ul.breadcrumb li.active{
 	height:38px;
 	line-height:38px;
 	padding-left:30px;
+	padding-right:15px;
 }
 ul.actions{
 	width: 220px;
@@ -1398,6 +1400,9 @@ div.chi-list ul li{
 div.chi-list ul li:hover{
 	background-color:#f3f7fa; 
 }
+div.chi-list ul li:hover a{
+	font-weight:bold;
+}
 div.chi-list ul li a{
 	font-family: MicrosoftYaHei;
 	font-size: 14px;
@@ -1420,7 +1425,7 @@ div.dt-container{
 div.dt-section-title{
 	padding-left: 30px;
 	padding-right: 15px;
-	width: 890px;
+	width: 879px;
 	height: 41px;
 	background-color: #f3f7fa;
 }
@@ -1486,11 +1491,13 @@ div.dt-section-title ul li{
 	line-height: 41px;
 	cursor: pointer;
 }
-div.dt-section-title ul li:hover{
+div.dt-section-title ul li:hover,
+div.dt-section-title ul li.active {
 	background-color: #f9de19;
 }
-div.dt-section-title ul li.active{
-	background-color: #f9de19;
+div.dt-section-title ul li:hover a,
+div.dt-section-title ul li.active a {
+	color:#fff;
 }
 div.dt-section-title ul li a{
 	font-family: MicrosoftYaHei;
@@ -1560,15 +1567,22 @@ p.word-graph span{
 	text-align: left;
 	height:37px;
 }
+.line-tiles label{
+	width:110px;
+}
 .checkbox-inline+.checkbox-inline, .radio-inline+.radio-inline{
 	margin-left: 0px;
 }
 .line-start{
 	font-weight: bold;
 	font-size: 15px;
-	display:block;
+	display:inline-block;
+	float:left;
 }
 .line-tiles{
+	float:left;
+	width:680px;
+	margin-left: 10px;
 }
 .chart-content a{
 	color:#333333;
@@ -1580,7 +1594,7 @@ p.word-graph span{
 }
 .chart{
 	width:500px;
-	height:500px;
+	height:530px;
 	background: url("../images/yck-4.jpg") no-repeat center;
 	margin:0 auto;
 }
