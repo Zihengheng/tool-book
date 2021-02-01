@@ -565,6 +565,13 @@ a.go-right{
     height: 210px;
     margin-top:28px;
 }
+.ep-box img{
+    transition: all 0.2s;
+    -ms-transition:all 0.2s; /* IE 9 */
+    -moz-transition:all 0.2s; /* Firefox */
+    -webkit-transition:all 0.2s; /* Safari 和 Chrome */
+    -o-transition:all 0.2s; /* Opera */
+}
 .ep-box img:hover{
     box-shadow: 5px 5px 5px 5px  #eeeeee;
     transform: scale(1.08);

@@ -1,0 +1,1195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>检索条目页</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- others -->
+  <link rel="stylesheet" type="text/css" href="css/public.css">
+   <link rel="stylesheet" type="text/css" href="css/layout.css">
+  <link rel="stylesheet" type="text/css" href="css/result.css">
+  <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.input.js"></script><!--输入框事件-->
+  <script type="text/javascript" src="js/homePage.js"></script>
+  <script type="text/javascript" src="js/init.js"></script>
+  <script type="text/javascript" src="js/filter.js"></script>
+</head>
+
+<body>
+  <div class="rst-header">
+    <div class="top-bar">
+      <div class="container">
+        <div class="left-bar">
+          <ul class="navbar-nav">
+            <li><a href="https://www.cnki.net/">中国知网</a></li>
+            <li><a href="homepage.html">工具书首页</a></li>
+            <li><a href="museum-words.html">语词库</a></li>
+            <li><a href="museum-appre.html">鉴赏库</a></li>
+            <li><a href="museum-profession.html">行业库</a></li>
+            <li><a href="museum-appendix.html">附录库</a></li>
+            <li><a href="book-list.html">书目导览</a></li>
+            <li><a href="https://gongjushu.cnki.net/rbook/">旧版</a></li>
+          </ul>
+        </div><!-- end of the laft-bar -->
+        <div class="head-right pull-right">
+        <ul class="navbar-nav">
+          <li><a href="#">注册</a></li>
+          <li><a href="#" class="down">机构登陆<img src="images/downiconh.png" alt=""></a></li>
+          <li><a href="#" class="down">个人登陆<img src="images/downiconh.png" alt=""></a></li>
+          <li><a href="my-collection.html">个人书房</a></li>
+        </ul>
+      </div><!-- end of right bar -->
+      </div><!-- end of the container -->
+    </div><!-- end of the top-bar -->
+    <div class="banner-sm">
+     <div class="container">
+      <img src="images/brand-icon3.png" alt="">
+      <div class="searchmain">
+        <div class="search-form">
+          <div class="sort" id="search-type">
+              <div class="sort-default" id="type">
+                <span>全文</span>
+                <i class="sort-icon">▼</i>
+              </div>
+              <ul class="sort-list" style="display: none;">
+                <li class="cur"><a href="javascript:void(0);">全文</a></li>
+                <li><a href="javascript:void(0);">条头</a></li>
+                <li><a href="javascript:void(0);">书目</a></li>
+                <li><a href="javascript:void(0);">图片</a></li>
+                <li><a href="javascript:void(0);">表格</a></li>
+                <li><a href="javascript:void(0);">人物</a></li>
+              </ul>
+            </div>
+          <div class="input-box">
+            <input class="search-input" type="text" autocomplete="off" placeholder="请输入检索词···" value="请输入检索词···" maxlength="100">
+            <a class="btn-wildcard" href="javascript:void(0);" data-toggle="tooltip" title="通配符”?”代表该位置有且仅有1个字符（=1），如检索“?细胞”可检出“红细胞”、“白细胞”。通配符可放在检索词任意位置，可组合使用，如“细?胞*”可检出“细菌胞质素”。" data-placement = "bottom">?</a>
+            <a class="btn-wildcard" href="javascript:void(0);" data-toggle="tooltip" title="通配符”*”代表该位置有任意个字符（≥0），如检索“*细胞”可检出“细胞”、“红细胞”、“白细胞”、“巨噬细胞”等。通配符可放在检索词任意位置，可组合使用，如“细?胞*”可检出“细菌胞质素”。" data-placement = "bottom">*</a>
+
+            <div class="sort">
+              <div class="sort-default">
+                <span>精确</span>
+                <i class="sort-icon">▼</i>
+              </div>
+              <ul class="sort-list" style="display: none;">
+                <li class="cur"><a href="javascript:void(0);">精确</a></li>
+                <li><a href="javascript:void(0);">模糊</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn" id="search"></button>
+          <button class="btn" id="search-in-result">结果中检索</button>
+          <button class="btn" id="gaoji">高级检索</button>
+          <a class="adv-search-btn pull-right" href="#" target="_blank">翻译助手 &gt;&gt;</a>
+          <br>
+        </div><!--search-form-->
+
+        <div class="search-nav">
+          <span class="title">输入助手：</span>
+          <ul class="nav-bar">
+            <li><a href="javascript:void(0);">部首<i class="icon"></i></a></li>
+            <li><a href="javascript:void(0);">笔画<i class="icon"></i></a></li>
+            <li><a href="javascript:void(0);">拼音<i class="icon"></i></a></li>
+            <li><a href="javascript:void(0);">通配符说明<i class="icon"></i></a></li>
+          </ul>
+        </div><!--search-nav-->
+
+        <div class="drop-box">
+          <a href="javascript:;" class="close"></a>
+          <div class="bg-color"></div>
+          <div class="subnav-container">
+            <div class="unit bushou">
+              <h5>部首导航</h5>
+              <ul class="menu">
+                <li><a href="javascript:void(0);">1</a></li>
+                <li><a href="javascript:void(0);">2</a></li>
+                <li><a href="javascript:void(0);">3</a></li>
+                <li><a href="javascript:void(0);">4</a></li>
+                <li><a href="javascript:void(0);">5</a></li>
+                <li><a href="javascript:void(0);">6</a></li>
+                <li><a href="javascript:void(0);">7</a></li>
+                <li><a href="javascript:void(0);">8</a></li>
+                <li><a href="javascript:void(0);">9</a></li>
+                <li><a href="javascript:void(0);">10</a></li>
+                <li><a href="javascript:void(0);">11</a></li>
+                <li><a href="javascript:void(0);">12</a></li>
+                <li><a href="javascript:void(0);">13</a></li>
+                <li><a href="javascript:void(0);">14</a></li>
+                <li><a href="javascript:void(0);">15</a></li>
+              </ul><!--menu-->
+
+              <div class="submenu-box">
+                <ul class="submenu">
+                  <li><a href="javascript:void(0);">一</a></li>
+                  <li><a href="javascript:void(0);">丨</a></li>
+                  <li><a href="javascript:void(0);">亅</a></li>
+                  <li><a href="javascript:void(0);">丿</a></li>
+                  <li><a href="javascript:void(0);">丶</a></li>
+                  <li><a href="javascript:void(0);">乛</a></li>
+                  <li><a href="javascript:void(0);">乙</a></li>
+                  <li><a href="javascript:void(0);">乚</a></li>
+                </ul><!--submenu-->
+                <div class="thirdmenu-box">
+                  <ul class="thirdmenu">
+                    <li><a href="javascript:void(0);">1</a></li>
+                    <li><a href="javascript:void(0);">2</a></li>
+                    <li><a href="javascript:void(0);">3</a></li>
+                    <li><a href="javascript:void(0);">4</a></li>
+                    <li><a href="javascript:void(0);">5</a></li>
+                    <li><a href="javascript:void(0);">6</a></li>
+                    <li><a href="javascript:void(0);">7</a></li>
+                    <li><a href="javascript:void(0);">8</a></li>
+                  </ul>
+                  <div class="fourthmenu-box">
+                    <ul class="fourthmenu">
+                      <li><a href="javascript:void(0);">兀</a></li>
+                      <li><a href="javascript:void(0);">无</a></li>
+                      <li><a href="javascript:void(0);">丨</a></li>
+                      <li><a href="javascript:void(0);">卡</a></li>
+                      <li><a href="javascript:void(0);">卡</a></li>
+                      <li><a href="javascript:void(0);">卥</a></li>
+                      <li><a href="javascript:void(0);">临</a></li>
+                      <li><a href="javascript:void(0);">中</a></li>
+                      <li><a href="javascript:void(0);">串</a></li>
+                      <li><a href="javascript:void(0);">串</a></li>
+                      <li><a href="javascript:void(0);">丳</a></li>
+                      <li><a href="javascript:void(0);">丯</a></li>
+                      <li><a href="javascript:void(0);">丬</a></li>
+                      <li><a href="javascript:void(0);">丫</a></li>
+                      <li><a href="javascript:void(0);">丮</a></li>
+                      <li><a href="javascript:void(0);">丩</a></li>
+                      <li><a href="javascript:void(0);">丱</a></li>
+                    </ul>
+                  </div>
+
+                </div><!--thirdmenu-box-->
+              </div><!--submenu-box-->
+
+              <div class="result-box">
+                <table cellpadding="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                    <td rowspan="2" class="hz">无</td>
+                    <td><b>汉字：</b>无</td>
+                    <td><b>部首：</b>一</td>
+                    <td><b>笔画数：</b>4</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="py"><b>拼音：</b>mó;wú</td>
+                    <td>
+                      <b>五笔：</b>fqv
+                      <a class="btn-more" href="javascript:void(0);" >more&nbsp;&gt;&gt;</a>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+
+                <div class="result-more">
+                  <p><span class="tit">基本内容：</span>无 （無） wú 没有，与“有”相对；不：无辜。无偿。无从（没有门径或找不到头绪）。无度。无端（无缘无故）。无方（不得法，与“有方”相对）。无非（只，不过）。无动于衷。无所适从。 有 笔画数：4； 部首：一； 笔顺编号：1135</p>
+                  <p><span class="tit">详细内容：</span>无 無 mó ——“南无”(nāmó):佛教用语,表示对佛尊敬或皈依 另见wú 无 無 wú 【名】 (会意。据甲骨文字形,象一个人持把在跳舞。卜辞、金文中“无、舞”同字。本义:乐舞) 同本义〖singanddance〗 哲学范畴,指无形、无名、虚无等,或指物质的隐微状态〖nihility〗 天下万物生于有,有生于无。——《老子》 无 無 wú 【动】 没有,跟“有”相对〖nothave;thereisnot〗 无,不有也。</p>
+                  <p><span class="tit">相关单词：</span>爱憎无常;安然无事;安然无恙;安忍无亲;坐无虚席;坐无公车作辍无常;坐帐无鹤;尊无二上;走投无路;</p>
+                  <p><span class="tit">相关成语：</span>案无留牍;黯淡无光;黯然无色;傲慢无礼;白璧无瑕;白玉无瑕;变幻无穷;变幻无常;兵无常势;百无一成;百无一是;卑鄙无耻;别来无恙;别无二致;秉公无私;搏手无策;苍白无力;不识之无;策无遗算;茶饭无心</p>
+                </div>
+              </div><!--result-box-->
+
+            </div><!--bushou end-->
+
+            <div class="unit bihua">
+              <h5>笔画导航</h5>
+              <ul class="menu">
+                <li><a href="javascript:void(0);">1</a></li>
+                <li><a href="javascript:void(0);">2</a></li>
+                <li><a href="javascript:void(0);">3</a></li>
+                <li><a href="javascript:void(0);">4</a></li>
+                <li><a href="javascript:void(0);">5</a></li>
+                <li><a href="javascript:void(0);">6</a></li>
+                <li><a href="javascript:void(0);">7</a></li>
+                <li><a href="javascript:void(0);">8</a></li>
+                <li><a href="javascript:void(0);">9</a></li>
+                <li><a href="javascript:void(0);">10</a></li>
+                <li><a href="javascript:void(0);">11</a></li>
+                <li><a href="javascript:void(0);">12</a></li>
+                <li><a href="javascript:void(0);">13</a></li>
+                <li><a href="javascript:void(0);">14</a></li>
+                <li><a href="javascript:void(0);">15</a></li>
+                <li><a href="javascript:void(0);">16</a></li>
+                <li><a href="javascript:void(0);">17</a></li>
+                <li><a href="javascript:void(0);">18</a></li>
+                <li><a href="javascript:void(0);">19</a></li>
+                <li><a href="javascript:void(0);">20</a></li>
+                <li><a href="javascript:void(0);">21</a></li>
+                <li><a href="javascript:void(0);">22</a></li>
+                <li><a href="javascript:void(0);">23</a></li>
+                <li><a href="javascript:void(0);">24</a></li>
+                <li><a href="javascript:void(0);">25以上</a></li>
+              </ul><!--menu-->
+
+              <div class="submenu-box">
+                <ul class="submenu">
+                  <li><a href="javascript:void(0);">卍</a></li>
+                  <li><a href="javascript:void(0);">分</a></li>
+                  <li><a href="javascript:void(0);">乥</a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);">亖</a></li>
+                  <li><a href="javascript:void(0);">丰</a></li>
+                  <li><a href="javascript:void(0);">王</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">开</a></li>
+                  <li><a href="javascript:void(0);">天</a></li>
+                  <li><a href="javascript:void(0);">夫</a></li>
+                  <li><a href="javascript:void(0);">无</a></li>
+                  <li><a href="javascript:void(0);">分</a></li>
+                  <li><a href="javascript:void(0);">乥</a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);">亖</a></li>
+                  <li><a href="javascript:void(0);">丰</a></li>
+                  <li><a href="javascript:void(0);">王</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">开</a></li>
+                  <li><a href="javascript:void(0);">天</a></li>
+                  <li><a href="javascript:void(0);">夫</a></li>
+                  <li><a href="javascript:void(0);">分</a></li>
+                  <li><a href="javascript:void(0);">乥</a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);">亖</a></li>
+                  <li><a href="javascript:void(0);">丰</a></li>
+                  <li><a href="javascript:void(0);">王</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">开</a></li>
+                  <li><a href="javascript:void(0);">天</a></li>
+                  <li><a href="javascript:void(0);">夫</a></li>
+
+                </ul><!--submenu-->
+              </div><!--submenu-box-->
+
+              <div class="result-box">
+                <table cellpadding="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                    <td rowspan="2" class="hz">无</td>
+                    <td><b>汉字：</b>无</td>
+                    <td><b>部首：</b>一</td>
+                    <td><b>笔画数：</b>4</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="py"><b>拼音：</b>mó;wú</td>
+                    <td>
+                      <b>五笔：</b>fqv
+                      <a class="btn-more" href="javascript:void(0);" >more&nbsp;&gt;&gt;</a>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+
+                <div class="result-more">
+                  <p><span class="tit">基本内容：</span>无 （無） wú 没有，与“有”相对；不：无辜。无偿。无从（没有门径或找不到头绪）。无度。无端（无缘无故）。无方（不得法，与“有方”相对）。无非（只，不过）。无动于衷。无所适从。 有 笔画数：4； 部首：一； 笔顺编号：1135</p>
+                  <p><span class="tit">详细内容：</span>无 無 mó ——“南无”(nāmó):佛教用语,表示对佛尊敬或皈依 另见wú 无 無 wú 【名】 (会意。据甲骨文字形,象一个人持把在跳舞。卜辞、金文中“无、舞”同字。本义:乐舞) 同本义〖singanddance〗 哲学范畴,指无形、无名、虚无等,或指物质的隐微状态〖nihility〗 天下万物生于有,有生于无。——《老子》 无 無 wú 【动】 没有,跟“有”相对〖nothave;thereisnot〗 无,不有也。</p>
+                  <p><span class="tit">相关单词：</span>爱憎无常;安然无事;安然无恙;安忍无亲;坐无虚席;坐无公车作辍无常;坐帐无鹤;尊无二上;走投无路;</p>
+                  <p><span class="tit">相关成语：</span>案无留牍;黯淡无光;黯然无色;傲慢无礼;白璧无瑕;白玉无瑕;变幻无穷;变幻无常;兵无常势;百无一成;百无一是;卑鄙无耻;别来无恙;别无二致;秉公无私;搏手无策;苍白无力;不识之无;策无遗算;茶饭无心</p>
+                </div>
+              </div><!--result-box-->
+            </div>
+
+            <div class="unit pinyin">
+              <h5>拼音导航</h5>
+              <ul class="menu">
+                <li><a href="javascript:void(0);">a</a></li>
+                <li><a href="javascript:void(0);">b</a></li>
+                <li><a href="javascript:void(0);">c</a></li>
+                <li><a href="javascript:void(0);">ch</a></li>
+                <li><a href="javascript:void(0);">d</a></li>
+                <li><a href="javascript:void(0);">e</a></li>
+                <li><a href="javascript:void(0);">f</a></li>
+                <li><a href="javascript:void(0);">g</a></li>
+                <li><a href="javascript:void(0);">h</a></li>
+                <li><a href="javascript:void(0);">j</a></li>
+                <li><a href="javascript:void(0);">k</a></li>
+                <li><a href="javascript:void(0);">l</a></li>
+                <li><a href="javascript:void(0);">m</a></li>
+                <li><a href="javascript:void(0);">n</a></li>
+                <li><a href="javascript:void(0);">o</a></li>
+                <li><a href="javascript:void(0);">q</a></li>
+                <li><a href="javascript:void(0);">r</a></li>
+                <li><a href="javascript:void(0);">s</a></li>
+                <li><a href="javascript:void(0);">sh</a></li>
+                <li><a href="javascript:void(0);">t</a></li>
+                <li><a href="javascript:void(0);">w</a></li>
+                <li><a href="javascript:void(0);">x</a></li>
+                <li><a href="javascript:void(0);">y</a></li>
+                <li><a href="javascript:void(0);">z</a></li>
+                <li><a href="javascript:void(0);">zh</a></li>
+              </ul><!--menu-->
+
+              <div class="submenu-box">
+                <ul class="submenu">
+                  <li><a href="javascript:void(0);">wa</a></li>
+                  <li><a href="javascript:void(0);">wai</a></li>
+                  <li><a href="javascript:void(0);">wan</a></li>
+                  <li><a href="javascript:void(0);">wang</a></li>
+                  <li><a href="javascript:void(0);">wei</a></li>
+                  <li><a href="javascript:void(0);">wen</a></li>
+                  <li><a href="javascript:void(0);">weng</a></li>
+                  <li><a href="javascript:void(0);">wo</a></li>
+                  <li><a href="javascript:void(0);">wu</a></li>
+                </ul><!--submenu-->
+                <div class="thirdmenu-box">
+                  <ul class="thirdmenu">
+                    <li><a href="javascript:void(0);">兀</a></li>
+                    <li><a href="javascript:void(0);">珷</a></li>
+                    <li><a href="javascript:void(0);">珸</a></li>
+                    <li><a href="javascript:void(0);">武</a></li>
+                    <li><a href="javascript:void(0);">鵡</a></li>
+                    <li><a href="javascript:void(0);">鹉</a></li>
+                    <li><a href="javascript:void(0);">玝</a></li>
+                    <li><a href="javascript:void(0);">璑</a></li>
+                    <li><a href="javascript:void(0);">瑦</a></li>
+                    <li><a href="javascript:void(0);">无</a></li>
+                    <li><a href="javascript:void(0);">圬</a></li>
+                    <li><a href="javascript:void(0);">捂</a></li>
+                    <li><a href="javascript:void(0);">扤</a></li>
+                    <li><a href="javascript:void(0);">墲</a></li>
+                    <li><a href="javascript:void(0);">摀</a></li>
+                    <li><a href="javascript:void(0);">蜈</a></li>
+                    <li><a href="javascript:void(0);">蟱</a></li>
+                    <li><a href="javascript:void(0);">螐</a></li>
+                  </ul>
+                </div><!--thirdmenu-box-->
+              </div><!--submenu-box-->
+
+              <div class="result-box">
+                <table cellpadding="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                    <td rowspan="2" class="hz">无</td>
+                    <td><b>汉字：</b>无</td>
+                    <td><b>部首：</b>一</td>
+                    <td><b>笔画数：</b>4</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="py"><b>拼音：</b>mó;wú</td>
+                    <td>
+                      <b>五笔：</b>fqv
+                      <a class="btn-more" href="javascript:void(0);" >more&nbsp;&gt;&gt;</a>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+
+                <div class="result-more">
+                  <p><span class="tit">基本内容：</span>无 （無） wú 没有，与“有”相对；不：无辜。无偿。无从（没有门径或找不到头绪）。无度。无端（无缘无故）。无方（不得法，与“有方”相对）。无非（只，不过）。无动于衷。无所适从。 有 笔画数：4； 部首：一； 笔顺编号：1135</p>
+                  <p><span class="tit">详细内容：</span>无 無 mó ——“南无”(nāmó):佛教用语,表示对佛尊敬或皈依 另见wú 无 無 wú 【名】 (会意。据甲骨文字形,象一个人持把在跳舞。卜辞、金文中“无、舞”同字。本义:乐舞) 同本义〖singanddance〗 哲学范畴,指无形、无名、虚无等,或指物质的隐微状态〖nihility〗 天下万物生于有,有生于无。——《老子》 无 無 wú 【动】 没有,跟“有”相对〖nothave;thereisnot〗 无,不有也。</p>
+                  <p><span class="tit">相关单词：</span>爱憎无常;安然无事;安然无恙;安忍无亲;坐无虚席;坐无公车作辍无常;坐帐无鹤;尊无二上;走投无路;</p>
+                  <p><span class="tit">相关成语：</span>案无留牍;黯淡无光;黯然无色;傲慢无礼;白璧无瑕;白玉无瑕;变幻无穷;变幻无常;兵无常势;百无一成;百无一是;卑鄙无耻;别来无恙;别无二致;秉公无私;搏手无策;苍白无力;不识之无;策无遗算;茶饭无心</p>
+                </div>
+              </div><!--result-box-->
+            </div><!--pinyin end-->
+            <div class="unit tongpei">
+              <h5>通配符说明</h5>
+              <div class="tip-text">
+                <p>友情提示：</p>
+                <p>【词目】精确检索可用通配符 (如: '中国?' 或 '中国*')</p>
+              </div>
+            </div><!--wildcard end-->
+          </div>
+        </div> <!--drop-box-->
+      </div> <!--searchmain-->
+      </div> <!-- container -->
+    </div> <!-- end of the banner -->
+  </div> <!-- end of the rst-header -->
+
+ <div class="top-doctype">
+        <div class="container">
+            <ul class="doctype-menus" id="menu-tab">
+              <li class="active"><a href="com-result.html"><span>总库</span><em>52318</em></a></li>
+              <li><a href="com-result-yck.html"><span>语词库</span><em>12803</em></a>
+                <div class="nav-divider"></div></li>
+              <li class="cur"><a href="com-result-jsk.html"><span>鉴赏库</span><em>23800</em></a><div class="nav-divider"></div></li>
+              <li>
+              <a href="#hyk"><span>行业库</span><em>12345</em></a>
+              <div class="nav-divider"></div></li>
+              <li><a href="#flk"><span>附录库</span><em>32802</em></a><div class="nav-divider"></div></li>
+            </ul>
+          <!--   <a class="btn-crossDb-search" href="javascript:void(0);" title="更多资源"><i></i></a> -->
+            <div class="clear"></div>
+        </div>
+
+    </div><!--top-doctype end-->
+
+
+  <div class="main-content">
+    <div class="container">
+
+        <div class="sidebar-filter">
+
+            <!--左侧分组 start-->
+            <div class="js-condition">
+              <!-- 面包屑导航 -->
+              <div class="breadcumb-nav">
+                <ol class="breadcrumb">
+                  <li><span>位置：</span></li>
+                  <li><a href="#">首页</a></li>
+                  <li><a href="#">检索结果</a></li>
+                </ol>
+              </div>
+                <!--分组筛选 start-->
+                <div class="sidebar-filter-sort">
+                  <dl class="off">
+                    <dt class="tit"><b><img src="images/filter.png" alt="">筛选条件</b></dt>
+                  </dl>
+                    <dl class="off">
+                        <dt class="tit"><b><img src="images/xueke.png" alt="">学科</b><i class="icon icon-visual"></i><i class="icon icon-arrow"></i></dt>
+                        <dd class="">
+                            <div class="resultlist" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))" style="">
+                                <ul>
+                                    <li><input type="checkbox"><a href="javascript:void(0)" title="#">中国文学</a><span class="num">8172</span></li>
+                                    <li><input type="checkbox"><a href="javascript:void(0)" title="#">中国古代史</a><span class="num">7911</span></li>
+                                    <li><input type="checkbox"><a href="javascript:void(0)" title="#">考古</a><span>5673</span class="num"></li>
+                                </ul>
+                                <!-- <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a> -->
+                            </div><!--resultlist-->
+                        </dd>
+                    </dl>
+
+                    <dl class="off">
+                        <dt class="tit"><b><img src="images/hangye.png" alt="">行业</b><i class="icon icon-arrow"></i><i class="icon icon-visual" data-src="iframe-visual-leftSide.html"></i></dt>
+                        <dd>
+                            <div class="resultlist"  onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业一</a><span>8172</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业二</a><span>21312</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业三</a><span>12323</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业四</a><span>4432</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业五</a><span>3244</span></li>
+                                </ul>
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">教育</a><span>(106)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">通信经济</a><span>(89)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">文化</a><span>(52)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">工商管理</a><span>(47)</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">商业经济</a><span>(32)</span></li>
+                                </ul>
+                                <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                            </div><!--resultlist-->
+                        </dd>
+                    </dl>
+
+                    <dl class="off">
+                        <dt class="tit"><b><img src="images/fenku.png" alt="">分库</b><i class="icon icon-arrow"></i><i class="icon icon-visual" data-src="iframe-visual-leftSide.html"></i></dt>
+                        <dd>
+                            <div class="resultlist"  onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业一</a><span>8172</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业二</a><span>21312</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业三</a><span>12323</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业四</a><span>4432</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业五</a><span>3244</span></li>
+                                </ul>
+                                <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                            </div><!--resultlist-->
+                        </dd>
+                    </dl>
+
+                    <dl class="off">
+                        <dt class="tit"><b><img src="images/leixing.png" alt="">类型</b><i class="icon icon-arrow"></i><i class="icon icon-visual" data-src="iframe-visual-leftSide.html"></i></dt>
+                        <dt class="subtit row-a2">
+                        <a class="cur" href="javascript:void(0)">类型1</a>
+                        <a href="javascript:void(0)">类型2</a>
+                      </dt>
+                      <dd>
+                        <div class="resultlist" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+                          <ul>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">出版社</a><span>(49)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">文化机构</a><span>(33)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">出版业</a><span>(32)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">传统出版</a><span>(31)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">学术期刊</a><span>(30)</span></li>
+                          </ul>
+                          <ul>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">优先出版</a><span>(29)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">企业管理</a><span>(28)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">电子书</a><span>(27)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">产业链</a><span>(26)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">科技期刊</a><span>(25)</span></li>
+                          </ul>
+                          <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                        </div><!--resultlist-->
+                        </dd>
+                         <dd style="display: none;">
+                        <div class="resultlist" onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+                          <ul>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">出版社</a><span>(40)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">文化机构</a><span>(33)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">出版业</a><span>(22)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">传统出版</a><span>(31)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">学术期刊</a><span>(15)</span></li>
+                          </ul>
+                          <ul>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">优先出版</a><span>(29)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">企业管理</a><span>(28)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">电子书</a><span>(27)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">产业链</a><span>(26)</span></li>
+                            <li><input type="checkbox" /><a href="javascript:void(0)" title="#">科技期刊</a><span>(25)</span></li>
+                          </ul>
+                          <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                        </div><!--resultlist-->
+                      </dd>
+                    </dl>
+
+                    <dl class="off">
+                        <dt class="tit"><b><img src="images/chubanshe.png" alt="">出版社</b><i class="icon icon-arrow"></i><i class="icon icon-visual" data-src="iframe-visual-leftSide.html"></i></dt>
+                        <dd>
+                            <div class="resultlist"  onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业一</a><span>8172</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业二</a><span>21312</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业三</a><span>12323</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业四</a><span>4432</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业五</a><span>3244</span></li>
+                                </ul>
+                                <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                            </div><!--resultlist-->
+                        </dd>
+                    </dl>
+
+                    <dl class="off">
+                        <dt class="tit"><b><img src="images/jijin.png" alt="">基金</b><i class="icon icon-arrow"></i><i class="icon icon-visual" data-src="iframe-visual-leftSide.html"></i></dt>
+                        <dd>
+                            <div class="resultlist"  onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业一</a><span>8172</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业二</a><span>21312</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业三</a><span>12323</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业四</a><span>4432</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业五</a><span>3244</span></li>
+                                </ul>
+                                <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                            </div><!--resultlist-->
+                        </dd>
+                    </dl>
+                    <dl class="off">
+                        <dt class="tit"><b><img src="images/shiyong.png" alt="">适用范围</b><i class="icon icon-arrow"></i><i class="icon icon-visual" data-src="iframe-visual-leftSide.html"></i></dt>
+                        <dd>
+                            <div class="resultlist"  onmouseout="mouseout(this)" onmouseenter="resultHide($(this))">
+                                <ul>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业一</a><span>8172</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业二</a><span>21312</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业三</a><span>12323</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业四</a><span>4432</span></li>
+                                    <li><input type="checkbox" /><a href="javascript:void(0)" title="#">行业五</a><span>3244</span></li>
+                                </ul>
+                                <a class="btn" onmouseover="resultHide($(this).parent())" href="javascript:void(0);"></a>
+                            </div><!--resultlist-->
+                        </dd>
+                    </dl>
+                    <dl class="off">
+                    <dt class="tit">
+                      <b>
+                        <img src="images/calender.png" alt="">产品年度
+                        <!-- <i class="yesorno"><img src="images/choose-btn.png" alt=""></i> -->
+                       </b>
+                       <i class="icon icon-arrow"></i>
+                    </dt>
+                    <dd class="product">
+                      <div class="product-year">
+                        <!-- <div class="sort" id="product-sort">
+                        <div class="sort-default" id="year">
+                          <span>2008年</span>
+                          <i class="sort-icon">▼</i>
+                        </div>
+                        <ul class="sort-list" style="display: none;">
+                          <li class="cur"><a href="javascript:void(0);">2008年</a></li>
+                          <li><a href="javascript:void(0);">2009年</a></li>
+                          <li><a href="javascript:void(0);">2010年</a></li>
+                          <li><a href="javascript:void(0);">2011年</a></li>
+                          <li><a href="javascript:void(0);">2012年</a></li>
+                          <li><a href="javascript:void(0);">2013年</a></li>
+                        </ul>
+                      </div> -->
+                      </div>
+                    </dd>
+                    </dl>
+
+                    <dl class="off" id="pro">
+                    <dt class="tit"><b><img src="images/tongyin.png" alt="">同音提示</b>
+                    <i class="icon icon-arrow"></i></dt>
+                    <dd></dd>
+                    </dl>
+
+                </div>
+                <!--分组筛选 end-->
+
+            </div>
+            <!--左侧分组 end-->
+
+            <div class="sidebar-filter-btns disableclick">
+                <a class="btn-submit" href="javascript:void(0)">确定</a>
+                <a class="btn-clearall" href="javascript:void(0)">清除</a>
+            </div>
+
+        </div><!--sidebar-filter-->
+
+        <div class="main fr" id="menu-tab-content">
+          <div id="zk">
+            <div class="search-result">
+                <div class="toolbar">
+                    <div class="result-conditions">
+                        <div class="result-con-l">
+                            <div class="search-his-tip">
+                                <span class="tip-range">检索条件：</span>
+                            </div>
+                            <!--<a class="tiphide" onclick="">x</a>-->
+                            <a class="btn-subscribe js-haslogin" href="#">条头</a>
+                            <a class="btn-search-his" href="#" target="_blank">全文</a>
+                            <a class="btn-search-his" href="#" target="_blank">书目</a>
+                            <a class="btn-search-his" href="#" target="_blank">图片</a>
+                            <a class="btn-search-his" href="#" target="_blank">表格</a>
+                        </div>
+                        <div class="change-page pull-right">
+                          <input type="text" placeholder="1" value="">
+                          <span>/300</span>
+                          <a href="#" class="btn"> > </a>
+                        </div>
+                        <div id="count" class="result-con-r" style="">共找到<em>14210万</em>条结果</div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="toolbar-col">
+
+                        <div class="checkcount">
+                            <label class="checkAll"><input type="checkbox">全选</label>
+                            <span>已选：</span>
+                            <em onclick="window.open('文献管理-文献输出-格式引文.html')">1</em>
+                            <a class="clear-allcheck" href="javascript:void(0)">清除</a>
+                        </div><!--checkcount-->
+
+                        <div class="statistic">
+                            <div class="page-show-count">
+                              <span>显示</span>
+                                <div class="sort">
+                                    <div class="sort-default">
+                                        <span>10</span>
+                                        <div class="icon icon-sort"></div>
+                                    </div>
+                                    <ul class="sort-list">
+                                        <li class="cur">10</li>
+                                        <li>20</li>
+                                        <li>30</li>
+                                    </ul>
+                                </div>
+                            </div><!--page-show-count-->
+                        </div><!--statistic-->
+
+                        <!--排序 start-->
+                        <div class="order-group">
+                            <ul class="order navbar-nav">
+                                <li>
+                                  
+                                  <img src="images/relativity.png" alt="" class="">
+                                  <span>相关度</span>
+                                  <i class="as-ds"></i>
+                                  <div id="divider"></div>
+                                </li>
+                                <li data-id="">
+                                 
+                                  <img src="images/sort.png" alt="" class="">
+                                  <span>文字量</span>
+                                  <i class="as-ds"></i>
+                                  <div id="divider"></div>
+                                </li>
+                                <li data-id="">
+                                  
+                                  <img src="images/time.png" alt="" class="">
+                                  <span>出版时间</span>
+                                  <i class="as-ds"></i>
+                                  <div id="divider"></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--排序 end-->
+
+                    </div><!--toolbar-col-->
+                </div><!--toolbar-->
+
+                <!-- <a href="javascript:void(0)" class="btn-visual" data-src="iframe-visual-year.html" title="点击查看">发表年度趋势图</a>
+ -->
+
+                <!--详情 start-->
+                <dl class="result-detail-list">
+                    <dd>
+                        <div class="seq"><input type="checkbox"></div>
+                        <div class="middle">
+                          <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div>
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><span>表格数：3</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                            </ul>
+                            <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+
+                    <dd>
+                        <div class="seq"><input type="checkbox"></div>
+                        <div class="middle">
+                          <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div>
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><span>表格数：3</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                            </ul>
+                            <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+
+                    <dd>
+                        <div class="seq"><input type="checkbox"></div>
+                        <div class="middle">
+                          <div class="list-title">
+                           <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div>
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><span>表格数：3</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                            </ul>
+                            <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+
+                    <dd>
+                        <div class="seq"><input type="checkbox"></div>
+                        <div class="middle">
+                          <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div>
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><span>表格数：3</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                            </ul>
+                            <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+                    <dd>
+                        <div class="seq"><input type="checkbox"></div>
+                        <div class="middle">
+                          <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div>
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><span>表格数：3</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                            </ul>
+                            <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+                    <dd>
+                        <div class="seq"><input type="checkbox"></div>
+                        <div class="middle">
+                          <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div>
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><span>表格数：3</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                            </ul>
+                            <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+                    <dd>
+                        <div class="seq"><input type="checkbox"></div>
+                        <div class="middle">
+                          <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div>
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><span>表格数：3</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                            </ul>
+                            <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+
+                    <dd>
+                        <div class="seq"><input type="checkbox"></div>
+                        <div class="middle">
+                          <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div>
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><span>表格数：3</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                            </ul>
+                            <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+
+                    <dd>
+                        <div class="seq"><input type="checkbox"></div>
+                        <div class="middle">
+                          <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div>
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><span>表格数：3</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                            </ul>
+                            <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+                    <dd>
+                        <div class="seq"><input type="checkbox"></div>
+                        <div class="middle">
+                          <div class="list-title">
+                           <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div>
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><span>表格数：3</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                            </ul>
+                            <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+                </dl>
+                <!--详情 end-->
+
+                <!-- 分页 -->
+                <nav aria-label="Page navigation" class="fenye">
+                  <div class="pn-container">
+                <span class="pull-left page-sum">共300页</span>
+                  <ul class="pagination">
+                    <li>
+                      <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">前一页</span>
+                      </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li>
+                      <a href="#" aria-label="Next">
+                        <span aria-hidden="true">下一页</span>
+                      </a>
+                    </li>
+                  </ul>
+                  </div>
+                  <!-- end of the page-nav container -->
+                </nav> <!-- 分页 end -->
+            </div>
+            <!-- end of search-result -->
+
+
+            <ul class="bottom-commend-list">
+                <li>
+                    <h5>相关搜索：</h5>
+                    <p>
+                        <span><a href="#" title="#" target="_blank">工具书的使用</a></span>
+                        <span><a href="#" title="#" target="_blank">工具书</a></span>
+                        <span><a href="#" title="#" target="_blank">文史工具书</a></span>
+                        <span><a href="#" title="#" target="_blank">工具书的使用法</a></span>
+                        <span><a href="#" title="#" target="_blank">工具书服务</a></span>
+                        <span><a href="#" title="#" target="_blank">语文词典</a></span>
+                        <span><a href="#" title="#" target="_blank">《中华大字典》</a></span>
+                        <span><a href="#" title="#" target="_blank">《辞海》</a></span>
+                        <span><a href="#" title="#" target="_blank">资料性</a></span>
+                        <span><a href="#" title="#" target="_blank">出版物</a></span>
+                        <span><a href="#" title="#" target="_blank">《数学史词典》</a></span>
+                        <span><a href="#" title="#" target="_blank">社科文献检索</a></span>
+                        <span><a href="#" title="#" target="_blank">文献存贮</a></span>
+                        <span><a href="#" title="#" target="_blank"></a></span>
+                    </p>
+                </li>
+            </ul><!--bottom-commend-list-->
+        </div><!-- end of 总库结果 -->
+
+        <div class="clearfix"></div>
+
+    </div><!-- content end-->
+  </div><!-- end of the main-content -->
+
+
+  <!-- footer start -->
+  <div class="footer">
+     <div class="foot-top" data-edit="y">
+          <ul class="ft-container">
+              <li><img id="ft-logo" src="images/footer-icon.png" alt=""></li>
+              <li>
+                  <b>客服咨询</b>
+                  <span>服务热线：010-82439137</span>
+                  <span>QQ咨询：2172396729</span>
+                  <span>服务邮箱：zwsk@cnki.net</span>
+              </li>
+              <li>
+                  <b>特色服务</b>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://sk.cnki.net/#/product/detail?id=4028e9b27298f48701729d7ed68b00bc">免费试用</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://sk.cnki.net/#/activity">活动中心</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://sk.cnki.net/#/contact">订购咨询</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://sk.cnki.net/">知识服务超市</a>
+              </li>
+              <li>
+                  <b>读者服务</b>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://skcard.cnki.net/">购买知网卡</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://zhifu.cnki.net/?platform=skpt">充值中心</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://i.cnki.net/?platform=skpt">我的CNKI</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://sk.cnki.net/#/">帮助中心</a>
+              </li>
+               <li>
+                  <b>CNKI常用软件下载</b>
+                  <a target="_blank"  rel="noopener noreferrer" href="//cajviewer.cnki.net">CAJViewer浏览器</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="//www.cnki.net/software/xzydq.htm#CNKIe-Learning">CNKI数字化学习平台</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="//refbook.cnki.net/download.html">工具书桌面检索软件</a>
+              </li>
+              <li>
+                <img src="images/ewm_code.png" class="ft-code" id="code1" alt="">
+               <img src="images/rq_code.png" class="ft-code" id="code2" alt="">
+              </li>
+              <div class="clearfix"></div>
+          </ul>
+      </div>
+      <div class="foot-bot clearfix" data-edit="y">
+          <div class="t">
+              <p class="mid">
+                  <span>
+                      <a target="_blank"  rel="noopener noreferrer" href="//www.cnki.net/gycnki/gycnki.htm">关于我们</a>
+                      <a target="_blank"  rel="noopener noreferrer" href="//www.cnki.net/other/gonggao/gongsirongyu.html">CNKI 荣誉</a>
+                      <a target="_blank"  rel="noopener noreferrer" href="//www.cnki.net/other/gonggao/bqsm.htm">版权公告</a>
+                      <a target="_blank"  rel="noopener noreferrer" href="//service.cnki.net/">客服中心</a>
+                      <a target="_blank"  rel="noopener noreferrer" href="//help.cnki.net/">在线咨询</a>
+                      <a target="_blank"  rel="noopener noreferrer"
+                         href="//help.cnki.net/Live800_1_2.aspx?GroupID=503&amp;PageID=101008&amp;Name=&amp;CookieName=TTKN_OnLine_800">用户建议</a>
+                      <a target="_blank"  rel="noopener noreferrer" href="//piccache.cnki.net/index/CNKIRecruit/index.html">知网招聘</a>
+                      <a target="_blank"  rel="noopener noreferrer" href="//piccache.cnki.net/index/CNKIRecruit/index.html">知网推广</a>
+                  </span>
+                  <div class="trust-icon"> <img src="images/trust-icon.png" alt=""></div>
+                  <!-- <span id="copyright">© 1998-2019 中国知网（CNKI）</span>
+                  <script type="text/javascript">
+                      var date = new Date;
+                      document.getElementById('copyright').innerHTML = "© 1998-" + date.getFullYear() + " 中国知网（CNKI）";
+                  </script>
+              </p> -->
+            <!--   <p class="right"> -->
+                  <!--可信网站图片LOGO安装开始-->
+                  <!-- <a id="___szfw_logo___">
+                      <img alt="可信网站" src="images/footer/kxwz.jpg" height="33" width="86">
+                  </a> -->
+                  <!--可信网站图片LOGO安装结束-->
+                  <!--诚信网站图片LOGO安装开始-->
+                  <!-- <a id="A1">
+                      <img alt="诚信网站" src="footer/cert.jpg" height="33" width="86">
+                  </a>
+                  <script type="text/javascript">
+                      (function () {
+                          document.getElementById('___szfw_logo___').oncontextmenu = function () {
+                              return false;
+                          }
+                      })();
+                  </script> -->
+                  <!--诚信网站图片LOGO安装结束-->
+              </p>
+          </div>
+          <div class="b">
+              <span>
+                  京 ICP 证 040431 号
+                  <a target="_blank"  rel="noopener noreferrer" href="//piccache.cnki.net/index/images/gb/271.jpg">网络出版服务许可证 (总)网出证(京)字第 271 号</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="//piccache.cnki.net/index/images/gb/170001.jpg">出版物经营许可证</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202005012100021">经营性网站备案信息</a> 京公网安备 11010802020460 号
+              </span>
+              <span>《中国学术期刊（光盘版）》电子杂志社有限公司</span>
+              <span>KDN 平台基础技术由 KBASE 11.0 提供.</span>
+          </div>
+      </div>
+</div>
+<div id="return-top">
+        <a href="javascript:scroll(0,0);" title="返回顶部" alt="返回顶部"></a>
+ </div>
+  </div>
+  <!-- end of footer -->
+  <!-- jquery -->
+  <!-- script 文件 -->
+<!--   <script src="js/index.js"></script> -->
+  <!-- back to top -->
+  <script type="text/javascript">
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 150) {
+                $("#return-top").show();
+            } else {
+                $("#return-top").hide();
+            }
+        });
+   </script>
+  <!-- Bootstrap js引用 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

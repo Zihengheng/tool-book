@@ -458,6 +458,13 @@ div.booksec-box img{
 	box-shadow: 0px 3px 10px 0px 
 		rgba(202, 202, 202, 0.59);
 }
+div.booksec-box img{
+	transition: all 0.3s;
+    -ms-transition:all 0.3s; /* IE 9 */
+    -moz-transition:all 0.3s; /* Firefox */
+    -webkit-transition:all 0.3s; /* Safari 和 Chrome */
+    -o-transition:all 0.3s; /* Opera */
+}
 div.booksec-box img:hover{
 	box-shadow: 5px 5px 5px 5px  #eeeeee;
     transform: scale(1.08);
@@ -650,6 +657,7 @@ div.start-word span{
 	font-family: MicrosoftYaHei;
 	font-size: 18px;
 	color:white;
+	margin-right:6px;
 }
 div.other-words{
 	padding-top: 20px;
@@ -699,10 +707,8 @@ div.line-word{
 div.line-word span{
 	font-family: MicrosoftYaHei;
 	font-size: 16px;
-	font-weight: normal;
-	font-stretch: normal;
 	line-height: 48px;
-	letter-spacing: 0px;
+	margin-right:3px;
 	color: #ffffff;
 }
 div.line-other-words{

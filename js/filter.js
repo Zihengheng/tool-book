@@ -14,13 +14,17 @@
 $(function(){
     //增加个人收藏书目条目切换
     $("#tiaomu").hide();
-    $("a[href='#tiaomu']").click(function(){
+    $("li.tiaomu").click(function(){
         $("#shumu").hide();
         $("#tiaomu").show();
+        $(this).addClass("cur");
+        $(this).next().removeClass("cur");
     });
-    $("a[href='#shumu']").click(function(){
+    $("li.shumu").click(function(){
         $("#tiaomu").hide();
         $("#shumu").show();
+        $(this).addClass("cur");
+        $(this).prev().removeClass("cur");
     });
 
     // 增加搜索结果页显示搜索助手

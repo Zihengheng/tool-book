@@ -282,7 +282,7 @@ input[type="text"].disable-editor{ color: #999!important; }
 /*.btn-unfold{ display: block; vertical-align: middle; width: 20px; height: 20px; !*background-image: url("../images/icon-sprite.png"); background-repeat: no-repeat;*! }*/
 /*.btn-unfold .icon-unfold{ display: inline-block; vertical-align: middle; width: 20px; height: 20px; background-image: url("../images/icon-sprite.png"); background-repeat: no-repeat; }*/
 .btn-unfold{ position: absolute; left: 50%; display: block; width: 30px; height: 30px; margin-top: 13px; margin-left: -15px; background-image: url(../images/icon-btns.png); background-repeat: no-repeat; background-position: 0 -160px; *margin-top: -16px; }
-.btn-fold{ position: absolute; left:452px; bottom:-8px;display: block; width: 30px; height: 30px; background-image: url(../images/icon-btns.png); background-repeat: no-repeat; background-position: 0 -128px;}
+.btn-fold{ position: absolute; left:452px; bottom:-8px;display: block; width: 30px; height: 32px; background-image: url(../images/icon-btns.png); background-repeat: no-repeat; background-position: 0 -128px;}
 
 /*最多选择10条 弹出框*/
 .popup-prompt{ position: absolute; z-index: 1002; top: 150px; left: 44px; width: 170px; padding: 5px; background-color: #fff; border:1px solid #dcdcdc;

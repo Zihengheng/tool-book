@@ -18,19 +18,7 @@ button, .btn{outline: none;}
 .dt-leftbar.book-detail{
 	height:2050px;
 }
-/*== footer 补丁 ==*/
-div.footer{
-	margin-top:0px;
-}
-.foot-bot{
-	padding-left: 214px;
-}
-div.b{
-	margin-left: -98px;
-}
-div.t{
-	margin-left: -111px;
-}
+
 /* 相关解释 section*/
 .result-detail-list dd {
 	padding-right: 0;

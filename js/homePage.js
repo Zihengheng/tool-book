@@ -29,6 +29,31 @@ $(function(){
         })
     });
 	
+    //范围：book-list, book-result
+    //说明：显示书籍分享收藏操作
+    $("div.book-list-img").mouseenter(function(){
+        $(this).find(".book-operation").fadeIn(300);
+    });
+     $("div.book-list-img").mouseleave(function(){
+        $(this).find(".book-operation").fadeOut(300);
+    });
+    //范围：book-list, book-result
+    //说明：突出显示书籍盒子
+    $(".collection-box").mouseenter(function(){
+        $(this).addClass("box-highlight");
+    });
+    $(".collection-box").mouseleave(function(){
+        $(this).removeClass("box-highlight");
+    });
+
+    //范围：my-collection
+    //说明：突出显示书籍盒子
+    $(".booklist-box").mouseenter(function(){
+        $(this).addClass("box-highlight");
+    });
+    $(".booklist-box").mouseleave(function(){
+        $(this).removeClass("box-highlight");
+    });
     //范围：book-detiail page
     //说明：show-more
     $(".show-more-dt-col").click(function(){
