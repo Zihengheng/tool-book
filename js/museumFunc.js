@@ -196,15 +196,5 @@ $(function(){
   //说明：设置左边栏高度等于内容高度
   function setHeight(){
     var contentHeight =$(".dt-rightbar").outerHeight();
-    var newHeight = null;
-    if ($(".dt-leftbar").hasClass("yck")){
-        newHeight = 245 + contentHeight;
-    }
-    else if($(".dt-leftbar").hasClass("jsk")){
-        newHeight = contentHeight + 650;
-    }
-    else{
-        newHeight = 45+contentHeight;
-    }
-    $(".dt-leftbar").css("height", newHeight);
+    $(".dt-leftbar").css("height", contentHeight);
   };
