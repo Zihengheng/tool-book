@@ -215,7 +215,7 @@ a.adv-search-btn{
 .adv-set li{ *display: inline;}
 .adv-set li.on{ background-position: -46px -14px; }
 /*部首、笔画、拼音*/
-.searchmain .drop-box h5{ padding-top: 10px; font-size: 18px; line-height: 22px; font-family: "Microsoft YaHei"; font-weight: normal; }
+.searchmain .drop-box h5{ padding-top: 10px; font-size: 16px; line-height: 22px; font-family: "Microsoft YaHei"; font-weight: normal; }
 .searchmain .drop-box .menu{ width: 1130px; padding: 17px 0 17px 20px; line-height: 26px; font-size:14px; color:#333; /*white-space: nowrap;*/ clear:both; }
 .searchmain .drop-box .menu li{ display: inline-block; margin-right: 20px; }
 .searchmain .drop-box li.active a{ color:red; }

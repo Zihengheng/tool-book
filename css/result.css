@@ -568,13 +568,18 @@ input.book-input{
 	margin-right: auto;
 	margin-top: 10px;
 }
-#share-book{
-	background:url("../images/share-2.png") no-repeat;
+.book-list-img .share-book{
+	background:url("../images/share-o.png") no-repeat;
 	background-position:6px 5px;
 }
-#add-book{
-	background:url("../images/star.png") no-repeat;
+.book-list-img .add-book{
+	background:url("../images/star-o.png") no-repeat;
 	background-position:6px 5px;
+}
+.book-list-img .share-book:hover, .book-list-img .add-book:hover{
+	color:orange;
+	background-position:6px -15.5px;
+	border:1px solid orange;
 }
 .book-list-img img{
 	width: 100%;

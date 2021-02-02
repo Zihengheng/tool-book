@@ -396,11 +396,8 @@ div.left-menu{
 	padding-left: 20px;
 	padding-top: 10px;
 	font-family: MicrosoftYaHei;
-	font-size: 15px;
-	font-weight: normal;
-	font-stretch: normal;
+	font-size:12px;
 	line-height: 23px;
-	letter-spacing: 0px;
 	color: #333333;
 }
 .left-menu li.active, .left-menu li:hover{
@@ -2189,9 +2186,12 @@ li.rec a{
 	height: 39px;
 	background-color:#f3f6f9; 
 	border: solid 1px #eeeeee;
-	line-height:39px;
-	text-align:left;
-	padding-left: 15px;
+	font-family: MicrosoftYaHei;
+    font-size: 16px;
+    line-height: 39px;
+    color: #333333;
+    text-align:left;
+    padding-left:10px;
 }
 .hy-analysis .section-menu{
 	padding-left: 0px;
@@ -2426,7 +2426,7 @@ dl.nav-sections ul.nav-sections li{
 	padding-left: 15px;
 	margin-top: 38px;
 	font-size:16px;
-	line-height:32px;
+	line-height:36px;
 	color: #333333;
 	padding-left: 33px;
 	font-family: MicrosoftYaHei
