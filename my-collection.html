@@ -19,6 +19,12 @@
 </head>
 
 <body>
+  <div class="note-box">
+    <a href="javascript:void(0);" id="close-note">关闭</a>
+    <textarea name="" id="input-context" cols="75" rows="4" aria-expanded="false" autocomplete="off" placeholder="请输入笔记内容"></textarea>
+    <a href="javascript:void(0);">保存</a>
+    <a href="javascript:void(0);">编辑</a>
+  </div>
   <div class="rst-header">
     <div class="top-bar">
       <div class="container">
@@ -64,7 +70,7 @@
               </ul>
             </div>
           <div class="input-box">
-            <input class="search-input" type="text" autocomplete="off" placeholder="请输入检索词···" value="请输入检索词···" maxlength="100">
+            <input class="search-input" type="text" autocomplete="off" placeholder="请输入检索词"  maxlength="100">
             <a class="btn-wildcard" href="javascript:void(0);" data-toggle="tooltip" title="通配符”?”代表该位置有且仅有1个字符（=1），如检索“?细胞”可检出“红细胞”、“白细胞”。通配符可放在检索词任意位置，可组合使用，如“细?胞*”可检出“细菌胞质素”。" data-placement = "bottom">?</a>
             <a class="btn-wildcard" href="javascript:void(0);" data-toggle="tooltip" title="通配符”*”代表该位置有任意个字符（≥0），如检索“*细胞”可检出“细胞”、“红细胞”、“白细胞”、“巨噬细胞”等。通配符可放在检索词任意位置，可组合使用，如“细?胞*”可检出“细菌胞质素”。" data-placement = "bottom">*</a>
 
@@ -82,8 +88,10 @@
           <button class="btn" id="search"></button>
           <button class="btn" id="search-in-result">结果中检索</button>
           <button class="btn" id="gaoji">高级检索</button>
-          <a class="adv-search-btn pull-right" href="#" target="_blank">翻译助手 &gt;&gt;</a>
-          <br>
+          <div class="adv-group">
+           <a class="adv-search-btn top" href="#" target="_blank">翻译助手 &gt;&gt;</a><br>
+          <a class="adv-search-btn" id="drop-nav" href="javascript:void(0);">输入助手 &gt;&gt;</a> 
+          </div>
         </div><!--search-form-->
 
         <div class="search-nav">
@@ -551,9 +559,9 @@
                         <input type="checkbox">
                         <span>选择</span>
                         <div class="cop-group">
-                          <a href="#" id="cop1">笔记</a>
-                          <a href="#" id="cop2">分享</a>
-                          <a href="#" id="cop3">删除</a>
+                          <a href="javascript:void(0);" class="cop1">笔记</a>
+                          <a href="javascript:void(0);" class="cop2">分享</a>
+                          <a href="javascript:void(0);" class="cop3">删除</a>
                         </div>
                       </div>
                     </div>
@@ -575,9 +583,9 @@
                         <input type="checkbox">
                         <span>选择</span>
                         <div class="cop-group">
-                          <a href="#" id="cop1">笔记</a>
-                          <a href="#" id="cop2">分享</a>
-                          <a href="#" id="cop3">删除</a>
+                          <a href="javascript:void(0);" class="cop1">笔记</a>
+                          <a href="javascript:void(0);" class="cop2">分享</a>
+                          <a href="javascript:void(0);" class="cop3">删除</a>
                         </div>
                       </div>
                     </div>
@@ -599,9 +607,9 @@
                         <input type="checkbox">
                         <span>选择</span>
                         <div class="cop-group">
-                          <a href="#" id="cop1">笔记</a>
-                          <a href="#" id="cop2">分享</a>
-                          <a href="#" id="cop3">删除</a>
+                          <a href="javascript:void(0);" class="cop1">笔记</a>
+                          <a href="javascript:void(0);" class="cop2">分享</a>
+                          <a href="javascript:void(0);" class="cop3">删除</a>
                         </div>
                       </div>
                     </div>
@@ -626,9 +634,9 @@
                         <input type="checkbox">
                         <span>选择</span>
                         <div class="cop-group">
-                          <a href="#" id="cop1">笔记</a>
-                          <a href="#" id="cop2">分享</a>
-                          <a href="#" id="cop3">删除</a>
+                          <a href="javascript:void(0);" class="cop1">笔记</a>
+                          <a href="javascript:void(0);" class="cop2">分享</a>
+                          <a href="javascript:void(0);" class="cop3">删除</a>
                         </div>
                       </div>
                     </div>
@@ -650,9 +658,9 @@
                         <input type="checkbox">
                         <span>选择</span>
                         <div class="cop-group">
-                          <a href="#" id="cop1">笔记</a>
-                          <a href="#" id="cop2">分享</a>
-                          <a href="#" id="cop3">删除</a>
+                          <a href="javascript:void(0);" class="cop1">笔记</a>
+                          <a href="javascript:void(0);" class="cop2">分享</a>
+                          <a href="javascript:void(0);" class="cop3">删除</a>
                         </div>
                       </div>
                     </div>
@@ -674,9 +682,9 @@
                         <input type="checkbox">
                         <span>选择</span>
                         <div class="cop-group">
-                          <a href="#" id="cop1">笔记</a>
-                          <a href="#" id="cop2">分享</a>
-                          <a href="#" id="cop3">删除</a>
+                          <a href="javascript:void(0);" class="cop1">笔记</a>
+                          <a href="javascript:void(0);" class="cop2">分享</a>
+                          <a href="javascript:void(0);" class="cop3">删除</a>
                         </div>
                       </div>
                     </div>
@@ -701,9 +709,9 @@
                         <input type="checkbox">
                         <span>选择</span>
                         <div class="cop-group">
-                          <a href="#" id="cop1">笔记</a>
-                          <a href="#" id="cop2">分享</a>
-                          <a href="#" id="cop3">删除</a>
+                          <a href="javascript:void(0);" class="cop1">笔记</a>
+                          <a href="javascript:void(0);" class="cop2">分享</a>
+                          <a href="javascript:void(0);" class="cop3">删除</a>
                         </div>
                       </div>
                     </div>
@@ -725,9 +733,9 @@
                         <input type="checkbox">
                         <span>选择</span>
                         <div class="cop-group">
-                          <a href="#" id="cop1">笔记</a>
-                          <a href="#" id="cop2">分享</a>
-                          <a href="#" id="cop3">删除</a>
+                          <a href="javascript:void(0);" class="cop1">笔记</a>
+                          <a href="javascript:void(0);" class="cop2">分享</a>
+                          <a href="javascript:void(0);" class="cop3">删除</a>
                         </div>
                       </div>
                     </div>
@@ -749,9 +757,9 @@
                         <input type="checkbox">
                         <span>选择</span>
                         <div class="cop-group">
-                          <a href="#" id="cop1">笔记</a>
-                          <a href="#" id="cop2">分享</a>
-                          <a href="#" id="cop3">删除</a>
+                          <a href="javascript:void(0);" class="cop1">笔记</a>
+                          <a href="javascript:void(0);" class="cop2">分享</a>
+                          <a href="javascript:void(0);" class="cop3">删除</a>
                         </div>
                       </div>
                     </div>
@@ -776,9 +784,9 @@
                         <input type="checkbox">
                         <span>选择</span>
                         <div class="cop-group">
-                          <a href="#" id="cop1">笔记</a>
-                          <a href="#" id="cop2">分享</a>
-                          <a href="#" id="cop3">删除</a>
+                          <a href="javascript:void(0);" class="cop1">笔记</a>
+                          <a href="javascript:void(0);" class="cop2">分享</a>
+                          <a href="javascript:void(0);" class="cop3">删除</a>
                         </div>
                       </div>
                     </div>
@@ -800,9 +808,9 @@
                         <input type="checkbox">
                         <span>选择</span>
                         <div class="cop-group">
-                          <a href="#" id="cop1">笔记</a>
-                          <a href="#" id="cop2">分享</a>
-                          <a href="#" id="cop3">删除</a>
+                          <a href="javascript:void(0);" class="cop1">笔记</a>
+                          <a href="javascript:void(0);" classs="cop2">分享</a>
+                          <a href="javascript:void(0);" class="cop3">删除</a>
                         </div>
                       </div>
                     </div>
@@ -824,9 +832,9 @@
                         <input type="checkbox">
                         <span>选择</span>
                         <div class="cop-group">
-                          <a href="#" id="cop1">笔记</a>
-                          <a href="#" id="cop2">分享</a>
-                          <a href="#" id="cop3">删除</a>
+                          <a href="javascript:void(0);" class="cop1">笔记</a>
+                          <a href="javascript:void(0);" class="cop2">分享</a>
+                          <a href="javascript:void(0);" class="cop3">删除</a>
                         </div>
                       </div>
                     </div>
@@ -851,9 +859,9 @@
                         <input type="checkbox">
                         <span>选择</span>
                         <div class="cop-group">
-                          <a href="#" id="cop1">笔记</a>
-                          <a href="#" id="cop2">分享</a>
-                          <a href="#" id="cop3">删除</a>
+                          <a href="javascript:void(0);" class="cop1">笔记</a>
+                          <a href="javascript:void(0);" class="cop2">分享</a>
+                          <a href="javascript:void(0);" class="cop3">删除</a>
                         </div>
                       </div>
                     </div>
@@ -875,9 +883,9 @@
                         <input type="checkbox">
                         <span>选择</span>
                         <div class="cop-group">
-                          <a href="#" id="cop1">笔记</a>
-                          <a href="#" id="cop2">分享</a>
-                          <a href="#" id="cop3">删除</a>
+                          <a href="javascript:void(0);" class="cop1">笔记</a>
+                          <a href="javascript:void(0);" class="cop2">分享</a>
+                          <a href="javascript:void(0);" class="cop3">删除</a>
                         </div>
                       </div>
                     </div>
@@ -899,9 +907,9 @@
                         <input type="checkbox">
                         <span>选择</span>
                         <div class="cop-group">
-                          <a href="#" id="cop1">笔记</a>
-                          <a href="#" id="cop2">分享</a>
-                          <a href="#" id="cop3">删除</a>
+                          <a href="javascript:void(0);" class="cop1">笔记</a>
+                          <a href="javascript:void(0);" class="cop2">分享</a>
+                          <a href="javascript:void(0);" class="cop3">删除</a>
                         </div>
                       </div>
                     </div>

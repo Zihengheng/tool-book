@@ -64,7 +64,7 @@
               </ul>
             </div>
           <div class="input-box">
-            <input class="search-input" type="text" autocomplete="off" placeholder="请输入检索词···" value="请输入检索词···" maxlength="100">
+            <input class="search-input" type="text" autocomplete="off" placeholder="请输入检索词"  maxlength="100">
             <a class="btn-wildcard" href="javascript:void(0);" data-toggle="tooltip" title="通配符”?”代表该位置有且仅有1个字符（=1），如检索“?细胞”可检出“红细胞”、“白细胞”。通配符可放在检索词任意位置，可组合使用，如“细?胞*”可检出“细菌胞质素”。" data-placement = "bottom">?</a>
             <a class="btn-wildcard" href="javascript:void(0);" data-toggle="tooltip" title="通配符”*”代表该位置有任意个字符（≥0），如检索“*细胞”可检出“细胞”、“红细胞”、“白细胞”、“巨噬细胞”等。通配符可放在检索词任意位置，可组合使用，如“细?胞*”可检出“细菌胞质素”。" data-placement = "bottom">*</a>
 
@@ -82,8 +82,10 @@
           <button class="btn" id="search"></button>
           <button class="btn" id="search-in-result">结果中检索</button>
           <button class="btn" id="gaoji">高级检索</button>
-          <a class="adv-search-btn pull-right" href="#" target="_blank">翻译助手 &gt;&gt;</a>
-          <br>
+          <div class="adv-group">
+           <a class="adv-search-btn top" href="#" target="_blank">翻译助手 &gt;&gt;</a><br>
+          <a class="adv-search-btn" id="drop-nav" href="javascript:void(0);">输入助手 &gt;&gt;</a> 
+          </div>
         </div><!--search-form-->
 
         <div class="search-nav">
@@ -657,7 +659,7 @@
                                 <span class="tip-range">检索条件：</span>
                             </div>
                             <!--<a class="tiphide" onclick="">x</a>-->
-                            <a class="btn-subscribe js-haslogin" href="#">条头</a>
+                            <a class="btn-search-his" href="#">条头</a>
                             <a class="btn-search-his" href="#" target="_blank">全文</a>
                             <a class="btn-search-his" href="#" target="_blank">书目</a>
                             <a class="btn-search-his" href="#" target="_blank">图片</a>
@@ -746,6 +748,44 @@
                      <td class="book-col1">
                       <input type="checkbox" class="booklist-chck">
                       <span>1</span>
+                      <a href="#">英语常见问题解答大词典</a>
+                      <span class="table-divider">/</span>    
+                      <a href="#">英语常见问题解答大词典</a>      
+                    </td>
+                    <td class="book-col2">
+                      <span>中国冶金百科全书</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                 <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>1</span>
+                      <a href="#">英语常见问题解答大词典</a>   
+                      <span class="table-divider">/</span>    
+                      <a href="#">英语常见问题解答大词典</a>          
+                    </td>
+                    <td class="book-col2">
+                      <span>中国冶金百科全书</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                 <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>1</span>
+                      <a href="#">英语常见问题解答大词典</a>
+                      <span class="table-divider">/</span>    
                       <a href="#">英语常见问题解答大词典</a>             
                     </td>
                     <td class="book-col2">
@@ -762,7 +802,63 @@
                      <td class="book-col1">
                       <input type="checkbox" class="booklist-chck">
                       <span>1</span>
+                      <a href="#">英语常见问题解答大词典</a> 
+                      <span class="table-divider">/</span>    
+                      <a href="#">英语常见问题解答大词典</a>            
+                    </td>
+                    <td class="book-col2">
+                      <span>中国冶金百科全书</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>1</span>
+                      <a href="#">英语常见问题解答大词典</a>
+                      <span class="table-divider">/</span>    
                       <a href="#">英语常见问题解答大词典</a>             
+                    </td>
+                    <td class="book-col2">
+                      <span>中国冶金百科全书</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>1</span>
+                      <a href="#">英语常见问题解答大词典</a> 
+                      <span class="table-divider">/</span>    
+                      <a href="#">英语常见问题解答大词典</a>            
+                    </td>
+                    <td class="book-col2">
+                      <span>中国冶金百科全书</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>1</span>
+                      <a href="#">英语常见问题解答大词典</a> 
+                      <span class="table-divider">/</span>    
+                      <a href="#">英语常见问题解答大词典</a>            
                     </td>
                     <td class="book-col2">
                       <span>中国冶金百科全书</span>
@@ -779,6 +875,134 @@
                       <input type="checkbox" class="booklist-chck">
                       <span>1</span>
                       <a href="#">英语常见问题解答大词典</a>             
+                      <span class="table-divider">/</span>    
+                      <a href="#">英语常见问题解答大词典</a>
+                    </td>
+                    <td class="book-col2">
+                      <span>中国冶金百科全书</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>1</span>
+                      <a href="#">英语常见问题解答大词典</a> 
+                      <span class="table-divider">/</span>    
+                      <a href="#">英语常见问题解答大词典</a>            
+                    </td>
+                    <td class="book-col2">
+                      <span>中国冶金百科全书</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>1</span>
+                      <a href="#">英语常见问题解答大词典</a>  
+                      <span class="table-divider">/</span>    
+                      <a href="#">英语常见问题解答大词典</a>           
+                    </td>
+                    <td class="book-col2">
+                      <span>中国冶金百科全书</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>1</span>
+                      <a href="#">英语常见问题解答大词典</a>
+                      <span class="table-divider">/</span>    
+                      <a href="#">英语常见问题解答大词典</a>             
+                    </td>
+                    <td class="book-col2">
+                      <span>中国冶金百科全书</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>1</span>
+                      <a href="#">英语常见问题解答大词典</a>   
+                      <span class="table-divider">/</span>    
+                      <a href="#">英语常见问题解答大词典</a>          
+                    </td>
+                    <td class="book-col2">
+                      <span>中国冶金百科全书</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>1</span>
+                      <a href="#">英语常见问题解答大词典</a>  
+                      <span class="table-divider">/</span>    
+                      <a href="#">英语常见问题解答大词典</a>           
+                    </td>
+                    <td class="book-col2">
+                      <span>中国冶金百科全书</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>1</span>
+                      <a href="#">英语常见问题解答大词典</a>  
+                      <span class="table-divider">/</span>    
+                      <a href="#">英语常见问题解答大词典</a>           
+                    </td>
+                    <td class="book-col2">
+                      <span>中国冶金百科全书</span>
+                    </td>
+                    <td class="book-col7">
+                      <button class="op-group op1"></button>
+                      <button class="op-group op2"></button>
+                      <button class="op-group op3"></button>
+                    </td>
+                  </tr>
+                  <!-- 单个表行结束 -->
+                  <tr>
+                     <td class="book-col1">
+                      <input type="checkbox" class="booklist-chck">
+                      <span>1</span>
+                      <a href="#">英语常见问题解答大词典</a>    
+                      <span class="table-divider">/</span>    
+                      <a href="#">英语常见问题解答大词典</a>         
                     </td>
                     <td class="book-col2">
                       <span>中国冶金百科全书</span>
@@ -794,7 +1018,9 @@
                      <td class="book-col1">
                       <input type="checkbox" class="booklist-chck">
                       <span>1</span>
-                      <a href="#">英语常见问题解答大词典</a>             
+                      <a href="#">英语常见问题解答大词典</a>   
+                      <span class="table-divider">/</span>    
+                      <a href="#">英语常见问题解答大词典</a>          
                     </td>
                     <td class="book-col2">
                       <span>中国冶金百科全书</span>
@@ -810,7 +1036,9 @@
                      <td class="book-col1">
                       <input type="checkbox" class="booklist-chck">
                       <span>1</span>
-                      <a href="#">英语常见问题解答大词典</a>             
+                      <a href="#">英语常见问题解答大词典</a>    
+                      <span class="table-divider">/</span>    
+                      <a href="#">英语常见问题解答大词典</a>         
                     </td>
                     <td class="book-col2">
                       <span>中国冶金百科全书</span>
@@ -826,7 +1054,9 @@
                      <td class="book-col1">
                       <input type="checkbox" class="booklist-chck">
                       <span>1</span>
-                      <a href="#">英语常见问题解答大词典</a>             
+                      <a href="#">英语常见问题解答大词典</a> 
+                      <span class="table-divider">/</span>    
+                      <a href="#">英语常见问题解答大词典</a>            
                     </td>
                     <td class="book-col2">
                       <span>中国冶金百科全书</span>
@@ -842,23 +1072,9 @@
                      <td class="book-col1">
                       <input type="checkbox" class="booklist-chck">
                       <span>1</span>
-                      <a href="#">英语常见问题解答大词典</a>             
-                    </td>
-                    <td class="book-col2">
-                      <span>中国冶金百科全书</span>
-                    </td>
-                    <td class="book-col7">
-                      <button class="op-group op1"></button>
-                      <button class="op-group op2"></button>
-                      <button class="op-group op3"></button>
-                    </td>
-                  </tr>
-                  <!-- 单个表行结束 -->
-                 <tr>
-                     <td class="book-col1">
-                      <input type="checkbox" class="booklist-chck">
-                      <span>1</span>
-                      <a href="#">英语常见问题解答大词典</a>             
+                      <a href="#">英语常见问题解答大词典</a>   
+                      <span class="table-divider">/</span>    
+                      <a href="#">英语常见问题解答大词典</a>          
                     </td>
                     <td class="book-col2">
                       <span>中国冶金百科全书</span>
@@ -874,183 +1090,9 @@
                      <td class="book-col1">
                       <input type="checkbox" class="booklist-chck">
                       <span>1</span>
-                      <a href="#">英语常见问题解答大词典</a>             
-                    </td>
-                    <td class="book-col2">
-                      <span>中国冶金百科全书</span>
-                    </td>
-                    <td class="book-col7">
-                      <button class="op-group op1"></button>
-                      <button class="op-group op2"></button>
-                      <button class="op-group op3"></button>
-                    </td>
-                  </tr>
-                  <!-- 单个表行结束 -->
-                  <tr>
-                     <td class="book-col1">
-                      <input type="checkbox" class="booklist-chck">
-                      <span>1</span>
-                      <a href="#">英语常见问题解答大词典</a>             
-                    </td>
-                    <td class="book-col2">
-                      <span>中国冶金百科全书</span>
-                    </td>
-                    <td class="book-col7">
-                      <button class="op-group op1"></button>
-                      <button class="op-group op2"></button>
-                      <button class="op-group op3"></button>
-                    </td>
-                  </tr>
-                  <!-- 单个表行结束 -->
-                  <tr>
-                     <td class="book-col1">
-                      <input type="checkbox" class="booklist-chck">
-                      <span>1</span>
-                      <a href="#">英语常见问题解答大词典</a>             
-                    </td>
-                    <td class="book-col2">
-                      <span>中国冶金百科全书</span>
-                    </td>
-                    <td class="book-col7">
-                      <button class="op-group op1"></button>
-                      <button class="op-group op2"></button>
-                      <button class="op-group op3"></button>
-                    </td>
-                  </tr>
-                  <!-- 单个表行结束 -->
-                  <tr>
-                     <td class="book-col1">
-                      <input type="checkbox" class="booklist-chck">
-                      <span>1</span>
-                      <a href="#">英语常见问题解答大词典</a>             
-                    </td>
-                    <td class="book-col2">
-                      <span>中国冶金百科全书</span>
-                    </td>
-                    <td class="book-col7">
-                      <button class="op-group op1"></button>
-                      <button class="op-group op2"></button>
-                      <button class="op-group op3"></button>
-                    </td>
-                  </tr>
-                  <!-- 单个表行结束 -->
-                  <tr>
-                     <td class="book-col1">
-                      <input type="checkbox" class="booklist-chck">
-                      <span>1</span>
-                      <a href="#">英语常见问题解答大词典</a>             
-                    </td>
-                    <td class="book-col2">
-                      <span>中国冶金百科全书</span>
-                    </td>
-                    <td class="book-col7">
-                      <button class="op-group op1"></button>
-                      <button class="op-group op2"></button>
-                      <button class="op-group op3"></button>
-                    </td>
-                  </tr>
-                  <!-- 单个表行结束 -->
-                  <tr>
-                     <td class="book-col1">
-                      <input type="checkbox" class="booklist-chck">
-                      <span>1</span>
-                      <a href="#">英语常见问题解答大词典</a>             
-                    </td>
-                    <td class="book-col2">
-                      <span>中国冶金百科全书</span>
-                    </td>
-                    <td class="book-col7">
-                      <button class="op-group op1"></button>
-                      <button class="op-group op2"></button>
-                      <button class="op-group op3"></button>
-                    </td>
-                  </tr>
-                  <!-- 单个表行结束 -->
-                  <tr>
-                     <td class="book-col1">
-                      <input type="checkbox" class="booklist-chck">
-                      <span>1</span>
-                      <a href="#">英语常见问题解答大词典</a>             
-                    </td>
-                    <td class="book-col2">
-                      <span>中国冶金百科全书</span>
-                    </td>
-                    <td class="book-col7">
-                      <button class="op-group op1"></button>
-                      <button class="op-group op2"></button>
-                      <button class="op-group op3"></button>
-                    </td>
-                  </tr>
-                  <!-- 单个表行结束 -->
-                 <tr>
-                     <td class="book-col1">
-                      <input type="checkbox" class="booklist-chck">
-                      <span>1</span>
-                      <a href="#">英语常见问题解答大词典</a>             
-                    </td>
-                    <td class="book-col2">
-                      <span>中国冶金百科全书</span>
-                    </td>
-                    <td class="book-col7">
-                      <button class="op-group op1"></button>
-                      <button class="op-group op2"></button>
-                      <button class="op-group op3"></button>
-                    </td>
-                  </tr>
-                  <!-- 单个表行结束 -->
-                  <tr>
-                     <td class="book-col1">
-                      <input type="checkbox" class="booklist-chck">
-                      <span>1</span>
-                      <a href="#">英语常见问题解答大词典</a>             
-                    </td>
-                    <td class="book-col2">
-                      <span>中国冶金百科全书</span>
-                    </td>
-                    <td class="book-col7">
-                      <button class="op-group op1"></button>
-                      <button class="op-group op2"></button>
-                      <button class="op-group op3"></button>
-                    </td>
-                  </tr>
-                  <!-- 单个表行结束 -->
-                  <tr>
-                     <td class="book-col1">
-                      <input type="checkbox" class="booklist-chck">
-                      <span>1</span>
-                      <a href="#">英语常见问题解答大词典</a>             
-                    </td>
-                    <td class="book-col2">
-                      <span>中国冶金百科全书</span>
-                    </td>
-                    <td class="book-col7">
-                      <button class="op-group op1"></button>
-                      <button class="op-group op2"></button>
-                      <button class="op-group op3"></button>
-                    </td>
-                  </tr>
-                  <!-- 单个表行结束 -->
-                  <tr>
-                     <td class="book-col1">
-                      <input type="checkbox" class="booklist-chck">
-                      <span>1</span>
-                      <a href="#">英语常见问题解答大词典</a>             
-                    </td>
-                    <td class="book-col2">
-                      <span>中国冶金百科全书</span>
-                    </td>
-                    <td class="book-col7">
-                      <button class="op-group op1"></button>
-                      <button class="op-group op2"></button>
-                      <button class="op-group op3"></button>
-                    </td>
-                  </tr>
-                  <!-- 单个表行结束 -->
-                  <tr>
-                     <td class="book-col1">
-                      <input type="checkbox" class="booklist-chck">
-                      <span>1</span>
-                      <a href="#">英语常见问题解答大词典</a>             
+                      <a href="#">英语常见问题解答大词典</a>   
+                      <span class="table-divider">/</span>    
+                      <a href="#">英语常见问题解答大词典</a>          
                     </td>
                     <td class="book-col2">
                       <span>中国冶金百科全书</span>

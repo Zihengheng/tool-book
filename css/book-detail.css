@@ -468,13 +468,18 @@ div.dt-section-title{
 
 body > div.rst-header > div.top-bar{
 	width:100%;
-	height:36px;
+	height:37px;
 	background-color: #f4f6f9;
 }
 .top-bar li a{
-	font-size: 14px;
     color: #333333;
     text-decoration: none;
+    font-family:SimSun;
+    font-size: 12px;
+}
+.top-bar li a:hover{
+	color:#53a2e3;
+	font-weight:bold;
 }
 div.left-bar ul li{
 	float:left;
@@ -489,12 +494,10 @@ div.left-bar ul li{
 	float:left;
 }
 .head-right ul li{
-    font-family: MicrosoftYaHei;
-    font-size: 12px;
     line-height:30px;
 }
 .head-right ul li a {
-    color: #333333;
+  /*  color: #333333;*/
     margin-right: 10px;
     padding-left: 10px;
 }
@@ -531,7 +534,7 @@ div.left-bar ul li{
 	width:495px;
 }
 .searchmain .search-input {
-	width:348px;
+	width:361px;
 }
 .searchmain .search-input{
 	/*padding: 0;*/
@@ -547,17 +550,20 @@ div.left-bar ul li{
 	line-height: 40px;
 }
 .banner-sm .container img{
-	width:220px;
+	width:228px;
 	float:left;
 	margin-top:12px;
 }
 .searchmain .sort{
 	margin-top:7px;
 }
+.searchmain .sort span{
+	color:#666;
+}
 .search-form{
 	margin-left: 20px;
 	margin-top:9px;
-	margin-bottom:10px;
+	margin-bottom:6px;
 }
 #type span{
 	line-height: 40px;
@@ -576,6 +582,7 @@ div.left-bar ul li{
 	vertical-align: center;
 	height:21px;
 	padding-top: 1px;
+	text-decoration:none;
 }
 .searchmain .sort-default{
 
@@ -583,9 +590,19 @@ div.left-bar ul li{
 .sort-default .sort-icon{
 	line-height:27px;
 }
-.adv-search-btn{
-	margin-top: 10px;
-	margin-left: 10px;
+div.adv-group{
+	display: inline-block;
+    float:right;
+    margin-left: 6px;
+}
+a.adv-search-btn{
+	margin-top:0px;
+}
+a.adv-search-btn.top{
+	margin-top:-5px;
+}
+#drop-nav.active{
+	color: #53a2e3;
 }
 .search-nav{
 	padding-left:267px;
@@ -604,19 +621,20 @@ div.left-bar ul li{
 #search:hover{
 	background-position: -48px -2px;
 }
-#search-in-result{
+
+#gaoji, #search-in-result{
 	height:40px;
 	box-shadow: 0px 0px 3px 0px 
 		rgba(31, 30, 30, 0.09);
 	border:1px solid #e9e9e9;
 	outline: none;
+	background-color:#efefef;
+	color:#666;
+	padding:5px 8px;
 }
-#gaoji{
-	height:40px;
-	box-shadow: 0px 0px 3px 0px 
-		rgba(31, 30, 30, 0.09);
-	border:1px solid #e9e9e9;
-	outline: none;
+#gaoji:hover, #search-in-result:hover{
+	background-color:#d2d2d2;
+	border:1px solid #d2d2d2;
 }
 /* finish change search bar */
 /*========= rst-header end ==========*/

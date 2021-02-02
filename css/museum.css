@@ -129,7 +129,7 @@ div.pn-container{
 }
 /*======= 语词库 header start =========*/
 .msm-topbar{
-	height:36px;
+	height:37px;
 	background-color:#f4f6f9;
 }
 .topbar-left ul li{
@@ -137,28 +137,20 @@ div.pn-container{
 	text-align: center;
 	line-height: 36px;
 }
-.topbar-left ul li a{
+.topbar-left ul li a,.topbar-right ul li a {
 	color:#333333;
+	font-family:SimSun;
+    font-size: 12px;
 }
-.topbar-left ul li a:hover{
+.topbar-left ul li a:hover,.topbar-right ul li a:hover {
 	text-decoration:none;
 	color:#53a2e3;
 	font-weight:bold;
-	font-size:15px;
 }
 .topbar-right ul li{
 	width:80px;
 	text-align: center;
 	line-height: 36px;
-}
-.topbar-right ul li a{
-	color:#333333;
-}
-.topbar-right ul li a:hover{
-	text-decoration:none;
-	color:#53a2e3;
-	font-weight:bold;
-	font-size:15px;
 }
 ul li.login{
 	width:100px;
@@ -1203,8 +1195,6 @@ ul.breadcrumb li.active{
 	border: 1px solid #DCDCDC;
 	background-color: #fbfbfb;
 	float:left;
-	overflow-x: hidden;
-	overflow-y: scroll;
 }
 .dt-rightbar{
 	width:911px;

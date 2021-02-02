@@ -54,6 +54,17 @@ $(function(){
     $(".booklist-box").mouseleave(function(){
         $(this).removeClass("box-highlight");
     });
+    //范围：my-collection
+    //说明：显示笔记,关闭笔记
+    $(".cop1").click(function(){
+        $(".note-box").slideDown(200);
+    });
+    $(".op-note").click(function(){
+        $(".note-box").slideDown(200);
+    });
+    $("#close-note").click(function(){
+        $(".note-box").slideUp(200);
+    });
     //范围：book-detiail page
     //说明：show-more
     $(".show-more-dt-col").click(function(){

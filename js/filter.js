@@ -27,8 +27,21 @@ $(function(){
         $(this).prev().removeClass("cur");
     });
 
-    // 增加搜索结果页显示搜索助手
-    $(".banner-sm input.search-input").focus(function(){$(".search-nav").show();})
+    // 增加搜索结果页显示/隐藏搜索助手
+    $(".banner-sm input.search-input").focus(function(){
+        $(".search-nav").slideDown(200);
+        $("#drop-nav").addClass("active");
+    })
+    $("#drop-nav").click(function(){
+        if($(this).hasClass("active")){
+            $(this).removeClass("active");
+            $(".search-nav").slideUp(200);
+        }
+        else{
+            $(".search-nav").slideDown(200);
+            $("#drop-nav").addClass("active");
+        }
+    });
     // $(".banner-sm input.search-input").blur(function(){$(".search-nav").hide();})
 
     // doctype标签显示 

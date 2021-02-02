@@ -24,7 +24,7 @@ div.search-result{
 	height:38px;
 }
 .main-content .container{
-	padding-top: 104px;
+	padding-top: 110px;
 }
 /*========= 升序降序===========*/
 /*.order li.ascend span,
@@ -34,13 +34,14 @@ background-position/*:top 5px;}*/
 
 body > div.rst-header > div.top-bar{
 	width:100%;
-	height:36px;
+	height:37px;
 	background-color: #f4f6f9;
 }
 .top-bar li a{
-	font-size: 14px;
     color: #333333;
     text-decoration: none;
+    font-family:SimSun;
+    font-size: 12px;
 }
 .top-bar li a:hover{
 	color:#53a2e3;
@@ -59,12 +60,10 @@ div.left-bar ul li{
 	float:left;
 }
 .head-right ul li{
-    font-family: MicrosoftYaHei;
-    font-size: 12px;
     line-height:30px;
 }
 .head-right ul li a {
-    color: #333333;
+  /*  color: #333333;*/
     margin-right: 10px;
     padding-left: 10px;
 }
@@ -101,7 +100,7 @@ div.left-bar ul li{
 	width:495px;
 }
 .searchmain .search-input {
-	width:348px;
+	width:361px;
 }
 .searchmain .search-input{
 	/*padding: 0;*/
@@ -117,17 +116,20 @@ div.left-bar ul li{
 	line-height: 40px;
 }
 .banner-sm .container img{
-	width:220px;
+	width:228px;
 	float:left;
 	margin-top:12px;
 }
 .searchmain .sort{
 	margin-top:7px;
 }
+.searchmain .sort span{
+	color:#666;
+}
 .search-form{
 	margin-left: 20px;
 	margin-top:9px;
-	margin-bottom:10px;
+	margin-bottom:6px;
 }
 #type span{
 	line-height: 40px;
@@ -146,6 +148,7 @@ div.left-bar ul li{
 	vertical-align: center;
 	height:21px;
 	padding-top: 1px;
+	text-decoration:none;
 }
 .searchmain .sort-default{
 
@@ -153,9 +156,19 @@ div.left-bar ul li{
 .sort-default .sort-icon{
 	line-height:27px;
 }
-.adv-search-btn{
-	margin-top: 10px;
-	margin-left: 10px;
+div.adv-group{
+	display: inline-block;
+    float:right;
+    margin-left: 6px;
+}
+a.adv-search-btn{
+	margin-top:0px;
+}
+a.adv-search-btn.top{
+	margin-top:-5px;
+}
+#drop-nav.active{
+	color: #53a2e3;
 }
 .search-nav{
 	padding-left:267px;
@@ -174,19 +187,20 @@ div.left-bar ul li{
 #search:hover{
 	background-position: -48px -2px;
 }
-#search-in-result{
+
+#gaoji, #search-in-result{
 	height:40px;
 	box-shadow: 0px 0px 3px 0px 
 		rgba(31, 30, 30, 0.09);
 	border:1px solid #e9e9e9;
 	outline: none;
+	background-color:#efefef;
+	color:#666;
+	padding:5px 8px;
 }
-#gaoji{
-	height:40px;
-	box-shadow: 0px 0px 3px 0px 
-		rgba(31, 30, 30, 0.09);
-	border:1px solid #e9e9e9;
-	outline: none;
+#gaoji:hover, #search-in-result:hover{
+	background-color:#d2d2d2;
+	border:1px solid #d2d2d2;
 }
 /* finish change search bar */
 /*========= rst-header end ==========*/
@@ -207,7 +221,7 @@ div.left-bar ul li{
 /*选中*/
 .doctype-menus>li.active{ position: relative;color: #333; border-radius: 4px 4px 0 0; background-image: none; background-color: #fff;  border:0px;}
 .doctype-menus>li.active a{
-	height:65px;
+	height:75px;
 }
 .doctype-menus>li.active>a span,
 .doctype-menus>li.active>a em{ 
@@ -269,26 +283,27 @@ div.left-bar ul li{
 }
 .change-page input{
 	width:20px;
-	border: solid 1px #333333;
+	border: solid 1px #c3bfbf;
+	padding-left: 5px;
 }
 .change-page a.btn{
 	width:20px;
-	border:solid 1px #333333;
-	line-height: 20px;
+	border:solid 1px #c3bfbf;
+	line-height: 18px;
 	padding:0;
+	margin-top: -4px;
 }
 .toolbar .order-group{
 	float:right;
 	margin-right:10px;
 }
 div.order-group ul li {
-	width:117px;
+	width:112px;
 }
 div.order-group ul li img{
-	margin-right: 5px;
-	width:18px;
-	height:18px;
+	margin-right: 6px;
 	float:left;
+	margin-top:2px;
 }
 div.order-group ul li input{
 	float:left;
@@ -300,8 +315,9 @@ div.order-group i.as-ds{
 	height:18px;
 	background:url("../images/updown-icon.png") no-repeat;
 	background-position:0px 2px; 
-	margin-left: 8px;
+	margin-left: 6px;
 }
+.order li+li{margin-left:0px;}
 .order li.ascend i.as-ds{ background-position:0px 2px;}
 .order li.descend i.as-ds{ background-position:-9px 2px;}
 #divider{
@@ -503,6 +519,7 @@ input.book-input{
 	width: 297px;
 	height: 150px;
 	background-color: #ffffff;
+	border:solid 1px #fff;
 	box-shadow: 0px 6px 14px 2px 
 		rgba(237, 236, 236, 0.53);
 	transition: all 0.3s;
@@ -704,6 +721,14 @@ td.book-col a{
 .search-result div.pn-container{
 	width:700px;
 	left:131px;
+}
+.table-divider{
+	color:orange;
+	font-weight: bold;
+	margin-left:5px;
+	margin-right: 5px;
+	font-size:16px;
+	line-height:22px;
 }
 /*=================== 检索结果表格页 end =================*/
 
