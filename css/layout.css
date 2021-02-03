@@ -312,7 +312,7 @@ div.translate-header span{
     margin-left: 10px;
     position:relative;
     top:3px;
-    background: url("../images/ita.png") no-repeat center;
+    background: url("../images/delete.png") no-repeat center;
     background-color: #dcdcdc;
 }
 .trans-info{float:right; margin-right:20px;}
@@ -1001,7 +1001,7 @@ line-height:38px;}
 .result-con-l .btn-subscribe,
 .result-con-l .btn-search-his{ display: inline-block; vertical-align: middle; padding: 2px 15px; margin-left: 5px; line-height: 18px; color: #666666; font-size: 12px;text-align: center;background-color: #fff; border: 1px solid #666666; border-radius:5px;}
 .result-con-l .btn-subscribe:hover,
-.result-con-l .btn-search-his:hover{ font-weight:bold;color: #333333; border:1px solid #2b4167;text-decoration:none; }
+.result-con-l .btn-search-his:hover{background-color:#1890ff; color:#fff;text-decoration:none; }
 
 
 .result-con-r{ float: right; }

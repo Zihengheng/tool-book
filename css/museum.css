@@ -456,20 +456,20 @@ div.booksec-box img{
 }
 div.booksec-box img:hover{
 	box-shadow: 5px 5px 5px 5px  #eeeeee;
-    transform: scale(1.08);
-    -ms-transform: scale(1.08);   
-   -moz-transform: scale(1.08); 
-   -webkit-transform: scale(1.08); 
-   -o-transform: scale(1.08); 
+    transform: scale(1.15);
+    -ms-transform: scale(1.15);   
+   -moz-transform: scale(1.15); 
+   -webkit-transform: scale(1.15); 
+   -o-transform: scale(1.15); 
 }
 div.book-annotation{
 	position:absolute;
-	width:127px;
+	width:131px;
 	height:26px;
 	background-color:grey;
 	opacity:0.9;
 	top:145px;
-	left:11px;
+	left:6px;
 	color:white;
 	font-size: 15px;
 	text-align:center; 
@@ -2253,8 +2253,17 @@ li.rec a{
 	box-shadow: 0px 2px 11px 0px 
 		rgba(234, 234, 234, 0.58);
 	background:url("../images/book.png") no-repeat center;
+	transition: all 0.2s;
+    -ms-transition:all 0.2s; /* IE 9 */
+    -moz-transition:all 0.2s; /* Firefox */
+    -webkit-transition:all 0.2s; /* Safari 和 Chrome */
+    -o-transition:all 0.2s; /* Opera */
 }
-.rp-img a{width:157px; height:216px; display: inline-block;} 
+.rp-img a{
+	width:157px; 
+	height:216px; 
+	display: inline-block;
+} 
 .rp-img:hover{
 	box-shadow: 5px 5px 5px 5px  #eeeeee;
     transform: scale(1.08);
