@@ -130,7 +130,7 @@ div.pn-container{
 /*======= 语词库 header start =========*/
 .msm-topbar{
 	height:37px;
-	background-color:#f4f6f9;
+	background-color:#e9e9e7;
 }
 .topbar-left ul li{
 	width:80px;
@@ -145,7 +145,7 @@ div.pn-container{
 .topbar-left ul li a:hover,.topbar-right ul li a:hover {
 	text-decoration:none;
 	color:#53a2e3;
-	font-weight:bold;
+	/*font-weight:bold;*/
 }
 .topbar-right ul li{
 	width:80px;
@@ -246,6 +246,9 @@ ul li.login{
 	height:38px;
 	line-height:38px;
 }
+.searchmain .search-btn:hover{
+	background-color: #f9de19;
+}
 div.adv-group{
 	display: inline-block;
 	float:left;
@@ -315,6 +318,9 @@ li.rec3{
 	color: #333333;
 	text-decoration:none;
 }
+.recomm ul li:hover{
+	border:solid 1px #f9de19;
+}
 /*======= 语词库 header end =========* /
 
 /*=================== 语词库主要内容开始 =====================* /
@@ -373,7 +379,7 @@ div.show-more a{
 div.show-more a:hover{color:#53a2e3;}
 /*书目展示*/
 .book-nav{
-	padding-top: 25px;
+	padding-top:15px;
 	padding-bottom:75px;
 	/*height:778px;*/
 }
@@ -438,7 +444,7 @@ div.booksec-box.top{
 	padding-bottom: 46px;
 }
 div.booksec-box img{
-	margin-bottom: 17px;
+	margin-bottom: 15px;
 	margin-right: 22px;
 	width: 118px;
 	height: 166px;
@@ -464,12 +470,13 @@ div.booksec-box img:hover{
 }
 div.book-annotation{
 	position:absolute;
-	width:131px;
+	width:135px;
 	height:26px;
 	background-color:grey;
 	opacity:0.9;
+	filter:alpha(opacity=90);  /*filter 过滤器   兼容IE678*/
 	top:145px;
-	left:6px;
+	left:7px;
 	color:white;
 	font-size: 15px;
 	text-align:center; 
@@ -480,7 +487,7 @@ div.details{
 	margin-top: 12px;
 }
 div.details span{
-	font-family: SimSun;
+	font-family:MicrosoftYaHei;
 	font-size: 14px;
 	color: #333333;
 	font-weight: bold;
@@ -509,7 +516,7 @@ p.intro{
 }
 h5{
 	font-family: MicrosoftYaHei;
-	font-size: 15px;
+	font-size: 13px;
 	font-weight: bold;
 	line-height: 23px;
 	color: #333333;
@@ -603,20 +610,18 @@ input.search-words{
 	height: 25px;
 	border: solid 1px #eeeeee;
 	line-height: 39px;
+	padding-left:10px;
 }
-div.section-search input.search-btn{
+.section-search input.search-btn{
 	width: 61px;
 	height: 26px;
-	background-image: linear-gradient(
-		#70d2f7, 
-		#70d2f7), 
-	linear-gradient(
-		#f3f7fa, 
-		#f3f7fa);
-	background-blend-mode: normal, 
-		normal;
+	background-color:#70d2f7;
 	border:0px;
 	color:white;
+}
+.section-search input.search-btn:hover{
+	background-color:#f9de19;
+	color:#fff;
 }
 #di-content{
 	padding-top: 20px;
@@ -722,6 +727,15 @@ div.line-other-words li a{
 	font-size: 14px;
 	color: #6e90ff;
 }
+/*典故展示*/
+div.start-word a, div.line-word a{
+	padding:10px;
+	background:url("../images/gushi.png") no-repeat center;
+}
+
+div.start-word a:hover, div.line-word a:hover, div.start-word a.on-show, div.line-word a.on-show{
+	background:url("../images/gushi-h.png") no-repeat center;
+}
 /*成语连接线, 成语框*/
 div.connection{
 	float:left;
@@ -812,7 +826,7 @@ img.minus{
 	padding:10px 15px 10px 15px;
 	display:none;
 	position:absolute;
-	top:66px;
+	top:50px;
 	left:0px;
 	z-index:999;  
 	background: #fff;
@@ -1279,6 +1293,10 @@ ul.size-change li a:hover{
 	color: #2a3f6a;
 	text-align:center;
 	outline:none;
+}
+.dt-search-bar .btn:hover{
+	background-color: #f9de19;
+	color:#fff;
 }
 /*===== 左右分栏， 分栏标题 end =====*/
 /*==== 左侧边栏 start=====*/
@@ -1813,6 +1831,7 @@ ul.refer-list li em{
 }
 #jsk-banner{
 	background: url("../images/jsk_banner.jpg") no-repeat;
+	height:320px;
 }
 .book-nav.jsk{
 	padding-top:0px;
@@ -2031,9 +2050,6 @@ div.img-box-img{
 /*========================= 鉴赏库 end =========================*/
 
 /*======================= 鉴赏库条目 start =======================*/
-#jsk-book-nav .panel-body{
-	max-height:300px;
-}
 #poem-intro{
 	font-family: MicrosoftYaHei;
 	padding-bottom: 50px;

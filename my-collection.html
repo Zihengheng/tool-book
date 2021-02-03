@@ -21,7 +21,7 @@
 <body>
   <div class="note-box">
     <a href="javascript:void(0);" id="close-note">关闭</a>
-    <textarea name="" id="input-context" cols="75" rows="4" aria-expanded="false" autocomplete="off" placeholder="请输入笔记内容"></textarea>
+    <textarea name="" id="input-note" cols="75" rows="4" aria-expanded="false" autocomplete="off" placeholder="请输入笔记内容"></textarea>
     <a href="javascript:void(0);">保存</a>
     <a href="javascript:void(0);">编辑</a>
   </div>
@@ -55,7 +55,8 @@
       <img src="images/brand-icon3.png" alt="">
       <div class="searchmain">
         <div class="search-form">
-          <div class="sort" id="search-type">
+          <div class="input-box">
+            <div class="sort" id="search-type">
               <div class="sort-default" id="type">
                 <span>全文</span>
                 <i class="sort-icon">▼</i>
@@ -69,8 +70,7 @@
                 <li><a href="javascript:void(0);">人物</a></li>
               </ul>
             </div>
-          <div class="input-box">
-            <input class="search-input" type="text" autocomplete="off" placeholder="请输入检索词"  maxlength="100">
+            <input class="search-input" type="text" autocomplete="off" placeholder="请输入检索词" maxlength="100">
             <a class="btn-wildcard" href="javascript:void(0);" data-toggle="tooltip" title="通配符”?”代表该位置有且仅有1个字符（=1），如检索“?细胞”可检出“红细胞”、“白细胞”。通配符可放在检索词任意位置，可组合使用，如“细?胞*”可检出“细菌胞质素”。" data-placement = "bottom">?</a>
             <a class="btn-wildcard" href="javascript:void(0);" data-toggle="tooltip" title="通配符”*”代表该位置有任意个字符（≥0），如检索“*细胞”可检出“细胞”、“红细胞”、“白细胞”、“巨噬细胞”等。通配符可放在检索词任意位置，可组合使用，如“细?胞*”可检出“细菌胞质素”。" data-placement = "bottom">*</a>
 
@@ -539,7 +539,7 @@
                       </div><!-- drop-down -->
                        <input type="text" placeholder="按文献主题检索"class="book-input">
                     </div>
-                    <button class="btn" id="find-book">找书</button>
+                    <button class="btn find-book">找书</button>
                   </div><!-- end of the book-search-bar -->
                   <dd class="first-line">
                     <div class="collection-box left-box">
@@ -938,7 +938,7 @@
                       </div><!-- drop-down -->
                        <input type="text" placeholder="按文献主题检索"class="book-input">
                     </div>
-                    <button class="btn" id="find-book">找书</button>
+                    <button class="btn find-book">找书</button>
                   </div><!-- end of the book-search-bar -->
                 </td>
                   </tr>

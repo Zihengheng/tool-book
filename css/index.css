@@ -182,6 +182,7 @@ border:0px;
 padding:0px;text-decoration:none; margin-top:15px;}
 .searchmain .btn-wildcard:active{ border: 1px solid #a1a5a8; }
 .searchmain .search-btn { width:117px; height:50px; line-height:50px; font-size:20px;}
+.searchmain .search-btn:hover{background-color:#f9de19;}
 .searchmain .sort{ margin-top: 10px; }
 .searchmain .sort-default{ background-color: #fff; }
 .searchmain .sort span{ width: 36px; }
@@ -213,7 +214,7 @@ button.label{
     float:left;
     width:287px;
     height:380px;
-    padding:100px 25px 180px 25px;
+    padding:100px 25px 180px 22px;
     margin-left:36px;
 }
 .btn-vertical {
@@ -303,7 +304,7 @@ span.hp-sub{
     color: #ffffff;
 }
 #zk ul li img{
-    margin-right: 30px;
+    margin-right: 25px;
     margin-top:-7px;
 }
 /* ==== end of home page book====*/
