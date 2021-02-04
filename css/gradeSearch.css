@@ -171,7 +171,7 @@ input[type="text"].disable-editor{ color: #999!important; }
 .search-classify-content .inputs-list-sentence label { float: left; line-height: 34px; padding: 0 11px; }
 /*检索按钮*/
 .search-mainbox .search-buttons { padding-top: 24px; margin-top: 30px; line-height: 38px; text-align: center; border-top: 1px solid #cdd4dc; }
-.search-mainbox .search-buttons { margin-left: -47px; }
+.search-mainbox .search-buttons { margin-left: -36px; }
 .search-mainbox.is-on .search-buttons { margin-left: -28px; }
 .search-mainbox .search-buttons .btn-reset{ margin-right: 35px; color: #3f424a; font-size: 14px; }
 .search-mainbox .search-buttons .btn-reset:hover{ color: #53a2e3; }

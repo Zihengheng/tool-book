@@ -121,6 +121,7 @@ div.pn-container{
 	border:1px solid #ededed;
 	line-height:26px;
 	padding-left:5px;
+	width:233px;
 }
 /*=================== 语词库主要内容开始 =====================* /
 /*======= 书目导览 start =========* /
@@ -425,7 +426,7 @@ ul.size-change li a:hover{
 }
 .dt-search-bar .btn{
 	width: 68px;
-	height: 25px;
+	height: 26px;
 	background-color: #f3f7fa;
 	font-family: SimSun;
 	font-size: 12px;

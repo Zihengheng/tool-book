@@ -118,7 +118,7 @@ ul.words-list p{
 	margin-left: 20px;
 }
 div.pn-container{
-	width:540px;
+	width:600px;
 	margin:0 auto;
 }
 /*===== section input ========*/
@@ -126,6 +126,7 @@ div.pn-container{
 	border:1px solid #ededed;
 	line-height:26px;
 	padding-left:5px;
+	width:233px;
 }
 /*======= 语词库 header start =========*/
 .msm-topbar{
@@ -476,7 +477,7 @@ div.booksec-box img{
     -o-transition:all 0.3s; /* Opera */
 }
 div.booksec-box img:hover{
-	box-shadow: 5px 5px 5px 5px  #eeeeee;
+	box-shadow: 2px 2px 2px 2px  #eeeeee;
     transform: scale(1.15);
     -ms-transform: scale(1.15);   
    -moz-transform: scale(1.15); 
@@ -1191,7 +1192,7 @@ div.rst-flip{
 /*=================== 语词库条目内容开始 =====================*/
 /*===== 标题栏 =====*/
 .msm-banner.dt-page{
-	height:333px;
+	height:320px;
 }
 ul.breadcrumb{
 	background: none;
@@ -1286,7 +1287,7 @@ ul.size-change li a{
 	text-decoration: none;
 	color: #6f6f6f;
 }
-ul.size-change li.active a{
+ul.size-change li.on a{
 	color:#53a2e4;
 }
 ul.size-change li a:hover{
@@ -1300,7 +1301,7 @@ ul.size-change li a:hover{
 }
 .dt-search-bar .btn{
 	width: 68px;
-	height: 25px;
+	height: 26px;
 	background-color: #f3f7fa;
 	font-family: SimSun;
 	font-size: 12px;
@@ -1320,7 +1321,6 @@ ul.size-change li a:hover{
 	width:100%;
 	font-family: SimSun;
 	font-size: 15px;
-	line-height: 35px;
 	color: #cc0000;
 	font-weight:bold;
 	margin-left: 15px;
@@ -1345,8 +1345,8 @@ a.toggle-btn{
 	text-decoration: none;
 }
 ul.dt-chapters{
-	float:right;
-	margin-right:210px;
+	display:inline-block;
+	margin-left: 10px;
 }
 ul.dt-chapters a{
 	font-family: MicrosoftYaHei;
@@ -1359,10 +1359,20 @@ ul.dt-chapters a{
 	border:0;
 }
 .dt-book-navbar div.panel-body{
-	/*max-height:200px;*/
-	/*overflow-y:scroll;*/
 	overflow-x: hidden;
 	border:0;
+}
+.dt-book-navbar{display:none;}
+.dt-book-navbar.active{display:block;}
+.dt-leftbar-title li{margin-right: 5px;}
+.dt-leftbar-title li a{
+	line-height:37px;
+	padding:6px 12px;
+	text-decoration:none;
+}
+.dt-leftbar-title li a:hover, .dt-leftbar-title li.cur a{
+	background-color: #53a2e3;
+	color:#fff;
 }
 ul.nav-sections li{
 	display: block;
@@ -1842,7 +1852,7 @@ ul.refer-list li em{
 
 /*========================= 鉴赏库 start =========================*/
 .msm-banner{
-	height:350px;
+	height:320px;
 }
 #jsk-banner{
 	background: url("../images/jsk_banner.jpg") no-repeat;
@@ -1952,12 +1962,16 @@ ul.refer-list li em{
 	background-position: -90px -25px;
 }
 .p-title{
-	font-family: MicrosoftYaHei;
-	font-size: 16px;
 	line-height: 36px;
-	color: #cc0000;
 	margin-top: 28px;
 }
+.p-title a{
+	font-family: MicrosoftYaHei;
+	font-size: 16px;
+	color: #cc0000;
+	text-decoration:none;
+}
+.p-title a:hover{color:orange;}
 .p-author{
 	font-family: MicrosoftYaHei;
 	font-size: 12px;
@@ -2006,13 +2020,14 @@ ul.refer-list li em{
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-.img-box-title{
+.img-box-title a{
+	text-decoration:none;
 	font-family: MicrosoftYaHei;
 	font-size: 16px;
-	line-height: 36px;
-	letter-spacing: 0px;
 	color: #cc0000;
+	line-height: 36px;
 }
+.img-box-title a:hover{color:orange;}
 .jsk-img{
 	float:left;
 	width:196px;
@@ -2315,13 +2330,16 @@ li.rec a{
 .rp-tit{
 	position:absolute;
 	top:247px;
+}
+.rp-tit a{
 	font-family: MicrosoftYaHei;
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 36px;
-	letter-spacing: 0px;
 	color: #333333;
+	text-decoration:none;
 }
+.rp-tit a:hover{color:#53a2e3;}
 .rp-intro{
 	float:right;
 	width: 322px;
@@ -2404,6 +2422,35 @@ dl.nav-sections ul.nav-sections li{
 #flk-banner{
 	background: url("../images/flk_banner.jpg") no-repeat;
 }
+.appendix-tabs{
+	padding-bottom:25px;
+	padding-top:17px;
+	padding-left:10px;
+}
+.appendix-tabs span{
+	font-family:MicrosoftYaHei;
+	font-size:18px;
+	line-height:36px;
+	color:#333333;
+	float:left;
+}
+.tab-box{
+	float:left;
+	line-height:36px;
+	margin-left:20px;
+}
+.tab-box a{
+	text-decoration:none;
+	padding:3px 10px;
+	border:1px solid #333333;
+	border-radius:5px;
+	margin-left: 10px;
+}
+.tab-box a:hover{
+	color:#293e6b;
+	background-color:#e3ecfd;
+	border:1px solid #6883b2;
+}
 .appendix-col{
 	float:left;
 	width: 380px;
@@ -2475,7 +2522,7 @@ dl.nav-sections ul.nav-sections li{
 	padding-left: 15px;
 	margin-top: 38px;
 	font-size:16px;
-	line-height:36px;
+	line-height:45px;
 	color: #333333;
 	padding-left: 33px;
 	font-family: MicrosoftYaHei

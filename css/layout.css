@@ -24,6 +24,13 @@
     border:1px solid #eeeeee;
     box-shadow: 5px 5px 5px 5px rgb(237 236 236 / 53%);
 }
+.note-tit{
+    float:left;
+    font-family:MicrosoftYaHei; 
+    font-size:14px;
+    color:#333333; 
+    line-height:23px;
+}
 .note-box a{
     text-decoration:none;
 }
@@ -48,6 +55,7 @@
 #close-note{
     float:right;
     margin-bottom: 10px;
+    line-height:23px;
 }
 #my-collection{
     position: relative;color: #333; border-radius: 4px 4px 0 0; background-image: none; background-color: #fff;
@@ -70,8 +78,9 @@ li#my-collection:hover{border-bottom:0px;}
     float:right;
 }
 .collection-content .book-search-bar{
-    clear:both;
-    margin-left:875px;
+    float:right;
+    margin-top:5px;
+    margin-bottom:15px;
 }
 #collection-booklist dd{
     border-bottom: 0px;
@@ -85,6 +94,7 @@ li#my-collection:hover{border-bottom:0px;}
 }
 #collection-booklist dd.first-line{
     margin-top: 20px;
+    clear:both;
 }
 .collection-box{
     position:relative;
@@ -514,7 +524,7 @@ div.translate-header span{
 /*==================== 2021 书目详情 start ===================*/
 .banner-book-dt{
     background: url("../images/rst-banner.png") no-repeat top;
-    background-size:105% 123px;
+    background-size:105% 166px;
     padding-top:10px;
     padding-bottom:40px;
 }
@@ -529,17 +539,17 @@ div.translate-header span{
     box-shadow: 0px 2px 11px 0px 
         rgba(234, 234, 234, 0.58);
     background-color: #fff;
-    margin-top:9px;
-    padding-bottom:30px;
+    margin-top:-10px;
+    padding-bottom:24px;
 }
 .dt-box-header{
-    height:40px;
+    height:35px;
     width:1110px;
     margin:0 auto;
     border-bottom: 1px solid #eeeeee;
 }
 .dt-box-header a{
-    line-height: 40px;
+    line-height:35px;
     text-decoration: none;
     float:right;
     margin-right: 20px;
@@ -549,14 +559,14 @@ div.translate-header span{
 }
 .dt-box-content{
     width:100%;
-    padding:22px 50px 0px 50px;
+    padding:10px 50px 0px 50px;
 }
 .dt-box-book{
     position:relative;
     width: 131px;
     height: 192px;
     float:left;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 10px;
     background-color: #eeeeee;
     box-shadow: 0px 3px 10px 0px 
@@ -600,7 +610,7 @@ div.book-annotation{
 }
 .dt-con-tit{
     height:42px;
-    margin-bottom:15px;
+    margin-bottom:9px;
 }
 .dt-con-tit span{
     line-height:42px;
@@ -656,7 +666,11 @@ p.col-con-para{
 .dt-con-col2 .col-con-para{
     padding-left: 5px;
 }
-.show-more-dt-col{display:block; clear:both;}
+a.show-more-dt-col{
+    display:block; 
+    clear:both;
+    text-decoration:none;
+}
 .dt-col-more{display:none;}
 /*==================== 2021 书目详情 end ===================*/
 /*=============详情列表 start=============*/
@@ -1182,6 +1196,7 @@ ul.basic-info li{
 }
 ul.basic-info li a{
     color:#696969;
+    text-decoration:none;
 }
 .info-divider{
     width:1px;

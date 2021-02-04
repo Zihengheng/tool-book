@@ -96,7 +96,7 @@
             <li><a href="javascript:void(0);">部首<i class="icon"></i></a></li>
             <li><a href="javascript:void(0);">笔画<i class="icon"></i></a></li>
             <li><a href="javascript:void(0);">拼音<i class="icon"></i></a></li>
-             <li><a href="javascript:void(0);">通配符说明<i class="icon"></i></a></li>
+            <!-- <li><a href="javascript:void(0);">通配符说明<i class="icon"></i></a></li> -->
           </ul>
         </div><!--search-nav-->
 
@@ -442,52 +442,277 @@
       <!-- dt-leftbar start -->
       <div class="dt-leftbar prof">
         <div class="dt-leftbar-title">
-          <span>词条索引</span>
+          <ul class="navbar-nav">
+            <li class="cur"><a href="javascript:void(0);">音序</a></li>
+            <li><a href="javascript:void(0);">笔画</a></li>
+            <li><a href="javascript:void(0);">主题</a></li>
+          </ul>
         </div><!-- end of leftbar-title -->
         <div class="dt-book-title">
           <span>马克思主义哲学大辞典</span>
         </div>
-        <div class="dt-book-navbar panel-group" id="hyk-book-nav">
+        <div class="dt-book-navbar panel-group active" id="dt-book-nav1">
           <div class="panel">
             <div class="panel-heading">
-              <a href="#bnav-one" data-toggle="collapse" data-parent="#dt-book-nav" class="toggle-btn">-</a>
-              <ul class="dt-chapters">
-                <li><a href="#" data-toggle="tab">诗</a></li>
+              <a href="#bnav-one" data-toggle="collapse" data-parent="#dt-book-nav1" class="toggle-btn">-</a>
+              <ul class="dt-chapters" id="">
+                <li><a href="#a" data-toggle="tab">Aa</a></li>
               </ul>
             </div>
             <div id="bnav-one" class="panel-collapse collapse in">
               <div class="panel-body">
-                  <dl class="nav-sections">
-                    <dd>
-                      <div class="nav-section-title">
-                      <a href="#subsection-1" data-toggle="collapse" class="toggle-btn">-</a>
-                        <span>辩证唯物主义</span>
-                      </div>
-                      <ul id="subsection-1" class="collapse in nav-sections">
-                        <li><a href="#" data-toggle="tab">客观辩证法</a></li>
-                        <li><a href="#" data-toggle="tab">主观辩证法</a></li>
-                        <li><a href="#" data-toggle="tab">马克思主义辩证法</a></li>
-                        <li class="active"><a href="#ziran" data-toggle="tab">自然辩证法</a></li>
-                        <li><a href="#" data-toggle="tab">历史辩证法</a></li>
-                        <li><a href="#" data-toggle="tab">军事辩证法</a></li>
-                        <li><a href="#" data-toggle="tab">形而上学</a></li>
-                        <li><a href="#" data-toggle="tab">庸俗进化论</a></li>
-                      </ul>
-                    </dd>
-                    <dd>
-                      <div class="nav-section-title">
-                      <a href="#subsection-2" data-toggle="collapse" class="toggle-btn">-</a>
-                        <span>历史唯物主义</span>
-                      </div>
-                      <ul id="subsection-2" class="collapse nav-sections">
-                        <li><a href="#" data-toggle="tab">客观辩证法</a></li>
-                        <li><a href="#" data-toggle="tab">主观辩证法</a></li>
-                      </ul>
-                    </dd>
-                  </dl>
-              </div><!-- father panel-body -->
-            </div><!-- father panel-collapse -->
+                <ul id="nav1-sections" class="nav-sections">
+                  <li>
+                    <a href="#sx" data-toggle="tab">数学</a>
+                  </li>
+                  <li><a href="#cdsx" data-toggle="tab">初等数学</a></li>
+                  <li><a href="#sjx" data-toggle="tab">三角学</a></li>
+                  <li><a href="#dsx" data-toggle="tab">代数学</a></li>
+                  <li><a href="#jhx" data-toggle="tab">几何学</a></li>
+                  <li><a href="#jxjh" data-toggle="tab">解析几何</a></li>
+                  <li><a href="#zbjh" data-toggle="tab">坐标几何</a></li>
+                  <li><a href="#gdsx" data-toggle="tab">高等数学</a></li>
+                </ul>
+              </div>
+            </div>
           </div><!-- end of a panel -->
+
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-two" data-toggle="collapse" data-parent="#dt-book-nav1" class="toggle-btn">+</a>
+              <ul class="dt-chapters">
+                <li><a href="#b" data-toggle="tab">Bb</a></li>
+              </ul>
+            </div>
+            <div id="bnav-two" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="nav2-sections" class="nav-sections">
+                  <li>
+                    <a href="#nav2-cha1" data-toggle="tab">章节1</a>
+                  </li>
+                  <li><a href="#nav2-cha2" data-toggle="tab">章节2</a></li>
+                  <li><a href="#nav2-cha3" data-toggle="tab">章节3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-three" data-toggle="collapse" data-parent="#dt-book-nav1" class="toggle-btn">+</a>
+              <ul class="dt-chapters">
+                <li><a href="#c" data-toggle="tab">Cc</a></li>
+              </ul>
+            </div>
+            <div id="bnav-three" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="nav3-sections" class="nav-sections">
+                  <li>
+                    <a href="#nav3-cha1" data-toggle="tab">章节1</a>
+                  </li>
+                  <li><a href="#nav3-cha2" data-toggle="tab">章节2</a></li>
+                  <li><a href="#nav3-cha3" data-toggle="tab">章节3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-four" data-toggle="collapse" data-parent="#dt-book-nav1" class="toggle-btn">+</a>
+              <ul class="dt-chapters">
+                <li><a href="#d" data-toggle="tab">Dd</a></li>
+              </ul>
+            </div>
+            <div id="bnav-four" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="nav4-sections" class="nav-sections">
+                  <li>
+                    <a href="#nav4-cha1" data-toggle="tab">章节1</a>
+                  </li>
+                  <li><a href="#nav4-cha2" data-toggle="tab">章节2</a></li>
+                  <li><a href="#nav4-cha3" data-toggle="tab">章节3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+        </div>
+        <!-- end of the panel group -->
+        <div class="dt-book-navbar panel-group" id="dt-book-nav2">
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-one" data-toggle="collapse" data-parent="#dt-book-nav2" class="toggle-btn">-</a>
+              <ul class="dt-chapters" id="">
+                <li><a href="#a" data-toggle="tab">Aa2</a></li>
+              </ul>
+            </div>
+            <div id="bnav-one" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <ul id="nav1-sections" class="nav-sections">
+                  <li>
+                    <a href="#sx" data-toggle="tab">数学</a>
+                  </li>
+                  <li><a href="#cdsx" data-toggle="tab">初等数学</a></li>
+                  <li><a href="#sjx" data-toggle="tab">三角学</a></li>
+                  <li><a href="#dsx" data-toggle="tab">代数学</a></li>
+                  <li><a href="#jhx" data-toggle="tab">几何学</a></li>
+                  <li><a href="#jxjh" data-toggle="tab">解析几何</a></li>
+                  <li><a href="#zbjh" data-toggle="tab">坐标几何</a></li>
+                  <li><a href="#gdsx" data-toggle="tab">高等数学</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-two" data-toggle="collapse" data-parent="#dt-book-nav2" class="toggle-btn">+</a>
+              <ul class="dt-chapters">
+                <li><a href="#b" data-toggle="tab">Bb</a></li>
+              </ul>
+            </div>
+            <div id="bnav-two" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="nav2-sections" class="nav-sections">
+                  <li>
+                    <a href="#nav2-cha1" data-toggle="tab">章节1</a>
+                  </li>
+                  <li><a href="#nav2-cha2" data-toggle="tab">章节2</a></li>
+                  <li><a href="#nav2-cha3" data-toggle="tab">章节3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-three" data-toggle="collapse" data-parent="#dt-book-nav2" class="toggle-btn">+</a>
+              <ul class="dt-chapters">
+                <li><a href="#c" data-toggle="tab">Cc</a></li>
+              </ul>
+            </div>
+            <div id="bnav-three" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="nav3-sections" class="nav-sections">
+                  <li>
+                    <a href="#nav3-cha1" data-toggle="tab">章节1</a>
+                  </li>
+                  <li><a href="#nav3-cha2" data-toggle="tab">章节2</a></li>
+                  <li><a href="#nav3-cha3" data-toggle="tab">章节3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-four" data-toggle="collapse" data-parent="#dt-book-nav2" class="toggle-btn">+</a>
+              <ul class="dt-chapters">
+                <li><a href="#d" data-toggle="tab">Dd</a></li>
+              </ul>
+            </div>
+            <div id="bnav-four" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="nav4-sections" class="nav-sections">
+                  <li>
+                    <a href="#nav4-cha1" data-toggle="tab">章节1</a>
+                  </li>
+                  <li><a href="#nav4-cha2" data-toggle="tab">章节2</a></li>
+                  <li><a href="#nav4-cha3" data-toggle="tab">章节3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+        </div>
+        <!-- end of the panel group -->
+        <div class="dt-book-navbar panel-group" id="dt-book-nav3">
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-one" data-toggle="collapse" data-parent="#dt-book-nav3" class="toggle-btn">-</a>
+              <ul class="dt-chapters" id="">
+                <li><a href="#a" data-toggle="tab">Aa3</a></li>
+              </ul>
+            </div>
+            <div id="bnav-one" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <ul id="nav1-sections" class="nav-sections">
+                  <li>
+                    <a href="#sx" data-toggle="tab">数学</a>
+                  </li>
+                  <li><a href="#cdsx" data-toggle="tab">初等数学</a></li>
+                  <li><a href="#sjx" data-toggle="tab">三角学</a></li>
+                  <li><a href="#dsx" data-toggle="tab">代数学</a></li>
+                  <li><a href="#jhx" data-toggle="tab">几何学</a></li>
+                  <li><a href="#jxjh" data-toggle="tab">解析几何</a></li>
+                  <li><a href="#zbjh" data-toggle="tab">坐标几何</a></li>
+                  <li><a href="#gdsx" data-toggle="tab">高等数学</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-two" data-toggle="collapse" data-parent="#dt-book-nav3" class="toggle-btn">+</a>
+              <ul class="dt-chapters">
+                <li><a href="#b" data-toggle="tab">Bb</a></li>
+              </ul>
+            </div>
+            <div id="bnav-two" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="nav2-sections" class="nav-sections">
+                  <li>
+                    <a href="#nav2-cha1" data-toggle="tab">章节1</a>
+                  </li>
+                  <li><a href="#nav2-cha2" data-toggle="tab">章节2</a></li>
+                  <li><a href="#nav2-cha3" data-toggle="tab">章节3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-three" data-toggle="collapse" data-parent="#dt-book-nav3" class="toggle-btn">+</a>
+              <ul class="dt-chapters">
+                <li><a href="#c" data-toggle="tab">Cc</a></li>
+              </ul>
+            </div>
+            <div id="bnav-three" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="nav3-sections" class="nav-sections">
+                  <li>
+                    <a href="#nav3-cha1" data-toggle="tab">章节1</a>
+                  </li>
+                  <li><a href="#nav3-cha2" data-toggle="tab">章节2</a></li>
+                  <li><a href="#nav3-cha3" data-toggle="tab">章节3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-four" data-toggle="collapse" data-parent="#dt-book-nav3" class="toggle-btn">+</a>
+              <ul class="dt-chapters">
+                <li><a href="#d" data-toggle="tab">Dd</a></li>
+              </ul>
+            </div>
+            <div id="bnav-four" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="nav4-sections" class="nav-sections">
+                  <li>
+                    <a href="#nav4-cha1" data-toggle="tab">章节1</a>
+                  </li>
+                  <li><a href="#nav4-cha2" data-toggle="tab">章节2</a></li>
+                  <li><a href="#nav4-cha3" data-toggle="tab">章节3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
         </div>
         <!-- end of the panel group -->
         <div class="chi-knowledge">
@@ -613,33 +838,6 @@
                                 <li></li>
                                 <li></li>
                                 <li></li>
-                              </ul>
-                        </div>
-                        <!-- end of the content box -->
-                    </dd>
-                    <!-- end of a list -->
-                    <dd>
-                        <div class="seq"><div class="lan-list-icon"></div></div>
-                        <div class="middle">
-                          <!-- <div class="list-title">
-                            <a href="#"><span class="key">drift</span></a>
-                            <span>汉语大辞典&康熙字典</span>
-                            <span class="position"></span>
-                            <span class="chuban"></span>
-                          </div> -->
-                            <p class="abstract">床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”。明胡应麟说:“太白诸绝句床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”.</p>
-                            <ul class="basic-info clearfix">
-                              <li><span>字数：3621</span><div class="info-divider"></div></li>
-                              <li><span>图片数：12</span><div class="info-divider"></div></li>
-                              <li><span>表格数：3</span><div class="info-divider"></div></li>
-                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
-                              <li><a href="#"><span>进入条目</span></a></li>
-                            </ul>
-                              <ul class="pic-list clearfix">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
                                 <li></li>
                               </ul>
                         </div>
@@ -669,6 +867,36 @@
                                 <li></li>
                                 <li></li>
                                 <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+                    <dd>
+                        <div class="seq"><div class="lan-list-icon"></div></div>
+                        <div class="middle">
+                          <!-- <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div> -->
+                            <p class="abstract">床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”。明胡应麟说:“太白诸绝句床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”.</p>
+                            <ul class="basic-info clearfix">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><span>表格数：3</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                            </ul>
+                              <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
                               </ul>
                         </div>
                         <!-- end of the content box -->
@@ -697,6 +925,7 @@
                                 <li></li>
                                 <li></li>
                                 <li></li>
+                                <li></li>
                               </ul>
                         </div>
                         <!-- end of the content box -->
@@ -720,6 +949,7 @@
                               <li><a href="#"><span>进入条目</span></a></li>
                             </ul>
                               <ul class="pic-list clearfix">
+                                <li></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>
@@ -795,33 +1025,6 @@
                                 <li></li>
                                 <li></li>
                                 <li></li>
-                              </ul>
-                        </div>
-                        <!-- end of the content box -->
-                    </dd>
-                    <!-- end of a list -->
-                    <dd>
-                        <div class="seq"><div class="lan-list-icon"></div></div>
-                        <div class="middle">
-                          <!-- <div class="list-title">
-                            <a href="#"><span class="key">drift</span></a>
-                            <span>汉语大辞典&康熙字典</span>
-                            <span class="position"></span>
-                            <span class="chuban"></span>
-                          </div> -->
-                            <p class="abstract">床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”。明胡应麟说:“太白诸绝句床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”.</p>
-                            <ul class="basic-info clearfix">
-                              <li><span>字数：3621</span><div class="info-divider"></div></li>
-                              <li><span>图片数：12</span><div class="info-divider"></div></li>
-                              <li><span>表格数：3</span><div class="info-divider"></div></li>
-                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
-                              <li><a href="#"><span>进入条目</span></a></li>
-                            </ul>
-                              <ul class="pic-list clearfix">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
                                 <li></li>
                               </ul>
                         </div>
@@ -846,6 +1049,36 @@
                               <li><a href="#"><span>进入条目</span></a></li>
                             </ul>
                               <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+                    <dd>
+                        <div class="seq"><div class="lan-list-icon"></div></div>
+                        <div class="middle">
+                          <!-- <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div> -->
+                            <p class="abstract">床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”。明胡应麟说:“太白诸绝句床前明月光①,疑是地上霜。举头望明月②,低头思故乡。〔注〕　①明月光:一作“看月光”。　②望明月:一作“望山月”.</p>
+                            <ul class="basic-info clearfix">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><span>表格数：3</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                            </ul>
+                              <ul class="pic-list clearfix">
+                                <li></li>
                                 <li></li>
                                 <li></li>
                                 <li></li>

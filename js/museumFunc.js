@@ -46,9 +46,23 @@ $(function(){
     //2021 范围：所有museum 条目页（detail page）
     //说明：设置左边栏高度等于内容高度
     setHeight();
+
+    //2021 范围：所有museum 条目页（detail page）
+    //标签切换
+    tabFunc(".dt-leftbar", ".dt-leftbar-title li", "cur", ".dt-book-navbar", "active", "mousedown");
+
+    //2021 范围：附录库条目页
+    //说明：固定左边栏
+    fixMenu();
+
+    //2021 范围：mesuem detail page
+    //说明：改变字体
+    setFontSize();
+
     //2021 标签切换：语词库首页
     tabFunc(".dive-in", "#section-tab li", "cur", ".di-con", "active", "mousedown");
     tabFunc(".dive-in", "#section-tab li", "cur", ".di-con", "active", "mousedown");
+
     //语词库侧边栏
     //menu-1
    $('#menu-1').collapse('show');
@@ -137,10 +151,6 @@ $(function(){
        $(this).prev().children(".toggle-btn").text("+");
     })
 
-    //边栏自动收缩
-    // $('.dt-book-navbar .panel-collapse').on('show.bs.collapse', function () {
-    //     $(this).parents(".panel").
-    // })
     //防止高亮重叠
     $(".nav-sections a").click(function(){
         var _this = this;
@@ -178,7 +188,7 @@ $(function(){
     })
 });
   // 2021 tab标签切换
- function tabFunc(boxDom, tablist, current, tabcont, active, mouseEvent){
+  function tabFunc(boxDom, tablist, current, tabcont, active, mouseEvent){
      $(boxDom).each(function () {
                 var _this = $(this);
                 var index = 0;
@@ -195,6 +205,58 @@ $(function(){
   //2021 范围：所有museum 条目页（detail page）
   //说明：设置左边栏高度等于内容高度
   function setHeight(){
-    var contentHeight =$(".dt-rightbar").outerHeight();
+    var contentHeight =$(".dt-rightbar").outerHeight(true);
     $(".dt-leftbar").css("height", contentHeight);
   };
+
+  //2021 范围：附录库条目页
+  //说明：固定左边菜单栏
+  function fixMenu(){
+    if($(".dt-leftbar").hasClass("apd")){
+        var menuPosition = $("#apd-nav").offset().top;
+        var footerPosition = $(".footer").offset().top;
+        var menuH = $("#apd-nav").outerHeight(true);
+        var footerH = $(".footer").outerHeight(true);
+        $(window).scroll(function(){
+            var iNum = $(window).scrollTop();
+            if(iNum <= menuPosition){
+                $("#apd-nav").css({
+                    'position':'static',
+                });
+            }
+            else if (iNum > (footerPosition + menuH)){
+                $("#apd-nav").css({
+                    'position':'fixed',
+                    'bottom':footerH + menuH,
+                    'width':'289px',
+                });
+            }
+            else{
+                $("#apd-nav").css({
+                    'position':'fixed',
+                    'top':'0',
+                    'width':'289px',
+                });
+            }
+        });
+    }
+    else return;
+  };
+  //2021 范围：museum detail page
+  //说明：设置字体大小
+  function setFontSize(){  //设置字体大中小
+            $(".size-change").find("li").click(function () {
+                $(this).addClass("on").siblings().removeClass("on");
+                // btnA = $(this).find("a");
+                // textContent = $(this).parents(".result-box").find(".item-details");
+                // if(btnA.hasClass("l-words")){//大
+                //     textContent.removeClass("content-s").addClass("content-l");
+                // }
+                // if(btnA.hasClass("m-words")){//中
+                //     textContent.removeClass("content-s content-l");
+                // }
+                // if(btnA.hasClass("s-words")){//小
+                //     textContent.removeClass("content-l").addClass("content-s");
+                // }
+            });
+        };

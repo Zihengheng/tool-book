@@ -182,7 +182,7 @@ border:0px;
 padding:0px;text-decoration:none; margin-top:15px;}
 .searchmain .btn-wildcard:active{ border: 1px solid #a1a5a8; }
 .searchmain .search-btn { width:117px; height:50px; line-height:50px; font-size:20px;}
-.searchmain .search-btn:hover{background-color:#f9de19;}
+.searchmain .search-btn:hover{background-color:#53a2e3;}
 .searchmain .sort{ margin-top: 10px; }
 .searchmain .sort-default{ background-color: #fff; }
 .searchmain .sort span{ width: 36px; }
