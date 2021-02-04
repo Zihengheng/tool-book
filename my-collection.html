@@ -12,7 +12,8 @@
    <link rel="stylesheet" type="text/css" href="css/layout.css">
   <link rel="stylesheet" type="text/css" href="css/result.css">
   <script type="text/javascript" src="js/lib/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.input.js"></script><!--输入框事件-->
+  <script type="text/javascript" src="js/jquery.input.js"></script>
+  <!--输入框事件-->
   <script type="text/javascript" src="js/homePage.js"></script>
   <script type="text/javascript" src="js/init.js"></script>
   <script type="text/javascript" src="js/filter.js"></script>
@@ -22,8 +23,8 @@
   <div class="note-box">
     <a href="javascript:void(0);" id="close-note">关闭</a>
     <textarea name="" id="input-note" cols="75" rows="4" aria-expanded="false" autocomplete="off" placeholder="请输入笔记内容"></textarea>
-    <a href="javascript:void(0);">保存</a>
-    <a href="javascript:void(0);">编辑</a>
+    <a href="javascript:void(0);" class="save-note btn">保存</a>
+    <a href="javascript:void(0);" class="edit-note btn">编辑</a>
   </div>
   <div class="rst-header">
     <div class="top-bar">
@@ -43,9 +44,9 @@
         <div class="head-right pull-right">
         <ul class="navbar-nav">
           <li><a href="#">注册</a></li>
-          <li><a href="#" class="down">机构登陆<img src="images/downiconh.png" alt=""></a></li>
-          <li><a href="#" class="down">个人登陆<img src="images/downiconh.png" alt=""></a></li>
-          <li><a href="my-collection.html">个人书房</a></li>
+            <li class="login"><a href="javascript:void(0);" class="login-btn"><i>机构登陆<span class="down-icon"></span></i></a></li>
+            <li class="login"><a href="javascript:void(0);" class="login-btn"><i>个人登陆<span class="down-icon"></span></i></a></li>
+            <li><a href="my-collection.html">个人书房</a></li>
         </ul>
       </div><!-- end of right bar -->
       </div><!-- end of the container -->

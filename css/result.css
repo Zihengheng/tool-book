@@ -45,7 +45,6 @@ body > div.rst-header > div.top-bar{
 }
 .top-bar li a:hover{
 	color:#53a2e3;
-	/*font-weight:bold;*/
 }
 div.left-bar ul li{
 	float:left;
@@ -53,37 +52,38 @@ div.left-bar ul li{
 	line-height:36px;
 	text-align:center;
 }
-.head-right ul{
-    width:400px;
-}
 .adv-search-btn{
 	float:left;
 }
 .head-right ul li{
     line-height:30px;
-}
-.head-right ul li a {
-  /*  color: #333333;*/
-    margin-right: 10px;
-    padding-left: 10px;
-}
-.head-right ul li a.down img{
-	margin-left:10px; 
+    width:67px;
 }
 .head-right .navbar-nav{
 	margin-top:4px;
-	margin-right: -90px;
 }
-/*background*/
-/*.head-right ul li a.down{
-	color: #444;
-    background-color: #cddcdd;
-    height:36px;
-}*/
-
+ul li.login{
+	width:115px;
+}
+.down-icon{
+	width:8px;
+	height:5px;
+	display:inline-block;
+	background:url("../images/downicon.png") no-repeat;
+	vertical-align:middle;
+	margin-left:8px;
+	margin-top:-2px;
+}
+.login-btn i{
+	padding:3px 10px;
+	background-color:#cddcdd;
+}
+.login-btn:hover i{
+	color:#fff;
+	background-color:#53a2e3;
+}
 /*banner*/
 .banner-sm{
-	/*height:100px;*/
 	padding-top:14px;
 	padding-bottom:10px;
 	background: url("../images/banner-bg2.jpg") no-repeat;
@@ -494,7 +494,7 @@ input.book-input{
 	color:white;
 }
 .find-book:hover{
-	background-color: #f9de19;
+	background-color:#53a2e3;
 	color:#fff;
 }
 .book-search-bar{

@@ -36,10 +36,10 @@
         </div><!-- end of the laft-bar -->
         <div class="head-right pull-right">
         <ul class="navbar-nav">
-          <li><a href="#">注册</a></li>
-          <li><a href="#" class="down">机构登陆<img src="images/downiconh.png" alt=""></a></li>
-          <li><a href="#" class="down">个人登陆<img src="images/downiconh.png" alt=""></a></li>
-          <li><a href="my-collection.html">个人书房</a></li>
+            <li><a href="#">注册</a></li>
+            <li class="login"><a href="javascript:void(0);" class="login-btn"><i>机构登陆<span class="down-icon"></span></i></a></li>
+            <li class="login"><a href="javascript:void(0);" class="login-btn"><i>个人登陆<span class="down-icon"></span></i></a></li>
+            <li><a href="my-collection.html">个人书房</a></li>
         </ul>
       </div><!-- end of right bar -->
       </div><!-- end of the container -->
@@ -49,7 +49,8 @@
       <img src="images/brand-icon3.png" alt="">
       <div class="searchmain">
         <div class="search-form">
-          <div class="sort" id="search-type">
+          <div class="input-box">
+            <div class="sort" id="search-type">
               <div class="sort-default" id="type">
                 <span>全文</span>
                 <i class="sort-icon">▼</i>
@@ -63,8 +64,7 @@
                 <li><a href="javascript:void(0);">人物</a></li>
               </ul>
             </div>
-          <div class="input-box">
-            <input class="search-input" type="text" autocomplete="off" placeholder="请输入检索词·" maxlength="100">
+            <input class="search-input" type="text" autocomplete="off" placeholder="请输入检索词" maxlength="100">
             <a class="btn-wildcard" href="javascript:void(0);" data-toggle="tooltip" title="通配符”?”代表该位置有且仅有1个字符（=1），如检索“?细胞”可检出“红细胞”、“白细胞”。通配符可放在检索词任意位置，可组合使用，如“细?胞*”可检出“细菌胞质素”。" data-placement = "bottom">?</a>
             <a class="btn-wildcard" href="javascript:void(0);" data-toggle="tooltip" title="通配符”*”代表该位置有任意个字符（≥0），如检索“*细胞”可检出“细胞”、“红细胞”、“白细胞”、“巨噬细胞”等。通配符可放在检索词任意位置，可组合使用，如“细?胞*”可检出“细菌胞质素”。" data-placement = "bottom">*</a>
 

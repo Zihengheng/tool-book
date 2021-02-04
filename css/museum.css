@@ -145,7 +145,6 @@ div.pn-container{
 .topbar-left ul li a:hover,.topbar-right ul li a:hover {
 	text-decoration:none;
 	color:#53a2e3;
-	/*font-weight:bold;*/
 }
 .topbar-right ul li{
 	width:80px;
@@ -154,8 +153,24 @@ div.pn-container{
 }
 ul li.login{
 	width:100px;
-	background: url("../images/downicon.png") no-repeat right;
 	margin-right: 10px;
+}
+.down-icon{
+	width:8px;
+	height:5px;
+	display:inline-block;
+	background:url("../images/downicon.png") no-repeat;
+	vertical-align:middle;
+	margin-left:8px;
+	margin-top:-2px;
+}
+.login-btn i{
+	padding:3px 10px;
+	background-color:#cddcdd;
+}
+.login-btn:hover i{
+	color:#fff;
+	background-color:#53a2e3;
 }
 /* banner 部分*/
 .msm-banner{
@@ -247,7 +262,7 @@ ul li.login{
 	line-height:38px;
 }
 .searchmain .search-btn:hover{
-	background-color: #f9de19;
+	background-color: #53a2e3;
 }
 div.adv-group{
 	display: inline-block;
@@ -319,7 +334,7 @@ li.rec3{
 	text-decoration:none;
 }
 .recomm ul li:hover{
-	border:solid 1px #f9de19;
+	border:solid 1px #53a2e3;
 }
 /*======= 语词库 header end =========* /
 
@@ -620,7 +635,7 @@ input.search-words{
 	color:white;
 }
 .section-search input.search-btn:hover{
-	background-color:#f9de19;
+	background-color:#53a2e3;
 	color:#fff;
 }
 #di-content{
@@ -1295,7 +1310,7 @@ ul.size-change li a:hover{
 	outline:none;
 }
 .dt-search-bar .btn:hover{
-	background-color: #f9de19;
+	background-color: #53a2e3;
 	color:#fff;
 }
 /*===== 左右分栏， 分栏标题 end =====*/
@@ -1915,17 +1930,26 @@ ul.refer-list li em{
 	height:25px;
 	margin-left: 10px;
 }
-#like-btn{
-	background: url("../images/operation-icon.png") no-repeat;
-	background-position: -8px;
+.like-btn{
+	background: url("../images/appre-op.png") no-repeat;
+	background-position:-8px 0px;
 }
-#down-btn{
-	background: url("../images/operation-icon.png") no-repeat;
-	background-position: -48px;
+.down-btn{
+	background: url("../images/appre-op.png") no-repeat;
+	background-position: -48px 0px;
 }
-#next-btn{
-	background: url("../images/operation-icon.png") no-repeat;
-	background-position: -90px;
+.next-btn{
+	background: url("../images/appre-op.png") no-repeat;
+	background-position: -90px 1px;
+}
+.like-btn:hover{
+	background-position:-8px -26px;
+}
+.down-btn:hover{
+	background-position: -48px -26px;
+}
+.next-btn:hover{
+	background-position: -90px -25px;
 }
 .p-title{
 	font-family: MicrosoftYaHei;

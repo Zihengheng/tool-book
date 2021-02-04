@@ -27,12 +27,23 @@
 .note-box a{
     text-decoration:none;
 }
+.note-box .btn{
+    padding:3px 20px;
+    background-color: #70d2f7;
+    color:#fff;
+    font-family: MicrosoftYaHei;
+    text-align:center;
+}
+.note-box .btn:hover{
+    background-color: #53a2e3;
+}
+.edit-note{margin-left:15px;}
 #input-note{
     display:block;
     margin:10px auto 0px auto;
     border:1px solid #666;
     clear:both;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 #close-note{
     float:right;
@@ -1016,7 +1027,9 @@ line-height:38px;}
 .result-con-l .btn-subscribe,
 .result-con-l .btn-search-his{ display: inline-block; vertical-align: middle; padding: 2px 15px; margin-left: 5px; line-height: 18px; color: #666666; font-size: 12px;text-align: center;background-color: #fff; border: 1px solid #666666; border-radius:5px;}
 .result-con-l .btn-subscribe:hover,
-.result-con-l .btn-search-his:hover{border:1px solid #6883b2; color:#293e6b;text-decoration:none; }
+.result-con-l .btn-search-his:hover,
+.result-con-l .btn-search-his.cur,
+.result-con-l .btn-subscribe.cur{background-color:#e3ecfd;border:1px solid #6883b2; color:#293e6b;text-decoration:none; }
 
 
 .result-con-r{ float: right; }
