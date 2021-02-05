@@ -16,6 +16,8 @@
   <!--输入框事件-->
   <script type="text/javascript" src="js/init.js"></script>
   <script type="text/javascript" src="js/museumFunc.js"></script>
+  <!-- 引入 echarts.js -->
+    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
 </head>
 
 <body>
@@ -1022,7 +1024,7 @@
               <!-- <a>导图1</a><a>导图2</a> -->
              <div class="clearfix"></div>
             </div><!-- chart-control -->
-            <div class="chart"></div>
+            <div id="chart"></div>
             <div class="word-tree">
               <div class="word-tree-root">
                 <div class="word-tree-start">源流</div>
@@ -1031,7 +1033,7 @@
               <div class="word-tree-branches">
                 <div class="branch top" id="branch1">
                   <div class="linker"></div>
-                  <div class="world-col">字形</div>
+                  <div class="world-col cur">字形</div>
                   <div class="branch-connector">
                     <img src="images/minus.png" alt="minus">
                   </div>
@@ -1078,6 +1080,7 @@
                   <div class="branch-info"><span>形声字，篆文从后...</span></div>
                 </div>
               </div><!-- word-tree-branches -->
+              <div class="clearfix"></div>
             </div><!-- word-tree -->
           </div> <!-- chart-content -->
           <div class="clearfix"></div>

@@ -1592,7 +1592,7 @@ p.word-graph span{
 }
 /* 词链导图 section*/
 .word-chart{
-	padding-bottom: 68px;
+	padding-bottom:90px;
 }
 .chart-content{
 	padding:15px 0px 15px 22px;
@@ -1628,15 +1628,14 @@ p.word-graph span{
 .chart-content a:hover{
 	color:#53a2e4;
 }
-.chart{
+#chart{
 	width:500px;
-	height:530px;
-	background: url("../images/yck-4.jpg") no-repeat center;
-	margin:0 auto;
+	height:500px;
+	margin:50px auto 50px auto;
 }
-.word-tree{
+/*.word-tree{
 	padding-top:40px;
-}
+}*/
 .word-tree-root{
 	width:120px;
 	height:280px;
