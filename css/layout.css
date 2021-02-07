@@ -1098,7 +1098,7 @@ line-height:38px;}
 
 /*工具栏====全选、批量下载、导出参考文献、计量可视化分析*/
 .toolbar-col .checkAll{ margin-right: 10px; cursor:pointer; }
-.toolbar-col .checkAll input{ margin-right:5px; margin-top:-5px; }
+.toolbar-col .checkAll input{ margin-right:5px; margin-top:-2px; }
 .toolbar-col .checkcount{ float: left; margin-right: 20px; }
 .toolbar-col .checkcount em{ color:#2266c7; margin-right: 10px; cursor: pointer; }
 .toolbar-col .clear-allcheck:hover{ color: #53a2e3; }
