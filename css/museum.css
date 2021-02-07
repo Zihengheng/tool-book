@@ -176,9 +176,8 @@ ul li.login{
 /* banner 部分*/
 .msm-banner{
 	width:100%;
-	height:400px;
-	background:url("../images/yck_banner.jpg") no-repeat;
-	background-size: 100% 261px;
+	height:320px;
+	background:url("../images/yck-banner.png") center 0 no-repeat;
 }
 .msm-banner .container{
 	padding-top:33px;
@@ -1850,9 +1849,6 @@ ul.refer-list li em{
 /*=================== 语词库条目内容结束 =====================*/
 
 /*========================= 鉴赏库 start =========================*/
-.msm-banner{
-	height:320px;
-}
 #jsk-banner{
 	background: url("../images/jsk_banner.jpg") no-repeat;
 	height:320px;
@@ -2494,6 +2490,7 @@ dl.nav-sections ul.nav-sections li{
 	padding:10px 15px 22px 15px;
 	border-bottom:1px solid #e3ecf1;  
 }
+#apd-nav.fixed{ position: fixed; top: 0; }
 .grammar-intro-container{
 	padding:42px 15px;
 }

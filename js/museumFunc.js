@@ -204,10 +204,14 @@ $(function(){
             })
   };
   //2021 范围：所有museum 条目页（detail page）
-  //说明：设置左边栏高度等于内容高度
+  //说明：设置左边栏高度等于最高高度
   function setHeight(){
-    var contentHeight =$(".dt-rightbar").outerHeight(true);
-    $(".dt-leftbar").css("height", contentHeight);
+    var contentHeight = $(".dt-rightbar").outerHeight(true);
+    var leftbarHeight = $(".dt-leftbar").outerHeight(true);
+    if(contentHeight >= leftbarHeight){
+        $(".dt-leftbar").css("height", contentHeight);
+    }
+    else return;
   };
 
   //2021 范围：附录库条目页
@@ -218,6 +222,7 @@ $(function(){
         var footerPosition = $(".footer").offset().top;
         var menuH = $("#apd-nav").outerHeight(true);
         var footerH = $(".footer").outerHeight(true);
+        var winH = $(window).height();
         $(window).scroll(function(){
             var iNum = $(window).scrollTop();
             if(iNum <= menuPosition){
@@ -242,7 +247,7 @@ $(function(){
         });
     }
     else return;
-  };
+  }; 
   //2021 范围：museum detail page
   //说明：设置字体大小
   function setFontSize(){  //设置字体大中小
