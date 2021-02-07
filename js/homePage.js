@@ -8,7 +8,9 @@ $(function () { $("[data-toggle='tooltip']").tooltip(); });
 $(function(){
 	$('#myTab a[href="#t1"]').tab('show');
 	$('#labels a[href="#zk"]').tab('show');
-
+    //范围：首页
+    //说明：背景浮动
+    // $('.hp-decor1').smart3d();
     //范围：首页
     //说明：书签标签切换
     // tabFunc(".hp-book", "#labels li", "cur", ".label-con", "active", "mousedown");
