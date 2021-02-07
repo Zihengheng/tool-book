@@ -13,8 +13,8 @@
   <script type="text/javascript" src="js/lib/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.input.js"></script><!--输入框事件-->
   <script type="text/javascript" src="js/homePage.js"></script>
-  <!--背景浮动事件-->
-  <script type="text/javascript" src="js/jquery.smart3d.js"></script>
+  <!-- 多行文本溢出省略 -->
+  <script src ="js/jquery.dotdotdot.js"></script>
 </head>
 
 <body>
@@ -417,7 +417,7 @@
 
     <div class="hp-book clearfix">
       <div class="tab-content" id="label-content">
-        <div class="tab-pane in active" id="zk">
+        <div class="label-con active" id="zk">
           <span class="hp-title">总库资源</span>
           <ul>
             <li><img src="images/icon-book.png" alt=""><span class="num">1200</span><span class="des">部工具书</span></li>
@@ -425,26 +425,57 @@
             <li><img src="images/icon-box.png" alt=""><span class="num">9</span><span class="des">个独立子产品</span></li>
           </ul>
         </div>
-        <div class="tab-pane" id="child">
+        <div class="label-con child">
           <span class="hp-title">独立子产品</span>
           <br>
           <span class="hp-sub">汉语大词典&康熙字典（知网版）</span>
-          <p>本产品具有专业的检索平台和知识关联功能，全面满足文史工作者一站式查找和研究字词源流、读音、释义与书证的需要</p>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+          <p>首次将《汉语大词典》、《汉语大词典订补》和《康熙字典》整合，满足研究字词源流、释义与书证的专业需求。</p>
+          <br>
+          <span class="hp-sub">商务印书馆·精品工具书数据库</span>
+          <p>权威、专业的工具书全文数据库，集成了商务印书馆29部精品汉语言类工具书，收词约35万条，6000余万字。</p>
+        </div>
+        <div class="label-con child">
+          <span class="hp-title">独立子产品</span>
+          <br>
+          <span class="hp-sub">植物志</span>
+          <p>基于《中国高等植物》和《世界维管植物》开发，另收录《药用植物辞典》、珍稀濒危保护植物等资料。</p>
+          <br>
+          <span class="hp-sub">“文革”中草药实用手册数据库</span>
+          <p>收录中草药群众运动中编写的各种中草药的书籍，为研究或了解中草药知识提供专业服务。</p>
+        </div>
+        <div class="label-con child">
+          <span class="hp-title">独立子产品</span>
+          <br>
+          <span class="hp-sub">中国基础教育精品工具书总库</span>
+          <p>是4000多部优质工具书的数字化集成，提供内容权威、方便快捷的的百科知识检索平台。</p>
+          <br>
+          <span class="hp-sub">智叟助教辅学平台</span>
+          <p>集成830多部适用于基础教育的权威工具书、300多部经典文学作品，是权威、精准的释疑解惑平台。</p>
+        </div>
+        <div class="label-con child">
+          <span class="hp-title">独立子产品</span>
+          <br>
+          <span class="hp-sub">知网词典</span>
+          <p>挖掘总库词典类数据，补充学术文献中的前沿词汇。分7部词典，收词2200余万条。</p>
+          <br>
+          <span class="hp-sub">建筑工程造价预算与规范数据库</span>
+          <p>收录1400多册工程造价类图书，约26万多页，4亿字，是最大的工程造价知识检索平台。</p>
+        </div>
+        <div class="label-con child">
+          <span class="hp-title">独立子产品</span>
+          <br>
+          <span class="hp-sub">中国规范术语：全国科学技术名词审定委员会公布名词</span>
+          <p>根据全国名词委审定公布并出版的数据制作开发，为研究人员正确、规范地使用专业术语提供免费服务。</p>
         </div>
       </div><!-- end of label-content -->
       <div class="btn-vertical">
         <ul id="labels" class="">
-          <li><a href="#zk" data-toggle="tab"><img src="images/label-5.png" class="nav" alt=""><span>01</span></a></li>
-          <li><a href="#child" data-toggle="tab"><img src="images/label-6.png" class="nav" alt=""><span>02</span></a></li>
-          <li><a href="#"><img src="images/lable-1.png" class="nav" alt=""><span>03</span></a></li>
-          <li><a href=""><img src="images/label-2.png" class="nav" alt=""><span>04</span></a></li>
-          <li><a href=""><img src="images/label-3.png" class="nav" alt=""><span>05</span></a></li>
-          <li><a href=""><img src="images/label-4.png" class="nav" alt=""><span>06</span></a></li>
+          <li class="cur"><a href="javascript:void(0);"><img src="images/label-5.png" class="nav" alt=""><span>01</span></a></li>
+          <li><a href="javascript:void(0);"><img src="images/label-6.png" class="nav" alt=""><span>02</span></a></li>
+          <li><a href="javascript:void(0);"><img src="images/lable-1.png" class="nav" alt=""><span>03</span></a></li>
+          <li><a href="javascript:void(0);"><img src="images/label-2.png" class="nav" alt=""><span>04</span></a></li>
+          <li><a href="javascript:void(0);"><img src="images/label-3.png" class="nav" alt=""><span>05</span></a></li>
+          <li><a href="javascript:void(0);"><img src="images/label-4.png" class="nav" alt=""><span>06</span></a></li>
         </ul>
       </div>
     </div><!-- end of hp-book -->
@@ -458,7 +489,7 @@
       <div class="section-title" id="ir-title">
         <span>收录资源</span>
         <br>
-        <span class="eng">INCLUDE RESOURCES</span>
+        <span class="eng">INCLUDED RESOURCES</span>
       </div>
       <div class="ir-container content-container">        
             <div class="ir-box left">
@@ -529,9 +560,9 @@
     <!------- 独家合作 sectction -------->
     <div class="section section-ep">
       <div class="section-title">
-        <span>独家合作</span>
+        <span>合作伙伴</span>
         <br>
-        <span class="eng">EXCLUSIVE PARTNERSHIP</span>
+        <span class="eng">COOPERATION PARTNERS</span>
       </div>
       <div class="ep-container">
         <div class="ep-tabs">
@@ -554,8 +585,14 @@
             <div id="cooperate"></div>
             <div class="ep-row1">
               <div class="ep-intro">
-                <div><span>上海辞书出版社</span></div>
-                <p>上海辞书出版社有限公司是中国最重要的工具书出版机构之一，主要出版综合性辞典、语文词典、专科辞典以及手册、年表、索引、年鉴等。其前身是成立于1958年8月的中华书局辞海编辑所，1978年1月改称现名，系我国首家工具书专业出版社。</p>
+                <div><a href="#">上海辞书出版社上海辞书出版社上海辞书出版社>></a></div>
+                <p class="intro-content limit">
+                  <span>合作资源有：</span>
+                  <span>《汉语常用语词典》、《中医人物词典》、《五百种明清小说博览》、《中国历史大辞典》、《当代汉语词典》、《中国文学大辞典》、《敦煌学大辞典》、《俚语隐语行话词典》汉语常用语词典》、《中医人物词典》、《五百种明清小说博览》、《中国历史大辞典》、《当代汉语词典》、《中国文学大辞典》、《敦煌学大辞典》、《俚语隐语行话词典》
+                 汉语常用语词典》、《中医人物词典》、《五百种明清小说博览》、《中国历史大辞典》、《当代汉语词典》、《中国文学大辞典》、《敦煌学大辞典》、《俚语隐语行话词典》
+                 汉语常用语词典》、《中医人物词典》、《五百种明清小说博览》、《中国历史大辞典》、《当代汉语词典》、《中国文学大辞典》、《敦煌学大辞典》、《俚语隐语行话词典》
+                 汉语常用语词典》、《中医人物词典》、《五百种明清小说博览》、《中国历史大辞典》、《当代汉语词典》、《中国文学大辞典》、《敦煌学大辞典》、《俚语隐语行话词典》</span>
+                </p>
               </div>
               <div class="ep-box box1">
                 <div class="count">01</div>
@@ -771,6 +808,11 @@
                 $("#return-top").hide();
             }
         });
+        $(function () {
+        $(".limit").dotdotdot({
+            wrap: 'letter'//这里中文要用letter
+        });
+    });
    </script>
   <!-- Bootstrap js引用 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

@@ -251,18 +251,18 @@ $(function(){
   //2021 范围：museum detail page
   //说明：设置字体大小
   function setFontSize(){  //设置字体大中小
-            $(".size-change").find("li").click(function () {
-                $(this).addClass("on").siblings().removeClass("on");
-                // btnA = $(this).find("a");
-                // textContent = $(this).parents(".result-box").find(".item-details");
-                // if(btnA.hasClass("l-words")){//大
-                //     textContent.removeClass("content-s").addClass("content-l");
-                // }
-                // if(btnA.hasClass("m-words")){//中
-                //     textContent.removeClass("content-s content-l");
-                // }
-                // if(btnA.hasClass("s-words")){//小
-                //     textContent.removeClass("content-l").addClass("content-s");
-                // }
-            });
-        };
+    $(".size-change").find("li").click(function () {
+        $(this).addClass("on").siblings().removeClass("on");
+        btnA = $(this).find("a");
+        textContent = $(this).parents(".dt-rightbar").find(".dt-container");
+        if(btnA.hasClass("l-words")){//大
+            textContent.removeClass("content-s").addClass("content-l");
+        }
+        if(btnA.hasClass("m-words")){//中
+            textContent.removeClass("content-s content-l");
+        }
+        if(btnA.hasClass("s-words")){//小
+            textContent.removeClass("content-l").addClass("content-s");
+        }
+    });
+};

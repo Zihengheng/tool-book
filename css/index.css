@@ -238,14 +238,17 @@ button.label{
 #labels li span{
     visibility: hidden;
 }
-#labels li.active span{
+#labels li.cur span{
     visibility: visible;
 }
-#labels li.active img{
+#labels li.cur img{
     height:58px;
     width:20px;
     margin-top: -15px;
 }
+.label-con{display:none;}
+.label-con.active{display:block;}
+.label-con.child{margin-top:-22px;}
 .btn-vertical img:hover{
     width:20px;
 }
@@ -316,6 +319,7 @@ span.hp-sub{
 }
 .section-ir{
     padding-top:95px;
+    padding-bottom:35px;
     position:relative;
 }
 .ir-container{
@@ -336,17 +340,16 @@ span.hp-sub{
 }
 div.ir-box{
     float:left;
-    width:270px;
-    height:382px;
+    width:273px;
     position:relative;
 }
-.ir-box.left{margin-right: 33px;}
+.ir-box.left{margin-right: 34px;}
 .ir-container{
     padding-top:80px;
 }
 div.ir-body{
     width: 267px;
-    height: 342px;
+    height:426px;
     background-color: #ffffff;
     box-shadow: 0px 0px 10px 0px 
         rgba(147, 149, 152, 0.18);
@@ -358,6 +361,7 @@ div.ir-body{
    padding-left: 26px;
    padding-right: 26px;
 }
+/*div.ir-body.*/
 .ir-icon{
     position:absolute;
     top:-35px;
@@ -373,7 +377,7 @@ div.ir-body{
     text-align: center;
     margin-bottom:9px;
 }
-.ir-body .ir-sub a:hover{color:orange;}
+#sub1 a:hover, #sub2 a:hover, #sub3 a:hover, #sub4 a:hover{color:orange;}
 .ir-body .ir-sub a{
     font-family: AdobeHeitiStd-Regular;
     font-size: 16px;
@@ -381,16 +385,16 @@ div.ir-body{
     line-height: 36px;
     color:#62a4f6;
 }
-#ir-sub1 a{color:#6e90ff;}
-#ir-sub2 a{color:#5997e5;}
-#ir-sub3 a{color:#68d8ef;}
-#ir-sub4 a{color:#5db5fd;}
+#sub1 a {color:#6e90ff;}
+#sub2 a {color:#5997e5;}
+#sub3 a{color:#68d8ef;}
+#sub4 a{color:#5db5fd;}
 p.intro{
     width:100%;
-    height: 93px;
+    height:165px;
     font-family: MicrosoftYaHei;
     font-size: 12px;
-    line-height: 23px;
+    line-height: 24px;
     color: #666666;
     overflow:hidden;
     text-overflow: ellipsis;
@@ -530,22 +534,29 @@ a.go-right{
     padding-left:20px;
     padding-right:20px;
 }
-.ep-intro span{
+.ep-intro div a{
     font-family: MicrosoftYaHei;
     font-size: 22px;
     font-weight: bold;
     line-height: 36px;
     color: #333333;
 }
+.ep-intro div{
+    width:224px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.ep-intro div a:hover{color:#53a2e3;}
 .ep-intro p{
-    width: 217px;
-    height: 229px;
+    width: 224px;
     font-family: MicrosoftYaHei;
     font-size: 13px;
-    line-height: 36px;
+    line-height:32px;
     color: #333333;
     margin-top: 15px;
 }
+.limit{width:224px; height:290px;}
 .ep-box .count{
     font-family: MicrosoftYaHei;
     font-size: 18px;

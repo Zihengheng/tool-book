@@ -2398,6 +2398,12 @@ dl.nav-sections ul.nav-sections li{
 	line-height: 42px;
 	color: #333333;
 }
+.content-l .prof-inter p{
+	font-size:19px;
+}
+.content-s .prof-inter p{
+	font-size:13px;
+}
 .prof-keep-content{
 	padding:42px 22px 42px 22px;
 }
@@ -2525,5 +2531,11 @@ dl.nav-sections ul.nav-sections li{
 	font-weight: bold;
 	line-height:33px;
 	font-family: MicrosoftYaHei;
+}
+.content-s .gram-tips{
+	font-size:14px;
+}
+.content-l .gram-tips{
+	font-size:19px;
 }
 /*========================= 附录库条目页 end ==================
