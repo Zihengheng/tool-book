@@ -14,7 +14,7 @@
   <script type="text/javascript" src="js/jquery.input.js"></script><!--输入框事件-->
   <script type="text/javascript" src="js/homePage.js"></script>
   <!-- 多行文本溢出省略 -->
-  <script src ="js/jquery.dotdotdot.js"></script>
+  <script type="text/javascript" src ="js/jquery.dotdotdot.js"></script>
 </head>
 
 <body>
@@ -512,7 +512,7 @@
               <div class="ir-icon"><img src="images/icon_jsk.png" alt=""></div>
               <div class="ir-body">
                  <div class="ir-sub" id="sub2"><a href="museum-appre.html" target="_blank">鉴赏库</a></div>
-                 <p class="intro">是4000多部优质工具书的数字化集成，通过配备先进的全文检索系统，为在校师生提供了一个内容权威、方便快捷的的百科知识检索平台，是中小学师生释疑解惑和进行语文教学研究的重要工具。该库收录工具书的主要类型包括：汉语辞典、双语词典、专科辞典、百科全书、鉴赏辞典、图录图鉴等。研究字词源流、读音、释义与书证的需要。"</p>
+                 <p class="intro">是4000多部优质工具书的数字化集成，通过配备先进的全文检索系统，为在校师生提供了一个内容权威、方便快捷的的百科知识检索平台，是中小学师生释疑解惑和进行语文教学研究的重要工具。该库收录工具书的主要类型包括：汉语辞典、双语词典、专科辞典、百科全书、鉴赏辞典、图录图鉴等。研究字词源流、读音、释义与书证的需要。</p>
                  <div class="ir-sub2">资源主要收录</div>
                  <div class="highlighter" id="hl2"></div>
                  <ul>
@@ -796,9 +796,7 @@
   <div id="return-top">
         <a href="javascript:scroll(0,0);" title="返回顶部" alt="返回顶部"></a>
     </div>
-  <!-- jquery -->
-  <!-- script 文件 -->
-<!--   <script src="js/index.js"></script> -->
+
   <!-- back to top -->
   <script type="text/javascript">
         $(window).scroll(function () {
@@ -808,11 +806,12 @@
                 $("#return-top").hide();
             }
         });
-        $(function () {
+
+        $(function(){
         $(".limit").dotdotdot({
             wrap: 'letter'//这里中文要用letter
         });
-    });
+       });
    </script>
   <!-- Bootstrap js引用 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

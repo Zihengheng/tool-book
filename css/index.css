@@ -360,6 +360,17 @@ div.ir-body{
    padding-top:52px;
    padding-left: 26px;
    padding-right: 26px;
+   transition: all 0.5s;
+    -ms-transition:all 0.5s; /* IE 9 */
+    -moz-transition:all 0.5s; /* Firefox */
+    -webkit-transition:all 0.5s; /* Safari 和 Chrome */
+    -o-transition:all 0.5s; /* Opera */
+}
+.ir-body.box-highlight{
+    border: solid 1px #53a2e3;
+    box-shadow: 0px 0px 10px 0px 
+        #53a2e3;
+
 }
 /*div.ir-body.*/
 .ir-icon{
@@ -548,15 +559,17 @@ a.go-right{
     text-overflow: ellipsis;
 }
 .ep-intro div a:hover{color:#53a2e3;}
-.ep-intro p{
+.ep-intro p.limit{
     width: 224px;
+    height:280px;
     font-family: MicrosoftYaHei;
     font-size: 13px;
     line-height:32px;
     color: #333333;
     margin-top: 15px;
+    overflow:hidden;
 }
-.limit{width:224px; height:290px;}
+/*.limit{width:224px; height:200px;}*/
 .ep-box .count{
     font-family: MicrosoftYaHei;
     font-size: 18px;

@@ -21,8 +21,16 @@ $(function(){
     tabFunc(".trans-dt", "#trans-tabs li", "cur", ".trans-con", "active", "mousedown");
 
     //范围：首页
-    //说明：显示书籍注释
-	
+    //说明：突出显示词库介绍盒子
+    $(".ir-body").mouseenter(function(){
+        $(this).addClass("box-highlight");
+    });
+    $(".ir-body").mouseleave(function(){
+        $(this).removeClass("box-highlight");
+    });
+
+    //范围：首页
+    //说明：显示书籍注释	
 	$(".ep-box .book a").hover(
     function(){
         $(this).next().stop().fadeTo("slow",1,function(){

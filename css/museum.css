@@ -1487,6 +1487,12 @@ div.dt-section-title{
 	letter-spacing: 0px;
 	color: #010e1f;
 }
+.content-l .word-intro-container p{
+	font-size:18px;
+}
+.content-s .word-intro-container p{
+	font-size:12px;
+}
 .intro-source{
 	margin-top: 50px;
 	color:#333;
@@ -2143,6 +2149,14 @@ div.img-box-img{
 	font-size: 16px;
 	line-height: 36px;
 	color: #333333;
+}
+.content-l .ptext p, .content-l .p-annotation p,
+.content-l .p-interpretation p{
+	font-size:19px;
+}
+.content-s .ptext p, .content-s .p-annotation p,
+ .content-s .p-interpretation p{
+	font-size:14px;
 }
 .p-interpretation .inter-content{
 	width:799px;
