@@ -1175,12 +1175,9 @@ a.SinglePubMark{ color: #b92afb!important; }
 p.abstract{
     width: 878px;
     height: 35px;
-    font-family: SimSun;
+    font-family:  MicrosoftYaHei;
     font-size: 12px;
-    font-weight: normal;
-    font-stretch: normal;
     line-height: 23px;
-    letter-spacing: 0px;
     color:black;
     text-align: left;
 }
@@ -1191,18 +1188,21 @@ ul.basic-info{
 }
 ul.basic-info li{
     float:left;
-    width:120px;
+   /* width:120px;*/
     color:#696969;
 }
 ul.basic-info li a{
     color:#696969;
     text-decoration:none;
+    font-family:MicrosoftYaHei;
 }
+ul.basic-info .src{width:200px;float:left; margin-left:133px;}
 .info-divider{
     width:1px;
     height:15px;
     background-color:#a5adb8;
     margin-right: 20px;
+    margin-left:24px;
     float:right;
     margin-top: 2px;
 }
@@ -1299,7 +1299,7 @@ ul.basic-info li a{
 /*相关搜索、知名专家*/
 .bottom-commend-list{ margin-top:45px; line-height: 30px; }
 .bottom-commend-list li{ margin-bottom: 20px; }
-.bottom-commend-list h5{ margin-top:8px;display: inline-block; vertical-align: top; width: 70px; font-size: 14px; color: #b5b5b5; }
+.bottom-commend-list h5{ margin-top:8px;display: inline-block; vertical-align: top; width: 70px; font-size: 14px; color: #333333; }
 .bottom-commend-list p{ display: inline-block; vertical-align: top; width: 845px;font-size: 14px; }
 .bottom-commend-list span{ display: inline-block; vertical-align: top; width: 105px; margin-left: 10px; font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .bottom-commend-list a{ color: #4480b8; }

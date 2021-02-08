@@ -249,9 +249,15 @@ a.adv-search-btn.top{
 .breadcrumb li a, .breadcrumb span {
     font-family: MicrosoftYaHei;
     font-size: 12px;
-  /*  font-weight: bold;*/
+    font-weight: bold;
     line-height: 23px;
     color: #293e6b;
+}
+span.tip-range{
+	font-family: MicrosoftYaHei;
+    font-size: 12px;
+    line-height: 23px;
+    color: #333333;
 }
 .tit img{
 	margin-right: 10px;
@@ -371,7 +377,7 @@ div.order-group i.as-ds{
 p.abstract{
 	width: 878px;
 	height: 45px;
-	font-family: SimSun;
+	font-family: MicrosoftYaHei;
 	font-size: 12px;
 	line-height: 23px;
 	letter-spacing: 0px;
@@ -386,19 +392,22 @@ ul.basic-info{
 }
 ul.basic-info li{
 	float:left;
-	width:120px;
+/*	width:120px;*/
 	color:#696969;
 	line-height: 33px;
 }
 ul.basic-info li a{
 	color:#696969;
 	text-decoration:none;
+	font-family: MicrosoftYaHei;
 }
+ul.basic-info .src{width:200px;float:right; margin-right:56px;}
 .info-divider{
 	width:1px;
 	height:15px;
 	background-color:#a5adb8;
 	margin-right: 20px;
+	margin-left:24px;
 	float:right;
 	margin-top:8px;
 }
