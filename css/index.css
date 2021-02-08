@@ -553,23 +553,23 @@ a.go-right{
     color: #333333;
 }
 .ep-intro div{
-    width:224px;
+    width:190px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    float:left;
 }
 .ep-intro div a:hover{color:#53a2e3;}
 .ep-intro p.limit{
     width: 224px;
-    height:280px;
+    height:250px;
     font-family: MicrosoftYaHei;
     font-size: 13px;
     line-height:32px;
     color: #333333;
     margin-top: 15px;
-    overflow:hidden;
+    overflow: hidden;
 }
-/*.limit{width:224px; height:200px;}*/
 .ep-box .count{
     font-family: MicrosoftYaHei;
     font-size: 18px;

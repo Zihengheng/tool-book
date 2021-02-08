@@ -11,10 +11,11 @@
   <link rel="stylesheet" type="text/css" href="css/public.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <script type="text/javascript" src="js/lib/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.input.js"></script><!--输入框事件-->
-  <script type="text/javascript" src="js/homePage.js"></script>
-  <!-- 多行文本溢出省略 -->
+  <script type="text/javascript" src="js/jquery.input.js"></script>
+   <!-- 多行文本溢出省略 -->
   <script type="text/javascript" src ="js/jquery.dotdotdot.js"></script>
+  <!--输入框事件-->
+  <script type="text/javascript" src="js/homePage.js"></script>
 </head>
 
 <body>
@@ -585,7 +586,7 @@
             <div id="cooperate"></div>
             <div class="ep-row1">
               <div class="ep-intro">
-                <div><a href="#">上海辞书出版社上海辞书出版社上海辞书出版社>></a></div>
+                <div><a href="#">上海辞书出版社上海辞书出版社上海辞书出版社</a></div>
                 <p class="intro-content limit">
                   <span>合作资源有：</span>
                   <span>《汉语常用语词典》、《中医人物词典》、《五百种明清小说博览》、《中国历史大辞典》、《当代汉语词典》、《中国文学大辞典》、《敦煌学大辞典》、《俚语隐语行话词典》汉语常用语词典》、《中医人物词典》、《五百种明清小说博览》、《中国历史大辞典》、《当代汉语词典》、《中国文学大辞典》、《敦煌学大辞典》、《俚语隐语行话词典》
@@ -749,30 +750,6 @@
                       <a target="_blank"  rel="noopener noreferrer" href="//piccache.cnki.net/index/CNKIRecruit/index.html">知网推广</a>
                   </span>
                   <div class="trust-icon"> <img src="images/trust-icon.png" alt=""></div>
-                  <!-- <span id="copyright">© 1998-2019 中国知网（CNKI）</span>
-                  <script type="text/javascript">
-                      var date = new Date;
-                      document.getElementById('copyright').innerHTML = "© 1998-" + date.getFullYear() + " 中国知网（CNKI）";
-                  </script>
-              </p> -->
-            <!--   <p class="right"> -->
-                  <!--可信网站图片LOGO安装开始-->
-                  <!-- <a id="___szfw_logo___">
-                      <img alt="可信网站" src="images/footer/kxwz.jpg" height="33" width="86">
-                  </a> -->
-                  <!--可信网站图片LOGO安装结束-->
-                  <!--诚信网站图片LOGO安装开始-->
-                  <!-- <a id="A1">
-                      <img alt="诚信网站" src="footer/cert.jpg" height="33" width="86">
-                  </a>
-                  <script type="text/javascript">
-                      (function () {
-                          document.getElementById('___szfw_logo___').oncontextmenu = function () {
-                              return false;
-                          }
-                      })();
-                  </script> -->
-                  <!--诚信网站图片LOGO安装结束-->
               </p>
           </div>
           <div class="b">
@@ -799,20 +776,20 @@
 
   <!-- back to top -->
   <script type="text/javascript">
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 150) {
-                $("#return-top").show();
-            } else {
-                $("#return-top").hide();
-            }
-        });
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 150) {
+            $("#return-top").show();
+        } else {
+            $("#return-top").hide();
+        }
+    });
 
-        $(function(){
-        $(".limit").dotdotdot({
-            wrap: 'letter'//这里中文要用letter
-        });
-       });
-   </script>
+    $(function () {
+    $(".limit").dotdotdot({
+        wrap: 'letter'//这里中文要用letter
+    });
+    });
+  </script>
   <!-- Bootstrap js引用 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>

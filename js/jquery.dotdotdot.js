@@ -1,15 +1,15 @@
 
 /*
- *	jQuery dotdotdot 1.8.3
+ *  jQuery dotdotdot 1.8.3
  *
- *	Copyright (c) Fred Heusschen
- *	www.frebsite.nl
+ *  Copyright (c) Fred Heusschen
+ *  www.frebsite.nl
  *
- *	Plugin website:
- *	dotdotdot.frebsite.nl
+ *  Plugin website:
+ *  dotdotdot.frebsite.nl
  *
- *	Licensed under the MIT license.
- *	http://en.wikipedia.org/wiki/MIT_License
+ *  Licensed under the MIT license.
+ *  http://en.wikipedia.org/wiki/MIT_License
  */
 
 (function($, undef) {
@@ -162,12 +162,12 @@
                 }
             );
             return $dot;
-        }; //	/bind_events
+        }; //   /bind_events
 
         $dot.unbind_events = function() {
             $dot.unbind('.dot');
             return $dot;
-        }; //	/unbind_events
+        }; //   /unbind_events
 
         $dot.watch = function() {
             $dot.unwatch();
@@ -251,7 +251,7 @@
     };
 
 
-    //	public
+    //  public
     $.fn.dotdotdot.defaults = {
         'ellipsis': '... ',
         'wrap': 'word',
@@ -274,7 +274,7 @@
     $.fn.dotdotdot.debug = function(msg) {};
 
 
-    //	private
+    //  private
     var dotId = 1;
 
     function children($elem, o, after) {
@@ -305,10 +305,10 @@
     function ellipsis($elem, $d, $i, o, after) {
         var isTruncated = false;
 
-        //	Don't put the ellipsis directly inside these elements
+        //  Don't put the ellipsis directly inside these elements
         var notx = 'a, table, thead, tbody, tfoot, tr, col, colgroup, object, embed, param, ol, ul, dl, blockquote, select, optgroup, option, textarea, script, style';
 
-        //	Don't remove these elements even if they are after the ellipsis
+        //  Don't remove these elements even if they are after the ellipsis
         var noty = 'script, .dotdotdot-keep';
 
         $elem
@@ -369,7 +369,7 @@
             endPos = textArr.length - 1;
 
 
-        //	Only one word
+        //  Only one word
         if (o.fallbackToLetter && startPos === 0 && endPos === 0) {
             separator = '';
             textArr = txt.split(separator);
@@ -400,7 +400,7 @@
                 } else {
                     endPos = midPos;
 
-                    //	Fallback to letter
+                    //  Fallback to letter
                     if (o.fallbackToLetter && startPos === 0 && endPos === 0) {
                         separator = '';
                         textArr = textArr[0].split(separator);
@@ -558,7 +558,7 @@
     }
 
 
-    //	override jQuery.html
+    //  override jQuery.html
     var _orgHtml = $.fn.html;
     $.fn.html = function(str) {
         if (str != undef && !$.isFunction(str) && this.data('dotdotdot')) {
@@ -568,7 +568,7 @@
     };
 
 
-    //	override jQuery.text
+    //  override jQuery.text
     var _orgText = $.fn.text;
     $.fn.text = function(str) {
         if (str != undef && !$.isFunction(str) && this.data('dotdotdot')) {
