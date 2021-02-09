@@ -80,6 +80,7 @@ ul.words-list li:hover{
 	font-family: SimSun;
 	font-size: 14px;
 	line-height: 30px;
+	font-weight:bold;
 	color: #072958;
 	margin-right:15px;
 }

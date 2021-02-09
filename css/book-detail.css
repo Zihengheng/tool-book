@@ -75,6 +75,7 @@ ul.words-list li:hover{
 	font-family: SimSun;
 	font-size: 14px;
 	line-height: 30px;
+	font-weight:bold;
 	color: #072958;
 	margin-right:15px;
 }
@@ -121,7 +122,7 @@ div.pn-container{
 	border:1px solid #ededed;
 	line-height:26px;
 	padding-left:5px;
-	width:233px;
+	width:182px;
 }
 /*=================== 语词库主要内容开始 =====================* /
 /*======= 书目导览 start =========* /
