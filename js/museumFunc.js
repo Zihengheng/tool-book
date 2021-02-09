@@ -53,7 +53,7 @@ $(function(){
 
     //2021 范围：附录库条目页
     //说明：固定左边栏
-    fixMenu();
+    // fixMenu();
 
     //2021 范围：mesuem detail page
     //说明：改变字体

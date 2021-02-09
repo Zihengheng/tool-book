@@ -229,18 +229,23 @@ a.adv-search-btn.top{
 	text-align: center;
 }
 /*选中*/
-.doctype-menus>li.active{ position: relative;color: #333; border-radius: 4px 4px 0 0; background-image: none; background-color: #fff;  border:0px;}
+.doctype-menus>li.active{ position: relative;color: #333; border-radius: 4px 4px 0 0; border:1px solid #fff;
+						margin-right:17px;margin-left:10px;}
 .doctype-menus>li.active a{
 	height:75px;
 }
+.doctype-menus>li.active.cur,.doctype-menus>li.active:hover{background-color:#fff;}
+.doctype-menus>li.active.cur a span,.doctype-menus>li.active.cur a em, 
+.doctype-menus>li.active:hover a span,.doctype-menus>li.active:hover a em {
+	color:#286fe5;
+}
 .doctype-menus>li.active>a span,
 .doctype-menus>li.active>a em{ 
-	color: #0f5de5; 
+	color: #fff; 
 	text-decoration: none;
 	font-weight:bold;
 	font-size:17px;
 }
-
 /*=========== 左导航栏 ============*/
 .breadcrumb{
 	margin-bottom: 0px;

@@ -5,7 +5,7 @@ textarea {resize: none; overflow: auto; line-height: 18px; border: 1px solid #cc
 html { font-family: sans-serif;-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;}
 ol,ul li {list-style: none outside none;}
 img { border: none; /*display: block;*/}
-body,button,input,select,textarea {font: 12px/150% Arial, "宋体", serif; outline: 0;}
+body,button,input,select,textarea {font: 12px/150% MicrosoftYaHei, SimSun, Arial, "宋体", serif; outline: 0;}
 body,button,select,textarea { color: #666; }
 button{outline: none;}
 input { color: #999; }
