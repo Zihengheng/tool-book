@@ -1,0 +1,2351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>总库进入条目页</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- others -->
+  <link rel="stylesheet" type="text/css" href="css/public.css">
+   <link rel="stylesheet" type="text/css" href="css/layout.css">
+  <link rel="stylesheet" type="text/css" href="css/museum.css">
+  <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.input.js"></script>
+  <!--输入框事件-->
+  <script type="text/javascript" src="js/init.js"></script>
+  <script type="text/javascript" src="js/museumFunc.js"></script>
+  <!-- 引入 echarts.js -->
+  <script type="text/javascript" src="js/echarts.min.js"></script>
+  <script type="text/javascript" src="js/chart-sunburst.js"></script>
+   <!-- 引入 echarts.js -->
+  <script type="text/javascript" src="js/echarts.min.js"></script>
+  <script type="text/javascript" src="js/chart-tree2.js"></script>
+</head>
+
+<body>
+  <div class="msm-header">
+    <div class="msm-topbar">
+      <div class="container">
+        <div class="topbar-left">
+          <ul class="navbar-nav">
+            <li><a href="https://www.cnki.net/">中国知网</a></li>
+            <li><a href="homepage.html">工具书首页</a></li>
+            <li><a href="museum-words.html">语词库</a></li>
+            <li><a href="museum-appre.html">鉴赏库</a></li>
+            <li><a href="museum-profession.html">行业库</a></li>
+            <li><a href="museum-appendix.html">附录库</a></li>
+            <li><a href="book-list.html">书目导览</a></li>
+            <li><a href="https://gongjushu.cnki.net/rbook/">旧版</a></li>
+          </ul>
+        </div><!-- end of the topbar-left -->
+        <div class="topbar-right pull-right">
+          <ul class="navbar-nav">
+            <li><a href="#">注册</a></li>
+            <li class="login"><a href="javascript:void(0);" class="login-btn"><i>机构登陆<span class="down-icon"></span></i></a></li>
+            <li class="login"><a href="javascript:void(0);" class="login-btn"><i>个人登陆<span class="down-icon"></span></i></a></li>
+            <li><a href="my-collection.html">个人书房</a></li>
+          </ul>
+        </div><!-- end of the topbar-right -->
+      </div><!-- end of the container -->
+    </div><!-- end of the msm top-bar -->
+    <div class="msm-banner dt-page" id="zk-banner">
+      <div class="container">
+        <div class="msm-tit zk-tit"></div>
+        <div class="yck-search-box">
+           <div class="searchmain">
+          <div class="search-form">
+          <div class="sort" id="search-type">
+              <div class="sort-default" id="type">
+                <span>全文</span>
+                <i class="sort-icon" id="first">▼</i>
+              </div>
+              <ul class="sort-list" style="display: none;">
+                <li class="cur"><a href="javascript:void(0);">全文</a></li>
+                <li><a href="javascript:void(0);">条头</a></li>
+                <li><a href="javascript:void(0);">书目</a></li>
+                <li><a href="javascript:void(0);">图片</a></li>
+                <li><a href="javascript:void(0);">表格</a></li>
+                <li><a href="javascript:void(0);">人物</a></li>
+              </ul>
+            </div>
+          <div class="input-box">
+            <input class="search-input" type="text" autocomplete="off" placeholder="请输入检索词"  maxlength="100">
+            <a class="btn-wildcard" href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom" title="通配符”?”代表该位置有且仅有1个字符（=1），如检索“?细胞”可检出“红细胞”、“白细胞”。通配符可放在检索词任意位置，可组合使用，如“细?胞*”可检出“细菌胞质素”。">?</a>
+            <a class="btn-wildcard" href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom" title="通配符”*”代表该位置有任意个字符（≥0），如检索“*细胞”可检出“细胞”、“红细胞”、“白细胞”、“巨噬细胞”等。通配符可放在检索词任意位置，可组合使用，如“细?胞*”可检出“细菌胞质素”。">*</a>
+            
+            <div class="sort">
+              <div class="sort-default">
+                <span>精确</span>
+                <i class="sort-icon">▼</i>
+              </div>
+              <ul class="sort-list" style="display: none;">
+                <li class="cur"><a href="javascript:void(0);">精确</a></li>
+                <li><a href="javascript:void(0);">模糊</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <input class="search-btn" type="button" value="检索">
+          <div class="adv-group">
+          <a class="adv-search-btn top" href="#" target="_blank">翻译助手 &gt;&gt;</a>
+          <br>
+          <a class="adv-search-btn" href="#" target="_blank">高级检索 &gt;&gt;</a>
+          </div><!-- end of the adv-group -->
+        </div><!--search-form-->
+
+        <div class="search-nav">
+          <span class="title">输入助手：</span>
+          <ul class="nav-bar">
+            <li><a href="javascript:void(0);">部首<i class="icon"></i></a></li>
+            <li><a href="javascript:void(0);">笔画<i class="icon"></i></a></li>
+            <li><a href="javascript:void(0);">拼音<i class="icon"></i></a></li>
+            <!-- <li><a href="javascript:void(0);">通配符说明<i class="icon"></i></a></li> -->
+          </ul>
+        </div><!--search-nav-->
+
+        <div class="drop-box">
+          <a href="javascript:;" class="close"></a>
+          <div class="bg-color"></div>
+          <div class="subnav-container">
+            <div class="unit bushou">
+              <h5>部首导航</h5>
+              <ul class="menu">
+                <li><a href="javascript:void(0);">1</a></li>
+                <li><a href="javascript:void(0);">2</a></li>
+                <li><a href="javascript:void(0);">3</a></li>
+                <li><a href="javascript:void(0);">4</a></li>
+                <li><a href="javascript:void(0);">5</a></li>
+                <li><a href="javascript:void(0);">6</a></li>
+                <li><a href="javascript:void(0);">7</a></li>
+                <li><a href="javascript:void(0);">8</a></li>
+                <li><a href="javascript:void(0);">9</a></li>
+                <li><a href="javascript:void(0);">10</a></li>
+                <li><a href="javascript:void(0);">11</a></li>
+                <li><a href="javascript:void(0);">12</a></li>
+                <li><a href="javascript:void(0);">13</a></li>
+                <li><a href="javascript:void(0);">14</a></li>
+                <li><a href="javascript:void(0);">15</a></li>
+              </ul><!--menu-->
+
+              <div class="submenu-box">
+                <ul class="submenu">
+                  <li><a href="javascript:void(0);">一</a></li>
+                  <li><a href="javascript:void(0);">丨</a></li>
+                  <li><a href="javascript:void(0);">亅</a></li>
+                  <li><a href="javascript:void(0);">丿</a></li>
+                  <li><a href="javascript:void(0);">丶</a></li>
+                  <li><a href="javascript:void(0);">乛</a></li>
+                  <li><a href="javascript:void(0);">乙</a></li>
+                  <li><a href="javascript:void(0);">乚</a></li>
+                </ul><!--submenu-->
+                <div class="thirdmenu-box">
+                  <ul class="thirdmenu">
+                    <li><a href="javascript:void(0);">1</a></li>
+                    <li><a href="javascript:void(0);">2</a></li>
+                    <li><a href="javascript:void(0);">3</a></li>
+                    <li><a href="javascript:void(0);">4</a></li>
+                    <li><a href="javascript:void(0);">5</a></li>
+                    <li><a href="javascript:void(0);">6</a></li>
+                    <li><a href="javascript:void(0);">7</a></li>
+                    <li><a href="javascript:void(0);">8</a></li>
+                  </ul>
+                  <div class="fourthmenu-box">
+                    <ul class="fourthmenu">
+                      <li><a href="javascript:void(0);">兀</a></li>
+                      <li><a href="javascript:void(0);">无</a></li>
+                      <li><a href="javascript:void(0);">丨</a></li>
+                      <li><a href="javascript:void(0);">卡</a></li>
+                      <li><a href="javascript:void(0);">卡</a></li>
+                      <li><a href="javascript:void(0);">卥</a></li>
+                      <li><a href="javascript:void(0);">临</a></li>
+                      <li><a href="javascript:void(0);">中</a></li>
+                      <li><a href="javascript:void(0);">串</a></li>
+                      <li><a href="javascript:void(0);">串</a></li>
+                      <li><a href="javascript:void(0);">丳</a></li>
+                      <li><a href="javascript:void(0);">丯</a></li>
+                      <li><a href="javascript:void(0);">丬</a></li>
+                      <li><a href="javascript:void(0);">丫</a></li>
+                      <li><a href="javascript:void(0);">丮</a></li>
+                      <li><a href="javascript:void(0);">丩</a></li>
+                      <li><a href="javascript:void(0);">丱</a></li>
+                    </ul>
+                  </div>
+
+                </div><!--thirdmenu-box-->
+              </div><!--submenu-box-->
+
+              <div class="result-box">
+                <table cellpadding="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                    <td rowspan="2" class="hz">无</td>
+                    <td><b>汉字：</b>无</td>
+                    <td><b>部首：</b>一</td>
+                    <td><b>笔画数：</b>4</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="py"><b>拼音：</b>mó;wú</td>
+                    <td>
+                      <b>五笔：</b>fqv
+                      <a class="btn-more" href="javascript:void(0);" >more&nbsp;&gt;&gt;</a>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+
+                <div class="result-more">
+                  <p><span class="tit">基本内容：</span>无 （無） wú 没有，与“有”相对；不：无辜。无偿。无从（没有门径或找不到头绪）。无度。无端（无缘无故）。无方（不得法，与“有方”相对）。无非（只，不过）。无动于衷。无所适从。 有 笔画数：4； 部首：一； 笔顺编号：1135</p>
+                  <p><span class="tit">详细内容：</span>无 無 mó ——“南无”(nāmó):佛教用语,表示对佛尊敬或皈依 另见wú 无 無 wú 【名】 (会意。据甲骨文字形,象一个人持把在跳舞。卜辞、金文中“无、舞”同字。本义:乐舞) 同本义〖singanddance〗 哲学范畴,指无形、无名、虚无等,或指物质的隐微状态〖nihility〗 天下万物生于有,有生于无。——《老子》 无 無 wú 【动】 没有,跟“有”相对〖nothave;thereisnot〗 无,不有也。</p>
+                  <p><span class="tit">相关单词：</span>爱憎无常;安然无事;安然无恙;安忍无亲;坐无虚席;坐无公车作辍无常;坐帐无鹤;尊无二上;走投无路;</p>
+                  <p><span class="tit">相关成语：</span>案无留牍;黯淡无光;黯然无色;傲慢无礼;白璧无瑕;白玉无瑕;变幻无穷;变幻无常;兵无常势;百无一成;百无一是;卑鄙无耻;别来无恙;别无二致;秉公无私;搏手无策;苍白无力;不识之无;策无遗算;茶饭无心</p>
+                </div>
+              </div><!--result-box-->
+
+            </div><!--bushou end-->
+
+            <div class="unit bihua">
+              <h5>笔画导航</h5>
+              <ul class="menu">
+                <li><a href="javascript:void(0);">1</a></li>
+                <li><a href="javascript:void(0);">2</a></li>
+                <li><a href="javascript:void(0);">3</a></li>
+                <li><a href="javascript:void(0);">4</a></li>
+                <li><a href="javascript:void(0);">5</a></li>
+                <li><a href="javascript:void(0);">6</a></li>
+                <li><a href="javascript:void(0);">7</a></li>
+                <li><a href="javascript:void(0);">8</a></li>
+                <li><a href="javascript:void(0);">9</a></li>
+                <li><a href="javascript:void(0);">10</a></li>
+                <li><a href="javascript:void(0);">11</a></li>
+                <li><a href="javascript:void(0);">12</a></li>
+                <li><a href="javascript:void(0);">13</a></li>
+                <li><a href="javascript:void(0);">14</a></li>
+                <li><a href="javascript:void(0);">15</a></li>
+                <li><a href="javascript:void(0);">16</a></li>
+                <li><a href="javascript:void(0);">17</a></li>
+                <li><a href="javascript:void(0);">18</a></li>
+                <li><a href="javascript:void(0);">19</a></li>
+                <li><a href="javascript:void(0);">20</a></li>
+                <li><a href="javascript:void(0);">21</a></li>
+                <li><a href="javascript:void(0);">22</a></li>
+                <li><a href="javascript:void(0);">23</a></li>
+                <li><a href="javascript:void(0);">24</a></li>
+                <li><a href="javascript:void(0);">25以上</a></li>
+              </ul><!--menu-->
+
+              <div class="submenu-box">
+                <ul class="submenu">
+                  <li><a href="javascript:void(0);">卍</a></li>
+                  <li><a href="javascript:void(0);">分</a></li>
+                  <li><a href="javascript:void(0);">乥</a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);">亖</a></li>
+                  <li><a href="javascript:void(0);">丰</a></li>
+                  <li><a href="javascript:void(0);">王</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">开</a></li>
+                  <li><a href="javascript:void(0);">天</a></li>
+                  <li><a href="javascript:void(0);">夫</a></li>
+                  <li><a href="javascript:void(0);">无</a></li>
+                  <li><a href="javascript:void(0);">分</a></li>
+                  <li><a href="javascript:void(0);">乥</a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);">亖</a></li>
+                  <li><a href="javascript:void(0);">丰</a></li>
+                  <li><a href="javascript:void(0);">王</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">开</a></li>
+                  <li><a href="javascript:void(0);">天</a></li>
+                  <li><a href="javascript:void(0);">夫</a></li>
+                  <li><a href="javascript:void(0);">分</a></li>
+                  <li><a href="javascript:void(0);">乥</a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);"></a></li>
+                  <li><a href="javascript:void(0);">亖</a></li>
+                  <li><a href="javascript:void(0);">丰</a></li>
+                  <li><a href="javascript:void(0);">王</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">亓</a></li>
+                  <li><a href="javascript:void(0);">开</a></li>
+                  <li><a href="javascript:void(0);">天</a></li>
+                  <li><a href="javascript:void(0);">夫</a></li>
+
+                </ul><!--submenu-->
+              </div><!--submenu-box-->
+
+              <div class="result-box">
+                <table cellpadding="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                    <td rowspan="2" class="hz">无</td>
+                    <td><b>汉字：</b>无</td>
+                    <td><b>部首：</b>一</td>
+                    <td><b>笔画数：</b>4</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="py"><b>拼音：</b>mó;wú</td>
+                    <td>
+                      <b>五笔：</b>fqv
+                      <a class="btn-more" href="javascript:void(0);" >more&nbsp;&gt;&gt;</a>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+
+                <div class="result-more">
+                  <p><span class="tit">基本内容：</span>无 （無） wú 没有，与“有”相对；不：无辜。无偿。无从（没有门径或找不到头绪）。无度。无端（无缘无故）。无方（不得法，与“有方”相对）。无非（只，不过）。无动于衷。无所适从。 有 笔画数：4； 部首：一； 笔顺编号：1135</p>
+                  <p><span class="tit">详细内容：</span>无 無 mó ——“南无”(nāmó):佛教用语,表示对佛尊敬或皈依 另见wú 无 無 wú 【名】 (会意。据甲骨文字形,象一个人持把在跳舞。卜辞、金文中“无、舞”同字。本义:乐舞) 同本义〖singanddance〗 哲学范畴,指无形、无名、虚无等,或指物质的隐微状态〖nihility〗 天下万物生于有,有生于无。——《老子》 无 無 wú 【动】 没有,跟“有”相对〖nothave;thereisnot〗 无,不有也。</p>
+                  <p><span class="tit">相关单词：</span>爱憎无常;安然无事;安然无恙;安忍无亲;坐无虚席;坐无公车作辍无常;坐帐无鹤;尊无二上;走投无路;</p>
+                  <p><span class="tit">相关成语：</span>案无留牍;黯淡无光;黯然无色;傲慢无礼;白璧无瑕;白玉无瑕;变幻无穷;变幻无常;兵无常势;百无一成;百无一是;卑鄙无耻;别来无恙;别无二致;秉公无私;搏手无策;苍白无力;不识之无;策无遗算;茶饭无心</p>
+                </div>
+              </div><!--result-box-->
+            </div>
+
+            <div class="unit pinyin">
+              <h5>拼音导航</h5>
+              <ul class="menu">
+                <li><a href="javascript:void(0);">a</a></li>
+                <li><a href="javascript:void(0);">b</a></li>
+                <li><a href="javascript:void(0);">c</a></li>
+                <li><a href="javascript:void(0);">ch</a></li>
+                <li><a href="javascript:void(0);">d</a></li>
+                <li><a href="javascript:void(0);">e</a></li>
+                <li><a href="javascript:void(0);">f</a></li>
+                <li><a href="javascript:void(0);">g</a></li>
+                <li><a href="javascript:void(0);">h</a></li>
+                <li><a href="javascript:void(0);">j</a></li>
+                <li><a href="javascript:void(0);">k</a></li>
+                <li><a href="javascript:void(0);">l</a></li>
+                <li><a href="javascript:void(0);">m</a></li>
+                <li><a href="javascript:void(0);">n</a></li>
+                <li><a href="javascript:void(0);">o</a></li>
+                <li><a href="javascript:void(0);">q</a></li>
+                <li><a href="javascript:void(0);">r</a></li>
+                <li><a href="javascript:void(0);">s</a></li>
+                <li><a href="javascript:void(0);">sh</a></li>
+                <li><a href="javascript:void(0);">t</a></li>
+                <li><a href="javascript:void(0);">w</a></li>
+                <li><a href="javascript:void(0);">x</a></li>
+                <li><a href="javascript:void(0);">y</a></li>
+                <li><a href="javascript:void(0);">z</a></li>
+                <li><a href="javascript:void(0);">zh</a></li>
+              </ul><!--menu-->
+
+              <div class="submenu-box">
+                <ul class="submenu">
+                  <li><a href="javascript:void(0);">wa</a></li>
+                  <li><a href="javascript:void(0);">wai</a></li>
+                  <li><a href="javascript:void(0);">wan</a></li>
+                  <li><a href="javascript:void(0);">wang</a></li>
+                  <li><a href="javascript:void(0);">wei</a></li>
+                  <li><a href="javascript:void(0);">wen</a></li>
+                  <li><a href="javascript:void(0);">weng</a></li>
+                  <li><a href="javascript:void(0);">wo</a></li>
+                  <li><a href="javascript:void(0);">wu</a></li>
+                </ul><!--submenu-->
+                <div class="thirdmenu-box">
+                  <ul class="thirdmenu">
+                    <li><a href="javascript:void(0);">兀</a></li>
+                    <li><a href="javascript:void(0);">珷</a></li>
+                    <li><a href="javascript:void(0);">珸</a></li>
+                    <li><a href="javascript:void(0);">武</a></li>
+                    <li><a href="javascript:void(0);">鵡</a></li>
+                    <li><a href="javascript:void(0);">鹉</a></li>
+                    <li><a href="javascript:void(0);">玝</a></li>
+                    <li><a href="javascript:void(0);">璑</a></li>
+                    <li><a href="javascript:void(0);">瑦</a></li>
+                    <li><a href="javascript:void(0);">无</a></li>
+                    <li><a href="javascript:void(0);">圬</a></li>
+                    <li><a href="javascript:void(0);">捂</a></li>
+                    <li><a href="javascript:void(0);">扤</a></li>
+                    <li><a href="javascript:void(0);">墲</a></li>
+                    <li><a href="javascript:void(0);">摀</a></li>
+                    <li><a href="javascript:void(0);">蜈</a></li>
+                    <li><a href="javascript:void(0);">蟱</a></li>
+                    <li><a href="javascript:void(0);">螐</a></li>
+                  </ul>
+                </div><!--thirdmenu-box-->
+              </div><!--submenu-box-->
+
+              <div class="result-box">
+                <table cellpadding="0" cellspacing="0">
+                  <tbody>
+                  <tr>
+                    <td rowspan="2" class="hz">无</td>
+                    <td><b>汉字：</b>无</td>
+                    <td><b>部首：</b>一</td>
+                    <td><b>笔画数：</b>4</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="py"><b>拼音：</b>mó;wú</td>
+                    <td>
+                      <b>五笔：</b>fqv
+                      <a class="btn-more" href="javascript:void(0);" >more&nbsp;&gt;&gt;</a>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+
+                <div class="result-more">
+                  <p><span class="tit">基本内容：</span>无 （無） wú 没有，与“有”相对；不：无辜。无偿。无从（没有门径或找不到头绪）。无度。无端（无缘无故）。无方（不得法，与“有方”相对）。无非（只，不过）。无动于衷。无所适从。 有 笔画数：4； 部首：一； 笔顺编号：1135</p>
+                  <p><span class="tit">详细内容：</span>无 無 mó ——“南无”(nāmó):佛教用语,表示对佛尊敬或皈依 另见wú 无 無 wú 【名】 (会意。据甲骨文字形,象一个人持把在跳舞。卜辞、金文中“无、舞”同字。本义:乐舞) 同本义〖singanddance〗 哲学范畴,指无形、无名、虚无等,或指物质的隐微状态〖nihility〗 天下万物生于有,有生于无。——《老子》 无 無 wú 【动】 没有,跟“有”相对〖nothave;thereisnot〗 无,不有也。</p>
+                  <p><span class="tit">相关单词：</span>爱憎无常;安然无事;安然无恙;安忍无亲;坐无虚席;坐无公车作辍无常;坐帐无鹤;尊无二上;走投无路;</p>
+                  <p><span class="tit">相关成语：</span>案无留牍;黯淡无光;黯然无色;傲慢无礼;白璧无瑕;白玉无瑕;变幻无穷;变幻无常;兵无常势;百无一成;百无一是;卑鄙无耻;别来无恙;别无二致;秉公无私;搏手无策;苍白无力;不识之无;策无遗算;茶饭无心</p>
+                </div>
+              </div><!--result-box-->
+            </div><!--pinyin end-->
+
+             <div class="unit wildcard">
+              <h5>通配符说明</h5>
+              <div class="tip-text">
+                <p>友情提示：</p>
+                <p>【词目】精确检索可用通配符 (如: '中国?' 或 '中国*')</p>
+              </div>
+            </div> <!-- unit wildcard end -->
+          </div>
+        </div><!--drop-box-->
+      </div><!--searchmain-->
+      </div><!-- yck-search-box -->
+      </div><!-- end of the banner container -->
+    </div>  <!-- banner -->
+  </div>
+  <!-- end of the museum header -->
+
+
+  <!-- main content -->
+  <div class="main-content">
+    <div class="container">
+
+      <!-- root part start -->
+      <div class="root">
+        <ul class="breadcrumb">
+          <span>位置：</span>
+          <li><a href="#">首页</a></li>
+          <li><a href="#">语词库</a></li>
+          <li><a href="#">《塔吉克汉词典》</a></li>
+          <li><a href="#">栏目名称</a></li>
+          <li class="active">aluyid</li>
+        </ul>
+      </div><!-- end of the root part -->
+
+      <!-- 左边栏 -->
+      <!-- dt-leftbar start -->
+      <div class="dt-leftbar yck">
+        <div class="dt-leftbar-title">
+          <ul class="navbar-nav">
+            <li class="cur"><a href="javascript:void(0);">音序</a></li>
+            <li><a href="javascript:void(0);">笔画</a></li>
+            <li><a href="javascript:void(0);">主题</a></li>
+          </ul>
+        </div><!-- end of leftbar-title -->
+        <div class="dt-book-title">
+          <span>塔吉克汉词典</span>
+        </div>
+        <div class="dt-book-navbar panel-group active" id="dt-book-nav1">
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-one" data-toggle="collapse" data-parent="#dt-book-nav1" class="toggle-btn">-</a>
+              <ul class="dt-chapters" id="">
+                <li><a href="#a" data-toggle="tab">Aa</a></li>
+              </ul>
+            </div>
+            <div id="bnav-one" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <ul id="nav1-sections" class="nav-sections">
+                  <li>
+                    <a href="#sx" data-toggle="tab">数学</a>
+                  </li>
+                  <li><a href="#cdsx" data-toggle="tab">初等数学</a></li>
+                  <li><a href="#sjx" data-toggle="tab">三角学</a></li>
+                  <li><a href="#dsx" data-toggle="tab">代数学</a></li>
+                  <li><a href="#jhx" data-toggle="tab">几何学</a></li>
+                  <li><a href="#jxjh" data-toggle="tab">解析几何</a></li>
+                  <li><a href="#zbjh" data-toggle="tab">坐标几何</a></li>
+                  <li><a href="#gdsx" data-toggle="tab">高等数学</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-two" data-toggle="collapse" data-parent="#dt-book-nav1" class="toggle-btn">+</a>
+              <ul class="dt-chapters">
+                <li><a href="#b" data-toggle="tab">Bb</a></li>
+              </ul>
+            </div>
+            <div id="bnav-two" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="nav2-sections" class="nav-sections">
+                  <li>
+                    <a href="#nav2-cha1" data-toggle="tab">章节1</a>
+                  </li>
+                  <li><a href="#nav2-cha2" data-toggle="tab">章节2</a></li>
+                  <li><a href="#nav2-cha3" data-toggle="tab">章节3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-three" data-toggle="collapse" data-parent="#dt-book-nav1" class="toggle-btn">+</a>
+              <ul class="dt-chapters">
+                <li><a href="#c" data-toggle="tab">Cc</a></li>
+              </ul>
+            </div>
+            <div id="bnav-three" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="nav3-sections" class="nav-sections">
+                  <li>
+                    <a href="#nav3-cha1" data-toggle="tab">章节1</a>
+                  </li>
+                  <li><a href="#nav3-cha2" data-toggle="tab">章节2</a></li>
+                  <li><a href="#nav3-cha3" data-toggle="tab">章节3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-four" data-toggle="collapse" data-parent="#dt-book-nav1" class="toggle-btn">+</a>
+              <ul class="dt-chapters">
+                <li><a href="#d" data-toggle="tab">Dd</a></li>
+              </ul>
+            </div>
+            <div id="bnav-four" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="nav4-sections" class="nav-sections">
+                  <li>
+                    <a href="#nav4-cha1" data-toggle="tab">章节1</a>
+                  </li>
+                  <li><a href="#nav4-cha2" data-toggle="tab">章节2</a></li>
+                  <li><a href="#nav4-cha3" data-toggle="tab">章节3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+        </div>
+        <!-- end of the panel group -->
+        <div class="dt-book-navbar panel-group" id="dt-book-nav2">
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-one" data-toggle="collapse" data-parent="#dt-book-nav2" class="toggle-btn">-</a>
+              <ul class="dt-chapters" id="">
+                <li><a href="#a" data-toggle="tab">Aa2</a></li>
+              </ul>
+            </div>
+            <div id="bnav-one" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <ul id="nav1-sections" class="nav-sections">
+                  <li>
+                    <a href="#sx" data-toggle="tab">数学</a>
+                  </li>
+                  <li><a href="#cdsx" data-toggle="tab">初等数学</a></li>
+                  <li><a href="#sjx" data-toggle="tab">三角学</a></li>
+                  <li><a href="#dsx" data-toggle="tab">代数学</a></li>
+                  <li><a href="#jhx" data-toggle="tab">几何学</a></li>
+                  <li><a href="#jxjh" data-toggle="tab">解析几何</a></li>
+                  <li><a href="#zbjh" data-toggle="tab">坐标几何</a></li>
+                  <li><a href="#gdsx" data-toggle="tab">高等数学</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-two" data-toggle="collapse" data-parent="#dt-book-nav2" class="toggle-btn">+</a>
+              <ul class="dt-chapters">
+                <li><a href="#b" data-toggle="tab">Bb</a></li>
+              </ul>
+            </div>
+            <div id="bnav-two" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="nav2-sections" class="nav-sections">
+                  <li>
+                    <a href="#nav2-cha1" data-toggle="tab">章节1</a>
+                  </li>
+                  <li><a href="#nav2-cha2" data-toggle="tab">章节2</a></li>
+                  <li><a href="#nav2-cha3" data-toggle="tab">章节3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-three" data-toggle="collapse" data-parent="#dt-book-nav2" class="toggle-btn">+</a>
+              <ul class="dt-chapters">
+                <li><a href="#c" data-toggle="tab">Cc</a></li>
+              </ul>
+            </div>
+            <div id="bnav-three" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="nav3-sections" class="nav-sections">
+                  <li>
+                    <a href="#nav3-cha1" data-toggle="tab">章节1</a>
+                  </li>
+                  <li><a href="#nav3-cha2" data-toggle="tab">章节2</a></li>
+                  <li><a href="#nav3-cha3" data-toggle="tab">章节3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-four" data-toggle="collapse" data-parent="#dt-book-nav2" class="toggle-btn">+</a>
+              <ul class="dt-chapters">
+                <li><a href="#d" data-toggle="tab">Dd</a></li>
+              </ul>
+            </div>
+            <div id="bnav-four" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="nav4-sections" class="nav-sections">
+                  <li>
+                    <a href="#nav4-cha1" data-toggle="tab">章节1</a>
+                  </li>
+                  <li><a href="#nav4-cha2" data-toggle="tab">章节2</a></li>
+                  <li><a href="#nav4-cha3" data-toggle="tab">章节3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+        </div>
+        <!-- end of the panel group -->
+        <div class="dt-book-navbar panel-group" id="dt-book-nav3">
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-one" data-toggle="collapse" data-parent="#dt-book-nav3" class="toggle-btn">-</a>
+              <ul class="dt-chapters" id="">
+                <li><a href="#a" data-toggle="tab">Aa3</a></li>
+              </ul>
+            </div>
+            <div id="bnav-one" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <ul id="nav1-sections" class="nav-sections">
+                  <li>
+                    <a href="#sx" data-toggle="tab">数学</a>
+                  </li>
+                  <li><a href="#cdsx" data-toggle="tab">初等数学</a></li>
+                  <li><a href="#sjx" data-toggle="tab">三角学</a></li>
+                  <li><a href="#dsx" data-toggle="tab">代数学</a></li>
+                  <li><a href="#jhx" data-toggle="tab">几何学</a></li>
+                  <li><a href="#jxjh" data-toggle="tab">解析几何</a></li>
+                  <li><a href="#zbjh" data-toggle="tab">坐标几何</a></li>
+                  <li><a href="#gdsx" data-toggle="tab">高等数学</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-two" data-toggle="collapse" data-parent="#dt-book-nav3" class="toggle-btn">+</a>
+              <ul class="dt-chapters">
+                <li><a href="#b" data-toggle="tab">Bb</a></li>
+              </ul>
+            </div>
+            <div id="bnav-two" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="nav2-sections" class="nav-sections">
+                  <li>
+                    <a href="#nav2-cha1" data-toggle="tab">章节1</a>
+                  </li>
+                  <li><a href="#nav2-cha2" data-toggle="tab">章节2</a></li>
+                  <li><a href="#nav2-cha3" data-toggle="tab">章节3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-three" data-toggle="collapse" data-parent="#dt-book-nav3" class="toggle-btn">+</a>
+              <ul class="dt-chapters">
+                <li><a href="#c" data-toggle="tab">Cc</a></li>
+              </ul>
+            </div>
+            <div id="bnav-three" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="nav3-sections" class="nav-sections">
+                  <li>
+                    <a href="#nav3-cha1" data-toggle="tab">章节1</a>
+                  </li>
+                  <li><a href="#nav3-cha2" data-toggle="tab">章节2</a></li>
+                  <li><a href="#nav3-cha3" data-toggle="tab">章节3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+          <div class="panel">
+            <div class="panel-heading">
+              <a href="#bnav-four" data-toggle="collapse" data-parent="#dt-book-nav3" class="toggle-btn">+</a>
+              <ul class="dt-chapters">
+                <li><a href="#d" data-toggle="tab">Dd</a></li>
+              </ul>
+            </div>
+            <div id="bnav-four" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ul id="nav4-sections" class="nav-sections">
+                  <li>
+                    <a href="#nav4-cha1" data-toggle="tab">章节1</a>
+                  </li>
+                  <li><a href="#nav4-cha2" data-toggle="tab">章节2</a></li>
+                  <li><a href="#nav4-cha3" data-toggle="tab">章节3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- end of a panel -->
+
+        </div>
+        <!-- end of the panel group -->
+        <div class="chi-knowledge">
+          <div class="chi-title">
+            <span>汉语言知识</span>
+          </div>
+          <div class="chi-list">
+            <ul class="navbar-nav">
+              <li><a href="#">汉语拼音方案</a></li>
+              <li><a href="#">现代常用字部件表</a></li>
+              <li><a href="#">汉字结构分类表</a></li>
+              <li><a href="#">汉字笔顺规则表</a></li>
+              <li><a href="#">部分疑难汉字(繁体)笔顺表</a></li>
+              <li><a href="#">汉字简化方式一览表</a></li>
+              <li><a href="#">标点符号用法说明</a></li>
+              <li><a href="#">中国汉语方言图</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end of dt-leftbar -->
+
+      <!-- 右边拦 -->
+      <!-- dt-rightbar start -->
+      <div class="dt-rightbar">
+        <div class="dt-rightbar-title">
+          <ul class="actions navbar-nav">
+            <li><span><img src="images/star.png" alt="">收藏</span></li>
+            <li><span><img src="images/share-2.png" alt="">分享</span></li>
+            <li><span><img src="images/quote.png" alt="">引用</span></li>
+          </ul>
+          <ul class="size-change navbar-nav">
+            <li><a href="javascript:void(0);" class="l-words">[大]</a></li>
+            <li class="on"><a href="javascript:void(0);" class="m-words">[中]</a></li>
+            <li><a href="javascript:void(0);" class="s-words">[小]</a></li>
+          </ul>
+          <div class="dt-search-bar">
+            <input class="dt-input" type="text" autocomplete="off" placeholder="请输入检索内容">
+            <button class="btn" id="search-book">查本书</button>
+            <button class="btn" id="search-collection">查全辑</button>
+          </div>
+        </div><!-- end of dt-rightbar-title -->
+        <div class="dt-container">
+        <div id="word-intro" class="tab-content">
+          <div class="tab-pane fade in active" id="sx">
+            <div class="word-intro-container">
+            <span class="word-title">aluyid</span>
+            <p>〔形〕特别，独特，单独 yi tareh darsir aluyiddikhat kact他对历史课特别用心 aluyid gazit零售的报纸aluyid (a) usulheil特殊的办法 aluyid hüxrüi特别美丽aluyid qer特殊的事情 junguiq qi pa ghov na qost，aluyid doulat中国不仰人鼻息，是独立的国家 aluyid uz tayan tsa rang fikr yost另外你还有什么意见? wi gap aluyid他说话吐字清晰aluyid aluyid各个分开的，单另的(hy)ar halg qi tan aluyid aluyid qed yost各人有单独的房间aluyid aluyid nalist分开居住 </p>
+            <p class="intro-source">知识来源：中国社会科学院民族研究所主编;高尔锵编著；塔吉克汉词典；四川民族出版社；1996-05</p>
+            </div>
+            <div class="word-change">
+              <a href="#">上一条：<em>aluwat</em></a>
+              <a href="#">下一条：<em>alüts</em></a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="cdsx">初等数学</div>
+          <div class="tab-pane fade" id="sjx">三角学</div>
+          <div class="tab-pane fade" id="nav2-cha1">Bb章节1</div>
+          <div class="tab-pane fade" id="nav2-cha2">Bb章节1</div>
+          <div class="tab-pane fade" id="nav2-cha3">Bb章节1</div>
+          <div class="tab-pane fade" id="nav3-cha1">Cc章节1</div>
+          <div class="tab-pane fade" id="nav3-cha2">Cc章节1</div>
+          <div class="tab-pane fade" id="nav3-cha3">Cc章节1</div>
+          <div class="tab-pane fade" id="a">
+            <ul class="words-list">
+              <li>
+                <div class="words-list-title">
+                  <span>归一</span><span>guī yī</span>
+                </div>
+                <p class="words-list-description">
+                  方言。完善;.........
+                </p>
+                <ul class="pic-list clearfix">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+               <li>
+                <div class="words-list-title">
+                  <span>归一</span><span>guī yī</span>
+                </div>
+                <p class="words-list-description">
+                  方言。完善;.........
+                </p>
+                <ul class="pic-list clearfix">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+               <li>
+                <div class="words-list-title">
+                  <span>归一</span><span>guī yī</span>
+                </div>
+                <p class="words-list-description">
+                  方言。完善;.........
+                </p>
+                <ul class="pic-list clearfix">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+               <li>
+                <div class="words-list-title">
+                  <span>归一</span><span>guī yī</span>
+                </div>
+                <p class="words-list-description">
+                  方言。完善;.........
+                </p>
+                <ul class="pic-list clearfix">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- 分页 -->
+                <nav aria-label="Page navigation" class="fenye">
+                  <div class="pn-container">
+                  <ul class="pagination msm">
+                    <li>
+                      <a href="#" aria-label="front">
+                        <span aria-hidden="true">首页</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" aria-label="Previous">
+                        <span aria-hidden="true"><<</span>
+                      </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">...</a></li>
+                    <li>
+                      <a href="#" aria-label="Next">
+                        <span aria-hidden="true">>></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" aria-label="end">
+                        <span aria-hidden="true">尾页</span>
+                      </a>
+                    </li>
+                  </ul>
+                  </div>
+                  <!-- end of the page-nav container -->
+                </nav> <!-- 分页 end -->
+          </div>
+          <div class="tab-pane fade" id="b">b栏目内容</div>
+          <div class="tab-pane fade" id="c">c栏目内容</div>
+          <div class="tab-pane fade" id="d">d栏目内容</div>
+        </div><!-- end of the tab-content -->
+
+        <!-- 语词知识 section start-->
+        <div class="word-knowledge">        
+            <div class="dt-section-title">
+              <span>语词知识</span>
+              <ul id="word-knowledge-tabs">
+                <li>
+                  <a href="#hanzi" data-toggle="tab">汉字卡</a>
+                </li>
+                <li>
+                  <a href="#duoyin" data-toggle="tab">多音辨析</a>
+                </li>
+                <li class="active">
+                  <a href="#xingyi" data-toggle="tab">形义演释</a>
+                </li>
+              </ul>
+            </div>
+            <div id="word-knowledge-content" class="tab-content">
+              <div class="tab-pane fade" id="hanzi">
+                <p>注音：</p>
+                <p>笔画：</p>
+                <p>笔画提示：</p>
+                <p class="word-source">来源：汉字形义演绎字典 四川出版集团&sdot;四川辞书出版社 2006-11</p>
+              </div>
+              <!-- 汉字卡 end -->
+              <div class="tab-pane fade" id="duoyin">
+                <p>辩形：</p>
+                <p>辨义：</p>
+                <p>辨误：</p>
+                <p>注意：</p>
+                <p class="word-source">来源：汉字形义演绎字典 四川出版集团&sdot;四川辞书出版社 2006-11</p>
+              </div>
+              <!-- 多音辨析 end -->
+              <div class="tab-pane fade in active" id="xingyi">
+                <table class="word-table">
+                  <tr><td>甲</td><td>金</td><td>篆</td><td>隶</td></tr>
+                  <tr><td></td><td><img src="images/yck-1.png" alt=""></td><td><img src="images/yck-2.png" alt=""></td><td></td></tr>
+                </table>
+                <p>【形义】金文和小篆左边是“言”，指跟人说话;右边是“吾”，即“我”。合起来， 我跟人言，表示谈论。《说文》：“语，论也。从言，吾声。”“语”的本义是“谈 论”。的本义是“谈 论”。</p>
+                <p class="word-source">来源：汉字形义演绎字典 四川出版集团&sdot;四川辞书出版社 2006-11</p>
+                <p class="word-graph">
+                  <span>字义发展图示</span>
+                  <img src="images/yck-3.png" alt="发展流程图">
+                </p>
+                <p class="word-source">来源：汉字形义演绎字典 四川出版集团&sdot;四川辞书出版社 2006-11</p>
+              </div>
+              <!-- 形义演释 end -->
+            </div>
+        </div>
+        <!-- 语词知识 section end -->
+
+        <!-- 词链导图 section start -->
+        <div class="word-chart">
+          <div class="dt-section-title">
+            <span>词链导图</span>
+            <div class="chart-operators">
+              <a>全选</a>
+              <a>删除</a>
+              <a>建立导图 >></a>
+            </div>
+          </div><!-- section-title -->
+          <div class="chart-content">
+            <div class="chart-control">
+              <label class="checkbox-inline line-start">
+                <input type="checkbox" id="class1" value="class1">汉语辞典
+              </label>
+              <div class="line-tiles">
+                <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section1">源流
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section2">金文
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section3">虚词
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section4">通假
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section5">组词
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section6">造句
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section7">书证
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section8">辨析
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section9">方言
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section10">俗/熟语
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section11">谜语
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class1-section12">楹联
+              </label>
+              </div>
+
+              <br><br>
+
+              <label class="checkbox-inline line-start">
+                <input type="checkbox" id="class2" value="class2">
+                少数民族语言
+              </label>
+              <div class="line-tiles">
+                <label class="checkbox-inline">
+                <input type="checkbox" id="class2-section1">源流
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class2-section2">金文
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class2-section3">虚词
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class2-section4">通假
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class2-section5">组词
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="class2-section6">造句
+              </label>
+              </div>
+              <br><br>
+              <!-- <a>导图1</a><a>导图2</a> -->
+             <div class="clearfix"></div>
+            </div><!-- chart-control -->
+            <div id="chart"></div>
+            <div class="word-tree">
+              <div class="word-tree-root">
+                <div class="word-tree-start">源流</div>
+                <div class="connector root"><img src="images/minus.png" alt="minus"></div>
+              </div>
+              <div class="word-tree-branches">
+                <div class="branch top" id="branch1">
+                  <div class="linker"></div>
+                  <div class="world-col cur">字形</div>
+                  <div class="branch-connector">
+                    <img src="images/minus.png" alt="minus">
+                  </div>
+                  <div class="branch-info"><span>篆</span></div>
+                </div>
+                <div class="branch top" id="branch2">
+                  <div class="linker"></div>
+                  <div class="world-col"><span>构造</span></div>
+                  <div class="branch-connector">
+                    <img src="images/minus.png" alt="minus">
+                  </div>
+                  <div class="branch-info"><span>形声字，篆文从后...</span></div>
+                </div>
+                <div class="branch top" id="branch3">
+                  <div class="linker"></div>
+                  <div class="world-col">本义</div>
+                  <div class="branch-connector">
+                    <img src="images/minus.png" alt="minus">
+                  </div>
+                  <div class="branch-info"><span>形声字，篆文从后...</span></div>
+                </div>
+                <div class="branch bottom" id="branch4">
+                  <div class="linker"></div>
+                  <div class="world-col">演变</div>
+                  <div class="branch-connector">
+                    <img src="images/minus.png" alt="minus">
+                  </div>
+                  <div class="branch-info"><span>形声字，篆文从后...</span></div>
+                </div>
+                <div class="branch bottom" id="branch5">
+                  <div class="linker"></div>
+                  <div class="world-col">组字</div>
+                  <div class="branch-connector">
+                    <img src="images/minus.png" alt="minus">
+                  </div>
+                  <div class="branch-info"><span>形声字，篆文从后...</span></div>
+                </div>
+                <div class="branch bottom" id="branch6">
+                  <div class="linker"></div>
+                  <div class="world-col">相关辞书</div>
+                  <div class="branch-connector">
+                    <img src="images/minus.png" alt="minus">
+                  </div>
+                  <div class="branch-info"><span>形声字，篆文从后...</span></div>
+                </div>
+              </div><!-- word-tree-branches -->
+              <div class="clearfix"></div>
+            </div><!-- word-tree -->
+          </div> <!-- chart-content -->
+          <div class="clearfix"></div>
+        </div>
+        <!-- 词链导图 section end -->
+
+        <!-- 少数民族语言知识 section start -->
+        <div class="lan-knowledge">
+          <div class="dt-section-title">
+              <span>少数民族语言知识</span>
+              <ul id="lan-knowledge-tabs">
+                <li class="active">
+                  <a href="#lan1" data-toggle="tab">景颇语</a>
+                </li>
+                <li>
+                  <a href="#lan2" data-toggle="tab">塔吉克语</a>
+                </li>
+                <li>
+                  <a href="#lan3" data-toggle="tab">白语</a>
+                </li>
+                <li>
+                  <a href="#lan4" data-toggle="tab">苗语</a>
+                </li>
+                <li>
+                  <a href="#lan5" data-toggle="tab">满语</a>
+                </li>
+                <li>
+                  <a href="#lan6" data-toggle="tab">佤语</a>
+                </li>
+              </ul>
+            </div>
+            <div id="lan-knowledge-content" class="tab-content">
+              <div class="tab-pane fade in active" id="lan1">
+                <ul class="lan-list">
+                  <li><div class="lan-list-icon"></div><a href="#">景颇族姓氏简表</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇文字母表及声韵母表景</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">我国各民族名称人口和主要分布地区</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇语语法简况 </a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">颇语语音系统及文字表示法</a></li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="lan2">
+                <ul class="lan-list">
+                  <li><div class="lan-list-icon"></div><a href="#">景颇族姓氏简表</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇文字母表及声韵母表景</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">我国各民族名称人口和主要分布地区</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇语语法简况 </a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">颇语语音系统及文字表示法</a></li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="lan3">
+                <ul class="lan-list">
+                  <li><div class="lan-list-icon"></div><a href="#">景颇族姓氏简表</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇文字母表及声韵母表景</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">我国各民族名称人口和主要分布地区</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇语语法简况 </a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">颇语语音系统及文字表示法</a></li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="lan4">
+                <ul class="lan-list">
+                  <li><div class="lan-list-icon"></div><a href="#">景颇族姓氏简表</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇文字母表及声韵母表景</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">我国各民族名称人口和主要分布地区</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇语语法简况 </a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">颇语语音系统及文字表示法</a></li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="lan5">
+                <ul class="lan-list">
+                  <li><div class="lan-list-icon"></div><a href="#">景颇族姓氏简表</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇文字母表及声韵母表景</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">我国各民族名称人口和主要分布地区</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇语语法简况 </a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">颇语语音系统及文字表示法</a></li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="lan6">
+                <ul class="lan-list">
+                  <li><div class="lan-list-icon"></div><a href="#">景颇族姓氏简表</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇文字母表及声韵母表景</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">我国各民族名称人口和主要分布地区</a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">景颇语语法简况 </a></li>
+                   <li><div class="lan-list-icon"></div><a href="#">颇语语音系统及文字表示法</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <!-- 少数民族语言知识 section end -->
+
+        <!-- 行业分析 section start-->
+        <div class="prof-keep">        
+            <div class="dt-section-title">
+              <span>行业分析</span>
+            </div>
+            <div id="dt-chart"></div>
+        </div>
+        <!-- 行业分析 section end -->
+
+        <!-- 相关资源 section start-->
+        <div class="jsk-resouces">        
+            <div class="dt-section-title">
+              <span>相关资源</span>
+              <ul id="jsk-resouces-tabs">
+                <li class="active">
+                  <a href="#pics" data-toggle="tab">图片</a>
+                </li>
+                <li>
+                  <a href="#shufa" data-toggle="tab">书法</a>
+                </li>
+                <li>
+                  <a href="#others" data-toggle="tab">其他</a>
+                </li>
+              </ul>
+            </div>
+            <div id="jsk-resouces-content" class="tab-content">
+              <div class="tab-pane fade in active" id="pics">
+                <div class="pics-col left-col">
+                  <div class="pic-brick">
+                    <span class="pic">
+                      <img src="images/pic/pic18.png" alt="pic18.png">
+                    </span>
+                    <span class="tit">
+                      <a href="#">代表作有：明胡应麟说：“太白诸绝句，信口而成，所谓无意于工而无不工者。”(《诗薮·内编》卷六)明</a>
+                    </span>
+                  </div>
+                  <!-- end a pic-brick -->
+                  <div class="pic-brick">
+                    <span class="pic">
+                      <img src="images/pic/pic21.png" alt="pic18.png">
+                    </span>
+                    <span class="tit">
+                      <a href="#">标题内容...</a>
+                    </span>
+                  </div>
+                  <!-- end a pic-brick -->
+                  <div class="pic-brick">
+                    <span class="pic">
+                      <img src="images/pic/pic25.png" alt="pic18.png">
+                    </span>
+                    <span class="tit">
+                      <a href="#">标题内容...</a>
+                    </span>
+                  </div>
+                  <!-- end a pic-brick -->
+                  <div class="pic-brick">
+                    <span class="pic">
+                      <img src="images/pic/pic26.png" alt="pic18.png">
+                    </span>
+                    <span class="tit">
+                      <a href="#">标题内容...</a>
+                    </span>
+                  </div>
+                  <!-- end a pic-brick -->
+                </div>
+                <div class="pics-col left-col">
+                  <div class="pic-brick">
+                    <span class="pic">
+                      <img src="images/pic/pic17.png" alt="pic18.png">
+                    </span>
+                    <span class="tit">
+                      <a href="#">标题内容...</a>
+                    </span>
+                  </div>
+                  <!-- end a pic-brick -->
+                  <div class="pic-brick">
+                    <span class="pic">
+                      <img src="images/pic/pic22.png" alt="pic18.png">
+                    </span>
+                    <span class="tit">
+                      <a href="#">标题内容...</a>
+                    </span>
+                  </div>
+                  <!-- end a pic-brick -->
+                  <div class="pic-brick">
+                    <span class="pic">
+                      <img src="images/pic/pic27.png" alt="pic18.png">
+                    </span>
+                    <span class="tit">
+                      <a href="#">标题内容...</a>
+                    </span>
+                  </div>
+                  <!-- end a pic-brick -->
+                </div>
+                <div class="pics-col left-col">
+                  <div class="pic-brick">
+                    <span class="pic">
+                      <img src="images/pic/pic19.png" alt="pic18.png">
+                    </span>
+                    <span class="tit">
+                      <a href="#">标题内容...</a>
+                    </span>
+                  </div>
+                  <!-- end a pic-brick -->
+                  <div class="pic-brick">
+                    <span class="pic">
+                      <img src="images/pic/pic23.png" alt="pic18.png">
+                    </span>
+                    <span class="tit">
+                      <a href="#">标题内容...</a>
+                    </span>
+                  </div>
+                  <!-- end a pic-brick -->
+                  <div class="pic-brick">
+                    <span class="pic">
+                      <img src="images/pic/pic28.png" alt="pic18.png">
+                    </span>
+                    <span class="tit">
+                      <a href="#">标题内容...</a>
+                    </span>
+                  </div>
+                  <!-- end a pic-brick -->
+                </div>
+                <div class="pics-col">
+                  <div class="pic-brick">
+                    <span class="pic">
+                      <img src="images/pic/pic20.png" alt="pic18.png">
+                    </span>
+                    <span class="tit">
+                      <a href="#">标题内容...</a>
+                    </span>
+                  </div>
+                  <!-- end a pic-brick -->
+                  <div class="pic-brick">
+                    <span class="pic">
+                      <img src="images/pic/pic24.png" alt="pic18.png">
+                    </span>
+                    <span class="tit">
+                      <a href="#">标题内容...</a>
+                    </span>
+                  </div>
+                  <!-- end a pic-brick -->
+                  <div class="pic-brick">
+                    <span class="pic">
+                      <img src="images/pic/pic29.png" alt="pic18.png">
+                    </span>
+                    <span class="tit">
+                      <a href="#">标题内容...</a>
+                    </span>
+                  </div>
+                  <!-- end a pic-brick -->
+                </div>
+                <!-- 分页 -->
+                <nav aria-label="Page navigation" class="fenye">
+                  <div class="pn-container">
+                  <ul class="pagination msm">
+                    <li>
+                      <a href="#" aria-label="front">
+                        <span aria-hidden="true">首页</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" aria-label="Previous">
+                        <span aria-hidden="true"><<</span>
+                      </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">...</a></li>
+                    <li>
+                      <a href="#" aria-label="Next">
+                        <span aria-hidden="true">>></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" aria-label="end">
+                        <span aria-hidden="true">尾页</span>
+                      </a>
+                    </li>
+                  </ul>
+                  </div>
+                  <!-- end of the page-nav container -->
+                </nav> <!-- 分页 end -->
+              </div>
+              <!-- pics end -->
+              <div class="tab-pane fade" id="shufa">
+                
+              </div>
+              <!-- shufa end -->
+              <div class="tab-pane fade" id="others">
+                
+              </div>
+              <!-- others end -->
+            </div>
+        </div>
+        <!-- 相关资源 section end -->
+        
+        <!-- 相关解释 section start -->
+        <div class="related-info">
+           <div class="dt-section-title">
+              <span>“美丽” 在其他工具书的解释</span>
+              <ul id="related-info-tabs">
+                <li class="active">
+                  <a href="#yck" data-toggle="tab">语词库 </a>
+                </li>
+                <li>
+                  <a href="#jsk" data-toggle="tab">鉴赏库</a>
+                </li>
+                <li>
+                  <a href="#hyk" data-toggle="tab">行业库</a>
+                </li>
+              </ul>
+            </div>
+            <div id="related-info-content" class="tab-content">
+              <div class="tab-pane fade in active" id="yck">
+                <dl class="result-detail-list">
+                  <dd>
+                        <div class="seq"><div class="lan-list-icon"></div></div>
+                        <div class="middle">
+                          <!-- <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div> -->
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info clearfix">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                              <li class="src"><a href="#"><span>来源：《，，》， 2010</span></a></li>
+                            </ul>
+                              <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+                    <dd>
+                        <div class="seq"><div class="lan-list-icon"></div></div>
+                        <div class="middle">
+                          <!-- <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div> -->
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info clearfix">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                              <li class="src"><a href="#"><span>来源：《，，》， 2010</span></a></li>
+                            </ul>
+                              <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+                    <dd>
+                        <div class="seq"><div class="lan-list-icon"></div></div>
+                        <div class="middle">
+                          <!-- <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div> -->
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info clearfix">
+                             <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                              <li class="src"><a href="#"><span>来源：《，，》， 2010</span></a></li>
+                            </ul>
+                              <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+                    <dd>
+                        <div class="seq"><div class="lan-list-icon"></div></div>
+                        <div class="middle">
+                          <!-- <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div> -->
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info clearfix">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                              <li class="src"><a href="#"><span>来源：《，，》， 2010</span></a></li>
+                            </ul>
+                              <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+                    <dd>
+                        <div class="seq"><div class="lan-list-icon"></div></div>
+                        <div class="middle">
+                          <!-- <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div> -->
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info clearfix">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                              <li class="src"><a href="#"><span>来源：《，，》， 2010</span></a></li>
+                            </ul>
+                              <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+                </dl>
+                <!-- 分页 -->
+                <nav aria-label="Page navigation" class="fenye">
+                  <div class="pn-container">
+                  <ul class="pagination msm">
+                    <li>
+                      <a href="#" aria-label="front">
+                        <span aria-hidden="true">首页</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" aria-label="Previous">
+                        <span aria-hidden="true"><<</span>
+                      </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">...</a></li>
+                    <li>
+                      <a href="#" aria-label="Next">
+                        <span aria-hidden="true">>></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" aria-label="end">
+                        <span aria-hidden="true">尾页</span>
+                      </a>
+                    </li>
+                  </ul>
+                  </div>
+                  <!-- end of the page-nav container -->
+                </nav> <!-- 分页 end -->
+              </div>
+              <div class="tab-pane fade" id="jsk">
+                 <dl class="result-detail-list">
+                  <dd>
+                        <div class="seq"><div class="lan-list-icon"></div></div>
+                        <div class="middle">
+                          <!-- <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div> -->
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info clearfix">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                              <li class="src"><a href="#"><span>来源：《，，》， 2010</span></a></li>
+                            </ul>
+                              <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+                    <dd>
+                        <div class="seq"><div class="lan-list-icon"></div></div>
+                        <div class="middle">
+                          <!-- <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div> -->
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info clearfix">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                              <li class="src"><a href="#"><span>来源：《，，》， 2010</span></a></li>
+                            </ul>
+                              <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+                   <dd>
+                        <div class="seq"><div class="lan-list-icon"></div></div>
+                        <div class="middle">
+                          <!-- <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div> -->
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info clearfix">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                              <li class="src"><a href="#"><span>来源：《，，》， 2010</span></a></li>
+                            </ul>
+                              <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+                    <dd>
+                        <div class="seq"><div class="lan-list-icon"></div></div>
+                        <div class="middle">
+                          <!-- <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div> -->
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info clearfix">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                              <li class="src"><a href="#"><span>来源：《，，》， 2010</span></a></li>
+                            </ul>
+                              <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+                    <dd>
+                        <div class="seq"><div class="lan-list-icon"></div></div>
+                        <div class="middle">
+                          <!-- <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div> -->
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info clearfix">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                              <li class="src"><a href="#"><span>来源：《，，》， 2010</span></a></li>
+                            </ul>
+                              <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+                </dl>
+                <!-- 分页 -->
+                <nav aria-label="Page navigation" class="fenye">
+                  <div class="pn-container">
+                  <ul class="pagination">
+                    <li>
+                      <a href="#" aria-label="front">
+                        <span aria-hidden="true">首页</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" aria-label="Previous">
+                        <span aria-hidden="true"><<</span>
+                      </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">...</a></li>
+                    <li>
+                      <a href="#" aria-label="Next">
+                        <span aria-hidden="true">>></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" aria-label="end">
+                        <span aria-hidden="true">尾页</span>
+                      </a>
+                    </li>
+                  </ul>
+                  </div>
+                  <!-- end of the page-nav container -->
+                </nav> <!-- 分页 end -->
+              </div>
+              <div class="tab-pane fade" id="hyk">
+                 <dl class="result-detail-list">
+                  <dd>
+                        <div class="seq"><div class="lan-list-icon"></div></div>
+                        <div class="middle">
+                          <!-- <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div> -->
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info clearfix">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                              <li class="src"><a href="#"><span>来源：《，，》， 2010</span></a></li>
+                            </ul>
+                              <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+                    <dd>
+                        <div class="seq"><div class="lan-list-icon"></div></div>
+                        <div class="middle">
+                          <!-- <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div> -->
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info clearfix">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                              <li class="src"><a href="#"><span>来源：《，，》， 2010</span></a></li>
+                            </ul>
+                              <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+                   <dd>
+                        <div class="seq"><div class="lan-list-icon"></div></div>
+                        <div class="middle">
+                          <!-- <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div> -->
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info clearfix">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                              <li class="src"><a href="#"><span>来源：《，，》， 2010</span></a></li>
+                            </ul>
+                              <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+                    <dd>
+                        <div class="seq"><div class="lan-list-icon"></div></div>
+                        <div class="middle">
+                          <!-- <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div> -->
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info clearfix">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                              <li class="src"><a href="#"><span>来源：《，，》， 2010</span></a></li>
+                            </ul>
+                              <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+                    <dd>
+                        <div class="seq"><div class="lan-list-icon"></div></div>
+                        <div class="middle">
+                          <!-- <div class="list-title">
+                            <a href="#"><span class="key">drift</span></a>
+                            <span>汉语大辞典&康熙字典</span>
+                            <span class="position"></span>
+                            <span class="chuban"></span>
+                          </div> -->
+                            <p class="abstract">算术  数学的一个基础分支.它以自然数和非负分数为主要对象.算术的内容包括两部分,一部分讨论自然数的读法、写法和它的基本运算,这一部分包括进位制和记数法,主要是十进位制,其他的进位制与十进位制仅是采用的基数不同,都可以仿照十进位数的原理和原则进行计算.算术的另一...</p>
+                            <ul class="basic-info clearfix">
+                              <li><span>字数：3621</span><div class="info-divider"></div></li>
+                              <li><span>图片数：12</span><div class="info-divider"></div></li>
+                              <li><a href="#"><span>展开原文</span><div class="info-divider"></div></a></li>
+                              <li><a href="#"><span>进入条目</span></a></li>
+                              <li class="src"><a href="#"><span>来源：《，，》， 2010</span></a></li>
+                            </ul>
+                              <ul class="pic-list clearfix">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                              </ul>
+                        </div>
+                        <!-- end of the content box -->
+                    </dd>
+                    <!-- end of a list -->
+                </dl>
+                <!-- 分页 -->
+                <nav aria-label="Page navigation" class="fenye">
+                  <div class="pn-container">
+                  <ul class="pagination">
+                    <li>
+                      <a href="#" aria-label="front">
+                        <span aria-hidden="true">首页</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" aria-label="Previous">
+                        <span aria-hidden="true"><<</span>
+                      </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">...</a></li>
+                    <li>
+                      <a href="#" aria-label="Next">
+                        <span aria-hidden="true">>></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" aria-label="end">
+                        <span aria-hidden="true">尾页</span>
+                      </a>
+                    </li>
+                  </ul>
+                  </div>
+                  <!-- end of the page-nav container -->
+                </nav> <!-- 分页 end -->
+              </div>
+            </div>
+        </div>
+        <!-- 相关解释 section end -->
+
+        <!-- 相关文章 section start -->
+        <div class="reference">
+          <div class="dt-section-title">
+              <span>相关文章</span>
+              <ul id="related-info-tabs">
+                <li class="active">
+                  <a href="#qikan" data-toggle="tab">期刊杂志</a>
+                </li>
+                <li>
+                  <a href="#baozhi" data-toggle="tab">报纸</a>
+                </li>
+                <li>
+                  <a href="#shuoshi" data-toggle="tab">硕士学位论文</a>
+                </li>
+                <li>
+                  <a href="#boshi" data-toggle="tab">博士学位论文</a>
+                </li>
+                <li>
+                  <a href="#huiyi" data-toggle="tab">会议论文</a>
+                </li>
+                <li>
+                  <a href="#nianjian" data-toggle="tab">年鉴</a>
+                </li>
+              </ul>
+            </div>
+            <div id="reference-content" class="tab-content">
+              <div class="tab-pane fade in active" id="qikan">
+                <ul class="refer-list">
+                  <li><a href="#">
+                    <span>[1]崔义中;</span><em>割不断的教师缘.</em>
+                    <span>紫光阁,1999,(09)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[2]乔丹;</span><em>浅析“非遗”融入中学历史课堂的重要性.</em>
+                    <span>科学大众(科学教育) ,2020,(01)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[3]贺申杰;</span><em>日本人为何选择了战争?.</em>
+                    <span> 读书 ,2020,(02)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[4]史海燕;</span><em>学生为什么不喜欢历史课？——原因考察及解决策略.</em>
+                    <span>人民教育,2019,(23)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[5]李清秀;</span><em>高中历史课情境教学法开展思路与技巧探究.</em>
+                    <span>华夏教师 ,2019,(36)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[6]喻莘博;</span><em>核心素养视域中高中历史课堂教学策略研究.</em>
+                    <span>现代交际 ,2020,(06)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[7]易梦颖;</span><em>浅谈从提高教师语言素养的角度提升历史课的魅力. </em>
+                    <span>品位经典 ,2020,(01)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[8]宋东映;</span><em>落实核心素养，上好“有料”的历史课.科教导刊(中旬刊),</em>
+                    <span>2020,(05)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[9]关培凤;万佳;</span><em> 历史教育与国族认同:台湾地区高中历史课纲变迁研究. </em>
+                    <span>闽台关系研究 ,2020,(02)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[10]胡常海;</span><em>新课标视域下中职历史课堂有效教学探析.</em>
+                    <span> 中国职业技术教育 ,2020,(20)</span>
+                  </a></li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="baozhi">
+                <ul class="refer-list">
+                  <li><a href="#">
+                    <span>[1]崔义中;</span><em>割不断的教师缘.</em>
+                    <span>紫光阁,1999,(09)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[2]乔丹;</span><em>浅析“非遗”融入中学历史课堂的重要性.</em>
+                    <span>科学大众(科学教育) ,2020,(01)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[3]贺申杰;</span><em>日本人为何选择了战争?.</em>
+                    <span> 读书 ,2020,(02)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[4]史海燕;</span><em>学生为什么不喜欢历史课？——原因考察及解决策略.</em>
+                    <span>人民教育,2019,(23)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[5]李清秀;</span><em>高中历史课情境教学法开展思路与技巧探究.</em>
+                    <span>华夏教师 ,2019,(36)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[6]喻莘博;</span><em>核心素养视域中高中历史课堂教学策略研究.</em>
+                    <span>现代交际 ,2020,(06)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[7]易梦颖;</span><em>浅谈从提高教师语言素养的角度提升历史课的魅力. </em>
+                    <span>品位经典 ,2020,(01)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[8]宋东映;</span><em>落实核心素养，上好“有料”的历史课.科教导刊(中旬刊),</em>
+                    <span>2020,(05)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[9]关培凤;万佳;</span><em> 历史教育与国族认同:台湾地区高中历史课纲变迁研究. </em>
+                    <span>闽台关系研究 ,2020,(02)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[10]胡常海;</span><em>新课标视域下中职历史课堂有效教学探析.</em>
+                    <span> 中国职业技术教育 ,2020,(20)</span>
+                  </a></li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="shuoshi">
+                <ul class="refer-list">
+                  <li><a href="#">
+                    <span>[1]崔义中;</span><em>割不断的教师缘.</em>
+                    <span>紫光阁,1999,(09)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[2]乔丹;</span><em>浅析“非遗”融入中学历史课堂的重要性.</em>
+                    <span>科学大众(科学教育) ,2020,(01)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[3]贺申杰;</span><em>日本人为何选择了战争?.</em>
+                    <span> 读书 ,2020,(02)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[4]史海燕;</span><em>学生为什么不喜欢历史课？——原因考察及解决策略.</em>
+                    <span>人民教育,2019,(23)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[5]李清秀;</span><em>高中历史课情境教学法开展思路与技巧探究.</em>
+                    <span>华夏教师 ,2019,(36)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[6]喻莘博;</span><em>核心素养视域中高中历史课堂教学策略研究.</em>
+                    <span>现代交际 ,2020,(06)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[7]易梦颖;</span><em>浅谈从提高教师语言素养的角度提升历史课的魅力. </em>
+                    <span>品位经典 ,2020,(01)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[8]宋东映;</span><em>落实核心素养，上好“有料”的历史课.科教导刊(中旬刊),</em>
+                    <span>2020,(05)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[9]关培凤;万佳;</span><em> 历史教育与国族认同:台湾地区高中历史课纲变迁研究. </em>
+                    <span>闽台关系研究 ,2020,(02)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[10]胡常海;</span><em>新课标视域下中职历史课堂有效教学探析.</em>
+                    <span> 中国职业技术教育 ,2020,(20)</span>
+                  </a></li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="boshi">
+                <ul class="refer-list">
+                  <li><a href="#">
+                    <span>[1]崔义中;</span><em>割不断的教师缘.</em>
+                    <span>紫光阁,1999,(09)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[2]乔丹;</span><em>浅析“非遗”融入中学历史课堂的重要性.</em>
+                    <span>科学大众(科学教育) ,2020,(01)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[3]贺申杰;</span><em>日本人为何选择了战争?.</em>
+                    <span> 读书 ,2020,(02)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[4]史海燕;</span><em>学生为什么不喜欢历史课？——原因考察及解决策略.</em>
+                    <span>人民教育,2019,(23)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[5]李清秀;</span><em>高中历史课情境教学法开展思路与技巧探究.</em>
+                    <span>华夏教师 ,2019,(36)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[6]喻莘博;</span><em>核心素养视域中高中历史课堂教学策略研究.</em>
+                    <span>现代交际 ,2020,(06)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[7]易梦颖;</span><em>浅谈从提高教师语言素养的角度提升历史课的魅力. </em>
+                    <span>品位经典 ,2020,(01)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[8]宋东映;</span><em>落实核心素养，上好“有料”的历史课.科教导刊(中旬刊),</em>
+                    <span>2020,(05)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[9]关培凤;万佳;</span><em> 历史教育与国族认同:台湾地区高中历史课纲变迁研究. </em>
+                    <span>闽台关系研究 ,2020,(02)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[10]胡常海;</span><em>新课标视域下中职历史课堂有效教学探析.</em>
+                    <span> 中国职业技术教育 ,2020,(20)</span>
+                  </a></li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="huiyi">
+                <ul class="refer-list">
+                  <li><a href="#">
+                    <span>[1]崔义中;</span><em>割不断的教师缘.</em>
+                    <span>紫光阁,1999,(09)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[2]乔丹;</span><em>浅析“非遗”融入中学历史课堂的重要性.</em>
+                    <span>科学大众(科学教育) ,2020,(01)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[3]贺申杰;</span><em>日本人为何选择了战争?.</em>
+                    <span> 读书 ,2020,(02)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[4]史海燕;</span><em>学生为什么不喜欢历史课？——原因考察及解决策略.</em>
+                    <span>人民教育,2019,(23)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[5]李清秀;</span><em>高中历史课情境教学法开展思路与技巧探究.</em>
+                    <span>华夏教师 ,2019,(36)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[6]喻莘博;</span><em>核心素养视域中高中历史课堂教学策略研究.</em>
+                    <span>现代交际 ,2020,(06)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[7]易梦颖;</span><em>浅谈从提高教师语言素养的角度提升历史课的魅力. </em>
+                    <span>品位经典 ,2020,(01)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[8]宋东映;</span><em>落实核心素养，上好“有料”的历史课.科教导刊(中旬刊),</em>
+                    <span>2020,(05)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[9]关培凤;万佳;</span><em> 历史教育与国族认同:台湾地区高中历史课纲变迁研究. </em>
+                    <span>闽台关系研究 ,2020,(02)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[10]胡常海;</span><em>新课标视域下中职历史课堂有效教学探析.</em>
+                    <span> 中国职业技术教育 ,2020,(20)</span>
+                  </a></li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="nianjian">
+                <ul class="refer-list">
+                  <li><a href="#">
+                    <span>[1]崔义中;</span><em>割不断的教师缘.</em>
+                    <span>紫光阁,1999,(09)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[2]乔丹;</span><em>浅析“非遗”融入中学历史课堂的重要性.</em>
+                    <span>科学大众(科学教育) ,2020,(01)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[3]贺申杰;</span><em>日本人为何选择了战争?.</em>
+                    <span> 读书 ,2020,(02)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[4]史海燕;</span><em>学生为什么不喜欢历史课？——原因考察及解决策略.</em>
+                    <span>人民教育,2019,(23)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[5]李清秀;</span><em>高中历史课情境教学法开展思路与技巧探究.</em>
+                    <span>华夏教师 ,2019,(36)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[6]喻莘博;</span><em>核心素养视域中高中历史课堂教学策略研究.</em>
+                    <span>现代交际 ,2020,(06)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[7]易梦颖;</span><em>浅谈从提高教师语言素养的角度提升历史课的魅力. </em>
+                    <span>品位经典 ,2020,(01)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[8]宋东映;</span><em>落实核心素养，上好“有料”的历史课.科教导刊(中旬刊),</em>
+                    <span>2020,(05)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[9]关培凤;万佳;</span><em> 历史教育与国族认同:台湾地区高中历史课纲变迁研究. </em>
+                    <span>闽台关系研究 ,2020,(02)</span>
+                  </a></li>
+                  <li><a href="#">
+                    <span>[10]胡常海;</span><em>新课标视域下中职历史课堂有效教学探析.</em>
+                    <span> 中国职业技术教育 ,2020,(20)</span>
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <!-- 相关文章 section end -->
+      </div><!-- end of the dt-container -->
+      </div><!-- end of dt-rightbar -->
+    </div><!-- end of the main content container -->
+  </div>
+  <!-- end of the main content -->
+  <!-- footer start -->
+<div class="footer">
+     <div class="foot-top" data-edit="y">
+          <ul class="ft-container">
+              <li><img id="ft-logo" src="images/footer-icon.png" alt=""></li>
+              <li>
+                  <b>客服咨询</b>
+                  <span>服务热线：010-82439137</span>
+                  <span>QQ咨询：2172396729</span>
+                  <span>服务邮箱：zwsk@cnki.net</span>
+              </li>
+              <li>
+                  <b>特色服务</b>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://sk.cnki.net/#/product/detail?id=4028e9b27298f48701729d7ed68b00bc">免费试用</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://sk.cnki.net/#/activity">活动中心</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://sk.cnki.net/#/contact">订购咨询</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://sk.cnki.net/">知识服务超市</a>
+              </li>
+              <li>
+                  <b>读者服务</b>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://skcard.cnki.net/">购买知网卡</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://zhifu.cnki.net/?platform=skpt">充值中心</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://i.cnki.net/?platform=skpt">我的CNKI</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="https://sk.cnki.net/#/">帮助中心</a>
+              </li>
+               <li>
+                  <b>CNKI常用软件下载</b>
+                  <a target="_blank"  rel="noopener noreferrer" href="//cajviewer.cnki.net">CAJViewer浏览器</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="//www.cnki.net/software/xzydq.htm#CNKIe-Learning">CNKI数字化学习平台</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="//refbook.cnki.net/download.html">工具书桌面检索软件</a>
+              </li>
+              <li>
+                <img src="images/ewm_code.png" class="ft-code" id="code1" alt="">
+               <img src="images/rq_code.png" class="ft-code" id="code2" alt="">
+              </li>
+              <div class="clearfix"></div>
+          </ul>
+      </div>
+      <div class="foot-bot clearfix" data-edit="y">
+          <div class="t">
+              <p class="mid">
+                  <span>
+                      <a target="_blank"  rel="noopener noreferrer" href="//www.cnki.net/gycnki/gycnki.htm">关于我们</a>
+                      <a target="_blank"  rel="noopener noreferrer" href="//www.cnki.net/other/gonggao/gongsirongyu.html">CNKI 荣誉</a>
+                      <a target="_blank"  rel="noopener noreferrer" href="//www.cnki.net/other/gonggao/bqsm.htm">版权公告</a>
+                      <a target="_blank"  rel="noopener noreferrer" href="//service.cnki.net/">客服中心</a>
+                      <a target="_blank"  rel="noopener noreferrer" href="//help.cnki.net/">在线咨询</a>
+                      <a target="_blank"  rel="noopener noreferrer"
+                         href="//help.cnki.net/Live800_1_2.aspx?GroupID=503&amp;PageID=101008&amp;Name=&amp;CookieName=TTKN_OnLine_800">用户建议</a>
+                      <a target="_blank"  rel="noopener noreferrer" href="//piccache.cnki.net/index/CNKIRecruit/index.html">知网招聘</a>
+                      <a target="_blank"  rel="noopener noreferrer" href="//piccache.cnki.net/index/CNKIRecruit/index.html">知网推广</a>
+                  </span>
+                  <div class="trust-icon"> <img src="images/trust-icon.png" alt=""></div>
+              </p>
+          </div>
+          <div class="b">
+              <span>
+                  京 ICP 证 040431 号
+                  <a target="_blank"  rel="noopener noreferrer" href="//piccache.cnki.net/index/images/gb/271.jpg">网络出版服务许可证 (总)网出证(京)字第 271 号</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="//piccache.cnki.net/index/images/gb/170001.jpg">出版物经营许可证</a>
+                  <a target="_blank"  rel="noopener noreferrer" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202005012100021">经营性网站备案信息</a> 京公网安备 11010802020460 号
+              </span>
+              <span>《中国学术期刊（光盘版）》电子杂志社有限公司</span>
+              <span>KDN 平台基础技术由 KBASE 11.0 提供.</span>
+          </div>
+      </div>
+</div>
+<div id="return-top">
+        <a href="javascript:scroll(0,0);" title="返回顶部" alt="返回顶部"></a>
+ </div>
+  </div>
+  <!-- end of footer -->
+  
+  <!-- jquery -->
+  <!-- script 文件 -->
+  <!--   <script src="js/index.js"></script> -->
+  <!-- back to top -->
+  <script type="text/javascript">
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 150) {
+                $("#return-top").show();
+            } else {
+                $("#return-top").hide();
+            }
+        });
+   </script>
+  <!-- Bootstrap js引用 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -188,6 +188,10 @@ ul li.login{
 	width: 325px;
 	margin: 0 auto;
 }
+.msm-tit.zk-tit{
+	background: url("../images/zk-tit.png") no-repeat center;
+	width:500px;
+}
 .msm-tit.yck-tit{
 	background: url("../images/yck-tit.png") no-repeat center;
 }
@@ -2419,15 +2423,11 @@ dl.nav-sections ul.nav-sections li{
 	font-size:13px;
 }
 .prof-keep-content{
-	padding:42px 22px 42px 22px;
+	padding:42px 0px 42px 0px;
 }
-.prof-keep-content{
-	font-family: MicrosoftYaHei;
-	font-size: 15px;
-	line-height: 36px;
-	color: #333333;
-	text-indent: 2em;
-}
+#dt-chart{width:600px; height:600px;margin:0 auto;
+		  background:url("../images/tree-bg.png") no-repeat center;
+		  background-size:390px 390px;}
 /*========================= 行业库条目页 end ======================*/
 /*========================= 附录库 start =========================*/
 #flk-banner{

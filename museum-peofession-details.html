@@ -16,6 +16,9 @@
   <!--输入框事件-->
   <script type="text/javascript" src="js/init.js"></script>
   <script type="text/javascript" src="js/museumFunc.js"></script>
+  <!-- 引入 echarts.js -->
+  <script type="text/javascript" src="js/echarts.min.js"></script>
+  <script type="text/javascript" src="js/chart-tree2.js"></script>
 </head>
 
 <body>
@@ -781,20 +784,14 @@
           </div>
           </div><!-- end of the tab-content -->
 
-        <!-- 相关资源 section start-->
+        <!-- 行业分析 section start-->
         <div class="prof-keep">        
             <div class="dt-section-title">
-              <span>预留</span>
+              <span>行业分析</span>
             </div>
-            <div class="prof-keep-content">
-              <p> 在第二层含义上，作为马克思主义哲学的一个组成部分，自然辩证法是研究自然界的辩证过程和辩证联系的哲学理论。它研究的对象和
-              辩证唯物主义、各门自然科学是有区别的。各门自然科学研究客观世界某个方面、某个领域的特殊规律。辩证唯物主义则是对自然界、人类社
-              会和思维发展的最一般规律的概括和总结。自然辩证法研究的，是各门自然科学都共同存在的普遍规律。具体地说，它是以辩证唯物主义为基
-              础，通过深入研究自然科学史和自然科学，来描绘自然界发展变化的辩证图景;从自然科学产生和发展的历史，研究它的性质、作用、社会属
-              性、社会职能、发展规律等问题。</p>
-            </div>
+            <div id="dt-chart"></div>
         </div>
-        <!-- 相关资源 section end -->
+        <!-- 行业分析 section end -->
 
         <!-- 相关解释 section start -->
         <div class="related-info">
