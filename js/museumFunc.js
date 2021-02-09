@@ -52,7 +52,7 @@ $(function(){
     tabFunc(".dt-leftbar", ".dt-leftbar-title li", "cur", ".dt-book-navbar", "active", "mousedown");
 
     //2021 范围：附录库条目页
-    //说明：固定左边栏
+    //说明：固定左边栏..
     // fixMenu();
 
     //2021 范围：mesuem detail page
