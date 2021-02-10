@@ -63,7 +63,15 @@ $(function(){
     tabFunc(".dive-in", "#section-tab li", "cur", ".di-con", "active", "mousedown");
     tabFunc(".dive-in", "#section-tab li", "cur", ".di-con", "active", "mousedown");
 
-
+    //范围：条目页
+    //说明: 搜索框高亮
+    $("input.dt-input").focus(function(){
+        $(this).addClass("box-highlight");
+    })
+     $("input.dt-input").blur(function(){
+        $(this).removeClass("box-highlight");
+    })
+     
     //语词库侧边栏
     //menu-1
    $('#menu-1').collapse('show');
@@ -253,8 +261,8 @@ $(function(){
   function setFontSize(){  //设置字体大中小
     $(".size-change").find("li").click(function () {
         $(this).addClass("on").siblings().removeClass("on");
-        btnA = $(this).find("a");
-        textContent = $(this).parents(".dt-rightbar").find(".dt-container");
+        var btnA = $(this).find("a");
+        var textContent = $(this).parents(".dt-rightbar").find(".dt-container");
         if(btnA.hasClass("l-words")){//大
             textContent.removeClass("content-s").addClass("content-l");
         }

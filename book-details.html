@@ -16,6 +16,7 @@
   <script type="text/javascript" src="js/homePage.js"></script>
   <script type="text/javascript" src="js/init.js"></script>
   <script type="text/javascript" src="js/filter.js"></script>
+  <script type="text/javascript" src="js/museumFunc.js"></script>
 </head>
 
 <body>
@@ -441,8 +442,120 @@
         <div class="dt-box-con">
           <div class="dt-con-tit">
             <span>现代汉语大词典（上）</span>
-            <a href="#">相似工具书</a>
-            <a href="#">丛书</a>
+            <a href="javascript:void(0);" id="related-books">相似工具书</a>
+            <a href="javascript:void(0);" id="other-books">丛书</a>
+            <div class="other-book-con">
+              <p class="rbook-tit">丛书其它卷册</p>
+              <a href="javascript:void(0);" class="close-popup"></a>
+              <div class="clear"></div>
+              <ul class="related-book-list">
+                <li>
+                  <a href="#">
+                    <span><img src="images/qikan/qk10.png" alt=""></span>
+                    <p>歇后语成语词典</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><img src="images/qikan/qk10.png" alt=""></span>
+                    <p>歇后语成语词典</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><img src="images/qikan/qk10.png" alt=""></span>
+                    <p>歇后语成语词典</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><img src="images/qikan/qk10.png" alt=""></span>
+                    <p>歇后语成语词典</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><img src="images/qikan/qk10.png" alt=""></span>
+                    <p>歇后语成语词典</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><img src="images/qikan/qk10.png" alt=""></span>
+                    <p>歇后语成语词典</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><img src="images/qikan/qk10.png" alt=""></span>
+                    <p>歇后语成语词典</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><img src="images/qikan/qk10.png" alt=""></span>
+                    <p>歇后语成语词典</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- end of other book -->
+            <div class="related-book-con">
+              <p class="rbook-tit">相似工具书</p>
+              <a href="javascript:void(0);" class="close-popup"></a>
+              <div class="clear"></div>
+              <ul class="related-book-list">
+                <li>
+                  <a href="#">
+                    <span><img src="images/qikan/qk10.png" alt=""></span>
+                    <p>歇后语成语词典</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><img src="images/qikan/qk10.png" alt=""></span>
+                    <p>歇后语成语词典</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><img src="images/qikan/qk10.png" alt=""></span>
+                    <p>歇后语成语词典</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><img src="images/qikan/qk10.png" alt=""></span>
+                    <p>歇后语成语词典</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><img src="images/qikan/qk10.png" alt=""></span>
+                    <p>歇后语成语词典</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><img src="images/qikan/qk10.png" alt=""></span>
+                    <p>歇后语成语词典</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><img src="images/qikan/qk10.png" alt=""></span>
+                    <p>歇后语成语词典</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span><img src="images/qikan/qk10.png" alt=""></span>
+                    <p>歇后语成语词典</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- end of related book -->
           </div>
           <div class="dt-con-col1">
             <div class="dt-col-tit">基本信息</div>
@@ -566,9 +679,9 @@
             <li><span><img src="images/quote.png" alt="">引用</span></li>
           </ul>
           <ul class="size-change navbar-nav">
-            <li><a href="#">[大]</a></li>
-            <li class="active"><a href="#">[中]</a></li>
-            <li><a href="#">[小]</a></li>
+            <li><a href="javascript:void(0);" class="l-words">[大]</a></li>
+            <li class="on"><a href="javascript:void(0);" class="m-words">[中]</a></li>
+            <li><a href="javascript:void(0);" class="s-words">[小]</a></li>
           </ul>
           <div class="dt-search-bar">
             <input class="dt-input" type="text" autocomplete="off" placeholder="请输入检索内容">
@@ -582,7 +695,7 @@
           <ul class="words-list">
               <li>
                 <div class="words-list-title">
-                  <span>归一</span><span>guī yī</span>
+                  <a>归一</a><span>guī yī</span>
                 </div>
                 <p class="words-list-description">
                   方言。完善;.........
@@ -597,7 +710,7 @@
               </li>
               <li>
                 <div class="words-list-title">
-                  <span>归一</span><span>guī yī</span>
+                  <a>归一</a><span>guī yī</span>
                 </div>
                 <p class="words-list-description">
                   方言。完善;.........
@@ -612,7 +725,7 @@
               </li>
               <li>
                 <div class="words-list-title">
-                  <span>归一</span><span>guī yī</span>
+                  <a>归一</a><span>guī yī</span>
                 </div>
                 <p class="words-list-description">
                   方言。完善;.........
@@ -627,7 +740,7 @@
               </li>
               <li>
                 <div class="words-list-title">
-                  <span>归一</span><span>guī yī</span>
+                  <a>归一</a><span>guī yī</span>
                 </div>
                 <p class="words-list-description">
                   方言。完善;.........
@@ -642,7 +755,7 @@
               </li>
               <li>
                 <div class="words-list-title">
-                  <span>归一</span><span>guī yī</span>
+                  <a>归一</a><span>guī yī</span>
                 </div>
                 <p class="words-list-description">
                   方言。完善;.........
@@ -657,7 +770,7 @@
               </li>
               <li>
                 <div class="words-list-title">
-                  <span>归一</span><span>guī yī</span>
+                  <a>归一</a><span>guī yī</span>
                 </div>
                 <p class="words-list-description">
                   方言。完善;.........
@@ -672,7 +785,7 @@
               </li>
               <li>
                 <div class="words-list-title">
-                  <span>归一</span><span>guī yī</span>
+                  <a>归一</a><span>guī yī</span>
                 </div>
                 <p class="words-list-description">
                   方言。完善;.........
@@ -687,7 +800,7 @@
               </li>
               <li>
                 <div class="words-list-title">
-                  <span>归一</span><span>guī yī</span>
+                  <a>归一</a><span>guī yī</span>
                 </div>
                 <p class="words-list-description">
                   方言。完善;.........
@@ -702,7 +815,7 @@
               </li>
               <li>
                 <div class="words-list-title">
-                  <span>归一</span><span>guī yī</span>
+                  <a>归一</a><span>guī yī</span>
                 </div>
                 <p class="words-list-description">
                   方言。完善;.........

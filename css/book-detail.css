@@ -62,6 +62,64 @@ ul.basic-info {
     margin-right: 20px;
 }
 /*===== end of 通用结构 ======*/
+/*======= 相关资源 ========*/
+.related-book-con, .other-book-con{
+	position:absolute;
+	top:37px;
+	width:780px;
+	background-color:#fff;
+	z-index: 999999;
+	padding: 20px;
+    border: 1px solid #eeeeee;
+    box-shadow: 2px 2px 2px 2px #eeeeee ;
+    display:none;
+}
+.related-book-list li{
+	float:left;
+	padding-left:20px;
+	padding-right:20px;
+    margin-bottom:9px;
+    margin-top:9px;
+    vertical-align:top;
+}
+.related-book-list a{
+	text-decoration:none;
+	text-align:center;
+	border:0px;
+	line-height:33px;
+}
+.related-book-list span{
+	display: block;
+    width: 105px;
+    height: 140px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+.related-book-list span img{
+	transition: all 0.5s;
+    -ms-transition:all 0.5s; /* IE 9 */
+    -moz-transition:all 0.5s; /* Firefox */
+    -webkit-transition:all 0.5s; /* Safari 和 Chrome */
+    -o-transition:all 0.5s; /* Opera */
+}
+.related-book-list span:hover img{
+	transform: scale(1.3);
+     -ms-transform: scale(1.3);   
+   -moz-transform: scale(1.3); 
+   -webkit-transform: scale(1.3); 
+   -o-transform: scale(1.3); 
+}
+.rbook-tit{
+	float:left;
+	font-family: MicrosoftYaHei;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px;
+    color: #333333;}
+.related-book-con .close-popup, .other-book-con .close-popup
+    {float:right;width:20px; 
+	height:20px;background:url("../images/close-popup.png") no-repeat center;
+	border:0px;}
 /*======= 书目栏目词列表 ========*/
 ul.words-list li{
 	width:100%;
@@ -71,14 +129,15 @@ ul.words-list li{
 ul.words-list li:hover{
 	/*background-color: #f8f8f8;*/
 }
-.words-list-title span{
+.words-list-title span,.words-list-title a {
 	font-family: SimSun;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 30px;
 	font-weight:bold;
 	color: #072958;
 	margin-right:15px;
 }
+.words-list-title a:hover{color:#53a2e3; text-decoration:none;}
 ul.words-list p{
 	font-family: SimSun;
 	font-size: 12px;
@@ -86,6 +145,12 @@ ul.words-list p{
 	color: #333333;
 	height:40px;
 }
+.content-l .words-list-title span,
+.content-l .words-list-title a{font-size:18px;}
+.content-l ul.words-list p{font-size:16px;}
+.content-s .words-list-title span,
+.content-s .words-list-title a{font-size:12px;}
+.content-s ul.words-list p{font-size:12px;}
 /*===== 分页 ========*/
 .pagination.msm li a{
 	padding:5px 10px;
@@ -123,6 +188,11 @@ div.pn-container{
 	line-height:26px;
 	padding-left:5px;
 	width:182px;
+}
+.dt-input.box-highlight{
+	border: solid 1px #53a2e3;
+    box-shadow: 0px 0px 3px 0px 
+        #53a2e3;
 }
 /*=================== 语词库主要内容开始 =====================* /
 /*======= 书目导览 start =========* /
@@ -413,7 +483,7 @@ ul.size-change li a{
 	text-decoration: none;
 	color: #6f6f6f;
 }
-ul.size-change li.active a{
+ul.size-change li.on a{
 	color:#53a2e4;
 }
 ul.size-change li a:hover{

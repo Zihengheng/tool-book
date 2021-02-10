@@ -336,11 +336,12 @@ div.order-group i.as-ds{
 	float:left;
 	width:10px;
 	height:18px;
-	background:url("../images/updown-icon.png") no-repeat;
+	background:url("../images/updown.png") no-repeat;
 	background-position:0px 2px; 
 	margin-left: 6px;
 }
 .order li+li{margin-left:0px;}
+.order li i.as-ds {background-position:-18px 2px;}
 .order li.ascend i.as-ds{ background-position:0px 2px;}
 .order li.descend i.as-ds{ background-position:-9px 2px;}
 #divider{
@@ -366,31 +367,33 @@ div.order-group i.as-ds{
 }
 /*======== 结果列表 ==========*/
 .list-title{
-	line-height:36px;
-	font-family: MicrosoftYaHei, SimSun;
+	line-height:39px;
 	font-size:16px;
 	margin-top: -5px;
 }
 .list-title a .key{
+	font-family: MicrosoftYaHei, SimSun;
 	color:#f96868;
 	font-weight: bold;
 	margin-right: 10px;
+	font-size:16px;
 }
 .list-title span{
-	color: #2b4167;
+	color:#072958;
+	font-family: MicrosoftYaHei, SimSun;
 }
 p.abstract{
-	width: 878px;
-	height: 45px;
+	width: 850px;
+	height:45px;
+	overflow: hidden;
 	font-family: MicrosoftYaHei;
-	font-size: 12px;
-	line-height: 23px;
-	letter-spacing: 0px;
-	color:black;
+	font-size:14px;
+	line-height: 24px;
+	color:#333333;
 	text-align: left;
 }
 ul.basic-info{
-	margin-top:15px;
+	margin-top:6px;
 	width:900px;
 	height:33px;
 	margin-bottom: 0px;
@@ -405,6 +408,7 @@ ul.basic-info li a{
 	color:#696969;
 	text-decoration:none;
 	font-family: MicrosoftYaHei;
+	font-size:12px;
 }
 ul.basic-info .src{width:200px;float:right; margin-right:56px;}
 .info-divider{
@@ -429,7 +433,7 @@ ul.basic-info .src{width:200px;float:right; margin-right:56px;}
     margin-top: 10px;
 }
 .result-detail-list dd{
-	padding-bottom:20px;
+	padding-bottom:12px;
 }
 /*======== end of 结果列表 ==========*/
 
@@ -480,6 +484,7 @@ div.pn-container{
 }
 /*搜索栏目 start*/
 .book-search-box{
+	float:left;
 	width: 230px;
 	height:25px;
 	border: solid 1px #eeeeee;
@@ -488,13 +493,15 @@ div.pn-container{
 	float:left;
 	line-height:20px;
 }
-.book-search-box{
-	float:left;
+.book-search-box.box-highlight{
+	border: solid 1px #53a2e3;
+    box-shadow: 0px 0px 3px 0px 
+        #53a2e3;
 }
 input.book-input{
 	line-height:23px;
 	float:left;
-	width:150px;
+	width:153px;
 	border:0px;
 	padding-left: 5px;
 }
@@ -701,7 +708,7 @@ tr.title-col td{
 	text-align: left;
 	padding-left:5px;
 }
-tr.title-col td.book-col1{padding-left:50px;}
+tr.title-col td.book-col1{padding-left:102px;}
 tr.title-col td.book-col2,tr.title-col td.book-col3,
 tr.title-col td.book-col4,tr.title-col td.book-col5,
 tr.title-col td.book-col6,

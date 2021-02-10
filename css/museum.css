@@ -26,17 +26,17 @@ a.adv-search-btn.top{
 /* 相关解释 section*/
 .result-detail-list dd {
 	padding-right: 0;
+	padding-bottom:6px;
 }
+ul.pic-list{margin-bottom:10px;}
+ul.basic-info{padding-top:10px;padding-bottom:10px;}
 p.abstract{
 	width:772px;
 	height:45px;
+	margin-top:10px;
 	overflow: hidden;
 	/*white-space: nowrap;*/
 	text-overflow: ellipsis;
-}
-ul.basic-info {
-	margin-top:10px;
-	margin-bottom: 20px;
 }
 .result-detail-list dd:hover{
 	background-color: white;
@@ -50,7 +50,6 @@ ul.basic-info {
     height: 94px;
     padding: 1px;
     text-align: center;
-    line-height: 94px;
     border: 1px solid #ccc;
     overflow: hidden;
     margin-right: 20px;
@@ -76,14 +75,15 @@ ul.words-list li{
 ul.words-list li:hover{
 	/*background-color: #f8f8f8;*/
 }
-.words-list-title span{
+.words-list-title span,.words-list-title a {
 	font-family: SimSun;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 30px;
 	font-weight:bold;
 	color: #072958;
 	margin-right:15px;
 }
+.words-list-title a:hover{color:#53a2e3; text-decoration:none;}
 ul.words-list p{
 	font-family: SimSun;
 	font-size: 12px;
@@ -91,6 +91,12 @@ ul.words-list p{
 	color: #333333;
 	height:40px;
 }
+.content-l .words-list-title span,
+.content-l .words-list-title a{font-size:18px;}
+.content-l ul.words-list p{font-size:16px;}
+.content-s .words-list-title span,
+.content-s .words-list-title a{font-size:12px;}
+.content-s ul.words-list p{font-size:12px;}
 /*===== 分页 ========*/
 .pagination.msm li a{
 	padding:5px 10px;
@@ -128,6 +134,11 @@ div.pn-container{
 	line-height:26px;
 	padding-left:5px;
 	width:233px;
+}
+.dt-input.box-highlight{
+	border: solid 1px #53a2e3;
+    box-shadow: 0px 0px 3px 0px 
+        #53a2e3;
 }
 /*======= 语词库 header start =========*/
 .msm-topbar{
@@ -184,14 +195,14 @@ ul li.login{
 	padding-top:33px;
 	/*height:100%;*/
 }
+#zk-banner{background:url("../images/bannerbjzk.png") no-repeat center 0px;}
 .msm-tit{
 	height:121px;
-	width: 325px;
+	width: 1200px;
 	margin: 0 auto;
 }
 .msm-tit.zk-tit{
-	background: url("../images/zk-tit.png") no-repeat center;
-	width:500px;
+	background: url("../images/zk-tit.png") no-repeat center;;
 }
 .msm-tit.yck-tit{
 	background: url("../images/yck-tit.png") no-repeat center;
@@ -1627,7 +1638,7 @@ p.word-graph span{
 }
 .line-tiles{
 	float:left;
-	width:680px;
+	width:698px;
 	margin-left: 10px;
 }
 .chart-content a{
@@ -1829,7 +1840,7 @@ div.world-col.cur + .branch-connector +.branch-info{
 	height:10px;
 	background-color: grey;
 	float:left;
-	margin-top:10px;
+	margin-top:15px;
 	margin-right: 20px;
 }
 
@@ -1935,7 +1946,7 @@ ul.refer-list li em{
 	height:611px;
 }
 .operations{
-	width: 188px;
+	width: 133px;
 	height: 53px;
 	float:right;
 	padding-left: 50px;

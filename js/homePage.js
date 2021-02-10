@@ -6,11 +6,6 @@
  */
 $(function () { $("[data-toggle='tooltip']").tooltip(); });
 $(function(){
-	// $('#myTab a[href="#t1"]').tab('show');
-
-    //范围：首页
-    //说明：背景浮动
-    // $('.hp-decor1').smart3d();
 
     //范围：首页
     //说明：书签标签切换
@@ -97,6 +92,34 @@ $(function(){
         }
     });
 
+    //范围：book-detiail page
+    //说明：相似工具书，丛书
+    $("#other-books").click(function(){
+        $(".other-book-con").slideDown(500);
+        $(this).addClass("on");
+        if($(this).siblings().hasClass("on")){
+            $(this).siblings("a").removeClass("on");
+            $(".related-book-con").slideUp(500);
+        }
+    });
+    $(".other-book-con .close-popup").click(function(){
+        $(this).parents(".other-book-con").slideUp(500);
+        $("#other-books").removeClass("on");
+    });
+     $("#related-books").click(function(){
+        $(".related-book-con").slideDown(500);
+         $(this).addClass("on");
+         if($(this).siblings().hasClass("on")){
+            $(this).siblings("a").removeClass("on");
+            $(".other-book-con").slideUp(500);
+        }
+    });
+    $(".related-book-con .close-popup").click(function(){
+        $(this).parents(".related-book-con").slideUp(500);
+        $("#related-books").removeClass("on");
+
+    });
+
     //范围：书目详情页
     //说明：显示书籍注释
     $(".dt-box-book").hover(
@@ -125,6 +148,25 @@ $(function(){
     		$(".trans-box-divider").css("height", "182px");
     	}
     });
+
+    //范围：书目结果页，个人书房，书目导览
+    //说明: 搜索框高亮
+    $("input.book-input").focus(function(){
+        $(this).parents(".book-search-box").addClass("box-highlight");
+    })
+     $("input.book-input").blur(function(){
+        $(this).parents(".book-search-box").removeClass("box-highlight");
+    })
+
+    //范围：条目页
+    //说明: 搜索框高亮
+    $("input.dt-input").focus(function(){
+        $(this).addClass("box-highlight");
+    })
+     $("input.dt-input").blur(function(){
+        $(this).removeClass("box-highlight");
+    })
+
 
 	//  $('.js-banner-move').smart3d();//第一屏背景
         $('#myTab li:eq(1) a').tab('show'); 
