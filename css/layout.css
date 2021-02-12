@@ -342,11 +342,13 @@ div.translate-header span{
     padding:20px 20px 20px 20px;
 }
 .edit-btn{
-    width:53px;
+    width:30px;
     height:27px;
     margin-left: 10px;
     position:relative;
     top:3px;
+    border-radius:3px;
+    border:1px solid #eeeeee;
 }
 .edit-btn:hover{background-color:#dcdcdc;}
 .trans-info{float:right; margin-right:20px;}
