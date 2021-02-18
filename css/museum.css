@@ -1497,37 +1497,30 @@ div.dt-section-title{
 	padding-left: 15px;
 	padding-right: 15px;
 	text-indent: 2em;
-	font-family: SimSun;
+	font-family:  MicrosoftYaHei;
 	font-size: 15px;
 	line-height: 32px;
-	letter-spacing: 0px;
 	color: #010e1f;
 }
-.content-l .word-intro-container p{
+.content-l .word-intro-container p, 
+.content-l .word-intro-container .intro-addon,
+.content-l p.intro-addon,
+.content-l .intro-list li{
 	font-size:18px;
 }
-.content-s .word-intro-container p{
+.content-s .word-intro-container p, 
+.content-s .word-intro-container .intro-addon,
+.content-s p.intro-addon,
+.content-s .intro-list li{
 	font-size:12px;
 }
-.intro-source{
-	margin-top: 50px;
-	color:#333;
-}
-div.word-change{
-	padding-top: 50px;
-	width:270px;
-	margin:0 auto;
-	font-family: SimSun;
-	font-size: 14px;
-	text-align: center;
-}
-div.word-change a{
-	margin-right: 30px;
-	color: #010e1f;
-}
-div.word-change em{
-	color:#cc0000;
-}
+p.intro-con{margin-bottom:28px;}
+.word-intro-container .intro-addon{color:#333;}
+p.intro-addon{font-family: MicrosoftYaHei;font-size: 15px;line-height: 32px;color:#333;}
+.intro-list{font-family: MicrosoftYaHei;font-size: 15px; color:#333;line-height:36px; text-indent:4em;}
+div.word-change{padding-top: 50px;width:270px;margin:0 auto;font-family: MicrosoftYaHei;font-size: 14px;text-align: center;}
+div.word-change a{margin-right: 30px;color: #010e1f;}
+div.word-change em{color:#cc0000;}
 /*=== section-title ===*/
 div.dt-section-title span{
 	font-family: MicrosoftYaHei;
@@ -2106,36 +2099,13 @@ div.img-box-img{
 /*========================= 鉴赏库 end =========================*/
 
 /*======================= 鉴赏库条目 start =======================*/
-#poem-intro{
-	font-family: MicrosoftYaHei;
-	padding-bottom: 50px;
-}
-.poem-intro-container{
-	padding-top: 42px;
-}
-.pintro-tit{
-	font-size: 30px;
-	line-height: 36px;
-	color: #cc0000;
-	/*font-weight: bold;*/
-}
-.pinfo-bar{
-	float:right;
-	width: 365px;
-	height: 13px;
-}
-.pinfo-bar span{
-	font-size: 13px;
-	line-height: 36px;
-	color: #666666;
-	margin-left: 20px;
-}
-.pinfo-bar em, .pinfo-bar em a{
-	color:#2a3f6a;
-}
-.ptext{
-	margin-top: 36px;
-}
+#poem-intro{font-family: MicrosoftYaHei;padding-bottom: 50px;}
+.poem-intro-container{padding-top: 42px;}
+.pintro-tit{font-size: 30px;line-height: 36px;color: #cc0000;}
+.pinfo-bar{float:right;width: 365px;height: 13px;}
+.pinfo-bar span{font-size: 13px;line-height: 36px;color: #666666;margin-left: 20px;}
+.pinfo-bar em, .pinfo-bar em a{color:#2a3f6a;}
+.ptext{margin-top: 36px;}
 .ptext span, .p-annotation span, .p-interpretation span{
 	float:left;
 	font-size: 16px;
@@ -2150,9 +2120,7 @@ div.img-box-img{
 	line-height: 36px;
 	color: #000000;
 }
-.p-annotation, .p-interpretation{
-	margin-top:28px;
-}
+.p-annotation, .p-interpretation{margin-top:28px;}
 .p-annotation p{
 	float:left;
 	margin-left:22px;
@@ -2171,20 +2139,13 @@ div.img-box-img{
 	font-size:19px;
 }
 .content-s .ptext p, .content-s .p-annotation p,
- .content-s .p-interpretation p{
+.content-s .p-interpretation p{
 	font-size:14px;
 }
-.p-interpretation .inter-content{
-	width:799px;
-	float:left;
-	margin-left:22px;
-}
-#poem-intro .intro-source{
-	margin-left: 59px;
-}
-#poem-intro .word-change{
-	width:280px;
-}
+.p-interpretation .inter-content{width:799px;float:left;margin-left:22px;margin-bottom:28px;}
+#poem-intro .intro-addon{margin-left: 59px;}
+#poem-intro .intro-list{text-indent:5em;}
+#poem-intro .word-change{width:280px;}
 /*pics*/
 .jsk-resouces{
 	/*height:995px;*/
@@ -2420,6 +2381,7 @@ dl.nav-sections ul.nav-sections li{
 }
 .prof-inter{
 	margin-top: 36px;
+	margin-bottom:28px;
 }
 .prof-inter p{
 	text-indent:2em;
